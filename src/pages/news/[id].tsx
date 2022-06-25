@@ -4,9 +4,9 @@ import NewsDetail from "@layouts/News/NewsDetail/NewsDetail";
 const NewsDetailPage = () => {
     return (
         <Layout title="AOD Zone | Новости">
-            <NewsDetail/>
+            <NewsDetail />
         </Layout>
-    )
+    );
 };
 
 export default NewsDetailPage;

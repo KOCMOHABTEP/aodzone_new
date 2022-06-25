@@ -11,20 +11,28 @@ const NewsPage = () => {
 
     return (
         <Layout title="AOD Zone | test">
-            <Input value={userValue} onChange={handleInputChange} />
-            <Input value={userValue} onChange={handleInputChange} required />
+            <Input name="test" value={userValue} onChange={handleInputChange} />
             <Input
+                name="test"
+                value={userValue}
+                onChange={handleInputChange}
+                required
+            />
+            <Input
+                name="test"
                 value={userValue}
                 onChange={handleInputChange}
                 required
                 error={{ valid: true, message: "Описание ошибки" }}
             />
             <Input
+                name="test"
                 value={userValue}
                 onChange={handleInputChange}
                 hint="Обязательно заполните поле"
             />
             <Input
+                name="test"
                 value={userValue}
                 onChange={handleInputChange}
                 hint="Обязательно заполните поле"

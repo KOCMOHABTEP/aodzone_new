@@ -35,9 +35,9 @@ module.exports = {
     extends: [
         // "next/core-web-vitals",
         "plugin:@typescript-eslint/recommended",
-        "airbnb",
+        "airbnb-base",
+        "airbnb/rules/react",
         "prettier",
-        "plugin:jsx-a11y/recommended",
         "plugin:prettier/recommended",
         "plugin:sonarjs/recommended",
         "plugin:security/recommended",
@@ -47,7 +47,6 @@ module.exports = {
     rules: {
         "import/no-unresolved": "error",
         "@typescript-eslint/no-unused-vars": "error",
-        "@typescript-eslint/no-explicit-any": "error",
         "react/react-in-jsx-scope": "off",
         "react/jsx-filename-extension": [
             1,
@@ -56,6 +55,7 @@ module.exports = {
             },
         ],
         "react/jsx-props-no-spreading": "off",
+        "react/jsx-boolean-value": "off",
         "import/extensions": [
             "error",
             "ignorePackages",
@@ -66,18 +66,11 @@ module.exports = {
                 tsx: "never",
             },
         ],
-        "jsx-a11y/anchor-is-valid": [
-            "error",
-            {
-                components: ["Link"],
-                specialLink: ["hrefLeft", "hrefRight"],
-                aspects: ["invalidHref", "preferButton"],
-            },
-        ],
         "no-nested-ternary": "off",
         "import/prefer-default-export": "off",
         "react/prop-types": "off",
         "react/no-unused-prop-types": "off",
         "react/require-default-props": "off",
+        "jsx-a11y/anchor-is-valid": "off",
     },
 };

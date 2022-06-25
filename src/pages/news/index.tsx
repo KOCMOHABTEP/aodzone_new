@@ -6,7 +6,7 @@ const NewsPage = () => {
         <Layout title="AOD Zone | Новости">
             <NewsList />
         </Layout>
-    )
-}
+    );
+};
 
 export default NewsPage;

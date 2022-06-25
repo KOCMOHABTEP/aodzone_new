@@ -101,7 +101,7 @@ export const WidgetLastMatches = () => {
                     </div>
                     <div className={styles.matchHeadResults}>
                         <Icon
-                            name={"timer"}
+                            name="timer"
                             size={16}
                             className={styles.matchHeadResultsIcon}
                         />
@@ -187,7 +187,7 @@ export const WidgetLastMatches = () => {
                     </div>
                     <div className={styles.matchHeadResults}>
                         <Icon
-                            name={"timer"}
+                            name="timer"
                             size={16}
                             className={styles.matchHeadResultsIcon}
                         />
@@ -225,7 +225,7 @@ export const WidgetLastMatches = () => {
                             </a>
                         </Link>
                         <div className={styles.matchScore}>1:0</div>
-                        <Link href="#" passHref={true}>
+                        <Link href="#" passHref>
                             <a>
                                 <div
                                     className={cn(

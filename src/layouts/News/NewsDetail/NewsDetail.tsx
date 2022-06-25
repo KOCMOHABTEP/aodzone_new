@@ -1,13 +1,13 @@
-import styles from "./NewsDetail.module.css";
 import Icon from "@components/ui/Icon/Icon";
+import styles from "./NewsDetail.module.css";
 
-export const NewsDetail = () => {
-
+const NewsDetail = () => {
     const newsItem = {
         id: 1,
         image: "/img/content/article_1.jpg",
         title: "Эксперимент с криптоключами",
-        description: "100 Ящиков поддержки, 50 обычных, 50 редких. Что же выпадет? И немного статистики",
+        description:
+            "100 Ящиков поддержки, 50 обычных, 50 редких. Что же выпадет? И немного статистики",
         date: "17.03.2017",
         link: "",
         stats: {
@@ -50,20 +50,24 @@ export const NewsDetail = () => {
             </div>
             
             <p>Конечно 100 Ящиков поддержки не так уж и много, для того чтобы проводить эксперимент, но результаты, лично для меня, очевидны. Редкие ящики поддержки действительно стали лучше, после патча.</p>
-        `
-    }
-    
+        `,
+    };
+
     return (
         <div className={styles.newsDetail}>
             <div className={styles.newsDetailHeader}>
-                <div className={styles.newsDetailHeaderTitle}>{newsItem.title}</div>
-                <div className={styles.newsDetailHeaderCaption}>{newsItem.description}</div>
+                <div className={styles.newsDetailHeaderTitle}>
+                    {newsItem.title}
+                </div>
+                <div className={styles.newsDetailHeaderCaption}>
+                    {newsItem.description}
+                </div>
             </div>
             <div className={styles.newsDetailImageContainer}>
-                <img className={styles.newsDetailImage} src={newsItem.image}/>
+                <img className={styles.newsDetailImage} src={newsItem.image} />
             </div>
             <div className={styles.newsDetailContent}>
-                <div dangerouslySetInnerHTML={{__html: newsItem.content}} />
+                <div dangerouslySetInnerHTML={{ __html: newsItem.content }} />
             </div>
             <div className={styles.newsDetailFooter}>
                 <div className={styles.newsDetailFooterControls}>
@@ -71,9 +75,8 @@ export const NewsDetail = () => {
                     <Icon name="comments" />
                 </div>
             </div>
-            
         </div>
-    )
-}
+    );
+};
 
 export default NewsDetail;

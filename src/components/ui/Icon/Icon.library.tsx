@@ -20,28 +20,28 @@ import IconViews from "./icons/views.svg";
 import IconSteam from "./icons/socials-steam.svg";
 import IconTimer from "./icons/timer.svg";
 
-export type ICON_NAME = keyof typeof ICON_LIBRARY;
-
 export const ICON_LIBRARY = {
-    "arrow_up": (props: any) => <IconArrowUp {...props} />,
-    "arrow_right": (props: any) => <IconArrowRight {...props} />,
-    "arrow_down": (props: any) => <IconArrowDown {...props} />,
-    "arrow_left": (props: any) => <IconArrowLeft {...props} />,
-    "comments": (props: any) => <IconChat {...props} />,
-    "error": (props: any) => <IconError {...props} />,
-    "friends": (props: any) => <IconFriends {...props} />,
-    "game-blackops": (props: any) => <IconGameBlackOps {...props} />,
-    "groups": (props: any) => <IconGroups {...props} />,
-    "hint": (props: any) => <IconHint {...props} />,
-    "home": (props: any) => <IconHome {...props} />,
-    "like": (props: any) => <IconLike {...props} />,
-    "matches": (props: any) => <IconMatches {...props} />,
-    "media": (props: any) => <IconMedia {...props} />,
-    "news": (props: any) => <IconNews {...props} />,
-    "notification": (props: any) => <IconNotification {...props} />,
-    "streams": (props: any) => <IconStreams {...props} />,
-    "team": (props: any) => <IconTeam {...props} />,
-    "views": (props: any) => <IconViews {...props} />,
-    "social-steam": (props: any) => <IconSteam {...props} />,
-    "timer": (props: any) => <IconTimer {...props} />,
-}
+    arrow_up: props => <IconArrowUp {...props} />,
+    arrow_right: props => <IconArrowRight {...props} />,
+    arrow_down: props => <IconArrowDown {...props} />,
+    arrow_left: props => <IconArrowLeft {...props} />,
+    comments: props => <IconChat {...props} />,
+    error: props => <IconError {...props} />,
+    friends: props => <IconFriends {...props} />,
+    "game-blackops": props => <IconGameBlackOps {...props} />,
+    groups: props => <IconGroups {...props} />,
+    hint: props => <IconHint {...props} />,
+    home: props => <IconHome {...props} />,
+    like: props => <IconLike {...props} />,
+    matches: props => <IconMatches {...props} />,
+    media: props => <IconMedia {...props} />,
+    news: props => <IconNews {...props} />,
+    notification: props => <IconNotification {...props} />,
+    streams: props => <IconStreams {...props} />,
+    team: props => <IconTeam {...props} />,
+    views: props => <IconViews {...props} />,
+    "social-steam": props => <IconSteam {...props} />,
+    timer: props => <IconTimer {...props} />,
+};
+
+export type ICON_NAME = keyof typeof ICON_LIBRARY;
