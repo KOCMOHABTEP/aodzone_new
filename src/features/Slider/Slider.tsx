@@ -1,6 +1,7 @@
 import cn from "classnames";
 import Icon from "@components/Icon/Icon";
 import { useState } from "react";
+import { ICON_NAME } from "@components/Icon/Icon.library";
 import SliderItem from "./SliderItem/SliderItem";
 import styles from "./Slider.module.css";
 
@@ -64,14 +65,24 @@ const Slider = () => {
                 </div>
             </div>
             <div className={styles.sliderInner}>
-                {slidesList.map((slideProps, index) => (
-                    <SliderItem
-                        {...slideProps}
-                        /* eslint-disable-next-line react/no-array-index-key */
-                        key={index}
-                        current={index === currentSlide}
-                    />
-                ))}
+                {slidesList.map(
+                    (
+                        { description, image, icon, href, game, title },
+                        index
+                    ) => (
+                        <SliderItem
+                            description={description}
+                            image={image}
+                            icon={icon as ICON_NAME}
+                            href={href}
+                            game={game}
+                            title={title}
+                            /* eslint-disable-next-line react/no-array-index-key */
+                            key={index}
+                            current={index === currentSlide}
+                        />
+                    )
+                )}
             </div>
         </div>
     );

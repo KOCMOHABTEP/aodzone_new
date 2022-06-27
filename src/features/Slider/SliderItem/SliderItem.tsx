@@ -1,12 +1,13 @@
 import Icon from "@components/Icon/Icon";
 import Button from "@components/Button/Button";
 import cn from "classnames";
+import { ICON_NAME } from "@components/Icon/Icon.library";
 import styles from "./SliderItem.module.css";
 
 interface ISliderItem {
     title: string;
     game?: string;
-    icon?: string;
+    icon?: ICON_NAME;
     description: string;
     href: string;
     image: string;
