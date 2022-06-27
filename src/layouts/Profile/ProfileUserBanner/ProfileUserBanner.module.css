@@ -9,7 +9,12 @@
     position: relative;
 }
 
-.bannerBody {}
+.bannerBody {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .bannerBodyImage {
     height: 100%;
@@ -35,32 +40,32 @@
 }
 
 .bannerBodyUser {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: var(--spacing-4);
-    bottom: var(--spacing-4);
     z-index: 30;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .bannerBodyUserInfo {
-    margin-left: var(--spacing-3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.bannerFooter {
-    width: 100%;
-    height: 48px;
-    background: var(--color-green);
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 20;
+.progressBar {
+    width: 240px;
+    height: 8px;
+    background-color: var(--color-green);
+    border-radius: var(--radius);
+    margin-top: var(--spacing-1);
 }
+
 
 .userName {
     font-size: var(--font-size-xl);
     font-weight: bold;
-    margin-bottom: var(--spacing-1);
+    margin-top: var(--spacing-1);
+
 }
 
 .userMembership {

@@ -14,9 +14,10 @@ const ProfileUserBanner = () => {
                     />
                 </div>
                 <div className={styles.bannerBodyUser}>
-                    <Avatar level={34} size="large" />
+                    <Avatar size="large" />
                     <div className={styles.bannerBodyUserInfo}>
                         <div className={styles.userName}>KOCMOHABT</div>
+                        <div className={styles.progressBar} />
                         <div className={styles.userMembership}>
                             Пользователь с 09 Окт 2021
                         </div>
@@ -51,8 +52,6 @@ const ProfileUserBanner = () => {
                     </div>
                 </div>
             </div>
-
-            <div className={styles.bannerFooter} />
         </div>
     );
 };
