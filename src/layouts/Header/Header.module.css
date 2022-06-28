@@ -44,7 +44,7 @@
 }
 
 .controlsActivities {
-    font-size: 10px;
+    font-size: var(--font-10);
     font-weight: bold;
     text-align: center;
     color: var(--color-background);

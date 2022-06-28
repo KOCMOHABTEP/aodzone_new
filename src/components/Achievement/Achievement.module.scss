@@ -1,0 +1,32 @@
+.achievement {
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-bg-dark);
+  border-radius: 8px;
+  border: solid 1px var(--color-green);
+  padding: 4px;
+  position: relative;
+  text-align: center;
+
+  &__level {
+    width: 12px;
+    height: 12px;
+    font-size: var(--font-10);
+    background-color: var(--color-green);
+    color: var(--color-bg-dark);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 8px;
+  }
+
+
+  &__image {
+
+    &__icon {
+      width: 100%;
+    }
+  }
+
+
+}
