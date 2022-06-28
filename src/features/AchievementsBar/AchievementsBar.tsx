@@ -1,30 +1,30 @@
-import AchievementItem from "@features/Achievements/AchievementItem/AchievementItem";
-import styles from "./Achievements.module.scss";
+import AchievementsBarItem from "@features/AchievementsBar/AchievementsBarItem/AchievementsBarItem";
+import styles from "./AchievementsBar.module.scss";
 
-const Achievements = () => {
+const AchievementsBar = () => {
     return (
         <div className={styles.achievements}>
-            <AchievementItem
+            <AchievementsBarItem
                 description="Луп из семи"
                 icon="arrow_up"
                 stats="50%"
             />
-            <AchievementItem
+            <AchievementsBarItem
                 description="Луп из семи"
                 icon="friends"
                 stats="50%"
             />
-            <AchievementItem
+            <AchievementsBarItem
                 description="Луп из семи"
                 icon="timer"
                 stats="50%"
             />
-            <AchievementItem
+            <AchievementsBarItem
                 description="Луп из семи"
                 icon="matches"
                 stats="50%"
             />
-            <AchievementItem
+            <AchievementsBarItem
                 description="Луп из семи"
                 icon="groups"
                 stats="50%"
@@ -33,4 +33,4 @@ const Achievements = () => {
     );
 };
 
-export default Achievements;
+export default AchievementsBar;

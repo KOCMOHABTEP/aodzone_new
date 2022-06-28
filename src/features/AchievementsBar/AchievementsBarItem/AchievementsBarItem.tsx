@@ -1,18 +1,18 @@
 import Icon from "@components/Icon/Icon";
 import { ICON_NAME } from "@components/Icon/Icon.library";
-import styles from "./AchievementItem.module.scss";
+import styles from "./AchievementsBarItem.module.scss";
 
-interface AchievementItemProps {
+interface AchievementsBarItemProps {
     description: string;
     stats: number | string;
     icon: ICON_NAME;
 }
 
-const AchievementItem = ({
+const AchievementsBarItem = ({
     description,
     stats,
     icon,
-}: AchievementItemProps) => {
+}: AchievementsBarItemProps) => {
     return (
         <div className={styles.component}>
             <div className={styles.icon}>
@@ -26,4 +26,4 @@ const AchievementItem = ({
     );
 };
 
-export default AchievementItem;
+export default AchievementsBarItem;
