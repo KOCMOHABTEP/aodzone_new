@@ -1,0 +1,9 @@
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    flex: 1;
+    margin: 8px;
+}

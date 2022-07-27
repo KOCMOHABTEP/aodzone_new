@@ -1,0 +1,54 @@
+.userActivity {
+    padding: 24px;
+    background-color: var(--color-bg);
+    border-radius: 4px;
+}
+
+.userActivityList {
+    overflow-y: scroll;
+}
+
+.userActivityList::-webkit-scrollbar-track {
+    background: #2c2d3b;
+}
+
+.userActivityList::-webkit-scrollbar-thumb {
+    background: #2c2d3b;
+    box-shadow: inset 2px 2px 5px 0 rgba(255,255,255, 0.5);
+    border-radius: 100px;
+}
+
+
+.userActivityItem {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px var(--color-border);
+    padding: 16px 0;
+}
+
+.userActivityTime {
+    margin-right: 16px;
+    color: var(--color-grey);
+    font-size: var(--font-12);
+}
+
+.userActivityIcon {
+    margin-right: 24px;
+}
+
+.userActivityContent {
+    flex: 1;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.userActivityTitle{
+
+}
+
+.userActivitySubtitle {
+    color: var(--color-green);
+    font-size: var(--font-12);
+}
