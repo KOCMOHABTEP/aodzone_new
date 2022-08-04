@@ -1,0 +1,35 @@
+.componentTeamMembers {
+    padding: 24px;
+    background-color: var(--color-bg);
+    display: flex;
+
+}
+
+.headerTeamMembers {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.titleTeamMembers {
+    font-weight: bold;
+}
+
+.characterTeamMembers {
+    max-width: 96px;
+    text-align: center;
+    padding: 8px;
+    flex: 1;
+}
+
+
+.nicknameTeamMembers {
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.achievementsTeamMembers {
+    background-color: var(--color-green);
+    text-align: center;
+    border-radius: 8px;
+}

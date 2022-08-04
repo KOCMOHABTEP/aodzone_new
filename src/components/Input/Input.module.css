@@ -45,7 +45,7 @@
     font-family: inherit;
     color: var(--color-white);
     outline: none;
-    width: 320px;
+    width: 100%;
     padding: var(--spacing-3) var(--spacing-2) var(--spacing-1) var(--spacing-2);
     border-radius: var(--radius-md);
     border: solid 1px var(--color-border);

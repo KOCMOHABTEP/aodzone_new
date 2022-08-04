@@ -1,15 +1,23 @@
+import TeamForm from "@layouts/Team/TeamForm/TeamForm";
+import { WidgetLastMatches } from "@features/Widget/WidgetLastMatches/WidgetLastMatches";
 import Layout from "@layouts/Layout/Layout";
-import TeamBanner from "@layouts/Team/TeamBanner/TeamBanner";
+import ProfileUserInfo from "@layouts/Profile/ProfileUserInfo/ProfileUserInfo";
+import TeamMembers from "@layouts/Team/TeamMembers/TeamMembers";
 
 const Team = () => {
     return (
         <Layout>
-            <TeamBanner />
+            {/* <TeamBanner /> */}
+            <TeamForm />
             <div>
-                <div>Статистика</div>
-                <div>состав</div>
-                <div>последние матчи</div>
+                <div>
+                    <ProfileUserInfo />
+                </div>
+                <div>
+                    <TeamMembers />
+                </div>
             </div>
+            <WidgetLastMatches />
         </Layout>
     );
 };

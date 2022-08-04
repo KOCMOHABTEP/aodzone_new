@@ -6,6 +6,7 @@ import styles from "./Input.module.css";
 
 interface InputProps {
     name: string;
+    label: string;
     value: string;
     onChange: (event: ChangeEvent<HTMLInputElement>) => void;
     onFocus?: () => void;
@@ -22,7 +23,8 @@ interface InputProps {
 
 const Input = (props: InputProps) => {
     const [isFocused, setIsFocused] = useState(false);
-    const { name, value, required, onChange, hint, error, disabled } = props;
+    const { name, value, required, onChange, hint, error, disabled, label } =
+        props;
 
     const handleFocus = () => {
         setIsFocused(true);
@@ -58,7 +60,7 @@ const Input = (props: InputProps) => {
                             *{" "}
                         </span>
                     )}
-                    Номер договора
+                    {label}
                 </div>
                 <input
                     className={cn(styles.input, {
