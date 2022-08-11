@@ -1,0 +1,83 @@
+.componentFutureMatchesRound {
+    width: 100%;
+    height: auto;
+    background: var(--gradient-green);
+    border-radius: 4px;
+    padding: var(--spacing-3);
+    margin-bottom: var(--spacing-3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconMatchesLeft {
+    flex-shrink: 0;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.iconMatchesLeft:hover {
+    color: var(--color-bg);
+}
+
+.roundMatchesList {
+    display: flex;
+    flex: 1;
+}
+
+.blockRoundMatches {
+    display: flex;
+
+}
+
+.roundComponentMatches {
+    display: flex;
+    flex: 1;
+    padding-left: 16px;
+    height: auto;
+    flex-direction: column;
+    border-right: solid 1px var(--color-white);
+}
+
+.roundComponentMatches:last-child {
+    border-right: none;
+}
+
+.roundsContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.headerAchievementMatches{
+    font-weight: bold;
+}
+
+.achievementMatches {
+    background-color: var(--color-white);
+    max-width: 80px;
+    height: auto;
+    color: var(--color-bg);
+    font-size: var(--font-10);
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: 8px;
+    padding: 4px 8px;
+}
+
+.textRound {
+    color: var(--color-bg);
+    font-size: var(--font-12);
+   font-weight: bold;
+}
+
+.iconMatchesRight {
+    flex-shrink: 0;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.iconMatchesRight:hover {
+    color: var(--color-bg);
+}
