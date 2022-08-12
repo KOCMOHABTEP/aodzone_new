@@ -1,0 +1,120 @@
+.wrapperMatchDetail {
+    background-color: var(--color-bg);
+    width: 100%;
+    height: auto;
+    padding: 40px;
+}
+
+.matchDetailInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerMatchDetailInfo {
+    color: var(--color-green);
+    font-size: var(--font-12);
+    margin-bottom: 4px;
+}
+
+.wrapperTitleMatchDetailInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.titleMatchDetailInfo {
+    margin-right: 12px;
+    font-size: var(--font-20);
+}
+
+.buttonMatchDetail {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    opacity: 80%;
+    display: flex;
+    align-items: center;
+    border: solid 1px var(--color-green-darker);
+    border-radius: 8px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.buttonMatchDetail:hover {
+    background-color: var(--color-violet);
+}
+
+.shareButtonMatchDetail {
+    margin-right: 4px;
+}
+
+.logoGameMatchesDetailInfo {
+    width: 102px;
+}
+
+.matchDetailResults {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapperDetailMatch {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+}
+
+.wrapperResultMatch {
+    display: flex;
+    align-items: center;
+
+}
+
+.battleStatusVictoryResultMatch {
+    font-size: var(--font-12);
+    color: var(--color-green);
+}
+
+.logoResultMatch {
+    width: 102px;
+}
+
+.textDetailMatch {
+    color: var(--color-green);
+    font-size: var(--font-48);
+    margin: 0 16px;
+}
+
+.wrapperDataDetailResults {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 64px;
+}
+
+.dataDetailResults {
+    font-size: var(--font-12);
+    margin-bottom: 4px;
+}
+
+.timeDetailResults {
+    font-size: var(--font-12);
+    color: var(--color-green);
+}
+
+.wrapperInfoDetailMatch {
+    display: flex;
+    padding: 8px;
+}
+
+.infoDetailMatch {
+    background-color: var(--color-green);
+    border-radius: 16px;
+    min-width: 80px;
+    font-size: var(--font-12);
+    text-align: center;
+    margin-left: 16px;
+    padding: 4px;
+}
