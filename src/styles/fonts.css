@@ -1,5 +1,17 @@
 @font-face {
     font-family: "AvenirNextCyr";
+    font-weight: 100;
+    src: url("./../../public/fonts/AvenirNextCyr-Thin.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "AvenirNextCyr";
+    font-weight: 200;
+    src: url("./../../public/fonts/AvenirNextCyr-Light.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "AvenirNextCyr";
     font-weight: 400;
     src: url("./../../public/fonts/AvenirNextCyr-Medium.ttf") format('truetype');
 }

@@ -68,16 +68,54 @@
 .wrapperResultMatch {
     display: flex;
     align-items: center;
+}
 
+.resultMatchInfo {
+    padding: 6px;
+}
+
+.resultMatchInfoLeft {
+    text-align: right;
+    margin-right: 32px;
+}
+
+.resultMatchInfoRight {
+    text-align: left;
+    margin-left: 32px;
+}
+
+.battleStatusResultMatch {
+    font-size: var(--font-12);
+    margin-bottom: 4px;
 }
 
 .battleStatusVictoryResultMatch {
-    font-size: var(--font-12);
     color: var(--color-green);
+
+}
+
+.battleStatusDefeatResultMatch {
+    color: var(--color-red);
+}
+
+.battleStatusDrawResultMatch {
+    color: var(--color-violet);
+}
+
+.nameTeamResultMatch {
+    font-size: var(--font-20);
+    font-weight: 100;
 }
 
 .logoResultMatch {
     width: 102px;
+}
+
+
+
+.checkResultMatch {
+    font-size: var(--font-48);
+    margin: 0 32px;
 }
 
 .textDetailMatch {

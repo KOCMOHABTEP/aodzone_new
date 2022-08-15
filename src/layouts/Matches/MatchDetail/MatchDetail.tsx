@@ -1,4 +1,5 @@
 import Icon from "@components/Icon/Icon";
+import cn from "classnames";
 import styles from "./MatchDetail.module.css";
 
 const MatchDetail = () => {
@@ -28,25 +29,60 @@ const MatchDetail = () => {
             <div className={styles.matchDetailResults}>
                 <div className={styles.wrapperDetailMatch}>
                     <div className={styles.wrapperResultMatch}>
-                        <div>
+                        <div
+                            className={cn(styles.resultMatchInfo, {
+                                [styles.resultMatchInfoLeft]: true,
+                            })}
+                        >
                             <div
-                                className={
-                                    styles.battleStatusVictoryResultMatch
-                                }
+                                className={cn(styles.battleStatusResultMatch, {
+                                    [styles.battleStatusVictoryResultMatch]:
+                                        true,
+                                    [styles.battleStatusDrawResultMatch]: false,
+                                })}
                             >
                                 Victory
                             </div>
-                            <div>Name comand</div>
+                            <div className={styles.nameTeamResultMatch}>
+                                Name team
+                            </div>
                         </div>
                         <img
                             className={styles.logoResultMatch}
                             src="https://img.freepik.com/premium-vector/e-sports-team-logo-with-viking_113398-8.jpg"
                             alt="logo"
                         />
-                        <div>3</div>
+                        <div className={styles.checkResultMatch}>3</div>
                     </div>
                     <div className={styles.textDetailMatch}>vs</div>
-                    <div>right</div>
+                    <div className={styles.wrapperResultMatch}>
+                        <div>
+                            <div className={styles.checkResultMatch}>0</div>
+                        </div>
+                        <img
+                            className={styles.logoResultMatch}
+                            src="https://img.freepik.com/premium-vector/e-sports-team-logo-with-viking_113398-8.jpg"
+                            alt="logo"
+                        />
+                        <div
+                            className={cn(styles.resultMatchInfo, {
+                                [styles.resultMatchInfoRight]: true,
+                            })}
+                        >
+                            <div
+                                className={cn(styles.battleStatusResultMatch, {
+                                    [styles.battleStatusDefeatResultMatch]:
+                                        true,
+                                    [styles.battleStatusDrawResultMatch]: false,
+                                })}
+                            >
+                                Defeat
+                            </div>
+                            <div className={styles.nameTeamResultMatch}>
+                                Name team
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className={styles.wrapperDataDetailResults}>
                     <div className={styles.dataDetailResults}>MAY 28 2022</div>
