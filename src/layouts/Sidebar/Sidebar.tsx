@@ -69,30 +69,6 @@ export const Sidebar = () => {
                 </li>
                 <li className={styles.sidebarListItem}>
                     <SidebarItem
-                        title="Матч"
-                        href="/match"
-                        icon="matches"
-                        props={{ passHref: true }}
-                    />
-                </li>
-                <li className={styles.sidebarListItem}>
-                    <SidebarItem
-                        title="Турнир"
-                        href="/tournament"
-                        icon="team"
-                        props={{ passHref: true }}
-                    />
-                </li>
-                <li className={styles.sidebarListItem}>
-                    <SidebarItem
-                        title="Турниры"
-                        href="/tournaments"
-                        icon="team"
-                        props={{ passHref: true }}
-                    />
-                </li>
-                <li className={styles.sidebarListItem}>
-                    <SidebarItem
                         title="Стримы"
                         href="/streams"
                         icon="streams"

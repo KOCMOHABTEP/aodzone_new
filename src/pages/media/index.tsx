@@ -3,7 +3,7 @@ import Layout from "@layouts/Layout/Layout";
 const Media = () => {
     return (
         <Layout>
-            <div />
+            <div>Media</div>
         </Layout>
     );
 };

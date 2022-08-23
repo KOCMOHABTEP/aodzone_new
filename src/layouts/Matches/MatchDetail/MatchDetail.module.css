@@ -156,3 +156,106 @@
     margin-left: 16px;
     padding: 4px;
 }
+
+.statisticsPlayers {
+    display: flex;
+    align-items: flex-start;
+    padding: 8px;
+}
+
+.wrapperTeamStatistics {
+    flex: 1;
+    border-radius: 8px;
+    border: var(--border);
+    overflow: hidden;
+}
+
+.wrapperTeamStatisticsRight{
+    margin-left: 8px;
+}
+
+.wrapperTeamStatisticsLeft {
+    margin-right: 8px;
+}
+
+.wrapperUserStatisticHeader {
+    border-bottom: var(--border);
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+    background-color: var(--color-bg-lighter);
+}
+
+.wrapperUserStatisticPlayer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-bg-dark);
+    padding: 16px;
+    align-items: center;
+}
+
+.userResultTeam {
+    display: flex;
+}
+
+.logoUserTeamStatisticPlayer {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+
+.userInfoStatisticResult {
+    display: flex;
+    align-items: center;
+}
+
+.nickNameUserStatisticResult {
+    font-size: var(--font-14);
+}
+
+.accountStatusProStatisticResult {
+    background-color: var(--color-violet);
+    font-size: var(--font-10);
+    border-radius: 6px;
+    text-align: center;
+    padding: 2px;
+    margin: 0 4px;
+}
+
+.levelUserStatisticResult {
+    background-color: var(--color-green-dark);
+    font-size: var(--font-10);
+    padding: 2px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.statusLogoUserInfoStatisticResult {
+    width: 16px;
+    margin-left: 4px;
+
+}
+
+
+.linkUserInfoStatisticResult {
+    display: flex;
+    align-items: center;
+}
+
+.iconLinkStatisticResult {
+   width: 12px;
+    margin-right: 4px;
+    color: var(--color-grey);
+}
+
+.linkNameUserInfoStatisticResult {
+    font-size: var(--font-12);
+    color: var(--color-text-grey);
+}
+
+.resultMatchesUser {
+    font-size: var(--font-14);
+}

@@ -95,7 +95,221 @@ const MatchDetail = () => {
                     <div className={styles.infoDetailMatch}>DE_DUST2</div>
                 </div>
             </div>
-            <div>Statistics players</div>
+            <div className={styles.statisticsPlayers}>
+                <div
+                    className={cn(styles.wrapperTeamStatistics, {
+                        [styles.wrapperTeamStatisticsLeft]: true,
+                    })}
+                >
+                    <div className={styles.wrapperUserStatisticHeader}>
+                        <div>user team</div>
+                        <div>K-A-D</div>
+                        <div>K/D</div>
+                        <div>HS</div>
+                    </div>
+                    <div className={styles.wrapperUserStatisticPlayer}>
+                        <div className={styles.userResultTeam}>
+                            <img
+                                className={styles.logoUserTeamStatisticPlayer}
+                                src="https://uploads.turbologo.com/uploads/design/hq_preview_image/1476661/draw_svg20220113-19449-1pj5omn.svg.png"
+                                alt="logo"
+                            />
+                            <div>
+                                <div className={styles.userInfoStatisticResult}>
+                                    <div
+                                        className={
+                                            styles.nickNameUserStatisticResult
+                                        }
+                                    >
+                                        Dzezman
+                                    </div>
+                                    <div
+                                        className={
+                                            styles.accountStatusProStatisticResult
+                                        }
+                                    >
+                                        PRO
+                                    </div>
+                                    <div
+                                        className={
+                                            styles.levelUserStatisticResult
+                                        }
+                                    >
+                                        LVL6
+                                    </div>
+                                    <Icon
+                                        className={
+                                            styles.statusLogoUserInfoStatisticResult
+                                        }
+                                        name="profile"
+                                    />
+                                </div>
+                                <a
+                                    href="#"
+                                    className={
+                                        styles.linkUserInfoStatisticResult
+                                    }
+                                >
+                                    <Icon
+                                        className={
+                                            styles.iconLinkStatisticResult
+                                        }
+                                        name="home"
+                                    />
+                                    <div
+                                        className={
+                                            styles.linkNameUserInfoStatisticResult
+                                        }
+                                    >
+                                        BORIS WICK
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div className={styles.resultMatchesUser}>10-2-6</div>
+                        <div className={styles.resultMatchesUser}>0.43</div>
+                        <div className={styles.resultMatchesUser}>37% (4)</div>
+                    </div>
+                    <div className={styles.wrapperUserStatisticPlayer}>
+                        <div className={styles.userResultTeam}>
+                            <img
+                                className={styles.logoUserTeamStatisticPlayer}
+                                src="https://uploads.turbologo.com/uploads/design/hq_preview_image/1476661/draw_svg20220113-19449-1pj5omn.svg.png"
+                                alt="logo"
+                            />
+                            <div>
+                                <div className={styles.userInfoStatisticResult}>
+                                    <div
+                                        className={
+                                            styles.nickNameUserStatisticResult
+                                        }
+                                    >
+                                        Dzezman
+                                    </div>
+                                    <div
+                                        className={
+                                            styles.accountStatusProStatisticResult
+                                        }
+                                    >
+                                        PRO
+                                    </div>
+                                    <div
+                                        className={
+                                            styles.levelUserStatisticResult
+                                        }
+                                    >
+                                        LVL6
+                                    </div>
+                                    <Icon
+                                        className={
+                                            styles.statusLogoUserInfoStatisticResult
+                                        }
+                                        name="profile"
+                                    />
+                                </div>
+                                <a
+                                    href="#"
+                                    className={
+                                        styles.linkUserInfoStatisticResult
+                                    }
+                                >
+                                    <Icon
+                                        className={
+                                            styles.iconLinkStatisticResult
+                                        }
+                                        name="home"
+                                    />
+                                    <div
+                                        className={
+                                            styles.linkNameUserInfoStatisticResult
+                                        }
+                                    >
+                                        BORIS WICK
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div className={styles.resultMatchesUser}>10-2-6</div>
+                        <div className={styles.resultMatchesUser}>0.43</div>
+                        <div className={styles.resultMatchesUser}>37% (4)</div>
+                    </div>
+                </div>
+                <div
+                    className={cn(styles.wrapperTeamStatistics, {
+                        [styles.wrapperTeamStatisticsRight]: true,
+                    })}
+                >
+                    <div className={styles.wrapperUserStatisticHeader}>
+                        <div>user team</div>
+                        <div>K-A-D</div>
+                        <div>K/D</div>
+                        <div>HS</div>
+                    </div>
+                    <div className={styles.wrapperUserStatisticPlayer}>
+                        <div className={styles.userResultTeam}>
+                            <img
+                                className={styles.logoUserTeamStatisticPlayer}
+                                src="https://uploads.turbologo.com/uploads/design/hq_preview_image/1476661/draw_svg20220113-19449-1pj5omn.svg.png"
+                                alt="logo"
+                            />
+                            <div>
+                                <div className={styles.userInfoStatisticResult}>
+                                    <div
+                                        className={
+                                            styles.nickNameUserStatisticResult
+                                        }
+                                    >
+                                        Dzezman
+                                    </div>
+                                    <div
+                                        className={
+                                            styles.accountStatusProStatisticResult
+                                        }
+                                    >
+                                        PRO
+                                    </div>
+                                    <div
+                                        className={
+                                            styles.levelUserStatisticResult
+                                        }
+                                    >
+                                        LVL6
+                                    </div>
+                                    <Icon
+                                        className={
+                                            styles.statusLogoUserInfoStatisticResult
+                                        }
+                                        name="profile"
+                                    />
+                                </div>
+                                <a
+                                    href="#"
+                                    className={
+                                        styles.linkUserInfoStatisticResult
+                                    }
+                                >
+                                    <Icon
+                                        className={
+                                            styles.iconLinkStatisticResult
+                                        }
+                                        name="home"
+                                    />
+                                    <div
+                                        className={
+                                            styles.linkNameUserInfoStatisticResult
+                                        }
+                                    >
+                                        BORIS WICK
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div className={styles.resultMatchesUser}>10-2-6</div>
+                        <div className={styles.resultMatchesUser}>0.43</div>
+                        <div className={styles.resultMatchesUser}>37% (4)</div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
