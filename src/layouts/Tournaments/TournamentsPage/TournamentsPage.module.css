@@ -3,36 +3,8 @@
     padding: 24px;
 }
 
-.wrapperTournamentsInfo {
+.tournamentsList {
     display: flex;
-    justify-content: space-between;
-}
-
-.wrapperTournamentItem {
-    padding: 8px;
-    background-color: var(--color-bg-dark);
-}
-
-.wrapperTextInfoTournamentItem {
-
-}
-
-.wrapperTextTournamentItem {
-    display: flex;
-    align-items: center;
-    border-bottom: solid 1px var(--color-grey);
-    padding: 0 0 16px 0;
-}
-
-.statusInProgressTournamentItem {
-    font-size: var(--font-10);
-    background-color: var(--color-text-grey);
-    border-radius: 4px;
-    padding: 2px;
-    margin-right: 8px;
-}
-
-.textTournamentItem {
-    color: var(--color-grey);
-    font-size: var(--font-12);
+    flex-wrap: wrap;
+    margin: -8px;
 }

@@ -1,0 +1,145 @@
+.item {
+    margin-bottom: 16px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: calc(100%/3);
+    padding: 8px;
+}
+
+.itemTop{
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+.itemBottom {
+    background-color: var(--color-bg-dark);
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
+
+
+.itemHead {
+    display: flex;
+    background-image: url("https://www.iphones.ru/wp-content/uploads/2022/06/7723A0C1-6A77-4C39-96DC-3A8E0C708F4B-580x326.jpeg");
+    height: 120px;
+    padding: 8px;
+    align-items: flex-end;
+}
+
+.itemHeadLabel {
+    font-size: var(--font-10);
+    padding: 4px;
+    background-color: var(--color-bg);
+    opacity: 80%;
+    border-radius: 12px;
+    margin-right: 6px;
+}
+
+.itemContent {
+    border-bottom: solid 1px var(--color-grey);
+    margin: 0 16px;
+    padding: 16px 0 ;
+}
+
+.itemInfo {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itemInfoColumn{
+    display: flex;
+    align-items: center;
+}
+
+.itemInfoCard{
+
+}
+
+.itemInfoCard + .itemInfoCard {
+    margin-left: 8px;
+}
+
+.itemInfoHead {
+    font-size: var(--font-10);
+    color: var(--color-grey);
+}
+
+.itemInfoValue {
+    font-size: var(--font-12);
+}
+
+.itemInfoPlayers {
+    color: var(--color-green);
+    font-size: var(--font-14);
+}
+
+.itemInfoWinner {
+    display: flex;
+    align-items: center;
+}
+
+.itemInfoWinnerIcon {
+    margin-right: 4px;
+    color: var(--color-green);
+}
+
+.itemInfoWinnerName {
+    font-size: var(--font-10);
+}
+
+.itemInfoButton {
+    font-size: var(--font-10);
+    height: 24px;
+    min-width: auto;
+    padding: 0 8px;
+    margin-left: 8px;
+}
+
+.itemContentRow {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itemContentTitle {
+    margin-right: 8px;
+}
+
+.itemContentIcon {
+    color: var(--color-violet);
+}
+
+.itemContentStatus {
+    display: flex;
+    align-items: center;
+}
+
+.itemContentStatusLabel {
+    font-size: var(--font-10);
+
+    border-radius: 4px;
+    padding: 2px;
+    margin-right: 8px;
+}
+
+.itemContentStatusLabelGrey {
+    background-color: var(--color-text-grey);
+}
+
+.itemContentStatusLabelGreen {
+    background-color: var(--color-green);
+    color: var(--color-black);
+}
+
+.itemContentStatusLabelViolet {
+    background-color: var(--color-violet);
+    color: var(--color-black);
+}
+
+.itemContentStatusInfo {
+    color: var(--color-grey);
+    font-size: var(--font-12);
+}
