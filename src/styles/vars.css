@@ -19,6 +19,7 @@
     --field-disabled: #3C3C54;
     
     /* COLORS */
+    --color-background-overlay: rgba(25, 25, 30, 0.35);
     --color-background: #19191e;
     --color-background-light: #20212b;
     --color-background-lighter: #2c2d3b;

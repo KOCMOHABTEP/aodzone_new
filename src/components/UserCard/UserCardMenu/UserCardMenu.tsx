@@ -12,9 +12,11 @@ const UserCardMenu = ({ onSelectItem }: UserCardMenuProps) => {
             <Link href="/profile">
                 <a className={styles.item} onClick={onSelectItem}>
                     <div className={styles.itemContainer}>
-                        <div className={styles.icon}>
-                            <Icon name="profile" />
-                        </div>
+                        <Icon
+                            name="profile"
+                            size={16}
+                            className={styles.icon}
+                        />
                         <div className={styles.text}>Профиль</div>
                     </div>
                 </a>
@@ -23,9 +25,7 @@ const UserCardMenu = ({ onSelectItem }: UserCardMenuProps) => {
             <Link href="/logout">
                 <a className={styles.item} onClick={onSelectItem}>
                     <div className={styles.itemContainer}>
-                        <div className={styles.icon}>
-                            <Icon name="logout" />
-                        </div>
+                        <Icon name="logout" size={16} className={styles.icon} />
                         <div className={styles.text}>Выйти</div>
                     </div>
                 </a>

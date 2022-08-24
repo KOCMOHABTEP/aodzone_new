@@ -1,45 +1,45 @@
 
 .menu {
-  width: 280px;
-  padding: var(--spacing-2);
-  background: var(--color-bg);
-  border: solid 1px var(--color-border);
-  border-radius: var(--radius);
-  box-shadow: var(--box-shadow);
-  position: absolute;
-  top: var(--spacing-7);
-  right: 0;
+    width: 280px;
+    padding: var(--spacing-1);
+    background: var(--color-bg);
+    border: solid 1px var(--color-border);
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+    position: absolute;
+    top: var(--spacing-7);
+    right: 0;
 }
 
 .item {
-  color: var(--color-white);
-  padding: var(--spacing-2);
-  margin-bottom: var(--spacing-1);
-  border-radius: var(--radius);
-  opacity: 0.5;
-  display: block;
-  transition: background 0.3s ease, opacity 0.3s ease;
+    color: var(--color-white);
+    padding: var(--spacing-1);
+    margin-bottom: var(--spacing-1);
+    border-radius: var(--radius);
+    opacity: 0.5;
+    display: block;
+    transition: background 0.3s ease, opacity 0.3s ease;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+    &:last-child {
+        margin-bottom: 0;
+    }
 
-  &:hover {
-    opacity: 1;
-    background: var(--color-background-lighter);
-  }
+    &:hover {
+        opacity: 1;
+        background: var(--color-background-lighter);
+    }
 
 }
 
 .itemContainer {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .icon {
-  margin-right: var(--spacing-2);
+    margin-right: var(--spacing-1);
 }
 
 .text {
-  font-size: 16px;
+    font-size: var(--font-14);
 }

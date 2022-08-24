@@ -1,0 +1,44 @@
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.preloader {
+    width: var(--spacing-10);
+    height: var(--spacing-10);
+    padding: var(--spacing-1);
+    border-radius: 8px;
+    background: var(--color-background-overlay);
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.preloaderItem {
+    width: var(--spacing-8);
+    height: var(--spacing-8);
+    border: solid 8px rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: relative;
+}
+
+.preloaderItemLine {
+    width: var(--spacing-8);
+    height: var(--spacing-8);
+    border: solid 8px transparent;
+    border-top-color: var(--color-white);
+    border-radius: 50%;
+    position: absolute;
+    top: var(--spacing-neg-1);
+    left: var(--spacing-neg-1);
+    animation: spin 2s ease-in-out infinite;
+}
