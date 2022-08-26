@@ -8,3 +8,14 @@
     flex-wrap: wrap;
     margin: -8px;
 }
+
+.tournamentActionsBanner {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    background-image: url("");
+}
+
+.tournamentActionsBannerColumn {
+    margin: 0 48px;
+}

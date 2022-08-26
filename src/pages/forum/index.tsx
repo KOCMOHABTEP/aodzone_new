@@ -1,11 +1,11 @@
 import Layout from "@layouts/Layout/Layout";
 
-const Media = () => {
+const Forum = () => {
     return (
         <Layout>
-            <div>Media</div>
+            <div>Forum</div>
         </Layout>
     );
 };
 
-export default Media;
+export default Forum;
