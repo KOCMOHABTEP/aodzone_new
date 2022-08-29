@@ -1,0 +1,48 @@
+.item {
+    padding: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.itemContent {
+}
+
+.itemContentImage{
+    max-width: 128px;
+    overflow: hidden;
+    height: 180px ;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.itemContentImg {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.itemContentDescription {
+    display: flex;
+    background-color: var(--color-bg-light);
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.iconContentDescriptionInfo {
+    display: flex;
+}
+
+.iconContentDescriptionInfoImage {
+    color: var(--color-violet);
+
+}
+
+.iconContentDescriptionInfoViews {
+    font-size: var(--font-12);
+    margin: 0 8px;
+}

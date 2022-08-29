@@ -23,7 +23,6 @@ const TournamentFilter = () => {
     ];
 
     const handleTabClick = label => {
-        console.log(label);
         setFilterValue(label);
     };
 

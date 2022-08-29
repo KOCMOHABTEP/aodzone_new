@@ -1,0 +1,17 @@
+.item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.itemTabs {
+    font-size: var(--font-12);
+    color: var(--color-violet);
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+
+.itemIcon {
+    color: var(--color-violet);
+}

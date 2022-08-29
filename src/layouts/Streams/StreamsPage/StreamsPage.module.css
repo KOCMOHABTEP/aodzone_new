@@ -1,0 +1,34 @@
+.streamPage {
+    background-color: var(--color-bg-lighter);
+    padding: 24px;
+}
+
+.streamPageTitle{
+    font-size: var(--font-24);
+    font-weight: bold;
+    padding: 8px;
+    margin-bottom: 24px;
+}
+
+.streamsList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px;
+}
+
+.streamGameHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+}
+
+.streamGameHeaderTitle {
+    font-size: var(--font-12);
+    color: var(--color-grey);
+}
+
+.streamsGamesList {
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -77,6 +77,14 @@ export const Sidebar = () => {
                 </li>
                 <li className={styles.sidebarListItem}>
                     <SidebarItem
+                        title="Стрим"
+                        href="/streams/1"
+                        icon="streams"
+                        props={{ passHref: true }}
+                    />
+                </li>
+                <li className={styles.sidebarListItem}>
+                    <SidebarItem
                         title="Форум"
                         href="/forum"
                         icon="team"
