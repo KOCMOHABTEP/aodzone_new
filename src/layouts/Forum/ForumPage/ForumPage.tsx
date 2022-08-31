@@ -1,5 +1,6 @@
 import styles from "./ForumPage.module.css";
 import ForumItem from "@layouts/Forum/ForumItem/ForumItem";
+import ForumFilter from "@layouts/Forum/ForumFilter/ForumFilter";
 
 const ForumPage = () => {
     return (
@@ -12,6 +13,7 @@ const ForumPage = () => {
                 <ForumItem />
                 <ForumItem />
             </div>
+            <ForumFilter />
         </div>
     );
 };
