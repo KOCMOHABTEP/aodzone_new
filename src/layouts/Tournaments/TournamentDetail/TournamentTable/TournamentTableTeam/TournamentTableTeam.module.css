@@ -1,21 +1,4 @@
-.tournamentContainer {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 24px;
-    background-color: var(--color-bg);
-}
-
-.tournamentWrapper {
-    height: auto;
-
-}
-
-.wrapperMatchTournament {
-}
-
-.matchTournament {
+.item {
     background-color: var(--color-bg-dark);
     max-width: 240px;
     padding: 6px;
@@ -27,18 +10,18 @@
     justify-content: space-between;
 }
 
-.iconTournamentMatch {
+.itemIcon {
     height: 32px;
     width: 40px;
 }
 
-.nameTeamTournament {
+.itemTitle {
     font-size: var(--font-16);
     padding-right: 40px;
     margin: 6px;
     border-right: solid 1px var(--color-white);
 }
 
-.numberTeamTournament {
+.itemNumber {
     margin: 0 12px;
 }

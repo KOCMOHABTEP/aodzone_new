@@ -29,7 +29,9 @@
     --color-border-light: #414358;
     
     --color-violet: #928FFF;
+    --color-violet-ghost: rgba(146, 143, 255, 0.15);
     --color-green: #23EAA4;
+    --color-green-ghost: rgba(35, 234, 164, 0.15);
     --color-green-dark: #40809C;
     --color-green-darker: #329B9D;
 

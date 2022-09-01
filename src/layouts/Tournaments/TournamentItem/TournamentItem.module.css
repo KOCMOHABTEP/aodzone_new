@@ -4,26 +4,43 @@
     flex-shrink: 1;
     flex-basis: calc(100%/3);
     padding: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.05);
 }
 
 .itemTop{
     border-radius: 8px 8px 0 0;
     overflow: hidden;
+    position: relative;
+}
+
+.itemImage {
+    height: 180px;
+    overflow: hidden;
+}
+
+.itemImg {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+
+.itemHead {
+    display: flex;
+    position: absolute;
+    align-items: flex-end;
+    top: 16px;
+    left: 16px;
 }
 
 .itemBottom {
     background-color: var(--color-bg-dark);
     border-radius: 0 0 8px 8px;
     overflow: hidden;
-}
-
-
-.itemHead {
-    display: flex;
-    background-image: url("https://www.iphones.ru/wp-content/uploads/2022/06/7723A0C1-6A77-4C39-96DC-3A8E0C708F4B-580x326.jpeg");
-    height: 120px;
-    padding: 8px;
-    align-items: flex-end;
 }
 
 .itemHeadLabel {
@@ -119,7 +136,6 @@
 
 .itemContentStatusLabel {
     font-size: var(--font-10);
-
     border-radius: 4px;
     padding: 2px;
     margin-right: 8px;

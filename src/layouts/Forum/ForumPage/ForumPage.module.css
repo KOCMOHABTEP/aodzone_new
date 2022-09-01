@@ -1,0 +1,13 @@
+.forumContainerInner {
+
+}
+
+.forumPageHead {
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.forumPageList {
+    padding-bottom: 48px;
+    border-bottom: solid 1px var(--color-bg-light);
+}

@@ -1,0 +1,32 @@
+.rounds {
+    width: 100%;
+    height: auto;
+    background: var(--gradient-green);
+    border-radius: 4px;
+    padding: var(--spacing-3);
+    margin-bottom: var(--spacing-3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.roundsIcon {
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.roundsIcon:hover {
+    color: var(--color-bg);
+}
+
+.roundsIconLeft {
+    margin-right: 16px;
+}
+
+.roundsIconRight {
+    margin-left: 16px;
+}
+
+.tournaments {
+    display: flex;
+}

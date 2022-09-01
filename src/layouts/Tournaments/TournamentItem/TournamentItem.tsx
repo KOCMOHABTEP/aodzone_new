@@ -8,11 +8,13 @@ type TournamentType = "IN_PROGRESS" | "FINISHED" | "UPCOMING";
 interface TournamentItemStatusLabelProps {
     label: string;
     type: TournamentType;
+    src: string;
 }
 
 const TournamentItemStatusLabel = ({
     label,
     type,
+    src,
 }: TournamentItemStatusLabelProps) => {
     return (
         <div
@@ -29,9 +31,10 @@ const TournamentItemStatusLabel = ({
 
 interface TournamentItemProps {
     type: TournamentType;
+    src: string;
 }
 
-const TournamentItem = ({ type }: TournamentItemProps) => {
+const TournamentItem = ({ type, src }: TournamentItemProps) => {
     const generateLabelCaption = () => {
         if (type === "IN_PROGRESS") {
             return "IN PROGRESS";
@@ -78,6 +81,9 @@ const TournamentItem = ({ type }: TournamentItemProps) => {
     return (
         <div className={styles.item}>
             <div className={styles.itemTop}>
+                <div className={styles.itemImage}>
+                    <img className={styles.itemImg} src={src} alt="фон" />
+                </div>
                 <div className={styles.itemHead}>
                     <div className={styles.itemHeadLabel}>GAMING</div>
                     <div className={styles.itemHeadLabel}>GAMING</div>

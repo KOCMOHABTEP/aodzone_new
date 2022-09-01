@@ -1,0 +1,65 @@
+.item {
+    display: flex;
+    background-color: var(--color-background-light);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    border: solid 1px var(--color-border);
+    align-items: center;
+    transition: transform 0.3s ease
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.itemImage {
+    position: relative;
+    margin: 0 8px;
+}
+
+.itemImageElected {
+    color: var(--color-violet);
+    position: absolute;
+    margin-left: -12px;
+}
+
+
+.itemContent {
+    margin-left: 16px;
+}
+
+.itemContentHead {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.itemContentHeadInfo {
+    font-size: var(--font-20);
+    color: var(--color-violet);
+}
+
+.itemContentHeadTitle {
+    font-size: var(--font-20);
+    margin-left: 8px;
+}
+
+.itemContentStatusLabel {
+    font-size: var(--font-10);
+    border-radius: 4px;
+    padding: 2px;
+    margin-left: 8px;
+}
+
+.itemContentStatusLabelViolet {
+    background-color: var(--color-violet);
+    color: var(--color-black);
+}
+
+.itemContentForumInfo {
+    font-size: var(--font-12);
+    color: var(--color-grey);
+    margin-bottom: 8px;
+}

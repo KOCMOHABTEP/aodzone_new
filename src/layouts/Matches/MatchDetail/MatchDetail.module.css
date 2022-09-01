@@ -1,8 +1,9 @@
 .wrapperMatchDetail {
-    background-color: var(--color-bg);
+    background-color: var(--color-background-light);
     width: 100%;
     height: auto;
     padding: 40px;
+    border-radius: 8px;
 }
 
 .matchDetailInfo {
