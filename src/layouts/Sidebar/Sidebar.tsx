@@ -91,6 +91,14 @@ export const Sidebar = () => {
                         props={{ passHref: true }}
                     />
                 </li>
+                <li className={styles.sidebarListItem}>
+                    <SidebarItem
+                        title="Форум деталка"
+                        href="/forum/1"
+                        icon="team"
+                        props={{ passHref: true }}
+                    />
+                </li>
             </ul>
         </div>
     );
