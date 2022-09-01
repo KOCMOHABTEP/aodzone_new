@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
+import { RootState } from "@redux/store";
 import LocalStorageHelper from "../helpers/LocalStorageHelper";
 
 export interface appState {
@@ -24,7 +25,7 @@ export const appSlice = createSlice({
                 sidebarCollapsed: action.payload,
             });
         },
-        getSidebarCollapseState: state => {
+        loadSidebarCollapseState: state => {
             const storageState = LocalStorageHelper.loadState();
             state.userConfig.sidebarCollapsed =
                 storageState.userConfig.sidebarCollapsed;
@@ -32,7 +33,10 @@ export const appSlice = createSlice({
     },
 });
 
-export const { sidebarCollapseToggle, getSidebarCollapseState } =
+export const { sidebarCollapseToggle, loadSidebarCollapseState } =
     appSlice.actions;
+
+export const getSidebarCollapsed = (state: RootState) =>
+    state.app.userConfig.sidebarCollapsed;
 
 export default appSlice.reducer;

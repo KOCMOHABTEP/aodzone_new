@@ -72,5 +72,6 @@ module.exports = {
         "react/no-unused-prop-types": "off",
         "react/require-default-props": "off",
         "jsx-a11y/anchor-is-valid": "off",
+        "no-param-reassign": "off",
     },
 };

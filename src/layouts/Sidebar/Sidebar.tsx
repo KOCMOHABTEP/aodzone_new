@@ -5,22 +5,20 @@ import Icon from "@components/Icon/Icon";
 import { useEffect } from "react";
 import cn from "classnames";
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "@redux/store";
 import {
-    getSidebarCollapseState,
+    getSidebarCollapsed,
+    loadSidebarCollapseState,
     sidebarCollapseToggle,
 } from "@redux/appSlice";
 import Link from "next/link";
 import styles from "./Sidebar.module.css";
 
 export const Sidebar = () => {
-    const sidebarCollapsed = useSelector(
-        (state: RootState) => state.app.userConfig.sidebarCollapsed
-    );
+    const sidebarCollapsed = useSelector(getSidebarCollapsed);
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(getSidebarCollapseState());
+        dispatch(loadSidebarCollapseState());
     }, [dispatch]);
 
     const handleSidebarCollapse = () => {
