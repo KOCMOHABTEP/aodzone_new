@@ -17,6 +17,9 @@
       "@styles/*": [
         "src/styles/*"
       ],
+      "@redux/*": [
+        "src/redux/*"
+      ],
       "@public/*": [
         "public/*"
       ]

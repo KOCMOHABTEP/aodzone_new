@@ -1,52 +1,57 @@
 .avatar {
     position: relative;
+}
 
-    .level {
-        font-size: var(--font-size-sm);
-        font-weight: bold;
-        color: var(--color-background);
-        text-align: center;
-        line-height: 24px;
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        background: var(--color-green);
-        box-shadow: var(--box-shadow);
-        position: absolute;
-        left: -8px;
-        bottom: 0;
-        z-index: 10;
-    }
+.avatar:after {
+    content: "";
+    width: 58px;
+    height: 58px;
+    border: solid 1px var(--color-border);
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
-    .image {
-        height: 48px;
-        width: 48px;
-        border-radius: var(--radius);
-        overflow: hidden;
-        position: relative;
-        background: var(--color-background-lighter);
-        border: solid 1px var(--color-border);
-        box-shadow: var(--box-shadow);
-        transition: border 0.3s ease;
+.avatarImage {
+    height: 48px;
+    width: 48px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    background: var(--color-background-lighter);
+    border: solid 1px var(--color-border);
+    box-shadow: var(--box-shadow);
+    transition: border 0.3s ease;
+}
 
-        &:after {
-            content: "";
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: linear-gradient(135deg, rgba(238, 238, 240, 0.5) 0%, rgba(238, 238, 240, 0) 50%);
-        }
+.avatarImg {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
-        img {
-            width: 100%;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-    }
+.avatarImgOffline {
+    filter: grayscale(1);
+}
+
+.avatarImageIndicator {
+    width: 8px;
+    height: 8px;
+    background: var(--color-border);
+    outline: solid 4px var(--color-background-light);
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.avatarImageIndicatorOnline {
+    background: var(--color-green);
 }
 
 .avatarLarge {

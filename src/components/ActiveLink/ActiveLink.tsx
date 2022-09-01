@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import React, { Children } from "react";
 
-interface LinkProps {
+interface ActiveLinkProps {
     href: string;
     children: any;
     activeClassName: string;
@@ -10,7 +10,7 @@ interface LinkProps {
     exact?: boolean;
 }
 
-const ActiveLink = ({ children, exact, ...props }: LinkProps) => {
+const ActiveLink = ({ children, exact, ...props }: ActiveLinkProps) => {
     const router = useRouter();
 
     const segment = p =>

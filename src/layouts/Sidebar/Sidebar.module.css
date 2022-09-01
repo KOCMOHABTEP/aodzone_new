@@ -11,12 +11,39 @@
     z-index: var(--zindex-sidebar);
 }
 
+.sidebar.sidebarCollapsed {
+    max-width: 90px;
+}
+
+.sidebarToggle {
+    width: 32px;
+    height: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: var(--border);
+    background: var(--color-bg-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 32px;
+    right: -16px;
+    z-index: 1;
+    user-select: none;
+}
+
 .logo {
     height: 48px;
-    width: 320px;
-    padding: 0 var(--spacing-3);
+    max-width: 320px;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 var(--spacing-2);
     margin: var(--spacing-3) 0;
     position: relative;
+}
+
+.logo.logoCollapsed {
+    max-width: 90px;
 }
 
 .logoInner {

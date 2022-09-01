@@ -1,8 +1,13 @@
 .container {
     max-width: calc(100% - 320px);
     width: 100%;
-    padding-top: 100px;
+    padding-top: 96px;
     margin-left: 320px;
+}
+
+.container.containerFull {
+    max-width: calc(100% - 90px);
+    margin-left: 90px;
 }
 
 .containerInner {
@@ -14,4 +19,8 @@
     width: 100%;
     padding: 0 30px;
     margin: 0 auto;
+}
+
+.containerContent.containerContentFull {
+    max-width: initial;
 }

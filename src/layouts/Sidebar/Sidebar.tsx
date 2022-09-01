@@ -1,13 +1,70 @@
 import { SidebarItem } from "@layouts/Sidebar/SidebarItem/SidebarItem";
-import Logo from "@public/aodzone_logo.svg";
+import LogoFull from "@public/aodzone_logo_full.svg";
+import LogoShort from "@public/aodzone_logo_short.svg";
+import Icon from "@components/Icon/Icon";
+import { useEffect } from "react";
+import cn from "classnames";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "@redux/store";
+import {
+    getSidebarCollapseState,
+    sidebarCollapseToggle,
+} from "@redux/appSlice";
+import Link from "next/link";
 import styles from "./Sidebar.module.css";
 
 export const Sidebar = () => {
+    const sidebarCollapsed = useSelector(
+        (state: RootState) => state.app.userConfig.sidebarCollapsed
+    );
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(getSidebarCollapseState());
+    }, [dispatch]);
+
+    const handleSidebarCollapse = () => {
+        dispatch(sidebarCollapseToggle(!sidebarCollapsed));
+    };
+
+    const SidebarIcon = () => {
+        if (sidebarCollapsed) {
+            return <Icon name="arrow_right" size={16} />;
+        }
+
+        return <Icon name="arrow_left" size={16} />;
+    };
+
+    const sidebarClassName = cn(styles.sidebar, {
+        [styles.sidebarCollapsed]: sidebarCollapsed,
+    });
+    const logoClassName = cn(styles.logo, {
+        [styles.logoCollapsed]: sidebarCollapsed,
+    });
+
+    const LogoComponent = () => {
+        if (sidebarCollapsed) {
+            return <LogoShort />;
+        }
+
+        return <LogoFull />;
+    };
+
     return (
-        <div className={styles.sidebar}>
-            <div className={styles.logo}>
+        <div className={sidebarClassName}>
+            <div
+                className={styles.sidebarToggle}
+                onClick={handleSidebarCollapse}
+            >
+                <SidebarIcon />
+            </div>
+            <div className={logoClassName}>
                 <div className={styles.logoInner}>
-                    <Logo />
+                    <Link href="/">
+                        <a>
+                            <LogoComponent />
+                        </a>
+                    </Link>
                 </div>
             </div>
             <ul className={styles.sidebarList}>
