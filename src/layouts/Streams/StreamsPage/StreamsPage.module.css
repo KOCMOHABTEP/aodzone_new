@@ -1,6 +1,6 @@
 .streamPage {
-    background-color: var(--color-bg-lighter);
     padding: 24px;
+    border-radius: 8px;
 }
 
 .streamPageTitle{

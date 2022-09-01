@@ -58,11 +58,11 @@
 }
 
 .itemContent {
-    background-color: var(--color-bg-dark);
     display: flex;
     padding: 16px;
     align-items: center;
     border-radius: 0 0 8px 8px;
+    background-color: var(--color-background-light);
 }
 
 .itemText {

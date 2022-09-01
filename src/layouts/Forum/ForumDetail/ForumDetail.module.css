@@ -4,27 +4,45 @@
     border-radius: 8px;
 }
 
+.forumDetailHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 16px 16px 16px;
+}
+
+.forumDetailTitle {
+    font-size: var(--font-20);
+    font-weight: bold;
+}
+
 .forumDetailList {
     display: flex;
     padding: 16px;
     justify-content:center ;
     align-items: center;
+    margin-top: 16px;
 }
 
 .forumDetailListNumber {
-    width: 25px;
+    width: 28px;
     font-size: var(--font-14);
     text-align: center;
     border-radius: 4px;
     border: solid 1px var(--color-violet);
     padding: 4px;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .forumDetailListNumber +.forumDetailListNumber {
-    margin-right: 4px;
+    margin-left: 4px;
 }
 
 .forumDetailListNumber:hover {
     background-color: var(--color-violet);
+}
+
+.forumDetailListDots {
+    margin: 0 8px;
 }
