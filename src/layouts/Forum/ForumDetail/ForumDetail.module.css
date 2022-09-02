@@ -46,3 +46,40 @@
 .forumDetailListDots {
     margin: 0 8px;
 }
+
+
+.forumDetailComment {
+    background-color: var(--color-background-light);
+    border-radius: 8px;
+    margin-top: 24px;
+    padding: 24px;
+}
+
+.forumDetailCommentTitle {
+    font-size: var(--font-20);
+    font-weight: bold;
+    margin-bottom: 32px;
+    border-bottom: solid 1px var(--color-bg-light);
+    padding: 8px;
+}
+
+.forumDetailCommentContent {
+    display: flex;
+}
+
+.forumDetailTextarea {
+    flex: 1;
+    margin-right: 24px;
+    margin-bottom: 16px;
+    justify-content: end;
+}
+
+.forumDetailButtonContainer {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.forumDetailCommentButton {
+
+}

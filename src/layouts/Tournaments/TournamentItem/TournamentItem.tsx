@@ -14,7 +14,6 @@ interface TournamentItemStatusLabelProps {
 const TournamentItemStatusLabel = ({
     label,
     type,
-    src,
 }: TournamentItemStatusLabelProps) => {
     return (
         <div
@@ -106,6 +105,7 @@ const TournamentItem = ({ type, src }: TournamentItemProps) => {
                         <TournamentItemStatusLabel
                             label={generateLabelCaption()}
                             type={type}
+                            src={src}
                         />
                         <div className={styles.itemContentStatusInfo}>
                             Finishing in 2D 3H 22M

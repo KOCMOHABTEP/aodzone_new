@@ -1,24 +1,11 @@
-import styles from "./ForumDetailItem.module.css";
 import Icon from "@components/Icon/Icon";
+import ForumDetailAvatar from "@layouts/Forum/ForumDetail/ForumDetailAvatar/ForumDetailAvatar";
+import styles from "./ForumDetailItem.module.css";
 
 const ForumDetailItem = () => {
     return (
         <div className={styles.item}>
-            <div className={styles.itemLeft}>
-                <div className={styles.itemLeftImage}>
-                    <img
-                        className={styles.itemLeftImg}
-                        src="https://games.mail.ru/hotbox/content_files/game/2017/11/3d60df5.jpeg"
-                        alt="logoUser"
-                    />
-                </div>
-                <div className={styles.itemLeftContent}>
-                    <div className={styles.itemLeftTitle}>Server Vik</div>
-                    <div className={styles.itemLeftDescription}>
-                        259 messages
-                    </div>
-                </div>
-            </div>
+            <ForumDetailAvatar />
             <div className={styles.itemRightContent}>
                 <div className={styles.itemRightContentData}>
                     30.12.2022 12:57
@@ -36,13 +23,9 @@ const ForumDetailItem = () => {
                 </div>
             </div>
             <div className={styles.itemIcon}>
-                <Icon name={"home"} size={20} />
-                <Icon name={"home"} size={20} />
-                <Icon
-                    className={styles.itemIconShare}
-                    name={"home"}
-                    size={20}
-                />
+                <Icon name="home" size={20} />
+                <Icon name="home" size={20} />
+                <Icon className={styles.itemIconShare} name="home" size={20} />
             </div>
         </div>
     );
