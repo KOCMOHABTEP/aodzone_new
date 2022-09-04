@@ -35,6 +35,22 @@ h1 {
     letter-spacing: var(--header-ls);
 }
 
+*::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--color-border);
+    border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--color-green);
+    box-shadow: inset 2px 2px 5px 0 rgba(255,255,255, 0.5);
+    border-radius: 3px;
+}
+
 
 
 

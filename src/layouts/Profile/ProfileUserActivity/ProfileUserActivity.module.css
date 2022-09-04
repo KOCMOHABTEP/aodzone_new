@@ -8,17 +8,6 @@
     overflow-y: scroll;
 }
 
-.userActivityList::-webkit-scrollbar-track {
-    background: #2c2d3b;
-}
-
-.userActivityList::-webkit-scrollbar-thumb {
-    background: #2c2d3b;
-    box-shadow: inset 2px 2px 5px 0 rgba(255,255,255, 0.5);
-    border-radius: 100px;
-}
-
-
 .userActivityItem {
     display: flex;
     align-items: center;
