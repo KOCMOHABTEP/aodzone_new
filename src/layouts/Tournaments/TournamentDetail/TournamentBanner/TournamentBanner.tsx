@@ -1,11 +1,10 @@
-import styles from "@layouts/Matches/MatchesBanner/MatchesBanner.module.css";
+import styles from "@layouts/Tournaments/TournamentDetail/TournamentBanner/TournamentBanner.module.css";
 import Icon from "@components/Icon/Icon";
-import Button from "@components/Button/Button";
 
 const MatchesBanner = () => {
     return (
         <div>
-            <div className={styles.HeaderMatches}>
+            <div className={styles.item}>
                 <div className={styles.achievementsHeader}>
                     <div className={styles.teamLabels}>
                         <div className={styles.statusHeader}>Verified</div>

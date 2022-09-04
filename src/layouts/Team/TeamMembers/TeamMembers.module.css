@@ -1,8 +1,7 @@
 .componentTeamMembers {
     padding: 24px;
-    background-color: var(--color-bg);
+    background-color: var(--color-background-light);
     display: flex;
-
 }
 
 .headerTeamMembers {

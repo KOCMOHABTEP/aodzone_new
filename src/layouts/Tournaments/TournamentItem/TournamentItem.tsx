@@ -79,56 +79,62 @@ const TournamentItem = ({ type, src }: TournamentItemProps) => {
 
     return (
         <div className={styles.item}>
-            <div className={styles.itemTop}>
-                <div className={styles.itemImage}>
-                    <img className={styles.itemImg} src={src} alt="фон" />
-                </div>
-                <div className={styles.itemHead}>
-                    <div className={styles.itemHeadLabel}>GAMING</div>
-                    <div className={styles.itemHeadLabel}>GAMING</div>
-                    <div className={styles.itemHeadLabel}>GAMING</div>
-                </div>
-            </div>
-            <div className={styles.itemBottom}>
-                <div className={styles.itemContent}>
-                    <div className={styles.itemContentRow}>
-                        <div className={styles.itemContentTitle}>
-                            Mega cracken masters open
-                        </div>
-                        <Icon
-                            className={styles.itemContentIcon}
-                            name="like"
-                            size={16}
-                        />
+            <div className={styles.itemContainer}>
+                <div className={styles.itemTop}>
+                    <div className={styles.itemImage}>
+                        <img className={styles.itemImg} src={src} alt="фон" />
                     </div>
-                    <div className={styles.itemContentStatus}>
-                        <TournamentItemStatusLabel
-                            label={generateLabelCaption()}
-                            type={type}
-                            src={src}
-                        />
-                        <div className={styles.itemContentStatusInfo}>
-                            Finishing in 2D 3H 22M
-                        </div>
+                    <div className={styles.itemHead}>
+                        <div className={styles.itemHeadLabel}>GAMING</div>
+                        <div className={styles.itemHeadLabel}>GAMING</div>
+                        <div className={styles.itemHeadLabel}>GAMING</div>
                     </div>
                 </div>
-                <div className={styles.itemInfo}>
-                    <div className={styles.itemInfoColumn}>
-                        <div className={styles.itemInfoCard}>
-                            <div className={styles.itemInfoHead}>FORMAT</div>
-                            <div className={styles.itemInfoValue}>5 vs 5</div>
+                <div className={styles.itemBottom}>
+                    <div className={styles.itemContent}>
+                        <div className={styles.itemContentRow}>
+                            <div className={styles.itemContentTitle}>
+                                Mega cracken masters open
+                            </div>
+                            <Icon
+                                className={styles.itemContentIcon}
+                                name="like"
+                                size={16}
+                            />
                         </div>
-                        <div className={styles.itemInfoCard}>
-                            <div className={styles.itemInfoHead}>ENTRY</div>
-                            <div className={styles.itemInfoValue}>FREE</div>
-                        </div>
-                        <div className={styles.itemInfoCard}>
-                            <div className={styles.itemInfoHead}>PRICE</div>
-                            <div className={styles.itemInfoValue}>20$</div>
+                        <div className={styles.itemContentStatus}>
+                            <TournamentItemStatusLabel
+                                label={generateLabelCaption()}
+                                type={type}
+                                src={src}
+                            />
+                            <div className={styles.itemContentStatusInfo}>
+                                Finishing in 2D 3H 22M
+                            </div>
                         </div>
                     </div>
-                    <div className={styles.itemInfoColumn}>
-                        {renderTournamentActions()}
+                    <div className={styles.itemInfo}>
+                        <div className={styles.itemInfoColumn}>
+                            <div className={styles.itemInfoCard}>
+                                <div className={styles.itemInfoHead}>
+                                    FORMAT
+                                </div>
+                                <div className={styles.itemInfoValue}>
+                                    5 vs 5
+                                </div>
+                            </div>
+                            <div className={styles.itemInfoCard}>
+                                <div className={styles.itemInfoHead}>ENTRY</div>
+                                <div className={styles.itemInfoValue}>FREE</div>
+                            </div>
+                            <div className={styles.itemInfoCard}>
+                                <div className={styles.itemInfoHead}>PRICE</div>
+                                <div className={styles.itemInfoValue}>20$</div>
+                            </div>
+                        </div>
+                        <div className={styles.itemInfoColumn}>
+                            {renderTournamentActions()}
+                        </div>
                     </div>
                 </div>
             </div>

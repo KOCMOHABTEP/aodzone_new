@@ -1,10 +1,10 @@
-import MatchesBanner from "@layouts/Matches/MatchesBanner/MatchesBanner";
+import MatchesBanner from "@layouts/Tournaments/TournamentDetail/TournamentBanner/TournamentBanner";
 import TournamentTable from "@layouts/Tournaments/TournamentDetail/TournamentTable/TournamentTable";
 import Layout from "@layouts/Layout/Layout";
 import TournamentRound from "@layouts/Tournaments/TournamentDetail/TournamentRound/TournamentRound";
-import styles from "./TournamentDetail.module.css";
 import Icon from "@components/Icon/Icon";
 import cn from "classnames";
+import styles from "./TournamentDetail.module.css";
 
 const TournamentDetail = () => {
     const handleArrowLeftClick = () => {

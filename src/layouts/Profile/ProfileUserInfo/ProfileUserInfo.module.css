@@ -1,24 +1,23 @@
-.activityInfo {
-    background-color: var(--color-bg);
-    border-radius: 4px;
+.item {
+    background-color: var(--color-background-light);
     padding: 24px;
 }
 
-.title {
+.itemHeadTitle {
     font-weight: bold;
     margin-bottom: 8px;
 }
 
-.description {
+.itemHeadDescription {
     color: var(--color-grey);
     margin-bottom: 16px;
 }
 
-.button {
+.itemButton {
     margin-bottom: 16px;
 }
 
-.infoContainer {
+.itemContent {
 
 }
 

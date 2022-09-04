@@ -4,16 +4,18 @@ import styles from "./ProfileUserInfo.module.css";
 
 const ProfileUserInfo = () => {
     return (
-        <div className={styles.activityInfo}>
-            <div className={styles.title}>ABOUT</div>
-            <div className={styles.description}>
-                Nothing intresting hasn't been written here, what a pity. It is
-                a nice field
+        <div className={styles.item}>
+            <div>
+                <div className={styles.itemHeadTitle}>ABOUT</div>
+                <div className={styles.itemHeadDescription}>
+                    Nothing intresting hasn't been written here, what a pity. It
+                    is a nice field
+                </div>
             </div>
-            <div className={styles.button}>
+            <div className={styles.itemButton}>
                 <Button text="Add description" />
             </div>
-            <div className={styles.infoContainer}>
+            <div className={styles.itemContent}>
                 {/** Item 1 * */}
                 <div className={styles.infoItem}>
                     <Icon

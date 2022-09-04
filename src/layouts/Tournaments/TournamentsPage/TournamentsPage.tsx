@@ -1,22 +1,22 @@
 import Icon from "@components/Icon/Icon";
 import TournamentItem from "@layouts/Tournaments/TournamentItem/TournamentItem";
-import styles from "./TournamentsPage.module.css";
 import Button from "@components/Button/Button";
 import TournamentActionItem from "@layouts/Tournaments/TournamentActionItem/TournamentActionItem";
 import TournamentFilter from "@layouts/Tournaments/TournamentFilter/TournamentFilter";
+import styles from "./TournamentsPage.module.css";
 
 const TournamentsPage = () => {
     return (
         <div className={styles.wrapperTournamentsPage}>
             <div className={styles.tournamentActionsBanner}>
                 <div className={styles.tournamentActionsBannerColumn}>
-                    <TournamentActionItem type={"SOLO"} />
+                    <TournamentActionItem type="SOLO" />
                 </div>
                 <div className={styles.tournamentActionsBannerColumn}>
-                    <TournamentActionItem type={"PARTY"} />
+                    <TournamentActionItem type="PARTY" />
                 </div>
                 <div className={styles.tournamentActionsBannerColumn}>
-                    <TournamentActionItem type={"TEAM"} />
+                    <TournamentActionItem type="TEAM" />
                 </div>
             </div>
             <TournamentFilter />

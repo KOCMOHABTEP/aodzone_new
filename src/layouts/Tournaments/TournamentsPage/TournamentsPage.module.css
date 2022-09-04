@@ -1,6 +1,5 @@
 .wrapperTournamentsPage {
-    background-color: var(--color-bg);
-    padding: 24px;
+    padding: 16px;
 }
 
 .tournamentsList {

@@ -28,5 +28,9 @@
 }
 
 .tournaments {
+    background-color: var(--color-background-light);
     display: flex;
+    padding: 24px;
+    border: solid 1px var(--color-border);
+    border-radius: 8px;
 }

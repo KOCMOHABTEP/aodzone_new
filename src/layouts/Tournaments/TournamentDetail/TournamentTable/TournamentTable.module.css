@@ -1,14 +1,11 @@
-.tournamentContainer {
+.item {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: space-between;
-    padding: 24px;
-    background-color: var(--color-bg);
 }
 
-.tournamentWrapper {
+.itemInfo {
     height: auto;
-
 }
 

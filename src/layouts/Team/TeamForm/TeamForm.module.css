@@ -1,40 +1,42 @@
-.componentTeamForm{
+.item {
     padding: 24px;
     max-width: 380px;
-    background-color: var(--color-bg);
+    background-color: var(--color-background-light);
+    border: solid 1px var(--color-border);
     position: relative;
+    border-radius: 8px;
 }
 
-.componentClose {
+.itemClose {
     position: absolute;
     right: 12px;
     top: 12px;
 }
 
-.contentTeamForm {
-    padding: 8px 0;
+.itemHead {
     display: flex;
     flex-direction: column;
+    margin: 16px 0;
 }
 
-.titleTeamForm {
+.itemHeadTitle {
     font-size: var(--font-20);
     font-weight: bold;
-    margin-bottom: 4px;
+    margin-bottom: 16px;
 }
 
-.descriptionTeamForm{
+.itemHeadDescription {
     color: var(--color-grey);
     margin-bottom: 12px;
     flex-direction: column;
 }
 
-.inputAllTeamAdd {
+.itemContent {
     display: flex;
     flex-direction: column;
 }
 
-.inputTeamAdd {
+.itemContentField {
     margin-bottom: 16px;
 }
 
@@ -45,6 +47,6 @@
 
 }
 
-.buttonAddTeamBtn {
+.itemButton {
     width: 100%;
 }

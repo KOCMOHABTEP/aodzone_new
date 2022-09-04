@@ -20,16 +20,16 @@ const TeamForm = () => {
     };
 
     return (
-        <div className={styles.componentTeamForm}>
-            <div className={styles.componentClose}>x</div>
-            <div className={styles.contentTeamForm}>
-                <div className={styles.titleTeamForm}>СОЗДАТЬ КОМАНДУ</div>
-                <div className={styles.descriptionTeamForm}>
+        <div className={styles.item}>
+            <div className={styles.itemClose}>x</div>
+            <div className={styles.itemHead}>
+                <div className={styles.itemHeadTitle}>СОЗДАТЬ КОМАНДУ</div>
+                <div className={styles.itemHeadDescription}>
                     Начни добавлять друзей в команду уже сегодня!
                 </div>
             </div>
-            <div className={styles.inputAllTeamAdd}>
-                <div className={styles.inputTeamAdd}>
+            <div className={styles.itemContent}>
+                <div className={styles.itemContentField}>
                     <Input
                         name="teamName"
                         label="Название команды"
@@ -37,7 +37,7 @@ const TeamForm = () => {
                         onChange={handleOnChange}
                     />
                 </div>
-                <div className={styles.inputTeamAdd}>
+                <div className={styles.itemContentField}>
                     <Input
                         name="teamTag"
                         label="Тег команды"
@@ -45,7 +45,7 @@ const TeamForm = () => {
                         onChange={handleOnChange}
                     />
                 </div>
-                <div className={styles.inputTeamAdd}>
+                <div className={styles.itemContentField}>
                     <Input
                         name="teamAddPlayer"
                         label="Добавить игроков"
@@ -53,7 +53,7 @@ const TeamForm = () => {
                         onChange={handleOnChange}
                     />
                 </div>
-                <div className={styles.inputTeamAdd}>
+                <div className={styles.itemContentField}>
                     <Input
                         name="teamTagCommand"
                         label="Добавить игроков"
@@ -62,7 +62,7 @@ const TeamForm = () => {
                     />
                 </div>
             </div>
-            <div className={styles.buttonAddTeam}>
+            <div className={styles.itemButton}>
                 <Button
                     buttonClassName={styles.buttonAddTeamBtn}
                     text="Добавить команду"
