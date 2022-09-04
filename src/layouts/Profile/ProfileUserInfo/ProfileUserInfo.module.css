@@ -1,5 +1,4 @@
 .item {
-    background-color: var(--color-background-light);
     padding: 24px;
 }
 
@@ -11,6 +10,7 @@
 .itemHeadDescription {
     color: var(--color-grey);
     margin-bottom: 16px;
+    font-size: var(--font-12);
 }
 
 .itemButton {
@@ -32,5 +32,7 @@
 }
 
 .infoItemText {
+    font-size: var(--font-12);
     color: var(--color-grey);
+
 }

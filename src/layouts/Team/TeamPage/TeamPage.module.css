@@ -1,8 +1,14 @@
+.teamPage {
+
+}
+
 .teamPageForm {
     margin-bottom: 16px;
 }
 
 .teamProfileUser {
+    background-color: var(--color-background-light);
+    border-radius: 8px;
     display: flex;
     margin-bottom: 16px;
 }

@@ -1,0 +1,20 @@
+.item {
+    max-width: 96px;
+    text-align: center;
+    padding: 8px;
+}
+
+.itemContent {
+
+}
+
+.itemTitle {
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.itemAchievement {
+    background-color: var(--color-green-dark);
+    text-align: center;
+    border-radius: 8px;
+}

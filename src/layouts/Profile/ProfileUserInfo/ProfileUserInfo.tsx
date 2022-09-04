@@ -21,7 +21,7 @@ const ProfileUserInfo = () => {
                     <Icon
                         className={styles.infoItemIcon}
                         name="home"
-                        size={20}
+                        size={18}
                     />
                     <div className={styles.infoItemText}> from Serbia</div>
                 </div>
@@ -29,7 +29,7 @@ const ProfileUserInfo = () => {
                     <Icon
                         className={styles.infoItemIcon}
                         name="comments"
-                        size={20}
+                        size={18}
                     />
                     <div className={styles.infoItemText}>
                         Joined 23 days ago
@@ -39,7 +39,7 @@ const ProfileUserInfo = () => {
                     <Icon
                         className={styles.infoItemIcon}
                         name="profile"
-                        size={20}
+                        size={18}
                     />
                     <div className={styles.infoItemText}>
                         Born on 24.May.2018
@@ -49,7 +49,7 @@ const ProfileUserInfo = () => {
                     <Icon
                         className={styles.infoItemIcon}
                         name="timer"
-                        size={20}
+                        size={18}
                     />
                     <div className={styles.infoItemText}>
                         Last seen 5 day ago

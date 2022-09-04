@@ -1,6 +1,4 @@
-import Icon from "@components/Icon/Icon";
 import TournamentItem from "@layouts/Tournaments/TournamentItem/TournamentItem";
-import Button from "@components/Button/Button";
 import TournamentActionItem from "@layouts/Tournaments/TournamentActionItem/TournamentActionItem";
 import TournamentFilter from "@layouts/Tournaments/TournamentFilter/TournamentFilter";
 import styles from "./TournamentsPage.module.css";
