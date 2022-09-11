@@ -39,7 +39,13 @@ const TeamMembers = () => {
                     ))}
                 </div>
             </div>
-            <div>
+            <div className={styles.itemTeamPlayersItem}>
+                <TeamPlayersItem />
+                <TeamPlayersItem />
+                <TeamPlayersItem />
+                <TeamPlayersItem />
+                <TeamPlayersItem />
+                <TeamPlayersItem />
                 <TeamPlayersItem />
             </div>
         </div>

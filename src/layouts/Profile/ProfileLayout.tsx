@@ -9,7 +9,9 @@ const ProfileLayout = () => {
     return (
         <>
             <ProfileUserBanner />
-            <AchievementsBar />
+            <div>
+                <AchievementsBar />
+            </div>
             <div className={styles.row}>
                 <div className={styles.column}>
                     <ProfileUserInfo />

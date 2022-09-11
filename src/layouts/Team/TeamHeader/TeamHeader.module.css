@@ -1,0 +1,30 @@
+.itemHead {
+    display: flex;
+    background-color: var(--color-background-light);
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.itemBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemBottomLeft {
+    display: flex;
+}
+
+.itemBottomRight {
+    display: flex;
+}
+
+.itemBottomRightButton {
+    margin-right: 16px;
+}
+
+.itemButton {
+    font-size: var(--font-14);
+    height: 100%;
+    padding: 8px;
+}

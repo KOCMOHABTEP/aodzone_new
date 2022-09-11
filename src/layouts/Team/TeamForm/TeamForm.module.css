@@ -1,36 +1,3 @@
-.item {
-    padding: 24px;
-    max-width: 380px;
-    background-color: var(--color-background-light);
-    border: solid 1px var(--color-border);
-    position: relative;
-    border-radius: 8px;
-}
-
-.itemClose {
-    position: absolute;
-    right: 12px;
-    top: 12px;
-}
-
-.itemHead {
-    display: flex;
-    flex-direction: column;
-    margin: 16px 0;
-}
-
-.itemHeadTitle {
-    font-size: var(--font-20);
-    font-weight: bold;
-    margin-bottom: 16px;
-}
-
-.itemHeadDescription {
-    color: var(--color-grey);
-    margin-bottom: 12px;
-    flex-direction: column;
-}
-
 .itemContent {
     display: flex;
     flex-direction: column;
@@ -39,8 +6,6 @@
 .itemContentField {
     margin-bottom: 16px;
 }
-
-
 
 .buttonAddTeam {
     margin-bottom: 16px;

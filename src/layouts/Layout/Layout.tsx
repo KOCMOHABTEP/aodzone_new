@@ -20,6 +20,7 @@ const Layout = ({ title = "AOD Zone", children }: ILayout) => {
                 <Sidebar />
                 <Container>{children}</Container>
             </div>
+            <div id="modal-root" />
         </>
     );
 };

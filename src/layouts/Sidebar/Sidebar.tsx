@@ -108,14 +108,6 @@ export const Sidebar = () => {
                 </li>
                 <li className={styles.sidebarListItem}>
                     <SidebarItem
-                        title="Турнир"
-                        href="/tournaments/1"
-                        icon="team"
-                        props={{ passHref: true }}
-                    />
-                </li>
-                <li className={styles.sidebarListItem}>
-                    <SidebarItem
                         title="Турниры"
                         href="/tournaments"
                         icon="team"
@@ -132,24 +124,8 @@ export const Sidebar = () => {
                 </li>
                 <li className={styles.sidebarListItem}>
                     <SidebarItem
-                        title="Стрим"
-                        href="/streams/1"
-                        icon="streams"
-                        props={{ passHref: true }}
-                    />
-                </li>
-                <li className={styles.sidebarListItem}>
-                    <SidebarItem
                         title="Форум"
                         href="/forum"
-                        icon="team"
-                        props={{ passHref: true }}
-                    />
-                </li>
-                <li className={styles.sidebarListItem}>
-                    <SidebarItem
-                        title="Форум деталка"
-                        href="/forum/1"
                         icon="team"
                         props={{ passHref: true }}
                     />

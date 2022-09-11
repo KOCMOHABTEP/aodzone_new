@@ -27,6 +27,7 @@ import IconVolumeHalf from "./icons/volume_half.svg";
 import IconVolumeMuted from "./icons/volume_muted.svg";
 import IconSteam from "./icons/socials-steam.svg";
 import IconTimer from "./icons/timer.svg";
+import IconXmark from "./icons/xmark.svg";
 
 export const ICON_LIBRARY = {
     arrow_up: IconArrowUp,
@@ -58,6 +59,7 @@ export const ICON_LIBRARY = {
     volumeMuted: IconVolumeMuted,
     social_steam: IconSteam,
     timer: IconTimer,
+    xmark: IconXmark,
 };
 
 export type ICON_NAME = keyof typeof ICON_LIBRARY;

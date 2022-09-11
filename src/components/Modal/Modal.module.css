@@ -1,0 +1,46 @@
+.modalOverlay {
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: var(--color-background-overlay-modal);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: var(--zindex-modal);
+}
+
+.item {
+    padding: 24px;
+    max-width: 380px;
+    background-color: var(--color-background-light);
+    border: solid 1px var(--color-border);
+    position: relative;
+    border-radius: 8px;
+}
+
+.itemClose {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.itemHead {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+}
+
+.itemHeadTitle {
+    font-size: var(--font-20);
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.itemHeadDescription {
+    color: var(--color-grey);
+    margin-bottom: 12px;
+    flex-direction: column;
+}

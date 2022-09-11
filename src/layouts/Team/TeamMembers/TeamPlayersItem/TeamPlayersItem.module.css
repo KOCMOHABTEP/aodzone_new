@@ -1,7 +1,15 @@
 .item {
-    max-width: 96px;
-    text-align: center;
     padding: 8px;
+    flex: calc(100%/5);
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemImage {
+    margin-bottom: 8px;
 }
 
 .itemContent {
@@ -14,6 +22,7 @@
 }
 
 .itemAchievement {
+    font-size: var(--font-14);
     background-color: var(--color-green-dark);
     text-align: center;
     border-radius: 8px;

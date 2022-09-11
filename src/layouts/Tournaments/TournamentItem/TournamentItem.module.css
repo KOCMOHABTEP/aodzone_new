@@ -1,6 +1,7 @@
 .item {
     flex-grow: 0;
     flex-shrink: 1;
+    color: inherit;
     flex-basis: calc(100% /3);
     cursor: pointer;
     transition: transform 0.3s ease;

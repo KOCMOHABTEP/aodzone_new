@@ -1,5 +1,7 @@
 import styles from "@layouts/Tournaments/TournamentDetail/TournamentBanner/TournamentBanner.module.css";
 import Icon from "@components/Icon/Icon";
+import Tag from "@components/Tag/Tag";
+import { Verify } from "crypto";
 
 const MatchesBanner = () => {
     return (
@@ -7,9 +9,9 @@ const MatchesBanner = () => {
             <div className={styles.item}>
                 <div className={styles.achievementsHeader}>
                     <div className={styles.teamLabels}>
-                        <div className={styles.statusHeader}>Verified</div>
-                        <div className={styles.statusHeader}>Premium</div>
-                        <div className={styles.statusHeader}>Rokie</div>
+                        <Tag label="VERIFIED" />
+                        <Tag label="PREMIUM" />
+                        <Tag label="ROKIE" />
                     </div>
                     <div className={styles.rightAchievementsHeader}>
                         <div className={styles.componentStatusHeader}>

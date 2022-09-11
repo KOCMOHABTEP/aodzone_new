@@ -2,13 +2,35 @@ import TeamForm from "@layouts/Team/TeamForm/TeamForm";
 import ProfileUserInfo from "@layouts/Profile/ProfileUserInfo/ProfileUserInfo";
 import TeamMembers from "@layouts/Team/TeamMembers/TeamMembers";
 import { WidgetLastMatches } from "@features/Widget/WidgetLastMatches/WidgetLastMatches";
+import AchievementsBar from "@features/AchievementsBar/AchievementsBar";
+import TeamHeader from "@layouts/Team/TeamHeader/TeamHeader";
+import { useState } from "react";
 import styles from "./TeamPage.module.css";
 
 const TeamPage = () => {
+    const [teamFormVisible, setTeamFormVisible] = useState(false);
+
+    const handleOpenTeamModal = () => {
+        setTeamFormVisible(true);
+    };
+
+    const handleCloseTeamModal = () => {
+        setTeamFormVisible(false);
+    };
+
     return (
         <div className={styles.teamPage}>
+            <div>
+                <TeamHeader handleOpenTeamModal={handleOpenTeamModal} />
+            </div>
             <div className={styles.teamPageForm}>
-                <TeamForm />
+                <TeamForm
+                    teamFormVisible={teamFormVisible}
+                    handleCloseTeamModal={handleCloseTeamModal}
+                />
+            </div>
+            <div className={styles.teamAchievements}>
+                <AchievementsBar />
             </div>
             <div>
                 <div className={styles.teamProfileUser}>
