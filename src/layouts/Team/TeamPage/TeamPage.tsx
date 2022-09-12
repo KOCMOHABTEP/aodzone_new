@@ -3,8 +3,8 @@ import ProfileUserInfo from "@layouts/Profile/ProfileUserInfo/ProfileUserInfo";
 import TeamMembers from "@layouts/Team/TeamMembers/TeamMembers";
 import { WidgetLastMatches } from "@features/Widget/WidgetLastMatches/WidgetLastMatches";
 import AchievementsBar from "@features/AchievementsBar/AchievementsBar";
-import TeamHeader from "@layouts/Team/TeamHeader/TeamHeader";
 import { useState } from "react";
+import UserHeader from "@components/UserHeader/UserHeader";
 import styles from "./TeamPage.module.css";
 
 const TeamPage = () => {
@@ -21,7 +21,7 @@ const TeamPage = () => {
     return (
         <div className={styles.teamPage}>
             <div>
-                <TeamHeader handleOpenTeamModal={handleOpenTeamModal} />
+                <UserHeader handleOpenTeamModal={handleOpenTeamModal} />
             </div>
             <div className={styles.teamPageForm}>
                 <TeamForm
