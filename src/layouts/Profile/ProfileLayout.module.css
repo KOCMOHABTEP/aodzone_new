@@ -1,6 +1,15 @@
+.itemUserHeader {
+    margin-bottom: 16px;
+}
+
+.itemAchievementsBar {
+    margin-bottom: 16px;
+}
+
 .row {
     display: flex;
     flex-direction: row;
+    margin-bottom: 16px;
 }
 
 .column {
