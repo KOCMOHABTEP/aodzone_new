@@ -1,0 +1,14 @@
+.tooltip {
+    position: absolute;
+}
+
+.tooltipLabel {
+    color: var(--color-white);
+    padding: 8px 16px;
+    background: var(--color-bg);
+    border: solid 1px var(--color-border);
+    border-radius: var(--radius);
+    position: relative;
+    top: -48px;
+    right: -80px;
+}

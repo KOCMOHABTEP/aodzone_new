@@ -21,6 +21,7 @@ const Layout = ({ title = "AOD Zone", children }: ILayout) => {
                 <Container>{children}</Container>
             </div>
             <div id="modal-root" />
+            <div id="tooltip-root" />
         </>
     );
 };
