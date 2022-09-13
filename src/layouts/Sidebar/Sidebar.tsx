@@ -67,43 +67,22 @@ export const Sidebar = () => {
             </div>
             <ul className={styles.sidebarList}>
                 <li className={styles.sidebarListItem}>
-                    <SidebarItem
-                        title="Главная"
-                        href="/"
-                        icon="home"
-                        props={{ exact: true, passHref: true }}
-                    />
+                    <SidebarItem title="Главная" href="/" icon="home" />
                 </li>
                 <li className={styles.sidebarListItem}>
-                    <SidebarItem
-                        title="Новости"
-                        href="/news"
-                        icon="news"
-                        props={{ passHref: true }}
-                    />
+                    <SidebarItem title="Новости" href="/news" icon="news" />
                 </li>
                 <li className={styles.sidebarListItem}>
-                    <SidebarItem
-                        title="Команда"
-                        href="/team"
-                        icon="team"
-                        props={{ passHref: true }}
-                    />
+                    <SidebarItem title="Команда" href="/team" icon="team" />
                 </li>
                 <li className={styles.sidebarListItem}>
-                    <SidebarItem
-                        title="Матчи"
-                        href="/matches"
-                        icon="matches"
-                        props={{ passHref: true }}
-                    />
+                    <SidebarItem title="Матчи" href="/matches" icon="matches" />
                 </li>
                 <li className={styles.sidebarListItem}>
                     <SidebarItem
                         title="Матч"
                         href="/matches/1"
                         icon="matches"
-                        props={{ passHref: true }}
                     />
                 </li>
                 <li className={styles.sidebarListItem}>
@@ -111,7 +90,6 @@ export const Sidebar = () => {
                         title="Турниры"
                         href="/tournaments"
                         icon="team"
-                        props={{ passHref: true }}
                     />
                 </li>
                 <li className={styles.sidebarListItem}>
@@ -119,16 +97,10 @@ export const Sidebar = () => {
                         title="Стримы"
                         href="/streams"
                         icon="streams"
-                        props={{ passHref: true }}
                     />
                 </li>
                 <li className={styles.sidebarListItem}>
-                    <SidebarItem
-                        title="Форум"
-                        href="/forum"
-                        icon="team"
-                        props={{ passHref: true }}
-                    />
+                    <SidebarItem title="Форум" href="/forum" icon="team" />
                 </li>
                 <li className={styles.sidebarListItem}>
                     <SidebarItem
