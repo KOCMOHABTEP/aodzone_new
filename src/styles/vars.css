@@ -121,7 +121,12 @@
     --p-mb: var(--spacing-2);
 
     /* BORDERS */
-    --radius: 6px;
+    --radius-4: 4px;
+    --radius-6: 6px;
+    --radius-8: 8px;
+    --radius-10: 10px;
+    --radius-12: 12px;
+    --radius-16: 16px;
     --radius-sm: 2px;
     --radius-md: 6px;
     --radius-lg: 10px;

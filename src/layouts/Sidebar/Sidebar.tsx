@@ -130,6 +130,14 @@ export const Sidebar = () => {
                         props={{ passHref: true }}
                     />
                 </li>
+                <li className={styles.sidebarListItem}>
+                    <SidebarItem
+                        title="Медиа"
+                        href="/media"
+                        icon="media"
+                        props={{ passHref: true }}
+                    />
+                </li>
             </ul>
         </div>
     );
