@@ -11,11 +11,13 @@ import {
     sidebarCollapseToggle,
 } from "@redux/appSlice";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import styles from "./Sidebar.module.css";
 
 export const Sidebar = () => {
     const sidebarCollapsed = useSelector(getSidebarCollapsed);
     const dispatch = useDispatch();
+    const router = useRouter();
 
     useEffect(() => {
         dispatch(loadSidebarCollapseState());
@@ -48,6 +50,10 @@ export const Sidebar = () => {
         return <LogoFull />;
     };
 
+    const isActiveSidebarHref = (url: string) => {
+        return router.asPath === url;
+    };
+
     return (
         <div className={sidebarClassName}>
             <div
@@ -67,48 +73,103 @@ export const Sidebar = () => {
             </div>
             <ul className={styles.sidebarList}>
                 <li className={styles.sidebarListItem}>
-                    <SidebarItem title="Главная" href="/" icon="home" />
+                    <Link href="/">
+                        <a>
+                            <SidebarItem
+                                title="Главная"
+                                icon="home"
+                                active={isActiveSidebarHref("/")}
+                            />
+                        </a>
+                    </Link>
                 </li>
                 <li className={styles.sidebarListItem}>
-                    <SidebarItem title="Новости" href="/news" icon="news" />
+                    <Link href="/news">
+                        <a>
+                            <SidebarItem
+                                title="Новости"
+                                icon="news"
+                                active={isActiveSidebarHref("/news")}
+                            />
+                        </a>
+                    </Link>
                 </li>
                 <li className={styles.sidebarListItem}>
-                    <SidebarItem title="Команда" href="/team" icon="team" />
+                    <Link href="/team">
+                        <a>
+                            <SidebarItem
+                                title="Команда"
+                                icon="team"
+                                active={isActiveSidebarHref("/team")}
+                            />
+                        </a>
+                    </Link>
                 </li>
                 <li className={styles.sidebarListItem}>
-                    <SidebarItem title="Матчи" href="/matches" icon="matches" />
+                    <Link href="/matches">
+                        <a>
+                            <SidebarItem
+                                title="Матчи"
+                                icon="matches"
+                                active={isActiveSidebarHref("/matches")}
+                            />
+                        </a>
+                    </Link>
                 </li>
                 <li className={styles.sidebarListItem}>
-                    <SidebarItem
-                        title="Матч"
-                        href="/matches/1"
-                        icon="matches"
-                    />
+                    <Link href="/matches/1">
+                        <a>
+                            <SidebarItem
+                                title="Матч"
+                                icon="matches"
+                                active={isActiveSidebarHref("/matches/1")}
+                            />
+                        </a>
+                    </Link>
                 </li>
                 <li className={styles.sidebarListItem}>
-                    <SidebarItem
-                        title="Турниры"
-                        href="/tournaments"
-                        icon="team"
-                    />
+                    <Link href="/tournaments">
+                        <a>
+                            <SidebarItem
+                                title="Турниры"
+                                icon="team"
+                                active={isActiveSidebarHref("/tournaments")}
+                            />
+                        </a>
+                    </Link>
                 </li>
                 <li className={styles.sidebarListItem}>
-                    <SidebarItem
-                        title="Стримы"
-                        href="/streams"
-                        icon="streams"
-                    />
+                    <Link href="/streams">
+                        <a>
+                            <SidebarItem
+                                title="Стримы"
+                                icon="streams"
+                                active={isActiveSidebarHref("/streams")}
+                            />
+                        </a>
+                    </Link>
                 </li>
                 <li className={styles.sidebarListItem}>
-                    <SidebarItem title="Форум" href="/forum" icon="team" />
+                    <Link href="/forum">
+                        <a>
+                            <SidebarItem
+                                title="Форум"
+                                icon="team"
+                                active={isActiveSidebarHref("/forum")}
+                            />
+                        </a>
+                    </Link>
                 </li>
                 <li className={styles.sidebarListItem}>
-                    <SidebarItem
-                        title="Медиа"
-                        href="/media"
-                        icon="media"
-                        props={{ passHref: true }}
-                    />
+                    <Link href="/media">
+                        <a>
+                            <SidebarItem
+                                title="Медиа"
+                                icon="media"
+                                active={isActiveSidebarHref("/media")}
+                            />
+                        </a>
+                    </Link>
                 </li>
             </ul>
         </div>

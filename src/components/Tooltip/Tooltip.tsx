@@ -1,31 +1,27 @@
 import ReactDOM from "react-dom";
-import { useEffect, useState } from "react";
+import {CSSProperties, useEffect, useState} from "react";
 import styles from "./Tooltip.module.scss";
 
 interface TooltipProps {
+    customRef: any;
     visible: boolean;
     label: string;
-    position: {
-        x: number;
-        y: number;
-    };
-    placement?: any;
+    attributes: any;
+    customStyles: CSSProperties;
 }
 
-const Tooltip = ({ label, visible }: TooltipProps) => {
+const Tooltip = ({
+    customRef,
+    label,
+    visible,
+    customStyles,
+    attributes,
+}: TooltipProps) => {
     const [isBrowser, setIsBrowser] = useState(false);
 
     useEffect(() => {
         setIsBrowser(true);
     }, []);
-
-    const TooltipContent = () => {
-        return (
-            <div className={styles.tooltip}>
-                <div className={styles.tooltipLabel}>{label}</div>
-            </div>
-        );
-    };
 
     if (!visible) {
         return null;
@@ -33,7 +29,14 @@ const Tooltip = ({ label, visible }: TooltipProps) => {
 
     if (isBrowser) {
         return ReactDOM.createPortal(
-            <TooltipContent />,
+            <div
+                ref={customRef}
+                className={styles.tooltip}
+                style={customStyles}
+                {...attributes}
+            >
+                <div className={styles.tooltipLabel}>{label}</div>
+            </div>,
             document.getElementById("tooltip-root")
         );
     }

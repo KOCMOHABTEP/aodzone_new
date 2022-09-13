@@ -139,8 +139,9 @@
     --box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
 
     /* ZINDEX */
-    --zindex-sidebar: 5000;
-    --zindex-header: 4000;
-    --zindex-modal: 6000;
+    --zindex-header: 400;
+    --zindex-sidebar: 500;
+    --zindex-tooltip: 300;
+    --zindex-modal: 600;
     
 }

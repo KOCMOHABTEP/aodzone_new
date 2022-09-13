@@ -2,73 +2,73 @@ import Icon from "@components/Icon/Icon";
 import { ICON_NAME } from "@components/Icon/Icon.library";
 import { useSelector } from "react-redux";
 import { getSidebarCollapsed } from "@redux/appSlice";
-import { useRouter } from "next/router";
-import Link from "next/link";
 import cn from "classnames";
 import Tooltip from "@components/Tooltip/Tooltip";
 import { useState } from "react";
+import { usePopper } from "react-popper";
 import styles from "./SidebarItem.module.scss";
 
 interface SidebarItemProps {
     title: string;
-    href: string;
     icon: ICON_NAME;
+    active: boolean;
 }
 
-export const SidebarItem = ({ href, title, icon }: SidebarItemProps) => {
-    const router = useRouter();
+export const SidebarItem = ({ title, icon, active }: SidebarItemProps) => {
     const sidebarCollapsed = useSelector(getSidebarCollapsed);
 
     const [tooltipVisibility, setTooltipVisibility] = useState(false);
+    const [referenceElement, setReferenceElement] = useState(null);
+    const [popperElement, setPopperElement] = useState(null);
 
-    const isActiveSidebarHref = router.asPath === href;
+    const { styles: popperStyles, attributes } = usePopper(
+        referenceElement,
+        popperElement,
+        {
+            placement: "right",
+            modifiers: [
+                {
+                    name: "offset",
+                    options: {
+                        offset: [0, 20],
+                    },
+                },
+            ],
+        }
+    );
 
     const showDescription = Boolean(!sidebarCollapsed);
-    const showTooltip = Boolean(sidebarCollapsed);
+    const showTooltip = Boolean(sidebarCollapsed && tooltipVisibility);
 
     const sidebarItemClassNames = cn(styles.sidebarItem, {
         [styles.sidebarItemCollapsed]: sidebarCollapsed,
-        [styles.sidebarItemActive]: isActiveSidebarHref,
+        [styles.sidebarItemActive]: active,
     });
 
-    const handleShowTooltip = event => {
-        // const currentTargetRect = event.currentTarget.getBoundingClientRect();
-        // const event_offsetX = event.pageX - currentTargetRect.left;
-        // const event_offsetY = event.pageY - currentTargetRect.top;
-        // console.log({
-        //     event_offsetX,
-        //     event_offsetY,
-        // });
-        setTooltipVisibility(true);
-    };
-
-    const handleHideTooltip = () => {
-        setTooltipVisibility(false);
-    };
-
     return (
-        <Link href={href}>
-            <a>
-                <div
-                    className={sidebarItemClassNames}
-                    onMouseOver={handleShowTooltip}
-                    onMouseLeave={handleHideTooltip}
-                >
-                    <div className={styles.sidebarItemContainer}>
-                        <Icon name={icon} className={styles.sidebarItemIcon} />
-                        {showDescription && (
-                            <span className={styles.sidebarItemText}>
-                                {title}
-                            </span>
-                        )}
-                    </div>
+        <>
+            <div
+                ref={setReferenceElement}
+                className={sidebarItemClassNames}
+                onMouseOver={() => setTooltipVisibility(true)}
+                onMouseLeave={() => setTooltipVisibility(false)}
+            >
+                <div className={styles.sidebarItemContainer}>
+                    <Icon name={icon} className={styles.sidebarItemIcon} />
+                    {showDescription && (
+                        <span className={styles.sidebarItemText}>{title}</span>
+                    )}
                 </div>
-                {/* <Tooltip */}
-                {/*    visible={tooltipVisibility} */}
-                {/*    label={title} */}
-                {/*    position={{ x: 0, y: 0 }} */}
-                {/* /> */}
-            </a>
-        </Link>
+            </div>
+            {showTooltip && (
+                <Tooltip
+                    visible={true}
+                    label={title}
+                    customRef={setPopperElement}
+                    customStyles={popperStyles.popper}
+                    attributes={attributes.popper}
+                />
+            )}
+        </>
     );
 };

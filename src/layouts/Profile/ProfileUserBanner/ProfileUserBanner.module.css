@@ -57,7 +57,7 @@
     width: 240px;
     height: 8px;
     background-color: var(--color-green);
-    border-radius: var(--radius);
+    border-radius: var(--radius-6);
     margin-top: var(--spacing-1);
 }
 
