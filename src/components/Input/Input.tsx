@@ -8,7 +8,7 @@ interface InputProps {
     name: string;
     label: string;
     value: string;
-    onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+    onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
     onFocus?: () => void;
     onBlur?: () => void;
     icon?: ICON_NAME;

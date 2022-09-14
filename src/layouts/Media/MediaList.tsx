@@ -5,6 +5,7 @@ import styles from "./MediaList.module.css";
 
 const MediaList = () => {
     const [activeMediaItem, setActiveMediaItem] = useState(null);
+    const [mediaModalFormVisible, setMediaModalFormVisible] = useState(false);
 
     const mediaList = [
         {
@@ -74,6 +75,7 @@ const MediaList = () => {
 
     const handleMediaItemClick = (data: any) => {
         setActiveMediaItem(data);
+        setMediaModalFormVisible(true);
     };
 
     return (
@@ -90,8 +92,9 @@ const MediaList = () => {
                 ))}
             </div>
             <div>
-                {activeMediaItem && (
+                {activeMediaItem && mediaModalFormVisible && (
                     <MediaModal
+                        onClose={() => setMediaModalFormVisible(false)}
                         src={activeMediaItem.src}
                         stats={activeMediaItem.stats}
                     />

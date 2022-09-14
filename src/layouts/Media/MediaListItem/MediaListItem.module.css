@@ -39,6 +39,8 @@
 }
 
 .itemStatsLike {
+    color: var(--color-grey);
+    font-weight: bold;
     font-size: var(--font-12);
     display: flex;
     align-items: center;
@@ -46,6 +48,8 @@
 
 
 .itemStatsComment {
+    color: var(--color-grey);
+    font-weight: bold;
     font-size: var(--font-12);
     margin-left: 16px;
     display: flex;
@@ -53,5 +57,6 @@
 }
 
 .itemStatsIcon {
+    color: var(--color-grey);
     margin-right: 8px;
 }

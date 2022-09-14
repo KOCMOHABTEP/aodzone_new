@@ -1,6 +1,19 @@
-.item {
-    max-width: 480px;
+.modalOverlay {
+    width: 100%;
     height: 100%;
+    top:0;
+    left: 0;
+    background-color: var(--color-background-overlay-modal);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: var(--zindex-modal);
+}
+
+
+.item {
+    max-width: 960px;
     background-color: var(--color-background-light);
     border-radius: var(--radius-8);
     display: flex;
@@ -15,6 +28,32 @@
     right: 12px;
     top: 12px;
     cursor: pointer;
+}
+
+.itemContent {
+    display: flex;
+}
+
+.itemColumn {
+    flex: 1;
+}
+.itemColumnLeft {
+    margin-right: 8px;
+}
+
+.itemColumnRight {
+    margin-left: 8px;
+}
+
+.itemImage {
+    overflow: hidden;
+}
+
+.itemImageImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+    object-fit: contain;
 }
 
 .itemInfo {
@@ -38,6 +77,10 @@
 .itemInfoIcon {
     color: var(--color-grey);
     margin-right: 8px;
+}
+
+.itemComments {
+    margin-bottom: 16px;
 }
 
 
