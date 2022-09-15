@@ -39,7 +39,7 @@ const TeamPage = () => {
                 </div>
             </div>
             <div>
-                <WidgetLastMatches />
+                <WidgetLastMatches title="Все матчи команды" />
             </div>
         </div>
     );

@@ -117,17 +117,6 @@ export const Sidebar = () => {
                     </Link>
                 </li>
                 <li className={styles.sidebarListItem}>
-                    <Link href="/matches/1">
-                        <a>
-                            <SidebarItem
-                                title="Матч"
-                                icon="matches"
-                                active={isActiveSidebarHref("/matches/1")}
-                            />
-                        </a>
-                    </Link>
-                </li>
-                <li className={styles.sidebarListItem}>
                     <Link href="/tournaments">
                         <a>
                             <SidebarItem

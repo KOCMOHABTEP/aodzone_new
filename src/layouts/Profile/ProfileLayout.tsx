@@ -23,7 +23,7 @@ const ProfileLayout = () => {
                     <ProfileUserActivity />
                 </div>
             </div>
-            <WidgetLastMatches />
+            <WidgetLastMatches title="Последние матчи" />
         </>
     );
 };
