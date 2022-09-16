@@ -106,6 +106,17 @@ export const Sidebar = () => {
                     </Link>
                 </li>
                 <li className={styles.sidebarListItem}>
+                    <Link href="/friends">
+                        <a>
+                            <SidebarItem
+                                title="Друзья"
+                                icon="groups"
+                                active={isActiveSidebarHref("/friends")}
+                            />
+                        </a>
+                    </Link>
+                </li>
+                <li className={styles.sidebarListItem}>
                     <Link href="/matches">
                         <a>
                             <SidebarItem

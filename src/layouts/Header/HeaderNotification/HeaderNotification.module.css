@@ -1,0 +1,48 @@
+.item {
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item +.item {
+    border-top: solid 1px var(--color-border);
+}
+
+.itemTitle {
+    font-size: var(--font-12);
+    font-weight: bold;
+    color: var(--color-white);
+    margin-bottom: 4px;
+}
+
+.itemTitleRead {
+    color: var(--color-grey);
+}
+
+.itemDescription {
+    font-size: var(--font-12);
+    color: var(--color-white);
+    margin-bottom: 4px;
+}
+
+.itemDescriptionRead {
+    color: var(--color-grey);
+}
+
+.itemData {
+    font-size: var(--font-10);
+    color: var(--color-grey);
+}
+
+.notificationIndicator {
+    width: 8px;
+    height: 8px;
+    background: var(--color-green);
+    outline: solid 4px var(--color-background-light);
+    border-radius: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
