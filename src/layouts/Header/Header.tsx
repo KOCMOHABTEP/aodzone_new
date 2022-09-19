@@ -52,23 +52,6 @@ export const Header = () => {
                             <div className={styles.controlsActivities}>7</div>
                         </div>
                     </a>
-                    <a href="#">
-                        <div
-                            className={styles.controlsItem}
-                            onClick={() =>
-                                setMenuFriendsVisible(!menuFriendsVisible)
-                            }
-                        >
-                            <Icon name="friends" />
-                            <div className={styles.controlsActivities}>1</div>
-                            <HeaderActionMenu
-                                visible={menuFriendsVisible}
-                                title="Друзья"
-                            >
-                                <div>тест</div>
-                            </HeaderActionMenu>
-                        </div>
-                    </a>
                 </div>
                 <UserCard />
             </div>

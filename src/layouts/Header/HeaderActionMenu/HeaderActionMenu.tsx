@@ -1,4 +1,3 @@
-import HeaderNotification from "@layouts/Header/HeaderNotification/HeaderNotification";
 import Button from "@components/Button/Button";
 import { ReactNode } from "react";
 import Link from "next/link";

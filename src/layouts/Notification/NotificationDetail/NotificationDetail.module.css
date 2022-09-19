@@ -24,7 +24,7 @@
 }
 
 .itemContentDescription {
-
+    overflow: hidden;
 }
 
 .itemButton {
