@@ -1,7 +1,7 @@
 import NotificationItem from "@layouts/Notification/NotificationItem/NotificationItem";
-import styles from "./NotificationPage.module.css";
+import styles from "./NotificationList.module.css";
 
-const NotificationPage = () => {
+const NotificationList = () => {
     return (
         <div>
             <div>ВСЕ УВЕДОМЛЕНИЯ</div>
@@ -14,4 +14,4 @@ const NotificationPage = () => {
     );
 };
 
-export default NotificationPage;
+export default NotificationList;
