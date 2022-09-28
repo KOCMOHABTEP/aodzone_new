@@ -4,6 +4,8 @@
 
 .textareaField {
     font-size: 14px;
+    height: 48px;
+    overflow: hidden;
     color: var(--color-white);
     font-family: inherit;
     background-color: var(--ui-dark);

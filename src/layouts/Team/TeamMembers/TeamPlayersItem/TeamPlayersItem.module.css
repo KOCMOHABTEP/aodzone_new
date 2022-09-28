@@ -13,17 +13,20 @@
 }
 
 .itemContent {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.itemTitle {
+.itemContentTitle {
     text-align: center;
     margin-bottom: 4px;
 }
 
-.itemAchievement {
+.itemContentAchievement {
+    width: 72px;
     font-size: var(--font-14);
-    background-color: var(--color-green-dark);
+    background-color: var(--color-violet);
     text-align: center;
     border-radius: 8px;
 }

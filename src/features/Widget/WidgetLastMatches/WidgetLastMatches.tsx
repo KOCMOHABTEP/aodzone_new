@@ -1,10 +1,5 @@
-import cn from "classnames";
-import Icon from "@components/Icon/Icon";
-import Avatar from "@components/Avatar/Avatar";
-import Link from "next/link";
 import MatchCard from "@components/MatchCard/MatchCard";
 import { Widget } from "../Widget";
-import styles from "./WidgetLastMatches.module.css";
 
 interface WidgetLastMatchesProps {
     title: string;
@@ -13,9 +8,9 @@ interface WidgetLastMatchesProps {
 export const WidgetLastMatches = ({ title }: WidgetLastMatchesProps) => {
     return (
         <Widget title={title}>
-            <MatchCard />
-            <MatchCard />
-            <MatchCard />
+            <MatchCard data="22.07.23 19:18" team="39" />
+            <MatchCard data="26.05.23 03:18" team="25" />
+            <MatchCard data="18.07.23 08:18" team="38" />
         </Widget>
     );
 };

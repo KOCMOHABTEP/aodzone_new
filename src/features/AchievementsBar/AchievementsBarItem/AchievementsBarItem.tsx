@@ -14,13 +14,15 @@ const AchievementsBarItem = ({
     icon,
 }: AchievementsBarItemProps) => {
     return (
-        <div className={styles.component}>
-            <div className={styles.icon}>
+        <div className={styles.item}>
+            <div className={styles.itemIcon}>
                 <Icon size={48} name={icon} />
             </div>
-            <div className={styles.content}>
-                <div className={styles.stats}>{stats}</div>
-                <div className={styles.description}>{description}</div>
+            <div className={styles.itemContent}>
+                <div className={styles.itemContentStats}>{stats}</div>
+                <div className={styles.itemContentDescription}>
+                    {description}
+                </div>
             </div>
         </div>
     );

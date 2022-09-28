@@ -1,19 +1,19 @@
-.component {
+.item {
   flex: 1;
   display: flex;
-  color: #ffff;
+  color: #ffff; }
 
-  .icon{
+
+.itemIcon {
     margin-right: var(--spacing-2);
   }
 
-  .stats{
+.itemContentStats {
     font-size: var(--font-24);
     font-weight: bold;
-  }
+}
 
-  .description{
+.itemContentDescription {
     color: var(--color-bg-light);
     font-weight: bold;
-  }
 }

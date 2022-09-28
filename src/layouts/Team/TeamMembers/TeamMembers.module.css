@@ -3,17 +3,17 @@
     padding: 24px;
 }
 
-.itemHead {
+.itemHeader {
     display: flex;
     justify-content: space-between;
 }
 
 
-.itemHeadTitle {
+.itemHeaderTitle {
     font-weight: bold;
 }
 
-.itemHeadRosterInfo {
+.itemHeaderRosterInfo {
     display: flex;
     background-color: var(--color-background-lighter);
     margin-left: 16px;
@@ -46,8 +46,10 @@
 }
 
 .itemTeamPlayersItem {
+    height: 240px;
     display: flex;
     flex-wrap: wrap;
     margin: 16px 0;
+    overflow-y: auto;
 }
 

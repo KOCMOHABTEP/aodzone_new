@@ -1,0 +1,38 @@
+.item {
+    display: flex;
+    border: solid 1px var(--color-border);
+    padding: 8px;
+    border-radius: var(--radius-8);
+    align-items: center;
+    cursor: pointer;
+}
+
+.itemActive {
+    border: solid 1px var(--color-green);
+}
+
+.item + .item {
+    margin-top: 16px;
+}
+
+.itemContent {
+    margin-left: 16px;
+}
+
+.itemContentNickname {
+    font-weight: bold;
+}
+
+.itemContentLevel {
+    font-size: var(--font-12);
+    color: var(--color-green);
+}
+
+.itemContentOnlineTime {
+    font-size: var(--font-12);
+    color: var(--color-grey);
+}
+
+.itemIcon {
+    margin-left: 8px;
+}

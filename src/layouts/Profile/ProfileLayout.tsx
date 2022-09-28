@@ -1,4 +1,3 @@
-import ProfileUserBanner from "@layouts/Profile/ProfileUserBanner/ProfileUserBanner";
 import AchievementsBar from "@features/AchievementsBar/AchievementsBar";
 import ProfileUserInfo from "@layouts/Profile/ProfileUserInfo/ProfileUserInfo";
 import ProfileUserActivity from "@layouts/Profile/ProfileUserActivity/ProfileUserActivity";

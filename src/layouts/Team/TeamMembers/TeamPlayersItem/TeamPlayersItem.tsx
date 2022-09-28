@@ -1,15 +1,23 @@
 import Avatar from "@components/Avatar/Avatar";
 import styles from "./TeamPlayersItem.module.css";
 
-const TeamPlayersItem = () => {
+interface TeamPlayersItemProps {
+    img?: string;
+    title: string;
+    clanLeader?: boolean;
+}
+
+const TeamPlayersItem = ({ img, title, clanLeader }: TeamPlayersItemProps) => {
     return (
         <div className={styles.item}>
             <div className={styles.itemImage}>
-                <Avatar />
+                <Avatar image={img} />
             </div>
             <div className={styles.itemContent}>
-                <div className={styles.itemTitle}>Boris Wick</div>
-                <div className={styles.itemAchievement}>captain</div>
+                <div className={styles.itemContentTitle}>{title}</div>
+                {clanLeader && (
+                    <div className={styles.itemContentAchievement}>Капитан</div>
+                )}
             </div>
         </div>
     );

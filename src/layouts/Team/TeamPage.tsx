@@ -21,7 +21,16 @@ const TeamPage = () => {
     return (
         <div className={styles.teamPage}>
             <div>
-                <UserHeader handleOpenTeamModal={handleOpenTeamModal} />
+                <UserHeader
+                    nickName="КОСМОНАВТ"
+                    level={32}
+                    date="23.09.2022"
+                    steam={{
+                        link: "https://steamcommunity.com/id/KOCMOHABTYC",
+                        id: "KOCMOHABTYC",
+                    }}
+                    handleOpenTeamModal={handleOpenTeamModal}
+                />
             </div>
             <div className={styles.teamPageForm}>
                 <TeamForm
@@ -34,7 +43,16 @@ const TeamPage = () => {
             </div>
             <div>
                 <div className={styles.teamProfileUser}>
-                    <ProfileUserInfo />
+                    <ProfileUserInfo
+                        description={
+                            "Nothing intresting hasn't been written here, what a pity. It\n" +
+                            "                    is a nice field"
+                        }
+                        location="Сербия"
+                        joined="23"
+                        born="27.03.1968"
+                        online="Был в сети 5 дней назад"
+                    />
                     <TeamMembers />
                 </div>
             </div>

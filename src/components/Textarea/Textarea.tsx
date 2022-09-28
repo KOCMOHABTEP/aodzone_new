@@ -6,9 +6,15 @@ interface TextareaProps {
     label: string;
     value: string;
     onChange: (event: ChangeEvent<HTMLTextAreaElement>) => void;
+    textAresClassName?: string;
 }
 
-const Textarea = ({ label, value, onChange }: TextareaProps) => {
+const Textarea = ({
+    label,
+    value,
+    onChange,
+    textAresClassName,
+}: TextareaProps) => {
     const [isFocused, setIsFocused] = useState(false);
 
     const handleFocus = () => {

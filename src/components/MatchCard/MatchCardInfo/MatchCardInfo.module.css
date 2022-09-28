@@ -1,0 +1,18 @@
+.itemStats {
+
+}
+
+.itemStatsInfo {}
+
+.itemStatsInfoTitle {
+    font-size: var(--font-size-sm);
+    text-align: center;
+    color: var(--color-grey);
+    margin-bottom: var(--spacing-1);
+}
+
+.itemStatsInfoDescription {
+    font-size: var(--font-size-sm);
+    color: var(--color-white);
+    text-align: center;
+}

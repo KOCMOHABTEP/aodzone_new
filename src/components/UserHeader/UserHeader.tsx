@@ -8,10 +8,20 @@ import cn from "classnames";
 import styles from "./UserHeader.module.css";
 
 interface UserHeaderProps {
+    nickName: string;
+    level: number;
+    date: string;
     handleOpenTeamModal?: () => void;
+    steam?: { link: string; id: string };
 }
 
-const UserHeader = ({ handleOpenTeamModal }: UserHeaderProps) => {
+const UserHeader = ({
+    nickName,
+    level,
+    date,
+    steam,
+    handleOpenTeamModal,
+}: UserHeaderProps) => {
     const [filterValue, setFilterValue] = useState("OVERVIEW");
 
     const filters = [
@@ -41,7 +51,7 @@ const UserHeader = ({ handleOpenTeamModal }: UserHeaderProps) => {
             <div className={styles.itemContent}>
                 <div className={styles.itemHead}>
                     <Tag label="ROKIE" />
-                    <Tag label="ROKIE" />
+                    <Tag label="PUPA" />
                     <Tag label="ROKIE" />
                 </div>
                 <div className={styles.itemMiddle}>
@@ -51,37 +61,45 @@ const UserHeader = ({ handleOpenTeamModal }: UserHeaderProps) => {
                     <div className={styles.itemMiddleDescription}>
                         <div className={styles.itemMiddleTitle}>
                             <div className={styles.itemMiddleUsername}>
-                                КОСМОНАВТ
+                                {nickName}
                             </div>
                             <div>RU</div>
                         </div>
-                        <div className={styles.itemUserLevel}>Уровень 32</div>
-                        <div className={styles.userMembership}>
-                            Пользователь с 09 Окт 2021
+                        <div className={styles.itemUserLevel}>
+                            Уровень {level}
                         </div>
-                        <Link
-                            href="https://steamcommunity.com/id/KOCMOHABTYC"
-                            passHref
-                        >
-                            <a className={styles.itemContentSocialsLink}>
-                                <div className={styles.itemContentSocialsItem}>
+                        <div className={styles.userMembership}>
+                            Пользователь с {date}
+                        </div>
+                        {steam && (
+                            <Link href={steam.link} passHref>
+                                <a className={styles.itemContentSocialsLink}>
                                     <div
                                         className={
-                                            styles.itemContentSocialsItemIcon
+                                            styles.itemContentSocialsItem
                                         }
                                     >
-                                        <Icon name="social_steam" size={24} />
+                                        <div
+                                            className={
+                                                styles.itemContentSocialsItemIcon
+                                            }
+                                        >
+                                            <Icon
+                                                name="social_steam"
+                                                size={24}
+                                            />
+                                        </div>
+                                        <div
+                                            className={
+                                                styles.itemContentSocialsItemName
+                                            }
+                                        >
+                                            {steam.id}
+                                        </div>
                                     </div>
-                                    <div
-                                        className={
-                                            styles.itemContentSocialsItemName
-                                        }
-                                    >
-                                        KOCMOHABT
-                                    </div>
-                                </div>
-                            </a>
-                        </Link>
+                                </a>
+                            </Link>
+                        )}
                     </div>
                 </div>
                 <div className={styles.itemBottom}>

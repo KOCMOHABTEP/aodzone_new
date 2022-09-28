@@ -46,10 +46,10 @@ export const Header = () => {
                             />
                         </HeaderActionMenu>
                     </div>
-                    <a href="#">
+                    <a href="/friends">
                         <div className={styles.controlsItem}>
                             <Icon name="comments" />
-                            <div className={styles.controlsActivities}>7</div>
+                            <div className={styles.controlsActivities}>2</div>
                         </div>
                     </a>
                 </div>

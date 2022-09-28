@@ -2,12 +2,12 @@
     padding: 24px;
 }
 
-.itemHeadTitle {
+.itemHeaderTitle {
     font-weight: bold;
     margin-bottom: 8px;
 }
 
-.itemHeadDescription {
+.itemHeaderDescription {
     color: var(--color-grey);
     margin-bottom: 16px;
     font-size: var(--font-12);
@@ -15,6 +15,11 @@
 
 .itemButton {
     margin-bottom: 16px;
+}
+
+.itemButtonBtn {
+    font-size: var(--font-14);
+    height: 40px;
 }
 
 .itemContent {

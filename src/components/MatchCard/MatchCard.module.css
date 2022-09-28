@@ -1,29 +1,29 @@
-.match {
+.item {
     width: 100%;
     padding: var(--spacing-2);
     border-radius: var(--radius-md);
     color: inherit;
     border: var(--border-light);
-    background: var(--color-background-lighter);
+    background: var(--color-background-light);
     display: block;
 }
 
-.match + .match {
+.item + .item {
     margin-top: var(--spacing-3);
 }
 
-.matchHead {
+.itemHeader {
     margin-bottom: var(--spacing-2);
     display: flex;
     justify-content: space-between;
 }
 
-.matchHeadDate {
+.itemHeaderDate {
     font-size: var(--font-size-md);
     color: var(--color-grey);
 }
 
-.matchHeadResults {
+.itemHeaderResults {
     font-size: var(--font-size-md);
     color: var(--color-grey);
     display: flex;
@@ -31,20 +31,24 @@
     gap: 8px;
 }
 
-.matchHeadResultsIcon {
+.itemHeaderResultsIcon {
     color: var(--color-grey);
 }
 
-.matchHeadResultsStatus {
+.itemHeaderResultsStatus {
     font-weight: bold;
     color: var(--color-green);
 }
 
-.matchBody {
+.itemContent {
     display: flex;
 }
 
-.matchBodyResult {
+.itemContentMatchesInfo {
+    display: flex;
+}
+
+.itemContentResult {
     padding-right: var(--spacing-6);
     display: flex;
     align-items: center;
@@ -74,28 +78,8 @@
     right: 0;
 }
 
-.matchBodyStats {
-    display: flex;
-    gap: var(--spacing-6);
-    margin-left: auto;
-}
 
-.stat {}
-
-.statName {
-    font-size: var(--font-size-sm);
-    text-align: center;
-    color: var(--color-grey);
-    margin-bottom: var(--spacing-1);
-}
-
-.statValue {
-    font-size: var(--font-size-sm);
-    color: var(--color-white);
-    text-align: center;
-}
-
-.matchScore {
+.itemMatchScore {
     font-size: var(--font-size-2xl);
     font-weight: bold;
     text-align: center;
@@ -149,4 +133,10 @@
 .playerInfoLevel {
     font-size: var(--font-size-sm);
     color: var(--color-green-dark);
+}
+
+.itemMatchCardInfo {
+    display: flex;
+    gap: var(--spacing-6);
+    margin-left: auto;
 }
