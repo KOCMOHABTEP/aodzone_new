@@ -4,7 +4,7 @@ import FriendsList from "@layouts/Friends/FriendsList";
 const FriendsPage = () => {
     return (
         <Layout>
-            <FriendsList />
+            <FriendsList onlineFriends={256} allFriends={512} />
         </Layout>
     );
 };

@@ -1,8 +1,20 @@
-import styles from "./ForumFilterItem.module.css";
 import Icon from "@components/Icon/Icon";
 import { useState } from "react";
+import styles from "./ForumFilterItem.module.css";
 
-const ForumFilterItem = () => {
+interface ForumFilterItemProps {
+    title: string;
+    description?: string;
+    titleTopic?: string;
+    comments?: number;
+}
+
+const ForumFilterItem = ({
+    title,
+    description,
+    titleTopic,
+    comments,
+}: ForumFilterItemProps) => {
     const [dropDownShown, setDropDownShown] = useState(false);
 
     return (
@@ -11,11 +23,7 @@ const ForumFilterItem = () => {
                 onClick={() => setDropDownShown(!dropDownShown)}
                 className={styles.item}
             >
-                <Icon
-                    className={styles.itemImage}
-                    name={"comments"}
-                    size={32}
-                />
+                <Icon className={styles.itemImage} name="comments" size={32} />
                 <div className={styles.itemContent}>
                     <div className={styles.itemContentTitle}>
                         Counter Strike
@@ -24,12 +32,14 @@ const ForumFilterItem = () => {
                         Chill out and discuss about game
                     </div>
                 </div>
-                <Icon name={"arrow_down"} size={20} />
+                <div>
+                    <Icon name="arrow_down" size={20} />
+                </div>
             </div>
             {dropDownShown && (
                 <div className={styles.dropDown}>
                     <div className={styles.dropDownTitle}>General</div>
-                    <div className={styles.dropDownValue}>511 TOPICS</div>
+                    <div className={styles.dropDownValue}>511 комментариев</div>
                 </div>
             )}
         </>

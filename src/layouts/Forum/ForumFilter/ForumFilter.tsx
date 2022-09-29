@@ -7,7 +7,7 @@ import styles from "./ForumFilter.module.css";
 const ForumFilter = () => {
     return (
         <div className={styles.forumFilter}>
-            <div className={styles.forumFilterTitle}>FORUMS</div>
+            <div className={styles.forumFilterTitle}>ФОРУМ</div>
             <div>
                 <Input
                     name="Search forums"

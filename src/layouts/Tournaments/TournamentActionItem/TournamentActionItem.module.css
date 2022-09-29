@@ -4,13 +4,20 @@
     align-items: center;
 }
 
+.item +.item {
+    margin-left: 48px;
+}
+
 .itemIcon {
     margin-bottom: 16px;
 }
 
 
 .itemContent {
-    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    align-items: center;
 }
 
 .itemContentTitle {
@@ -18,7 +25,7 @@
     font-weight: bold;
 }
 
-.itemContentCaption {
+.itemContentDescription {
     color: var(--color-grey);
     font-size: var(--font-12);
 }

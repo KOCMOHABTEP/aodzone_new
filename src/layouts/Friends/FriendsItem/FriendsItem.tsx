@@ -5,10 +5,13 @@ import { useState } from "react";
 import styles from "./FriendsItem.module.css";
 
 interface FriendsItemProps {
+    nickName: string;
+    level: number;
+    online: string;
     label: boolean;
 }
 
-const FriendsItem = ({ label }: FriendsItemProps) => {
+const FriendsItem = ({ nickName, level, online, label }: FriendsItemProps) => {
     const [activeMessage, setActiveMessage] = useState(label);
 
     const handleTabClick = () => {
@@ -26,10 +29,10 @@ const FriendsItem = ({ label }: FriendsItemProps) => {
                 <Avatar />
             </div>
             <div className={styles.itemContent}>
-                <div className={styles.itemContentNickname}>КОСМОНАВТ</div>
-                <div className={styles.itemContentLevel}>Уровень 23</div>
+                <div className={styles.itemContentNickname}>{nickName}</div>
+                <div className={styles.itemContentLevel}>Уровень {level}</div>
                 <div className={styles.itemContentOnlineTime}>
-                    Последний раз был в сети 25.09.2022 15:45
+                    Последний раз был в сети {online}
                 </div>
             </div>
             <div className={styles.itemIcon}>

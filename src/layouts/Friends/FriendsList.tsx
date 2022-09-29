@@ -4,14 +4,22 @@ import Input from "@components/Input/Input";
 import Message from "@layouts/Message/Message";
 import styles from "./FriendsList.module.css";
 
-const FriendsList = () => {
+interface FriendsListProps {
+    onlineFriends: number;
+    allFriends: number;
+}
+
+const FriendsList = ({ onlineFriends, allFriends }: FriendsListProps) => {
     return (
         <div className={styles.item}>
             <div className={styles.itemContainer}>
-                <div className={styles.itemTitle}>Список друзей</div>
+                <div className={styles.itemTitle}>Друзья</div>
                 <div className={styles.itemAmount}>
-                    <div className={styles.itemAmountFriends}>256</div> /
-                    <div className={styles.itemAmountFriends}>512</div>
+                    <div className={styles.itemAmountFriends}>
+                        {onlineFriends}
+                    </div>{" "}
+                    /
+                    <div className={styles.itemAmountFriends}>{allFriends}</div>
                 </div>
                 <div className={styles.itemInput}>
                     <Input name="Поиск друга" label="Поиск друга" value="" />
@@ -20,15 +28,40 @@ const FriendsList = () => {
                     <Button text="Добавить в друзья" />
                 </div>
                 <div className={styles.itemFriendsItem}>
-                    <FriendsItem label={false} />
-                    <FriendsItem label={true} />
-                    <FriendsItem label={true} />
-                    <FriendsItem label={true} />
-                    <FriendsItem label={false} />
+                    <FriendsItem
+                        label={false}
+                        nickName="КОСМОНАВТ"
+                        level={26}
+                        online="10.09.2022"
+                    />
+                    <FriendsItem
+                        label={true}
+                        nickName="ЛУПА"
+                        level={23}
+                        online="18.08.2022"
+                    />
+                    <FriendsItem
+                        label={true}
+                        nickName="ПУПА"
+                        level={38}
+                        online="12.10.2022"
+                    />
+                    <FriendsItem
+                        label={true}
+                        nickName="КОСМОНАВТ"
+                        level={8}
+                        online="03.02.2022"
+                    />
+                    <FriendsItem
+                        label={false}
+                        nickName="КОСМОНАВТ"
+                        level={10}
+                        online="01.10.2022"
+                    />
                 </div>
             </div>
             <div>
-                <Message />
+                <Message nickName="КОСМОНАВТ" onlineTime="25 минут назад" />
             </div>
         </div>
     );

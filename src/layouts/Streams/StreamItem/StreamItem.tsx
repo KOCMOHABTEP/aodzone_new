@@ -4,68 +4,80 @@ import Link from "next/link";
 import styles from "./StreamItem.module.css";
 
 interface StreamItemProps {
+    title: string;
+    nickName: string;
+    numbersViews: number;
+    nameGame: string;
     src: string;
 }
 
-const StreamItem = ({ src }: StreamItemProps) => {
+const StreamItem = ({
+    title,
+    nickName,
+    nameGame,
+    numbersViews,
+    src,
+}: StreamItemProps) => {
     return (
         <Link href="/streams/1">
             <a className={styles.item}>
-                <div className={styles.itemHead}>
-                    <div className={styles.itemHeadImage}>
-                        <img className={styles.itemHeadImg} src={src} />
+                <div className={styles.itemHeader}>
+                    <div className={styles.itemHeaderImage}>
+                        <img className={styles.itemHeaderImageImg} src={src} />
                     </div>
-                    <div className={styles.itemHeadInfo}>
+                    <div className={styles.itemHeaderInfo}>
                         <div
                             className={cn(
-                                styles.itemHeadStats,
-                                styles.itemHeadStatsLeft
+                                styles.itemHeaderStats,
+                                styles.itemHeaderStatsLeft
                             )}
                         >
                             <Icon
-                                className={styles.itemHeadStatsIcon}
+                                className={styles.itemHeaderStatsIcon}
                                 name="views"
                                 size={16}
                             />
-                            <div className={styles.itemHeadStatsLabel}>
+                            <div className={styles.itemHeaderStatsLabel}>
                                 LIVE
                             </div>
                         </div>
                         <div
                             className={cn(
-                                styles.itemHeadStats,
-                                styles.itemHeadStatsRight
+                                styles.itemHeaderStats,
+                                styles.itemHeaderStatsRight
                             )}
                         >
                             <Icon
-                                className={styles.itemHeadStatsIcon}
+                                className={styles.itemHeaderStatsIcon}
                                 name="friends"
                                 size={16}
                             />
-                            <div className={styles.itemHeadStatsLabel}>156</div>
+                            <div className={styles.itemHeaderStatsLabel}>
+                                {numbersViews}
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className={styles.itemContent}>
                     <Icon name="matches" />
-                    <div className={styles.itemText}>
-                        <div className={styles.itemTitle}>
-                            Trying out Battlefield clone
+                    <div className={styles.itemContentText}>
+                        <div className={styles.itemContentTextTitle}>
+                            {title}
                         </div>
-                        <div className={styles.itemDescriptionInfo}>
-                            <div className={styles.itemDescription}>
-                                TAGANAY
+                        <div className={styles.itemContentTexDescriptionInfo}>
+                            <div className={styles.itemContentTexDescription}>
+                                {nickName}
                             </div>
                             <span
                                 className={cn(
-                                    styles.itemDescription,
-                                    styles.itemDescriptionSeparation
+                                    styles.itemContentTexDescription,
+                                    styles.itemContentDescriptionSeparation
                                 )}
                             >
                                 •
                             </span>
-                            <div className={styles.itemDescription}>
-                                WORLD WAY 3
+                            <div className={styles.itemContentTexDescription}>
+                                {nameGame}
                             </div>
                         </div>
                     </div>

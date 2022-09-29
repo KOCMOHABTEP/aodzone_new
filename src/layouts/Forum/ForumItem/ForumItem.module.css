@@ -20,7 +20,7 @@
     margin: 0 8px;
 }
 
-.itemImageElected {
+.itemImageImg {
     color: var(--color-violet);
     position: absolute;
     margin-left: -12px;
@@ -31,18 +31,18 @@
     margin-left: 16px;
 }
 
-.itemContentHead {
+.itemContentHeader {
     display: flex;
     align-items: center;
     margin-bottom: 2px;
 }
 
-.itemContentHeadInfo {
+.itemContentHeaderInfo {
     font-size: var(--font-20);
     color: var(--color-violet);
 }
 
-.itemContentHeadTitle {
+.itemContentHeaderTitle {
     font-size: var(--font-20);
     margin-left: 8px;
 }
@@ -59,8 +59,12 @@
     color: var(--color-black);
 }
 
-.itemContentForumInfo {
+.itemContentDescription {
+    font-size: var(--font-14);
+    margin-bottom: 8px;
+}
+
+.itemContentCreatedForum {
     font-size: var(--font-12);
     color: var(--color-grey);
-    margin-bottom: 8px;
 }

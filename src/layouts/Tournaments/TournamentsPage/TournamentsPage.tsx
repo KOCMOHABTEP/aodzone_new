@@ -5,21 +5,18 @@ import styles from "./TournamentsPage.module.css";
 
 const TournamentsPage = () => {
     return (
-        <div className={styles.wrapperTournamentsPage}>
-            <div className={styles.tournamentActionsBanner}>
-                <div className={styles.tournamentActionsBannerColumn}>
-                    <TournamentActionItem type="SOLO" />
-                </div>
-                <div className={styles.tournamentActionsBannerColumn}>
-                    <TournamentActionItem type="PARTY" />
-                </div>
-                <div className={styles.tournamentActionsBannerColumn}>
-                    <TournamentActionItem type="TEAM" />
-                </div>
+        <div className={styles.item}>
+            <div className={styles.itemTitle}>ТУРНИРЫ</div>
+            <div className={styles.itemHeaderBanner}>
+                <TournamentActionItem type="SOLO" />
+                <TournamentActionItem type="PARTY" />
+                <TournamentActionItem type="TEAM" />
             </div>
-            <TournamentFilter />
+            <div className={styles.itemFilter}>
+                <TournamentFilter />
+            </div>
             <div>
-                <div className={styles.tournamentsList}>
+                <div className={styles.itemTournamentsList}>
                     <TournamentItem
                         type="IN_PROGRESS"
                         src="https://media.kasperskydaily.com/wp-content/uploads/sites/90/2020/02/17181010/game-ratings-featured.jpg"

@@ -4,7 +4,12 @@ import Textarea from "@components/Textarea/Textarea";
 import { useState } from "react";
 import styles from "./Message.module.css";
 
-const Message = () => {
+interface MessageProps {
+    nickName: string;
+    onlineTime: string;
+}
+
+const Message = ({ nickName, onlineTime }: MessageProps) => {
     const [userMessage, setUserMessage] = useState("");
 
     const handleUserMessageChange = event => {
@@ -13,28 +18,29 @@ const Message = () => {
     return (
         <div className={styles.item}>
             <div className={styles.itemHeader}>
-                <div className={styles.itemHeaderTitle}>Ник</div>
-                <div className={styles.itemHeaderDescription}>
-                    Был в сети 10 минут назад
-                </div>
+                <div className={styles.itemHeaderTitle}>{nickName}</div>
+                <div className={styles.itemHeaderDescription}>{onlineTime}</div>
             </div>
             <div className={styles.itemMessagesContainer}>
                 <div className={styles.itemMessages}>
-                    <MessageItem />
-                    <MessageItem />
-                    <MessageItem />
-                    <MessageItem />
-                    <MessageItem />
-                    <MessageItem />
-                    <MessageItem />
-                    <MessageItem />
-                    <MessageItem />
-                    <MessageItem />
-                    <MessageItem />
-                    <MessageItem />
-                    <MessageItem />
-                    <MessageItem />
-                    <MessageItem />
+                    <MessageItem nickName="КОСМОНАВТ" message="Заходи в игру" />
+                    <MessageItem nickName="ЛУПА" message="Заходи в игру" />
+                    <MessageItem nickName="КОСМОНАВТ" message="Заходи в игру" />
+                    <MessageItem nickName="ЛУПА" message="Заходи в игру" />
+                    <MessageItem nickName="КОСМОНАВТ" message="Заходи в игру" />
+                    <MessageItem nickName="ЛУПА" message="Заходи в игру" />
+                    <MessageItem nickName="КОСМОНАВТ" message="Заходи в игру" />
+                    <MessageItem nickName="КОСМОНАВТ" message="Заходи в игру" />
+                    <MessageItem nickName="КОСМОНАВТ" message="Заходи в игру" />
+                    <MessageItem nickName="ЛУПА" message="Заходи в игру" />
+                    <MessageItem
+                        nickName="КОСМОНАВТ"
+                        message="Заходи в игру по ссылке -https://www.google.com/"
+                    />
+                    <MessageItem nickName="КОСМОНАВТ" message="Заходи в игру" />
+                    <MessageItem nickName="ЛУПА" message="Заходи в игру" />
+                    <MessageItem nickName="КОСМОНАВТ" message="Заходи в игру" />
+                    <MessageItem nickName="КОСМОНАВТ" message="Заходи в игру" />
                 </div>
             </div>
             <div className={styles.itemInputButton}>

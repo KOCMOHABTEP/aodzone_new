@@ -36,6 +36,7 @@
 }
 
 .itemContentDescription {
+    width: 124px;
     display: flex;
     background-color: var(--color-bg-light);
     border-radius: 8px;
@@ -44,16 +45,21 @@
     padding: 4px;
 }
 
-.iconContentDescriptionInfo {
+.itemContentDescriptionIcon {
     display: flex;
+    align-items: center;
+
 }
 
-.iconContentDescriptionInfoImage {
+.itemContentDescriptionIconImage {
     color: var(--color-green);
-
 }
 
-.iconContentDescriptionInfoViews {
+.itemContentDescriptionNickName {
     font-size: var(--font-12);
     margin: 0 8px;
+}
+
+.itemContentDescriptionViews {
+    font-size: var(--font-12);
 }

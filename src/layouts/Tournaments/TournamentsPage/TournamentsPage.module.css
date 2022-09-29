@@ -1,20 +1,29 @@
-.wrapperTournamentsPage {
-    padding: 16px;
+.item {
+    padding: 24px;
 }
 
-.tournamentsList {
+.itemTitle {
+    font-size: var(--font-20);
+    font-weight: bold;
+}
+
+.itemHeaderBanner {
+    display: flex;
+    justify-content: center;
+    margin: 48px 0;
+    background-image: url("");
+}
+
+.itemFilter {
+    margin-bottom: 16px;
+}
+
+
+.itemTournamentsList {
     display: flex;
     flex-wrap: wrap;
     margin: -8px;
 }
 
-.tournamentActionsBanner {
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
-    background-image: url("");
-}
 
-.tournamentActionsBannerColumn {
-    margin: 0 48px;
-}
+

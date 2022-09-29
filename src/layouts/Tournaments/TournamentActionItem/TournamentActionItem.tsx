@@ -1,8 +1,8 @@
 import Button from "@components/Button/Button";
-import styles from "./TournamentActionItem.module.css";
 import Icon from "@components/Icon/Icon";
 import cn from "classnames";
 import { ICON_NAME } from "@components/Icon/Icon.library";
+import styles from "./TournamentActionItem.module.css";
 
 interface TournamentActionItemProps {
     type: "SOLO" | "PARTY" | "TEAM";
@@ -11,20 +11,24 @@ interface TournamentActionItemProps {
 const TournamentActionItem = ({ type }: TournamentActionItemProps) => {
     let icon: ICON_NAME = "matches";
     let title = "";
+    let description = "";
 
     if (type === "TEAM") {
         icon = "team";
-        title = "PLAY WITH TEAM";
+        title = "ИГРАТЬ С КОМАНДОЙ";
+        description = "Играй вместе с командой";
     }
 
     if (type === "SOLO") {
         icon = "profile";
-        title = "PLAY AS SOLO";
+        title = "ОДИНОЧНАЯ ИГРА";
+        description = "Играй один без команды";
     }
 
     if (type === "PARTY") {
         icon = "friends";
-        title = "PLAY WITH PARTY";
+        title = "ИГРАТЬ ПАРТИЮ";
+        description = "Играй несколько партий сразу";
     }
 
     return (
@@ -32,8 +36,8 @@ const TournamentActionItem = ({ type }: TournamentActionItemProps) => {
             <Icon className={styles.itemIcon} name={icon} size={48} />
             <div className={styles.itemContent}>
                 <div className={styles.itemContentTitle}>{title}</div>
-                <div className={styles.itemContentCaption}>
-                    Lorem isput dolor sit arnet
+                <div className={styles.itemContentDescription}>
+                    {description}
                 </div>
             </div>
             <Button

@@ -14,47 +14,47 @@
 }
 
 
-.itemHead {
+.itemHeader {
     position: relative;
 }
 
-.itemHeadImage {
+.itemHeaderImage {
     max-height: 140px;
     overflow: hidden;
 }
 
-.itemHeadImg {
+.itemHeaderImageImg {
     width: 100%;
     border-radius: 8px 8px 0 0;
 }
 
-.itemHeadInfo {
+.itemHeaderInfo {
     display: flex;
     position: absolute;
     top: 16px;
     left: 16px;
 }
 
-.itemHeadStats {
+.itemHeaderStats {
     background-color: var(--color-background-overlay);
     padding: 4px;
     align-items: center;
     display: flex;
 }
 
-.itemHeadStatsLeft {
+.itemHeaderStatsLeft {
     border-radius: 8px 0 0 8px;
 }
 
-.itemHeadStatsRight {
+.itemHeaderStatsRight {
     border-radius: 0 8px 8px 0;
 }
 
-.itemHeadStatsIcon {
+.itemHeaderStatsIcon {
     margin-right: 4px;
 }
 
-.itemHeadStatsLabel {
+.itemHeaderStatsLabel {
     font-size: var(--font-12);
 }
 
@@ -66,24 +66,24 @@
     background-color: var(--color-background-light);
 }
 
-.itemText {
+.itemContentText {
     margin-left: 16px;
 }
 
-.itemTitle {
+.itemContentTextTitle {
     font-weight: bold;
     margin-bottom: 4px;
 }
 
-.itemDescriptionInfo {
+.itemContentTexDescriptionInfo {
     display: flex;
 }
 
-.itemDescription {
+.itemContentTexDescription {
     font-size: var(--font-14);
     color: var(--color-grey);
 }
 
-.itemDescriptionSeparation {
+.itemContentDescriptionSeparation {
     margin: 0 8px;
 }

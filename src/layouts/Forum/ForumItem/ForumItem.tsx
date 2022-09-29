@@ -3,25 +3,31 @@ import Icon from "@components/Icon/Icon";
 import Link from "next/link";
 import styles from "./ForumItem.module.css";
 
-const ForumItem = () => {
+interface ForumItemProps {
+    title: string;
+    description?: string;
+    created: string;
+}
+
+const ForumItem = ({ title, description, created }: ForumItemProps) => {
     return (
         <Link href="/forum/1">
             <a className={styles.item}>
                 <div className={styles.itemImage}>
                     <Icon name="home" size={40} />
                     <Icon
-                        className={styles.itemImageElected}
+                        className={styles.itemImageImg}
                         name="comments"
                         size={16}
                     />
                 </div>
                 <div className={styles.itemContent}>
-                    <div className={styles.itemContentHead}>
-                        <div className={styles.itemContentHeadInfo}>
+                    <div className={styles.itemContentHeader}>
+                        <div className={styles.itemContentHeaderInfo}>
                             [Sticky]
                         </div>
-                        <div className={styles.itemContentHeadTitle}>
-                            Community Forum Guidelines & Etiquette
+                        <div className={styles.itemContentHeaderTitle}>
+                            {title}
                         </div>
                         <div
                             className={cn(
@@ -32,10 +38,12 @@ const ForumItem = () => {
                             FINISHED
                         </div>
                     </div>
-                    <div className={styles.itemContentForumInfo}>
-                        Call of Duty Esports General Discussion
+                    <div className={styles.itemContentDescription}>
+                        {description}
                     </div>
-                    <div>Started by SerbianDuke 5 Hours ago</div>
+                    <div className={styles.itemContentCreatedForum}>
+                        Тема создана {created}
+                    </div>
                 </div>
             </a>
         </Link>

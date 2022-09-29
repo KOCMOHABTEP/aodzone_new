@@ -4,12 +4,12 @@ import styles from "./MatchPage.module.css";
 const MatchPage = () => {
     return (
         <>
-            <div className={styles.title}>Все матчи команды</div>
+            <div className={styles.itemTitle}>Все матчи команды</div>
             <div>
-                <MatchCard />
-                <MatchCard />
-                <MatchCard />
-                <MatchCard />
+                <MatchCard team="39" data="25.09.2022 15:38" />
+                <MatchCard team="39" data="25.09.2022 15:38" />
+                <MatchCard team="39" data="25.09.2022 15:38" />
+                <MatchCard team="39" data="25.09.2022 15:38" />
             </div>
         </>
     );

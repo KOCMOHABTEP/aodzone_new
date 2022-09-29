@@ -1,11 +1,13 @@
-import styles from "./StreamsGames.module.css";
 import Icon from "@components/Icon/Icon";
+import styles from "./StreamsGames.module.css";
 
 interface StreamGameProps {
+    nameGame: string;
+    views: number;
     src: string;
 }
 
-const StreamsGames = ({ src }: StreamGameProps) => {
+const StreamsGames = ({ nameGame, views, src }: StreamGameProps) => {
     return (
         <div className={styles.item}>
             <div className={styles.itemContent}>
@@ -13,18 +15,18 @@ const StreamsGames = ({ src }: StreamGameProps) => {
                     <img className={styles.itemContentImg} src={src} />
                 </div>
                 <div className={styles.itemContentDescription}>
-                    <div className={styles.iconContentDescriptionInfoViews}>
-                        Fortnite
+                    <div className={styles.itemContentDescriptionNickName}>
+                        {nameGame}
                     </div>
-                    <div className={styles.iconContentDescriptionInfo}>
+                    <div className={styles.itemContentDescriptionIcon}>
                         <Icon
-                            className={styles.iconContentDescriptionInfoImage}
-                            name={"home"}
+                            className={styles.itemContentDescriptionIconImage}
+                            name="home"
                             size={16}
                         />
-                        <div className={styles.iconContentDescriptionInfoViews}>
-                            279
-                        </div>
+                    </div>
+                    <div className={styles.itemContentDescriptionViews}>
+                        {views}
                     </div>
                 </div>
             </div>
