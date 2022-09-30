@@ -17,7 +17,7 @@ const ForumPage = () => {
                     created="10 часов назад"
                 />
                 <ForumItem
-                    title=""
+                    title="Игра аоладо"
                     description="Обсуждение игры COUNTER STRIKE "
                     created="2 дня назад"
                 />

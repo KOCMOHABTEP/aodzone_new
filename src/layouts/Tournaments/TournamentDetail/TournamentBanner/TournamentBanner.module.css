@@ -8,12 +8,18 @@
     border: solid 1px var(--color-border);
 }
 
-.achievementsHeader{
+.itemContent {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px var(--color-bg-dark);
+}
+
+.itemHeader{
     display: flex;
     justify-content: space-between;
 }
 
-.teamLabels{
+.itemHeaderTeamLabels{
     display: flex;
     align-items: center;
 }
@@ -22,38 +28,31 @@
     margin-left: 24px;
 }
 
-.rightAchievementsHeader {
+.itemRight {
     display: flex;
-
 }
 
-.componentStatusHeader {
+.itemRightButton {
     display: flex;
-    width: 100%;
-    border-radius: 6px;
     margin-bottom: 12px;
     margin-right: 24px;
-    padding: 4px;
-    background-color: var(--color-green);
-    opacity: 80%;
     align-items: center;
     cursor: pointer;
 }
 
-.componentStatusHeader:hover {
-    background-color: var(--color-violet);
+.itemRightButtonBtn {
+    color: var(--color-bg);
+    width: 120px;
+    max-height: 24px;
+    opacity: 70%;
 }
 
-.statusTextHeader {
-    color: var(--color-bg);
-    width: 96px;
-}
 
 .buttonIconColorHeaderMatches {
     color: var(--color-bg);
 }
 
-.additionalMenuHeader {
+.itemRightAdditional {
     width: 100%;
     color: var(--color-green);
     cursor: pointer;
@@ -63,67 +62,31 @@
     color: var(--color-violet);
 }
 
-.componentInfoMatchesBanner{
+.itemInfo{
     display: flex;
     align-items: center;
     padding: 20px;
     margin: 32px 0;
 }
 
-.tabsMatchesBanner {
-    display: flex;
-    border-bottom: solid 1px var(--color-bg-dark);
-}
-
-.wrapperTabsContentMatches {
-    margin-right: 16px;
-    padding: 8px;
-    position: relative;
-}
-
-.wrapperTabsContentMatches:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 1px;
-    width: 100%;
-    background: var(--color-white);
-}
-
-.amountMatches {
-    font-size: var(--font-10);
-    color: var(--color-bg);
-    font-weight: bold;
-    text-align: center;
-    width: 24px;
-    height: auto;
-    background-color: var(--color-green);
-    border-radius: 4px;
-    position: absolute;
-    right: -10px;
-    top: -10px;
-}
-
-.nameMatchesBanner {
-    font-size: var(--font-12);
-    font-weight: bold;
-
-}
-
-.imageInfoMatchesBanner {
+.itemInfoImage {
     width: 160px;
 }
 
-.textBannerInfoMatchesBanner{
+.itemInfoHeader{
     padding: 20px;
 }
 
-.infoShareMatchesBanner {
-    width: 240px;
-    margin-bottom: 6px;
+.itemInfoHeaderTitle {
+    width: 296px;
+    margin-bottom: 8px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.itemInfoHeaderWrapper {
+    display: flex;
     align-items: center;
 }
 
@@ -133,53 +96,54 @@
     justify-content: space-between;
 }
 
-.buttonJoinMatchesBanner {
-    color: var(--color-bg);
+.itemButton {
+    margin-right: 16px;
+}
+
+.itemButtonBtn {
     padding: 6px;
+    max-height:32px;
     font-size: var(--font-14);
     display: flex;
     text-align: left;
     justify-content: center;
-    border-radius: 16px;
-    width: 152px;
-    background-color: var(--color-green);
-    border-color: var(--color-green-darker);
+    align-items: center;
     cursor: pointer;
 }
 
-.buttonJoinMatchesBanner:hover {
+.itemButtonBtn:hover {
     background-color: var(--color-violet);
     border-color: var(--color-violet);
 }
 
-.textContentJoinMatchesBanner {
+.itemJoinInfo {
     font-size: var(--font-12);
     color: var(--color-violet);
 }
 
-.textContentMatchesBanner{
+.itemInfoHeaderTitleText {
     font-size: var(--font-14);
+    margin-left: 8px;
 }
 
-.buttonShareMatchesBanner {
+.itemInfoHeaderButton {
     color: var(--color-bg);
+    max-height: 24px;
     display: flex;
     align-items: center;
     text-align: left;
     justify-content: center;
     border-radius: 8px;
-    width: 72px;
-    opacity: 80%;
     background-color: var(--color-green);
     border: none;
     cursor: pointer;
 }
 
-.buttonShareMatchesBanner:hover {
+.itemInfoHeaderButton:hover {
     background-color: var(--color-violet);
 }
 
-.contentTextMatches{
+.itemInfoMatches {
     font-size: var(--font-20);
     margin-bottom: 12px;
 }

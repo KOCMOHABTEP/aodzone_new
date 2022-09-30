@@ -20,13 +20,61 @@ const ForumFilter = () => {
                 buttonClassName={styles.forumTitleButton}
                 text="+ Добавить тему"
             />
-            <div>
-                <ForumFilterItem />
-                <ForumFilterItem />
-                <ForumFilterItem />
-                <ForumFilterItem />
-                <ForumFilterItem />
-                <ForumFilterItem />
+            <div className={styles.itemForumFilterItem}>
+                <ForumFilterItem
+                    title="Counter-Strike"
+                    description="Обсуждение фишек Counter-Strike"
+                    titleTopic="Фишки"
+                    comments={512}
+                />
+                <ForumFilterItem
+                    title="Counter-Strike"
+                    description="Обсуждение фишек Counter-Strike"
+                    titleTopic="Фишки"
+                    comments={512}
+                />
+                <ForumFilterItem
+                    title="Counter-Strike"
+                    description="Обсуждение фишек Counter-Strike"
+                    titleTopic="Фишки"
+                    comments={512}
+                />
+                <ForumFilterItem
+                    title="Counter-Strike"
+                    description="Обсуждение фишек Counter-Strike"
+                    titleTopic="Фишки"
+                    comments={512}
+                />
+                <ForumFilterItem
+                    title="Counter-Strike"
+                    description="Обсуждение фишек Counter-Strike"
+                    titleTopic="Фишки"
+                    comments={512}
+                />
+                <ForumFilterItem
+                    title="Counter-Strike"
+                    description="Обсуждение фишек Counter-Strike"
+                    titleTopic="Фишки"
+                    comments={512}
+                />
+                <ForumFilterItem
+                    title="Counter-Strike"
+                    description="Обсуждение фишек Counter-Strike"
+                    titleTopic="Фишки"
+                    comments={512}
+                />
+                <ForumFilterItem
+                    title="Counter-Strike"
+                    description="Обсуждение фишек Counter-Strike"
+                    titleTopic="Фишки"
+                    comments={512}
+                />
+                <ForumFilterItem
+                    title="Counter-Strike"
+                    description="Обсуждение фишек Counter-Strike"
+                    titleTopic="Фишки"
+                    comments={512}
+                />
             </div>
         </div>
     );

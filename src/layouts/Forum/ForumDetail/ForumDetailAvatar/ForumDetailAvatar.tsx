@@ -1,20 +1,25 @@
 import styles from "./ForumDetailAvatar.module.css";
 
-const ForumDetailAvatar = () => {
+interface ForumDetailAvatarProps {
+    title: string;
+    messages: string;
+    src: string;
+}
+
+const ForumDetailAvatar = ({
+    title,
+    messages,
+    src,
+}: ForumDetailAvatarProps) => {
+    console.log(src);
     return (
         <div className={styles.item}>
             <div className={styles.itemImage}>
-                <img
-                    className={styles.itemImg}
-                    src="https://games.mail.ru/hotbox/content_files/game/2017/11/3d60df5.jpeg"
-                    alt="logoUser"
-                />
+                <img className={styles.itemImageImg} src={src} alt="logoUser" />
             </div>
             <div className={styles.itemContent}>
-                <div className={styles.itemContentTitle}>Server Vik</div>
-                <div className={styles.itemContentDescription}>
-                    259 messages
-                </div>
+                <div className={styles.itemContentTitle}>{title}</div>
+                <div className={styles.itemContentDescription}>{messages}</div>
             </div>
         </div>
     );

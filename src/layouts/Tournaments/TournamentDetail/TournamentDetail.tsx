@@ -4,6 +4,7 @@ import Layout from "@layouts/Layout/Layout";
 import TournamentRound from "@layouts/Tournaments/TournamentDetail/TournamentRound/TournamentRound";
 import Icon from "@components/Icon/Icon";
 import cn from "classnames";
+import TournamentTableTeam from "@layouts/Tournaments/TournamentDetail/TournamentTable/TournamentTableTeam/TournamentTableTeam";
 import styles from "./TournamentDetail.module.css";
 
 const TournamentDetail = () => {
@@ -25,9 +26,21 @@ const TournamentDetail = () => {
                         className={cn(styles.roundsIcon, styles.roundsIconLeft)}
                     />
                 </div>
-                <TournamentRound />
-                <TournamentRound />
-                <TournamentRound />
+                <TournamentRound
+                    title="Раунд 1"
+                    label="BEST OF1"
+                    data="22АПРЕЛЯ2018"
+                />
+                <TournamentRound
+                    title="Раунд 2"
+                    label="BEST OF1"
+                    data="23АПРЕЛЯ2019"
+                />
+                <TournamentRound
+                    title="Раунд 3"
+                    label="BEST OF23"
+                    data="25МАЯ2015"
+                />
                 <div onClick={handleArrowRightClick}>
                     <Icon
                         name="arrow_right"
@@ -39,9 +52,18 @@ const TournamentDetail = () => {
                 </div>
             </div>
             <div className={styles.tournaments}>
-                <TournamentTable />
-                <TournamentTable />
-                <TournamentTable />
+                <TournamentTable>
+                    <TournamentTableTeam nameTeam="Лупа" gameScore={2} />
+                    <TournamentTableTeam nameTeam="Пупа" gameScore={3} />
+                </TournamentTable>
+                <TournamentTable>
+                    <TournamentTableTeam nameTeam="КОСМОНАВТ" gameScore={10} />
+                    <TournamentTableTeam nameTeam="Пупа" gameScore={15} />
+                </TournamentTable>
+                <TournamentTable>
+                    <TournamentTableTeam nameTeam="Лупа" gameScore={2} />
+                    <TournamentTableTeam nameTeam="Пупа" gameScore={3} />
+                </TournamentTable>
             </div>
         </Layout>
     );

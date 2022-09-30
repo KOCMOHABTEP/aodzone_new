@@ -1,4 +1,3 @@
-import Input from "@components/Input/Input";
 import Button from "@components/Button/Button";
 import ForumDetailAvatar from "@layouts/Forum/ForumDetail/ForumDetailAvatar/ForumDetailAvatar";
 import { useState } from "react";
@@ -33,8 +32,16 @@ const ForumDetail = () => {
                     </div>
                 </div>
                 <div>
-                    <ForumDetailItem />
-                    <ForumDetailItem />
+                    <ForumDetailItem
+                        data="30.12.2021 15:45"
+                        title="Очередное обновление другого ружья"
+                        description="Очередное обновление, еще одно ружье, Еще одно обновление, еще одно ружье, еще одно"
+                    />
+                    <ForumDetailItem
+                        data="30.12.2021 15:45"
+                        title="Очередное обновление другого ружья"
+                        description="Очередное обновление, еще одно ружье, Еще одно обновление, еще одно ружье, еще одно jvksn hdsbfgjhdskb gfkjgf"
+                    />
                 </div>
                 <div className={styles.forumDetailList}>
                     <div className={styles.forumDetailListNumber}>1</div>
@@ -56,7 +63,11 @@ const ForumDetail = () => {
                     Комментарии
                 </div>
                 <div className={styles.forumDetailCommentContent}>
-                    <ForumDetailAvatar />
+                    <ForumDetailAvatar
+                        title="ЛУПА"
+                        messages="256 сообщений"
+                        src="https://avatars.mds.yandex.net/get-kino-vod-films-gallery/28788/47e2fd514411e18b76af786d7417062d/100x64_3"
+                    />
                     <div className={styles.forumDetailTextarea}>
                         <Textarea
                             label="Написать комментарий ..."

@@ -2,24 +2,29 @@ import Icon from "@components/Icon/Icon";
 import ForumDetailAvatar from "@layouts/Forum/ForumDetail/ForumDetailAvatar/ForumDetailAvatar";
 import styles from "./ForumDetailItem.module.css";
 
-const ForumDetailItem = () => {
+interface ForumDetailItemProps {
+    title: string;
+    description: string;
+    data: string;
+}
+
+const ForumDetailItem = ({
+    title,
+    description,
+    data,
+}: ForumDetailItemProps) => {
     return (
         <div className={styles.item}>
-            <ForumDetailAvatar />
+            <ForumDetailAvatar
+                title="КОСМОНАВТ"
+                messages="259 собщений"
+                src="https://cdn.7days.ru/pic/5d1/978888/1425947/86.jpg"
+            />
             <div className={styles.itemRightContent}>
-                <div className={styles.itemRightContentData}>
-                    30.12.2022 12:57
-                </div>
-                <div className={styles.itemRightContentTitle}>
-                    Another update another gun
-                </div>
+                <div className={styles.itemRightContentData}>{data}</div>
+                <div className={styles.itemRightContentTitle}>{title}</div>
                 <div className={styles.itemRightContentDescription}>
-                    Another update another gunAnother update another gunAnother
-                    update another gunAnother update another gunAnother update
-                    another gunAnother update another gunAnother update another
-                    gunAnother update another gunAnother update another
-                    gunAnother update another gunAnother update another
-                    gunAnother update another gun
+                    {description}
                 </div>
             </div>
             <div className={styles.itemIcon}>

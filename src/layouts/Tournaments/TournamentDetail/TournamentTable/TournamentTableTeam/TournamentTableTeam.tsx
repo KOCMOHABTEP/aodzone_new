@@ -1,15 +1,27 @@
 import styles from "./TournamentTableTeam.module.css";
 
-const TournamentTableTeam = () => {
+interface TournamentTableTeamProps {
+    nameTeam: string;
+    gameScore: number;
+}
+
+const TournamentTableTeam = ({
+    nameTeam,
+    gameScore,
+}: TournamentTableTeamProps) => {
     return (
         <div className={styles.item}>
-            <img
-                className={styles.itemIcon}
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCAd4AtTJbbcQljRDgUF9nGt0CNTHS2h0Fw&usqp=CAU"
-                alt="icon"
-            />
-            <div className={styles.itemTitle}>Team Flawed</div>
-            <div className={styles.itemNumber}>2</div>
+            <div className={styles.itemImage}>
+                <img
+                    className={styles.itemImageIcon}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCAd4AtTJbbcQljRDgUF9nGt0CNTHS2h0Fw&usqp=CAU"
+                    alt="icon"
+                />
+            </div>
+            <div className={styles.itemContent}>
+                <div className={styles.itemContentTitle}>{nameTeam}</div>
+                <div className={styles.itemContentNumber}>{gameScore}</div>
+            </div>
         </div>
     );
 };

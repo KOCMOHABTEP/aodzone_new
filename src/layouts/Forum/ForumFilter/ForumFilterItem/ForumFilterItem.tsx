@@ -6,7 +6,7 @@ interface ForumFilterItemProps {
     title: string;
     description?: string;
     titleTopic?: string;
-    comments?: number;
+    comments: number;
 }
 
 const ForumFilterItem = ({
@@ -25,11 +25,9 @@ const ForumFilterItem = ({
             >
                 <Icon className={styles.itemImage} name="comments" size={32} />
                 <div className={styles.itemContent}>
-                    <div className={styles.itemContentTitle}>
-                        Counter Strike
-                    </div>
+                    <div className={styles.itemContentTitle}>{title}</div>
                     <div className={styles.itemContentDescription}>
-                        Chill out and discuss about game
+                        {description}
                     </div>
                 </div>
                 <div>
@@ -38,8 +36,10 @@ const ForumFilterItem = ({
             </div>
             {dropDownShown && (
                 <div className={styles.dropDown}>
-                    <div className={styles.dropDownTitle}>General</div>
-                    <div className={styles.dropDownValue}>511 комментариев</div>
+                    <div className={styles.dropDownTitle}>{titleTopic}</div>
+                    <div className={styles.dropDownValue}>
+                        {comments} комментариев
+                    </div>
                 </div>
             )}
         </>
