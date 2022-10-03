@@ -46,7 +46,7 @@ const TournamentActionItem = ({ type }: TournamentActionItemProps) => {
                         type === "PARTY" || type === "TEAM",
                     [styles.itemContentButtonGreen]: type === "SOLO",
                 })}
-                text="PLAY NOW"
+                text="ИГРАТЬ СЕЙЧАС"
             />
         </div>
     );

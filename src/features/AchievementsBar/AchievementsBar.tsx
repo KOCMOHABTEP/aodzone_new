@@ -5,25 +5,29 @@ const AchievementsBar = () => {
     return (
         <div className={styles.achievements}>
             <AchievementsBarItem
-                description="TOTAL MATCHES"
+                description="Всего матчей"
                 icon="matches"
                 stats="678"
             />
             <AchievementsBarItem
-                description="WIN RATIO"
+                description="Коэффициент выигрыша"
                 icon="arrow_up"
                 stats="68%"
             />
-            <AchievementsBarItem description="TIMES" icon="timer" stats="43" />
             <AchievementsBarItem
-                description="FRIENDS"
+                description="Среднее время"
+                icon="timer"
+                stats="43"
+            />
+            <AchievementsBarItem
+                description="Друзей"
                 icon="friends"
                 stats="22"
             />
             <AchievementsBarItem
-                description="ACHIEVEMENTS"
+                description="Достижения"
                 icon="groups"
-                stats="22"
+                stats="12"
             />
         </div>
     );

@@ -5,14 +5,14 @@ import cn from "classnames";
 import styles from "./TeamMembers.module.css";
 
 const TeamMembers = () => {
-    const [filterValue, setFilterValue] = useState("Team Roster");
+    const [filterValue, setFilterValue] = useState("Состав команды");
 
     const filters = [
         {
-            label: "Team Roster",
+            label: "Состав команды",
         },
         {
-            label: "Roster change history",
+            label: "История изменений состава",
         },
     ];
 
@@ -23,7 +23,7 @@ const TeamMembers = () => {
     return (
         <div className={styles.item}>
             <div className={styles.itemHeader}>
-                <div className={styles.itemHeaderTitle}>TEAM MEMBERS</div>
+                <div className={styles.itemHeaderTitle}>КОМАНДА</div>
                 <div className={styles.itemHeaderRosterInfo}>
                     {filters.map(item => (
                         <div

@@ -22,17 +22,17 @@ const UserHeader = ({
     steam,
     handleOpenTeamModal,
 }: UserHeaderProps) => {
-    const [filterValue, setFilterValue] = useState("OVERVIEW");
+    const [filterValue, setFilterValue] = useState("ОБЗОР");
 
     const filters = [
         {
-            label: "OVERVIEW",
+            label: "ОБЗОР",
         },
         {
-            label: "PLAY HISTORY",
+            label: "ИСТОРИЯ ИГРЫ",
         },
         {
-            label: "ACHIEVEMENTS",
+            label: "ДОСТИЖЕНИЯ",
         },
     ];
 
@@ -121,7 +121,7 @@ const UserHeader = ({
                         <Button
                             onClick={handleOpenTeamModal}
                             buttonClassName={styles.itemButton}
-                            text="+ ADD TEAM"
+                            text="+ Добавить команду"
                         />
                     </div>
                 </div>
