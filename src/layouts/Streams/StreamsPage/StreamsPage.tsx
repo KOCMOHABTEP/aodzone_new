@@ -17,7 +17,7 @@ const StreamsPage = () => {
                 <StreamsGames
                     nameGame="Fortnite"
                     views={258}
-                    src="https://msgnews.name/uploads/games/cover/small/2988251171_cover.jpg"
+                    src="http://u.kanobu.ru/editor/images/43/eee21854-2a21-4b96-9b8b-7001c2c92949.jpg"
                 />
                 <StreamsGames
                     nameGame="Fortnite"

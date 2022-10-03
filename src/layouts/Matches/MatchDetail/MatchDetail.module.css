@@ -1,4 +1,4 @@
-.wrapperMatchDetail {
+.item {
     width: 100%;
     height: auto;
     padding: 40px;
@@ -6,57 +6,55 @@
     border: solid 1px var(--color-border);
 }
 
-.matchDetailInfo {
+.itemHeader {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.headerMatchDetailInfo {
+.itemHeaderTitle {
     color: var(--color-green);
     font-size: var(--font-12);
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
-.wrapperTitleMatchDetailInfo {
+.itemHeaderContent {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
 }
 
-.titleMatchDetailInfo {
+.itemHeaderContentDescription {
     margin-right: 12px;
     font-size: var(--font-20);
 }
 
-.buttonMatchDetail {
-    background-color: var(--color-green);
-    color: var(--color-white);
-    opacity: 80%;
-    display: flex;
-    align-items: center;
-    border: solid 1px var(--color-green-darker);
-    border-radius: 8px;
-    padding: 4px;
-    cursor: pointer;
+.itemButton {
+    margin-right: 16px;
 }
 
-.buttonMatchDetail:hover {
+
+.itemButtonBtn {
+    height: 24px;
+}
+
+.itemButtonBtn:hover {
     background-color: var(--color-violet);
 }
 
-.shareButtonMatchDetail {
-    margin-right: 4px;
-}
-
-.logoGameMatchesDetailInfo {
+.itemLogoGame {
     width: 102px;
 }
 
-.matchDetailResults {
+.itemContent {
     padding: 40px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.itemContentInfo {
+    display: flex;
     align-items: center;
 }
 
@@ -125,7 +123,7 @@
     margin: 0 16px;
 }
 
-.wrapperDataDetailResults {
+.itemContentInfoData {
     padding: 8px;
     display: flex;
     align-items: center;
@@ -133,34 +131,25 @@
     margin-bottom: 64px;
 }
 
-.dataDetailResults {
+.itemContentData {
     font-size: var(--font-12);
     margin-bottom: 4px;
 }
 
-.timeDetailResults {
+.itemContentTime {
     font-size: var(--font-12);
     color: var(--color-green);
 }
 
-.wrapperInfoDetailMatch {
+.itemTags {
     display: flex;
     padding: 8px;
 }
 
-.infoDetailMatch {
-    background-color: var(--color-green);
-    border-radius: 16px;
-    min-width: 80px;
-    font-size: var(--font-12);
-    text-align: center;
-    margin-left: 16px;
-    padding: 4px;
-}
-
-.statisticsPlayers {
+.itemInfoUserTeam {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     padding: 8px;
 }
 
