@@ -1,0 +1,15 @@
+.item {
+    width: 320px;
+    background-color: var(--color-background-light);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.itemTitle {
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.itemInput {
+    margin-bottom: 8px;
+}

@@ -5,6 +5,7 @@ import { WidgetLastMatches } from "@features/Widget/WidgetLastMatches/WidgetLast
 import AchievementsBar from "@features/AchievementsBar/AchievementsBar";
 import { useState } from "react";
 import UserHeader from "@components/UserHeader/UserHeader";
+import FormDescription from "@layouts/Team/FormDescription/FormDescription";
 import styles from "./TeamPage.module.css";
 
 const TeamPage = () => {
@@ -58,6 +59,9 @@ const TeamPage = () => {
             </div>
             <div>
                 <WidgetLastMatches title="Все матчи команды" />
+            </div>
+            <div>
+                <FormDescription />
             </div>
         </div>
     );

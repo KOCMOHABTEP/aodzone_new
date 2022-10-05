@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom";
 import Icon from "@components/Icon/Icon";
 import styles from "./Modal.module.css";
@@ -18,6 +18,7 @@ const Modal = ({
     visibility,
     onClose,
 }: ModalProps) => {
+    const modalContainerRef = useRef(null);
     const [isBrowser, setIsBrowser] = useState(false);
 
     useEffect(() => {
@@ -28,10 +29,19 @@ const Modal = ({
         return null;
     }
 
+    const handleClickOutside = event => {
+        if (
+            event.target !== modalContainerRef.current &&
+            !modalContainerRef.current.contains(event.target)
+        ) {
+            onClose();
+        }
+    };
+
     const ModalContent = () => {
         return (
-            <div className={styles.modalOverlay}>
-                <div className={styles.item}>
+            <div onClick={handleClickOutside} className={styles.modalOverlay}>
+                <div ref={modalContainerRef} className={styles.item}>
                     <div className={styles.itemClose} onClick={onClose}>
                         <Icon name="xmark" size={16} />
                     </div>
