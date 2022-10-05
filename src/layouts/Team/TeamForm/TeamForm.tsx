@@ -25,6 +25,7 @@ const TeamForm = ({ teamFormVisible, handleCloseTeamModal }: TeamFormProps) => {
         });
     };
 
+    console.log("teamForm:: render");
     return (
         <Modal
             title="СОЗДАТЬ КОМАНДУ"

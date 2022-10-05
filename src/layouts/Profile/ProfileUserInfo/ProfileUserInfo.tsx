@@ -8,6 +8,7 @@ interface ProfileUserInfoProps {
     joined?: string;
     born?: string;
     online: string;
+    handleOpenDescriptionForm?: () => void;
 }
 
 const ProfileUserInfo = ({
@@ -16,6 +17,7 @@ const ProfileUserInfo = ({
     joined,
     born,
     online,
+    handleOpenDescriptionForm,
 }: ProfileUserInfoProps) => {
     return (
         <div className={styles.item}>
@@ -29,6 +31,7 @@ const ProfileUserInfo = ({
                 <Button
                     buttonClassName={styles.itemButtonBtn}
                     text="Добавить описание"
+                    onClick={handleOpenDescriptionForm}
                 />
             </div>
             <div className={styles.itemContent}>

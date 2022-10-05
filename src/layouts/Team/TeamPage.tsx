@@ -6,10 +6,12 @@ import AchievementsBar from "@features/AchievementsBar/AchievementsBar";
 import { useState } from "react";
 import UserHeader from "@components/UserHeader/UserHeader";
 import FormDescription from "@layouts/Team/FormDescription/FormDescription";
+import Input from "@components/Input/Input";
 import styles from "./TeamPage.module.css";
 
 const TeamPage = () => {
     const [teamFormVisible, setTeamFormVisible] = useState(false);
+    const [descriptionFormVisible, setDescriptionFormVisible] = useState(false);
 
     const handleOpenTeamModal = () => {
         setTeamFormVisible(true);
@@ -17,6 +19,14 @@ const TeamPage = () => {
 
     const handleCloseTeamModal = () => {
         setTeamFormVisible(false);
+    };
+
+    const handleOpenDescriptionModal = () => {
+        setDescriptionFormVisible(true);
+    };
+
+    const handleCloseDescriptionModal = () => {
+        setDescriptionFormVisible(false);
     };
 
     return (
@@ -53,6 +63,7 @@ const TeamPage = () => {
                         joined="23"
                         born="27.03.1968"
                         online="Был в сети 5 дней назад"
+                        handleOpenDescriptionForm={handleOpenDescriptionModal}
                     />
                     <TeamMembers />
                 </div>
@@ -61,7 +72,10 @@ const TeamPage = () => {
                 <WidgetLastMatches title="Все матчи команды" />
             </div>
             <div>
-                <FormDescription />
+                <FormDescription
+                    descriptionFormVisible={descriptionFormVisible}
+                    handleCloseDescriptionForm={handleCloseDescriptionModal}
+                />
             </div>
         </div>
     );

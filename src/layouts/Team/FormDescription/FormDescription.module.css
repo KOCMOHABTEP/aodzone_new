@@ -1,15 +1,32 @@
 .item {
-    width: 320px;
+    width: 240px;
     background-color: var(--color-background-light);
     padding: 16px;
     border-radius: 8px;
+    border: solid 1px var(--color-border);
 }
 
-.itemTitle {
-    font-weight: bold;
+.itemHeader {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 16px;
+}
+
+.itemHeaderTitle {
+    font-weight: bold;
+   margin-top: 24px;
+}
+
+.itemHeaderImageIcon {
+    cursor: pointer;
 }
 
 .itemInput {
     margin-bottom: 8px;
+}
+
+.itemButton {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
 }
