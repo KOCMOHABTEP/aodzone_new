@@ -1,6 +1,5 @@
 .item {
     display: flex;
-    flex: 1;
 }
 
 .item + .item {

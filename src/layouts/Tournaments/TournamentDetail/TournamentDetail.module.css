@@ -10,6 +10,21 @@
     justify-content: space-between;
 }
 
+.roundsSlider {
+    display: flex;
+    overflow: hidden;
+}
+
+.roundsSliderTrack {
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+.roundsSliderItem {
+    flex: 0 0 calc(100%/3);
+}
+
+
 .roundsIcon {
     flex-shrink: 0;
     cursor: pointer;

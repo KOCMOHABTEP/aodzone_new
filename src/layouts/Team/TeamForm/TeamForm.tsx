@@ -19,10 +19,11 @@ const TeamForm = ({ teamFormVisible, handleCloseTeamModal }: TeamFormProps) => {
 
     const handleOnChange = e => {
         const { name, value } = e.target;
-        setFormData({
+        setFormData(() => ({
             ...formData,
             [name]: value,
-        });
+        }));
+        console.log(value);
     };
 
     console.log("teamForm:: render");

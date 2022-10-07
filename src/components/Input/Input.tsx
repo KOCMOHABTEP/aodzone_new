@@ -1,7 +1,7 @@
 import cn from "classnames";
 import Icon from "@components/Icon/Icon";
 import { ICON_NAME } from "@components/Icon/Icon.library";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, memo, useState } from "react";
 import styles from "./Input.module.css";
 
 interface InputProps {
@@ -40,6 +40,8 @@ const Input = (props: InputProps) => {
         styles.inputPlaceholder,
         placeholderIsModified && styles.inputPlaceholderModified,
     ]);
+
+    console.log("Input::render");
 
     return (
         <label className={styles.inputLabel} htmlFor={name}>
