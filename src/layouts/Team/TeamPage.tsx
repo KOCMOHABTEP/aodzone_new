@@ -6,7 +6,7 @@ import AchievementsBar from "@/features/AchievementsBar/AchievementsBar";
 import { useState } from "react";
 import UserHeader from "@/components/UserHeader/UserHeader";
 import FormDescription from "@/layouts/Team/FormDescription/FormDescription";
-import Input from "@/components/Input/Input";
+import Input from "@/components/ui/Input/Input";
 import styles from "./TeamPage.module.css";
 
 const TeamPage = () => {

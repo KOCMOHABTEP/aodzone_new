@@ -1,0 +1,80 @@
+.avatar {
+    max-width: 48px;
+    position: relative;
+
+    &:after {
+        content: "";
+        width: 58px;
+        height: 58px;
+        border: solid 1px var(--color-border);
+        border-radius: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        &__offline {
+            filter: grayscale(1);
+        }
+    }
+
+    &__large {
+        width: 102px;
+        height: 102px;
+    }
+
+    &__image {
+        height: 48px;
+        width: 48px;
+        border-radius: 100%;
+        overflow: hidden;
+        position: relative;
+        background: var(--color-background-lighter);
+        border: solid 1px var(--color-border);
+        box-shadow: var(--box-shadow);
+        transition: border 0.3s ease;
+
+        &__indicator {
+            width: 8px;
+            height: 8px;
+            background: var(--color-border);
+            outline: solid 4px var(--color-background-light);
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+
+            &__online {
+                background: var(--color-green);
+            }
+        }
+    }
+}
+
+.level {
+    font-size: 20px;
+    line-height: 48px;
+    width: 48px;
+    height: 48px;
+}
+
+
+
+
+
+
+
+
+
+
+

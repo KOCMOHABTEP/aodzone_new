@@ -1,4 +1,4 @@
-import Button from "@/components/Button/Button";
+import Button from "@/components/ui/Button/Button";
 import styles from "./NotificationDetail.module.css";
 
 interface NotificationDetailProps {

@@ -1,12 +1,12 @@
 import ForumItem from "@/layouts/Forum/ForumItem/ForumItem";
 import ForumFilter from "@/layouts/Forum/ForumFilter/ForumFilter";
-import styles from "./ForumPage.module.css";
+import styles from "./ForumView.module.scss";
 
-const ForumPage = () => {
+const ForumView = () => {
     return (
         <div className={styles.item}>
-            <div className={styles.itemTitle}>COUNTER STRIKE</div>
-            <div className={styles.itemPageList}>
+            <div className={styles.item__title}>COUNTER STRIKE</div>
+            <div className={styles.item__list}>
                 <ForumItem
                     title="Правила и этикет форума сообщества"
                     description="Обсуждение Call of Duty "
@@ -27,4 +27,4 @@ const ForumPage = () => {
     );
 };
 
-export default ForumPage;
+export default ForumView;

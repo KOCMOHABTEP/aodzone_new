@@ -1,10 +1,10 @@
 import Layout from "@/layouts/Layout/Layout";
-import ForumPage from "@/layouts/Forum/ForumPage/ForumPage";
+import ForumView from "@/components/views/ForumView/ForumView";
 
 const Forum = () => {
     return (
         <Layout>
-            <ForumPage />
+            <ForumView />
         </Layout>
     );
 };

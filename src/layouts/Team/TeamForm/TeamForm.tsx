@@ -1,5 +1,5 @@
-import Button from "@/components/Button/Button";
-import Input from "@/components/Input/Input";
+import Button from "@/components/ui/Button/Button";
+import Input from "@/components/ui/Input/Input";
 import { useState, useRef } from "react";
 import Modal from "@/components/Modal/Modal";
 import styles from "./TeamForm.module.css";

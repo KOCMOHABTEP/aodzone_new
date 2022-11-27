@@ -1,7 +1,7 @@
 import styles from "@/layouts/Tournaments/TournamentDetail/TournamentBanner/TournamentBanner.module.css";
 import Icon from "@/components/Icon/Icon";
 import Tag from "@/components/Tag/Tag";
-import Button from "@/components/Button/Button";
+import Button from "@/components/ui/Button/Button";
 
 const MatchesBanner = () => {
     return (

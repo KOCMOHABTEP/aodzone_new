@@ -1,4 +1,4 @@
-import Button from "@/components/Button/Button";
+import Button from "@/components/ui/Button/Button";
 import Icon from "@/components/Icon/Icon";
 import styles from "./ProfileUserInfo.module.css";
 

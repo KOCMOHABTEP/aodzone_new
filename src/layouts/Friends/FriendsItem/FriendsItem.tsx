@@ -1,4 +1,4 @@
-import Avatar from "@/components/Avatar/Avatar";
+import Avatar from "@/components/ui/Avatar/Avatar";
 import Icon from "@/components/Icon/Icon";
 import cn from "classnames";
 import { useState } from "react";

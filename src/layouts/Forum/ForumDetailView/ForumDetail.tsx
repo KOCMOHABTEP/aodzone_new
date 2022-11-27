@@ -1,5 +1,5 @@
-import Button from "@/components/Button/Button";
-import ForumDetailAvatar from "@/layouts/Forum/ForumDetail/ForumDetailAvatar/ForumDetailAvatar";
+import Button from "@/components/ui/Button/Button";
+import ForumDetailAvatar from "@/layouts/Forum/ForumDetailView/ForumDetailAvatar/ForumDetailAvatar";
 import { useState } from "react";
 import Textarea from "@/components/Textarea/Textarea";
 import styles from "./ForumDetail.module.css";

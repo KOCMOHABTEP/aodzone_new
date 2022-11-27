@@ -1,6 +1,6 @@
-import Button from "@/components/Button/Button";
+import Button from "@/components/ui/Button/Button";
 import FriendsItem from "@/layouts/Friends/FriendsItem/FriendsItem";
-import Input from "@/components/Input/Input";
+import Input from "@/components/ui/Input/Input";
 import Message from "@/layouts/Message/Message";
 import styles from "./FriendsList.module.css";
 

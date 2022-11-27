@@ -1,5 +1,5 @@
 import Icon from "@/components/Icon/Icon";
-import Button from "@/components/Button/Button";
+import Button from "@/components/ui/Button/Button";
 import { useEffect, useState } from "react";
 import Textarea from "@/components/Textarea/Textarea";
 import MediaComment from "@/layouts/Media/MediaComment/MediaComment";

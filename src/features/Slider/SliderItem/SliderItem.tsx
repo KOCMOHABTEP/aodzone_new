@@ -1,5 +1,5 @@
 import Icon from "@/components/Icon/Icon";
-import Button from "@/components/Button/Button";
+import Button from "@/components/ui/Button/Button";
 import cn from "classnames";
 import { ICON_NAME } from "@/components/Icon/Icon.library";
 import styles from "./SliderItem.module.css";

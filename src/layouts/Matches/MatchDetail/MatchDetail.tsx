@@ -1,6 +1,6 @@
 import Icon from "@/components/Icon/Icon";
 import cn from "classnames";
-import Button from "@/components/Button/Button";
+import Button from "@/components/ui/Button/Button";
 import Tag from "@/components/Tag/Tag";
 import MatchItemTeam from "@/layouts/Matches/MatchDetail/MatchItemTeam/MatchItemTeam";
 import UserTeam from "@/layouts/Matches/MatchDetail/UserTeam/UserTeam";
