@@ -11,7 +11,6 @@ const ForumDetailAvatar = ({
     messages,
     src,
 }: ForumDetailAvatarProps) => {
-    console.log(src);
     return (
         <div className={styles.item}>
             <div className={styles.itemImage}>

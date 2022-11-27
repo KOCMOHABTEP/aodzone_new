@@ -1,5 +1,5 @@
-import Icon from "@components/Icon/Icon";
-import TeamPlayersItem from "@layouts/Team/TeamMembers/TeamPlayersItem/TeamPlayersItem";
+import Icon from "@/components/Icon/Icon";
+import TeamPlayersItem from "@/layouts/Team/TeamMembers/TeamPlayersItem/TeamPlayersItem";
 import { useState } from "react";
 import cn from "classnames";
 import styles from "./TeamMembers.module.css";

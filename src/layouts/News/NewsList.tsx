@@ -1,4 +1,4 @@
-import NewsItem from "@layouts/News/NewsItem/NewsItem";
+import NewsItem from "@/layouts/News/NewsItem/NewsItem";
 import styles from "./NewsList.module.css";
 
 const NewsList = () => {

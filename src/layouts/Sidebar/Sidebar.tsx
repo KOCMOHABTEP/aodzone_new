@@ -1,17 +1,13 @@
-import { SidebarItem } from "@layouts/Sidebar/SidebarItem/SidebarItem";
-import LogoFull from "@public/aodzone_logo_full.svg";
-import LogoShort from "@public/aodzone_logo_short.svg";
-import Icon from "@components/Icon/Icon";
-import { useEffect } from "react";
+import { SidebarItem } from "@/layouts/Sidebar/SidebarItem/SidebarItem";
+import LogoFull from "~/aodzone_logo_full.svg";
+import LogoShort from "~/aodzone_logo_short.svg";
+import Icon from "@/components/Icon/Icon";
 import cn from "classnames";
 import { useDispatch, useSelector } from "react-redux";
-import {
-    getSidebarCollapsed,
-    loadSidebarCollapseState,
-    sidebarCollapseToggle,
-} from "@redux/appSlice";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { getSidebarCollapsed } from "@/redux/app/app.selectors";
+import { sidebarCollapseToggle } from "@/redux/app/app.slice";
 import styles from "./Sidebar.module.css";
 
 export const Sidebar = () => {
@@ -19,20 +15,8 @@ export const Sidebar = () => {
     const dispatch = useDispatch();
     const router = useRouter();
 
-    useEffect(() => {
-        dispatch(loadSidebarCollapseState());
-    }, [dispatch]);
-
     const handleSidebarCollapse = () => {
         dispatch(sidebarCollapseToggle(!sidebarCollapsed));
-    };
-
-    const SidebarIcon = () => {
-        if (sidebarCollapsed) {
-            return <Icon name="arrow_right" size={16} />;
-        }
-
-        return <Icon name="arrow_left" size={16} />;
     };
 
     const sidebarClassName = cn(styles.sidebar, {
@@ -41,14 +25,6 @@ export const Sidebar = () => {
     const logoClassName = cn(styles.logo, {
         [styles.logoCollapsed]: sidebarCollapsed,
     });
-
-    const LogoComponent = () => {
-        if (sidebarCollapsed) {
-            return <LogoShort />;
-        }
-
-        return <LogoFull />;
-    };
 
     const isActiveSidebarHref = (url: string) => {
         return router.asPath === url;
@@ -60,14 +36,16 @@ export const Sidebar = () => {
                 className={styles.sidebarToggle}
                 onClick={handleSidebarCollapse}
             >
-                <SidebarIcon />
+                {sidebarCollapsed ? (
+                    <Icon name="arrow_right" size={16} />
+                ) : (
+                    <Icon name="arrow_left" size={16} />
+                )}
             </div>
             <div className={logoClassName}>
                 <div className={styles.logoInner}>
                     <Link href="/">
-                        <a>
-                            <LogoComponent />
-                        </a>
+                        <a>{sidebarCollapsed ? <LogoShort /> : <LogoFull />}</a>
                     </Link>
                 </div>
             </div>

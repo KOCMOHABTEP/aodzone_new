@@ -1,4 +1,4 @@
-import Icon from "@components/Icon/Icon";
+import Icon from "@/components/Icon/Icon";
 import cn from "classnames";
 import Link from "next/link";
 import styles from "./StreamItem.module.css";

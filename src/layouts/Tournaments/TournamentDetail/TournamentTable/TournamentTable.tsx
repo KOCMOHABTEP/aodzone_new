@@ -1,4 +1,4 @@
-import TournamentTableTeam from "@layouts/Tournaments/TournamentDetail/TournamentTable/TournamentTableTeam/TournamentTableTeam";
+import TournamentTableTeam from "@/layouts/Tournaments/TournamentDetail/TournamentTable/TournamentTableTeam/TournamentTableTeam";
 import { ReactNode } from "react";
 import styles from "./TournamentTable.module.css";
 

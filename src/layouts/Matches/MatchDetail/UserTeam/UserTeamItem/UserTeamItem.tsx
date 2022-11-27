@@ -1,5 +1,5 @@
-import Icon from "@components/Icon/Icon";
-import Avatar from "@components/Avatar/Avatar";
+import Icon from "@/components/Icon/Icon";
+import Avatar from "@/components/Avatar/Avatar";
 import styles from "./UserTeamItem.module.css";
 
 interface UserTeamItemProps {

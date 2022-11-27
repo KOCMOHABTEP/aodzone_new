@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom";
-import {CSSProperties, useEffect, useState} from "react";
+import { CSSProperties, useEffect, useState } from "react";
 import styles from "./Tooltip.module.scss";
 
 interface TooltipProps {

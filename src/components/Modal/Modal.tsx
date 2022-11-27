@@ -1,6 +1,6 @@
 import { ReactNode, useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom";
-import Icon from "@components/Icon/Icon";
+import Icon from "@/components/Icon/Icon";
 import styles from "./Modal.module.css";
 
 interface ModalProps {

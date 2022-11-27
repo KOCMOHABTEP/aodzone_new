@@ -1,4 +1,4 @@
-import TournamentDetail from "@layouts/Tournaments/TournamentDetail/TournamentDetail";
+import TournamentDetail from "@/layouts/Tournaments/TournamentDetail/TournamentDetail";
 
 const TournamentDetailPage = () => {
     return <TournamentDetail />;

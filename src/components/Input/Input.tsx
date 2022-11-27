@@ -1,6 +1,6 @@
 import cn from "classnames";
-import Icon from "@components/Icon/Icon";
-import { ICON_NAME } from "@components/Icon/Icon.library";
+import Icon from "@/components/Icon/Icon";
+import { ICON_NAME } from "@/components/Icon/Icon.library";
 import { ChangeEvent, memo, useState } from "react";
 import styles from "./Input.module.css";
 

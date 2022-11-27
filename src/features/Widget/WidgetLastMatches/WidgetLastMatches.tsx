@@ -1,4 +1,4 @@
-import MatchCard from "@components/MatchCard/MatchCard";
+import MatchCard from "@/components/MatchCard/MatchCard";
 import { Widget } from "../Widget";
 
 interface WidgetLastMatchesProps {

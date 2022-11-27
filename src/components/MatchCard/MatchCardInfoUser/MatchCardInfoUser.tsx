@@ -1,5 +1,5 @@
 import cn from "classnames";
-import Avatar from "@components/Avatar/Avatar";
+import Avatar from "@/components/Avatar/Avatar";
 import styles from "./MatchCardInfoUser.module.css";
 
 interface MatchCardInfoUserProps {

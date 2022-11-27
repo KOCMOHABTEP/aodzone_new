@@ -1,7 +1,7 @@
-import Button from "@components/Button/Button";
-import Icon from "@components/Icon/Icon";
+import Button from "@/components/Button/Button";
+import Icon from "@/components/Icon/Icon";
 import cn from "classnames";
-import { ICON_NAME } from "@components/Icon/Icon.library";
+import { ICON_NAME } from "@/components/Icon/Icon.library";
 import styles from "./TournamentActionItem.module.css";
 
 interface TournamentActionItemProps {

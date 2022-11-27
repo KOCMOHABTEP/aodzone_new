@@ -1,4 +1,4 @@
-import AchievementsBarItem from "@features/AchievementsBar/AchievementsBarItem/AchievementsBarItem";
+import AchievementsBarItem from "@/features/AchievementsBar/AchievementsBarItem/AchievementsBarItem";
 import styles from "./AchievementsBar.module.scss";
 
 const AchievementsBar = () => {

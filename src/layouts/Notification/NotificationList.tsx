@@ -1,4 +1,4 @@
-import NotificationItem from "@layouts/Notification/NotificationItem/NotificationItem";
+import NotificationItem from "@/layouts/Notification/NotificationItem/NotificationItem";
 import styles from "./NotificationList.module.css";
 
 const NotificationList = () => {

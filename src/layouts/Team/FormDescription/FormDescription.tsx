@@ -1,7 +1,7 @@
-import Input from "@components/Input/Input";
-import Button from "@components/Button/Button";
+import Input from "@/components/Input/Input";
+import Button from "@/components/Button/Button";
 import { useState } from "react";
-import Modal from "@components/Modal/Modal";
+import Modal from "@/components/Modal/Modal";
 import styles from "./FormDescription.module.css";
 
 interface FormDescriptionProps {

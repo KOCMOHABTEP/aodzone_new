@@ -1,5 +1,5 @@
-import Layout from "@layouts/Layout/Layout";
-import NotificationDetail from "@layouts/Notification/NotificationDetail/NotificationDetail";
+import Layout from "@/layouts/Layout/Layout";
+import NotificationDetail from "@/layouts/Notification/NotificationDetail/NotificationDetail";
 
 const NotificationDetailPage = () => {
     return (

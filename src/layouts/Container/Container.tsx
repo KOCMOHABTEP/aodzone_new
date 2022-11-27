@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { RootState } from "@redux/store";
 import cn from "classnames";
-import { getSidebarCollapsed } from "@redux/appSlice";
+
+import { getSidebarCollapsed } from "@/redux/app/app.selectors";
 import styles from "./Container.module.css";
 
 export const Container = ({ children }) => {

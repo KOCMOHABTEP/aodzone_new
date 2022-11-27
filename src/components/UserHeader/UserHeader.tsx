@@ -1,8 +1,8 @@
-import Tag from "@components/Tag/Tag";
-import Avatar from "@components/Avatar/Avatar";
+import Tag from "@/components/Tag/Tag";
+import Avatar from "@/components/Avatar/Avatar";
 import Link from "next/link";
-import Icon from "@components/Icon/Icon";
-import Button from "@components/Button/Button";
+import Icon from "@/components/Icon/Icon";
+import Button from "@/components/Button/Button";
 import { useState } from "react";
 import cn from "classnames";
 import styles from "./UserHeader.module.css";

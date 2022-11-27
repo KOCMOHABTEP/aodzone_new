@@ -1,7 +1,7 @@
-import Avatar from "@components/Avatar/Avatar";
-import Icon from "@components/Icon/Icon";
+import Avatar from "@/components/Avatar/Avatar";
+import Icon from "@/components/Icon/Icon";
 import { useState } from "react";
-import UserCardMenu from "@components/UserCard/UserCardMenu/UserCardMenu";
+import UserCardMenu from "@/components/UserCard/UserCardMenu/UserCardMenu";
 import Link from "next/link";
 import styles from "./UserCard.module.scss";
 

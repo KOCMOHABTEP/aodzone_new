@@ -1,4 +1,4 @@
-import Avatar from "@components/Avatar/Avatar";
+import Avatar from "@/components/Avatar/Avatar";
 import styles from "./TeamPlayersItem.module.css";
 
 interface TeamPlayersItemProps {

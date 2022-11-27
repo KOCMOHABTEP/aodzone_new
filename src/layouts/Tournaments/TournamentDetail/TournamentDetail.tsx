@@ -1,10 +1,10 @@
-import MatchesBanner from "@layouts/Tournaments/TournamentDetail/TournamentBanner/TournamentBanner";
-import TournamentTable from "@layouts/Tournaments/TournamentDetail/TournamentTable/TournamentTable";
-import Layout from "@layouts/Layout/Layout";
-import TournamentRound from "@layouts/Tournaments/TournamentDetail/TournamentRound/TournamentRound";
-import Icon from "@components/Icon/Icon";
+import MatchesBanner from "@/layouts/Tournaments/TournamentDetail/TournamentBanner/TournamentBanner";
+import TournamentTable from "@/layouts/Tournaments/TournamentDetail/TournamentTable/TournamentTable";
+import Layout from "@/layouts/Layout/Layout";
+import TournamentRound from "@/layouts/Tournaments/TournamentDetail/TournamentRound/TournamentRound";
+import Icon from "@/components/Icon/Icon";
 import cn from "classnames";
-import TournamentTableTeam from "@layouts/Tournaments/TournamentDetail/TournamentTable/TournamentTableTeam/TournamentTableTeam";
+import TournamentTableTeam from "@/layouts/Tournaments/TournamentDetail/TournamentTable/TournamentTableTeam/TournamentTableTeam";
 import { useEffect, useRef, useState } from "react";
 import styles from "./TournamentDetail.module.css";
 

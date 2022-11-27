@@ -1,5 +1,5 @@
-import Layout from "@layouts/Layout/Layout";
-import StreamsPage from "@layouts/Streams/StreamsPage/StreamsPage";
+import Layout from "@/layouts/Layout/Layout";
+import StreamsPage from "@/layouts/Streams/StreamsPage/StreamsPage";
 
 const Streams = () => {
     return (

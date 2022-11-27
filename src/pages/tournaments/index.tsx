@@ -1,5 +1,5 @@
-import Layout from "@layouts/Layout/Layout";
-import TournamentsPage from "@layouts/Tournaments/TournamentsPage/TournamentsPage";
+import Layout from "@/layouts/Layout/Layout";
+import TournamentsPage from "@/layouts/Tournaments/TournamentsPage/TournamentsPage";
 
 const Tournaments = () => {
     return (

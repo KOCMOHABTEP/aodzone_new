@@ -1,8 +1,7 @@
-import styles from "@layouts/Tournaments/TournamentDetail/TournamentBanner/TournamentBanner.module.css";
-import Icon from "@components/Icon/Icon";
-import Tag from "@components/Tag/Tag";
-import { Verify } from "crypto";
-import Button from "@components/Button/Button";
+import styles from "@/layouts/Tournaments/TournamentDetail/TournamentBanner/TournamentBanner.module.css";
+import Icon from "@/components/Icon/Icon";
+import Tag from "@/components/Tag/Tag";
+import Button from "@/components/Button/Button";
 
 const MatchesBanner = () => {
     return (

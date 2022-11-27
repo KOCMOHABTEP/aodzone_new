@@ -1,5 +1,5 @@
 import cn from "classnames";
-import { ICON_LIBRARY, ICON_NAME } from "@components/Icon/Icon.library";
+import { ICON_LIBRARY, ICON_NAME } from "@/components/Icon/Icon.library";
 import styles from "./Icon.module.css";
 
 interface IconProps {

@@ -1,8 +1,8 @@
-import VideoPlayer from "@components/VideoPlayer/VideoPlayer";
-import StreamItem from "@layouts/Streams/StreamItem/StreamItem";
-import StreamsFilter from "@layouts/Streams/StreamsFilter/StreamsFilter";
-import StreamsGames from "@layouts/Streams/StreamsGames/StreamsGames";
-import StreamFilterIAll from "@layouts/Streams/StreamsFilter/StreamFilterIAll/StreamFilterIAll";
+import VideoPlayer from "@/components/VideoPlayer/VideoPlayer";
+import StreamItem from "@/layouts/Streams/StreamItem/StreamItem";
+import StreamsFilter from "@/layouts/Streams/StreamsFilter/StreamsFilter";
+import StreamsGames from "@/layouts/Streams/StreamsGames/StreamsGames";
+import StreamFilterIAll from "@/layouts/Streams/StreamsFilter/StreamFilterIAll/StreamFilterIAll";
 import styles from "./StreamsPage.module.css";
 
 const StreamsPage = () => {

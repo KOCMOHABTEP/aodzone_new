@@ -1,5 +1,5 @@
 import cn from "classnames";
-import UserTeamItem from "@layouts/Matches/MatchDetail/UserTeam/UserTeamItem/UserTeamItem";
+import UserTeamItem from "@/layouts/Matches/MatchDetail/UserTeam/UserTeamItem/UserTeamItem";
 import styles from "./UserTeam.module.css";
 
 const UserTeam = () => {

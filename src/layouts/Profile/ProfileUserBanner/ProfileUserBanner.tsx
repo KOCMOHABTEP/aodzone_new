@@ -1,5 +1,5 @@
-import Avatar from "@components/Avatar/Avatar";
-import Icon from "@components/Icon/Icon";
+import Avatar from "@/components/Avatar/Avatar";
+import Icon from "@/components/Icon/Icon";
 import Link from "next/link";
 import styles from "./ProfileUserBanner.module.css";
 

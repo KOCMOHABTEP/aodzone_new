@@ -1,5 +1,5 @@
-import Layout from "@layouts/Layout/Layout";
-import MatchDetail from "@layouts/Matches/MatchDetail/MatchDetail";
+import Layout from "@/layouts/Layout/Layout";
+import MatchDetail from "@/layouts/Matches/MatchDetail/MatchDetail";
 
 const MatchDetailPage = () => {
     return (

@@ -1,5 +1,5 @@
 import cn from "classnames";
-import Icon from "@components/Icon/Icon";
+import Icon from "@/components/Icon/Icon";
 import Link from "next/link";
 import styles from "./ForumItem.module.css";
 

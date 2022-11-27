@@ -1,11 +1,11 @@
-import Icon from "@components/Icon/Icon";
-import { ICON_NAME } from "@components/Icon/Icon.library";
+import Icon from "@/components/Icon/Icon";
+import { ICON_NAME } from "@/components/Icon/Icon.library";
 import { useSelector } from "react-redux";
-import { getSidebarCollapsed } from "@redux/appSlice";
 import cn from "classnames";
-import Tooltip from "@components/Tooltip/Tooltip";
+import Tooltip from "@/components/Tooltip/Tooltip";
 import { useState } from "react";
 import { usePopper } from "react-popper";
+import { getSidebarCollapsed } from "@/redux/app/app.selectors";
 import styles from "./SidebarItem.module.scss";
 
 interface SidebarItemProps {

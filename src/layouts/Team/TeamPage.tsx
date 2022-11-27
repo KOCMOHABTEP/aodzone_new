@@ -1,12 +1,12 @@
-import TeamForm from "@layouts/Team/TeamForm/TeamForm";
-import ProfileUserInfo from "@layouts/Profile/ProfileUserInfo/ProfileUserInfo";
-import TeamMembers from "@layouts/Team/TeamMembers/TeamMembers";
-import { WidgetLastMatches } from "@features/Widget/WidgetLastMatches/WidgetLastMatches";
-import AchievementsBar from "@features/AchievementsBar/AchievementsBar";
+import TeamForm from "@/layouts/Team/TeamForm/TeamForm";
+import ProfileUserInfo from "@/layouts/Profile/ProfileUserInfo/ProfileUserInfo";
+import TeamMembers from "@/layouts/Team/TeamMembers/TeamMembers";
+import { WidgetLastMatches } from "@/features/Widget/WidgetLastMatches/WidgetLastMatches";
+import AchievementsBar from "@/features/AchievementsBar/AchievementsBar";
 import { useState } from "react";
-import UserHeader from "@components/UserHeader/UserHeader";
-import FormDescription from "@layouts/Team/FormDescription/FormDescription";
-import Input from "@components/Input/Input";
+import UserHeader from "@/components/UserHeader/UserHeader";
+import FormDescription from "@/layouts/Team/FormDescription/FormDescription";
+import Input from "@/components/Input/Input";
 import styles from "./TeamPage.module.css";
 
 const TeamPage = () => {

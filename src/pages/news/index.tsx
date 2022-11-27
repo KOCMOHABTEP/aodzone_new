@@ -1,5 +1,5 @@
-import Layout from "@layouts/Layout/Layout";
-import NewsList from "@layouts/News/NewsList";
+import Layout from "@/layouts/Layout/Layout";
+import NewsList from "@/layouts/News/NewsList";
 
 const NewsPage = () => {
     return (

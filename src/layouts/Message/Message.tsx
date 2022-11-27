@@ -1,6 +1,6 @@
-import Button from "@components/Button/Button";
-import MessageItem from "@layouts/Message/MessageItem/MessageItem";
-import Textarea from "@components/Textarea/Textarea";
+import Button from "@/components/Button/Button";
+import MessageItem from "@/layouts/Message/MessageItem/MessageItem";
+import Textarea from "@/components/Textarea/Textarea";
 import { useState } from "react";
 import styles from "./Message.module.css";
 

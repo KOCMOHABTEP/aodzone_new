@@ -1,5 +1,5 @@
-import Layout from "@layouts/Layout/Layout";
-import ProfileLayout from "@layouts/Profile/ProfileLayout";
+import Layout from "@/layouts/Layout/Layout";
+import ProfileLayout from "@/layouts/Profile/ProfileLayout";
 
 const Profile = () => {
     return (

@@ -1,5 +1,5 @@
-import MediaListItem from "@layouts/Media/MediaListItem/MediaListItem";
-import MediaModal from "@layouts/Media/MediaModal/MediaModal";
+import MediaListItem from "@/layouts/Media/MediaListItem/MediaListItem";
+import MediaModal from "@/layouts/Media/MediaModal/MediaModal";
 import { useState } from "react";
 import styles from "./MediaList.module.css";
 

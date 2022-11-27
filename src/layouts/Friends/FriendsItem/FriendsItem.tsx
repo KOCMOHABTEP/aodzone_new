@@ -1,5 +1,5 @@
-import Avatar from "@components/Avatar/Avatar";
-import Icon from "@components/Icon/Icon";
+import Avatar from "@/components/Avatar/Avatar";
+import Icon from "@/components/Icon/Icon";
 import cn from "classnames";
 import { useState } from "react";
 import styles from "./FriendsItem.module.css";

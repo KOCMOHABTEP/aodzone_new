@@ -1,5 +1,5 @@
-import Layout from "@layouts/Layout/Layout";
-import ForumDetail from "@layouts/Forum/ForumDetail/ForumDetail";
+import Layout from "@/layouts/Layout/Layout";
+import ForumDetail from "@/layouts/Forum/ForumDetail/ForumDetail";
 
 const ForumDetailPage = () => {
     return (

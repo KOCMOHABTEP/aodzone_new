@@ -1,7 +1,7 @@
-import Icon from "@components/Icon/Icon";
+import Icon from "@/components/Icon/Icon";
 import Link from "next/link";
-import MatchCardInfo from "@components/MatchCard/MatchCardInfo/MatchCardInfo";
-import MatchCardInfoUser from "@components/MatchCard/MatchCardInfoUser/MatchCardInfoUser";
+import MatchCardInfo from "@/components/MatchCard/MatchCardInfo/MatchCardInfo";
+import MatchCardInfoUser from "@/components/MatchCard/MatchCardInfoUser/MatchCardInfoUser";
 import styles from "./MatchCard.module.css";
 
 interface MatchCardProps {

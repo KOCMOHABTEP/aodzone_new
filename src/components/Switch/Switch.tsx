@@ -1,5 +1,5 @@
-import styles from "./Switch.module.css";
 import cn from "classnames";
+import styles from "./Switch.module.css";
 
 interface SwitchProps {
     value: boolean;

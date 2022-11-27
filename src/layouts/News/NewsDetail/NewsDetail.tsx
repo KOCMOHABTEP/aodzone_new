@@ -1,4 +1,4 @@
-import Icon from "@components/Icon/Icon";
+import Icon from "@/components/Icon/Icon";
 import styles from "./NewsDetail.module.css";
 
 const NewsDetail = () => {

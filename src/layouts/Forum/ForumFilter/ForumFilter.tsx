@@ -1,7 +1,6 @@
-import ForumFilterItem from "@layouts/Forum/ForumFilter/ForumFilterItem/ForumFilterItem";
-import Button from "@components/Button/Button";
-import Input from "@components/Input/Input";
-import { ChangeEvent } from "react";
+import ForumFilterItem from "@/layouts/Forum/ForumFilter/ForumFilterItem/ForumFilterItem";
+import Button from "@/components/Button/Button";
+import Input from "@/components/Input/Input";
 import styles from "./ForumFilter.module.css";
 
 const ForumFilter = () => {

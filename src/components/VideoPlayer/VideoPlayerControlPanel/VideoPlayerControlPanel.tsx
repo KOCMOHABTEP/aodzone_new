@@ -1,7 +1,7 @@
 import { ChangeEvent, MouseEvent, useRef, useState } from "react";
 import cn from "classnames";
-import VideoPlayerPreloader from "@components/VideoPlayer/VideoPlayerPreloader/VideoPlayerPreloader";
-import Icon from "@components/Icon/Icon";
+import VideoPlayerPreloader from "@/components/VideoPlayer/VideoPlayerPreloader/VideoPlayerPreloader";
+import Icon from "@/components/Icon/Icon";
 import styles from "./VideoPlayerControlPanel.module.css";
 
 interface VideoPlayerControlPanelProps {

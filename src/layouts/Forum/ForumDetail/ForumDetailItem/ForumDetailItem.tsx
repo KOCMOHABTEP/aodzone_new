@@ -1,5 +1,5 @@
-import Icon from "@components/Icon/Icon";
-import ForumDetailAvatar from "@layouts/Forum/ForumDetail/ForumDetailAvatar/ForumDetailAvatar";
+import Icon from "@/components/Icon/Icon";
+import ForumDetailAvatar from "@/layouts/Forum/ForumDetail/ForumDetailAvatar/ForumDetailAvatar";
 import styles from "./ForumDetailItem.module.css";
 
 interface ForumDetailItemProps {

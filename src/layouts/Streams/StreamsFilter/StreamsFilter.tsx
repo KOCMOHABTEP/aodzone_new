@@ -1,7 +1,7 @@
-import styles from "./StreamsFilter.module.css";
-import StreamFilterIAll from "@layouts/Streams/StreamsFilter/StreamFilterIAll/StreamFilterIAll";
+import StreamFilterIAll from "@/layouts/Streams/StreamsFilter/StreamFilterIAll/StreamFilterIAll";
 import { useState } from "react";
 import cn from "classnames";
+import styles from "./StreamsFilter.module.css";
 
 const StreamsFilter = () => {
     const [filterValue, setFilterValue] = useState("TOP STEAMS");

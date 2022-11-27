@@ -1,5 +1,5 @@
+import VideoPlayer from "@/components/VideoPlayer/VideoPlayer";
 import styles from "./StreamDetail.module.css";
-import VideoPlayer from "@components/VideoPlayer/VideoPlayer";
 
 const StreamDetail = () => {
     return (

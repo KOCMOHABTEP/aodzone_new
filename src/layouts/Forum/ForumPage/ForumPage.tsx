@@ -1,5 +1,5 @@
-import ForumItem from "@layouts/Forum/ForumItem/ForumItem";
-import ForumFilter from "@layouts/Forum/ForumFilter/ForumFilter";
+import ForumItem from "@/layouts/Forum/ForumItem/ForumItem";
+import ForumFilter from "@/layouts/Forum/ForumFilter/ForumFilter";
 import styles from "./ForumPage.module.css";
 
 const ForumPage = () => {

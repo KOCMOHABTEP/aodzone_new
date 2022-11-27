@@ -1,8 +1,8 @@
-import Icon from "@components/Icon/Icon";
-import UserCard from "@components/UserCard/UserCard";
-import HeaderActionMenu from "@layouts/Header/HeaderActionMenu/HeaderActionMenu";
+import Icon from "@/components/Icon/Icon";
+import UserCard from "@/components/UserCard/UserCard";
+import HeaderActionMenu from "@/layouts/Header/HeaderActionMenu/HeaderActionMenu";
 import { useState } from "react";
-import HeaderNotification from "@layouts/Header/HeaderNotification/HeaderNotification";
+import HeaderNotification from "@/layouts/Header/HeaderNotification/HeaderNotification";
 import styles from "./Header.module.css";
 
 export const Header = () => {

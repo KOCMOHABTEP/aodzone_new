@@ -1,8 +1,8 @@
-import Icon from "@components/Icon/Icon";
-import Button from "@components/Button/Button";
+import Icon from "@/components/Icon/Icon";
+import Button from "@/components/Button/Button";
 import { useEffect, useState } from "react";
-import Textarea from "@components/Textarea/Textarea";
-import MediaComment from "@layouts/Media/MediaComment/MediaComment";
+import Textarea from "@/components/Textarea/Textarea";
+import MediaComment from "@/layouts/Media/MediaComment/MediaComment";
 import ReactDOM from "react-dom";
 import cn from "classnames";
 import styles from "./MediaModal.module.css";

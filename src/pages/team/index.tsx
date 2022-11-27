@@ -1,5 +1,5 @@
-import Layout from "@layouts/Layout/Layout";
-import TeamPage from "@layouts/Team/TeamPage";
+import Layout from "@/layouts/Layout/Layout";
+import TeamPage from "@/layouts/Team/TeamPage";
 
 const Team = () => {
     return (

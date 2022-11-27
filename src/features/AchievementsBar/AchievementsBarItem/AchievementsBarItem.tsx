@@ -1,5 +1,5 @@
-import Icon from "@components/Icon/Icon";
-import { ICON_NAME } from "@components/Icon/Icon.library";
+import Icon from "@/components/Icon/Icon";
+import { ICON_NAME } from "@/components/Icon/Icon.library";
 import styles from "./AchievementsBarItem.module.scss";
 
 interface AchievementsBarItemProps {

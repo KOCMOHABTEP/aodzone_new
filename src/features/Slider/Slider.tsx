@@ -1,7 +1,7 @@
 import cn from "classnames";
-import Icon from "@components/Icon/Icon";
+import Icon from "@/components/Icon/Icon";
 import { useState } from "react";
-import { ICON_NAME } from "@components/Icon/Icon.library";
+import { ICON_NAME } from "@/components/Icon/Icon.library";
 import SliderItem from "./SliderItem/SliderItem";
 import styles from "./Slider.module.css";
 

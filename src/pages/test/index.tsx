@@ -1,5 +1,5 @@
-import Layout from "@layouts/Layout/Layout";
-import Input from "@components/Input/Input";
+import Layout from "@/layouts/Layout/Layout";
+import Input from "@/components/Input/Input";
 import { useState } from "react";
 
 const NewsPage = () => {

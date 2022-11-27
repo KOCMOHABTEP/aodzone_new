@@ -1,7 +1,7 @@
-import styles from "./TournamentFilter.module.css";
-import Switch from "@components/Switch/Switch";
+import Switch from "@/components/Switch/Switch";
 import { useState } from "react";
 import cn from "classnames";
+import styles from "./TournamentFilter.module.css";
 
 const TournamentFilter = () => {
     const [switchValue, setSwitchValue] = useState(true);
