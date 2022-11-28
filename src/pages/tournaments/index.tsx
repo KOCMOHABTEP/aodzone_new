@@ -1,10 +1,10 @@
-import Layout from "@/layouts/Layout/Layout";
-import TournamentsPage from "@/layouts/Tournaments/TournamentsPage/TournamentsPage";
+import { Layout } from "@/components/layouts/Layout/Layout";
+import { TournamentsView } from "@/components/views/TournamentsView/TournamentsView";
 
 const Tournaments = () => {
     return (
         <Layout>
-            <TournamentsPage />
+            <TournamentsView />
         </Layout>
     );
 };

@@ -1,0 +1,14 @@
+.tooltip {
+    position: absolute;
+    inset: 0 auto auto 0;
+    z-index: 300;
+
+    &__label {
+        color: var(--color-white);
+        padding: 8px 16px;
+        background: var(--color-bg);
+        border: solid 1px var(--color-border);
+        border-radius: 6px;
+    }
+}
+

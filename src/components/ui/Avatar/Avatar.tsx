@@ -8,7 +8,7 @@ interface AvatarProps {
     online?: boolean;
 }
 
-const Avatar = ({
+export const Avatar = ({
     level,
     size,
     image = "/img/avatar_test.jpg",
@@ -17,8 +17,8 @@ const Avatar = ({
     const avatarOnlineImgClassName = cn(styles.avatar__img, {
         [styles.avatar__img__offline]: !online,
     });
-    const avatarOnlineIndicatorClassName = cn(styles.avatar__image__indicator, {
-        [styles.avatar__image__indicator__online]: online,
+    const avatarOnlineIndicatorClassName = cn(styles.indicator, {
+        [styles.indicator__online]: online,
     });
 
     return (
@@ -29,7 +29,7 @@ const Avatar = ({
         >
             {level ? <div className={styles.level}>{level}</div> : null}
             <div className={avatarOnlineIndicatorClassName} />
-            <div className={styles.avatar__image}>
+            <div className={styles.image}>
                 <img
                     src={image}
                     alt="avatar"
@@ -39,5 +39,3 @@ const Avatar = ({
         </div>
     );
 };
-
-export default Avatar;

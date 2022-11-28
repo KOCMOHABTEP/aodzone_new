@@ -1,0 +1,71 @@
+.item {
+    padding-right: 48px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+}
+
+.player {
+    width: 200px;
+    display: flex;
+    align-items: center;
+
+    &__left {
+        flex-direction: row;
+
+        &.info__level {
+            text-align: left;
+        }
+
+        &.itemInfo {
+            margin-left: 16px;
+        }
+
+        &.name {
+            text-align: left;
+        }
+    }
+
+    &__right {
+
+    }
+}
+
+.info {
+    margin-left: 16px;
+
+    &__level {
+        font-size: 12px;
+        color: var(--color-green-dark);
+    }
+
+    .name {
+        font-weight: bold;
+        font-size: 14px;
+        color: var(--color-white);
+    }
+}
+
+
+
+
+.itemPlayerRight.itemPlayer {
+    flex-direction: row-reverse;
+}
+
+.itemPlayerRight .itemInfo {
+    margin-right: 16px;
+}
+
+.itemPlayerRight .itemInfoNickName {
+    text-align: right;
+}
+
+.itemPlayerRight .itemInfoLevel {
+    text-align: right;
+}
+
+
+
+

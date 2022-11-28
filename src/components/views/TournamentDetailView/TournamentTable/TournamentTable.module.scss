@@ -1,0 +1,15 @@
+.item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item + .item {
+    margin-left: 16px
+}
+
+.info {
+    height: auto;
+}
+

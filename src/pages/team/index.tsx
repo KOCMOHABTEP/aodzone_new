@@ -1,10 +1,10 @@
-import Layout from "@/layouts/Layout/Layout";
-import TeamPage from "@/layouts/Team/TeamPage";
+import { Layout } from "@/components/layouts/Layout/Layout";
+import { TeamView } from "@/components/views/TeamView";
 
 const Team = () => {
     return (
         <Layout>
-            <TeamPage />
+            <TeamView />
         </Layout>
     );
 };

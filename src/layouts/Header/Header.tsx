@@ -1,4 +1,4 @@
-import Icon from "@/components/Icon/Icon";
+import { Icon } from "@/components/ui/Icon";
 import UserCard from "@/components/UserCard/UserCard";
 import HeaderActionMenu from "@/layouts/Header/HeaderActionMenu/HeaderActionMenu";
 import { useState } from "react";

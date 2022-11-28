@@ -1,0 +1,68 @@
+.item {
+    overflow: hidden;
+    background: var(--color-background-light);
+    border-radius: 6px;
+    border: solid 1px var(--color-border);
+    box-shadow: var(--box-shadow);
+    margin: 16px;
+    position: relative;
+    cursor: pointer;
+    flex: 0 0 calc(50% - 32px);
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &__image {
+        width: 100%;
+        min-height: 150px;
+        background: var(--color-grey);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+}
+
+.content {
+    padding: 24px;
+
+    &__title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+    &__description {
+        font-size: 14px;
+        height: 36px;
+        overflow: hidden;
+        margin-bottom: 24px;
+    }
+
+}
+
+.stats {
+    display: flex;
+}
+
+.control {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--color-grey);
+    line-height: 16px;
+    position: relative;
+    display: flex;
+
+    &__icon {
+        color: var(--color-grey);
+        margin-right: 8px;
+    }
+}
+
+.control + .control {
+    margin-left: 16px;
+}
+
+

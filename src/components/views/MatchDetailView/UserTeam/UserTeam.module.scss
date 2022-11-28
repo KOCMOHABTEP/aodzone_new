@@ -1,0 +1,35 @@
+.item {
+    display: flex;
+    align-items: flex-start;
+    padding: 8px;
+}
+
+.statistic {
+    flex: 1;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+
+    &__left {
+        margin-right: 8px;
+    }
+
+    &__right{
+        margin-left: 8px;
+    }
+}
+
+.header {
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+    background-color: var(--color-bg-lighter);
+
+    &__name {
+        width: 240px;
+    }
+}
+
+

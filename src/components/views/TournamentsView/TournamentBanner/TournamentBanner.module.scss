@@ -1,0 +1,157 @@
+.item {
+    padding: 16px;
+    background-color: var(--color-background-light);
+    width: 100%;
+    height: 100%;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    border: solid 1px var(--color-border);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px var(--color-bg-dark);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+
+    &__labels{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.header + .header {
+    margin-left: 24px;
+}
+
+.right {
+    display: flex;
+
+    &__additional {
+        width: 100%;
+        color: var(--color-green);
+        cursor: pointer;
+    }
+}
+
+.button {
+    display: flex;
+    margin-bottom: 12px;
+    margin-right: 24px;
+    align-items: center;
+    cursor: pointer;
+
+    &__btn {
+        color: var(--color-bg);
+        width: 120px;
+        max-height: 24px;
+        opacity: 70%;
+    }
+}
+
+
+
+
+.buttonIconColorHeaderMatches {
+    color: var(--color-bg);
+}
+
+
+
+.additionalMenuHeader:hover {
+    color: var(--color-violet);
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 32px 0;
+
+    &__image {
+        width: 160px;
+    }
+}
+
+
+
+.wrapper {
+    padding: 20px;
+
+    &__header {
+        width: 296px;
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
+.infoJoinMatchesBanner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itemButton {
+    margin-right: 16px;
+}
+
+.itemButtonBtn {
+    padding: 6px;
+    max-height:32px;
+    font-size: var(--font-14);
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.itemButtonBtn:hover {
+    background-color: var(--color-violet);
+    border-color: var(--color-violet);
+}
+
+.itemJoinInfo {
+    font-size: var(--font-12);
+    color: var(--color-violet);
+}
+
+.itemInfoHeaderTitleText {
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.itemInfoHeaderButton {
+    color: var(--color-bg);
+    max-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: var(--color-green);
+    border: none;
+    cursor: pointer;
+}
+
+.itemInfoHeaderButton:hover {
+    background-color: var(--color-violet);
+}
+
+.itemInfoMatches {
+    font-size: var(--font-20);
+    margin-bottom: 12px;
+}

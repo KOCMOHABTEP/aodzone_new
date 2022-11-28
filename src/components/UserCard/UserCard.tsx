@@ -1,8 +1,8 @@
-import Avatar from "@/components/ui/Avatar/Avatar";
-import Icon from "@/components/Icon/Icon";
 import { useState } from "react";
 import UserCardMenu from "@/components/UserCard/UserCardMenu/UserCardMenu";
 import Link from "next/link";
+import { Avatar } from "@/components/ui/Avatar";
+import { Icon } from "@/components/ui/Icon";
 import styles from "./UserCard.module.scss";
 
 const UserCard = () => {

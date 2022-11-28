@@ -1,7 +1,12 @@
-import TournamentDetail from "@/layouts/Tournaments/TournamentDetail/TournamentDetail";
+import { Layout } from "@/components/layouts/Layout/Layout";
+import { TournamentDetailView } from "@/components/views/TournamentDetailView";
 
 const TournamentDetailPage = () => {
-    return <TournamentDetail />;
+    return (
+        <Layout>
+            <TournamentDetailView />;
+        </Layout>
+    );
 };
 
 export default TournamentDetailPage;

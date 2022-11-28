@@ -1,0 +1,43 @@
+.item {
+    padding: 24px;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.description {
+    color: var(--color-grey);
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+
+.button {
+    margin-bottom: 16px;
+
+    &__btn {
+        font-size: 14px;
+        height: 40px;
+    }
+}
+
+.content {
+
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    &__icn {
+        margin-right: 8px;
+    }
+}
+
+.text {
+    font-size: 12px;
+    color: var(--color-grey);
+
+}

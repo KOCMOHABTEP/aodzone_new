@@ -1,10 +1,10 @@
-import Layout from "@/layouts/Layout/Layout";
-import MediaList from "@/layouts/Media/MediaList";
+import { Layout } from "@/components/layouts/Layout/Layout";
+import { MediaView } from "@/components/views/MediaView";
 
 const MediaPage = () => {
     return (
         <Layout>
-            <MediaList />
+            <MediaView />
         </Layout>
     );
 };

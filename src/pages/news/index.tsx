@@ -1,10 +1,10 @@
-import Layout from "@/layouts/Layout/Layout";
-import NewsList from "@/layouts/News/NewsList";
+import { Layout } from "@/components/layouts/Layout/Layout";
+import { NewsView } from "@/components/views/NewsView";
 
 const NewsPage = () => {
     return (
         <Layout title="AOD Zone | Новости">
-            <NewsList />
+            <NewsView />
         </Layout>
     );
 };

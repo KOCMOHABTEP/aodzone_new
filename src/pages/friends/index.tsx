@@ -1,10 +1,10 @@
-import Layout from "@/layouts/Layout/Layout";
-import FriendsList from "@/layouts/Friends/FriendsList";
+import { Layout } from "@/components/layouts/Layout/Layout";
+import { FriendsView } from "@/components/views/FriendsView";
 
 const FriendsPage = () => {
     return (
         <Layout>
-            <FriendsList onlineFriends={256} allFriends={512} />
+            <FriendsView onlineFriends={256} allFriends={512} />
         </Layout>
     );
 };

@@ -1,10 +1,10 @@
-import Layout from "@/layouts/Layout/Layout";
-import NotificationList from "@/layouts/Notification/NotificationList";
+import { Layout } from "@/components/layouts/Layout/Layout";
+import { NotificationView } from "@/components/views/NotificationView";
 
 const NotificationPage = () => {
     return (
         <Layout>
-            <NotificationList />
+            <NotificationView />
         </Layout>
     );
 };

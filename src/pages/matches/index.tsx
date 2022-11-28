@@ -1,10 +1,10 @@
-import Layout from "@/layouts/Layout/Layout";
-import MatchPage from "@/layouts/Matches/MatchPage";
+import { Layout } from "@/components/layouts/Layout/Layout";
+import { MatchView } from "@/components/views/MatchView";
 
 const Matches = () => {
     return (
         <Layout>
-            <MatchPage />
+            <MatchView />
         </Layout>
     );
 };

@@ -1,7 +1,8 @@
 import cn from "classnames";
-import Icon from "@/components/Icon/Icon";
-import { ICON_NAME } from "@/components/Icon/Icon.library";
+
+import { ICON_NAME } from "@/components/ui/Icon/Icon.library";
 import { ChangeEvent, useState } from "react";
+import { Icon } from "@/components/ui/Icon";
 import styles from "./Input.module.scss";
 
 interface InputProps {
@@ -21,7 +22,7 @@ interface InputProps {
     };
 }
 
-const Input = (props: InputProps) => {
+export const Input = (props: InputProps) => {
     const [isFocused, setIsFocused] = useState(false);
     const { name, value, required, onChange, hint, error, disabled, label } =
         props;
@@ -37,8 +38,8 @@ const Input = (props: InputProps) => {
     const placeholderIsModified = isFocused || value.length;
 
     const placeholderClassName = cn([
-        styles.input__placeholder,
-        placeholderIsModified && styles.input__placeholder__modified,
+        styles.placeholder,
+        placeholderIsModified && styles.placeholder__modified,
     ]);
 
     console.log("Input::render");
@@ -46,28 +47,22 @@ const Input = (props: InputProps) => {
     return (
         <label className={styles.input__label} htmlFor={name}>
             {hint && (
-                <div className={styles.input__hint}>
-                    <Icon
-                        name="hint"
-                        size={16}
-                        className={styles.input__hint__icon}
-                    />
-                    <div className={styles.input__hint__message}>{hint}</div>
+                <div className={styles.hint}>
+                    <Icon name="hint" size={16} className={styles.hint__icon} />
+                    <div className={styles.hint__message}>{hint}</div>
                 </div>
             )}
             <div className={styles.input__container}>
                 <div className={placeholderClassName}>
                     {required && (
-                        <span className={styles.input__placeholder__required}>
-                            *{" "}
-                        </span>
+                        <span className={styles.placeholder__required}>* </span>
                     )}
                     {label}
                 </div>
                 <input
                     className={cn(styles.input, {
-                        [styles.input__disabled]: disabled,
-                        [styles.input__error]: error,
+                        [styles.disabled]: disabled,
+                        [styles.error]: error,
                     })}
                     type="text"
                     name={name}
@@ -80,13 +75,13 @@ const Input = (props: InputProps) => {
                 />
             </div>
             {error && (
-                <div className={styles.input__error__container}>
+                <div className={styles.error__container}>
                     <Icon
                         name="error"
                         size={16}
-                        className={styles.input__error__container__icon}
+                        className={styles.error__container__icon}
                     />
-                    <div className={styles.input__error__container__message}>
+                    <div className={styles.error__container__message}>
                         {error?.message}
                     </div>
                 </div>
@@ -94,5 +89,3 @@ const Input = (props: InputProps) => {
         </label>
     );
 };
-
-export default Input;

@@ -1,10 +1,10 @@
-import Layout from "@/layouts/Layout/Layout";
-import ForumDetail from "@/layouts/Forum/ForumDetailView/ForumDetail";
+import { Layout } from "@/components/layouts/Layout/Layout";
+import { ForumDetailView } from "@/components/views/ForumDetailView/ForumDetailView";
 
 const ForumDetailPage = () => {
     return (
         <Layout>
-            <ForumDetail />
+            <ForumDetailView />
         </Layout>
     );
 };

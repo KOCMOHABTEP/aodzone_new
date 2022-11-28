@@ -1,0 +1,70 @@
+.item {
+    display: flex;
+    background-color: var(--color-background-light);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    color: inherit;
+    cursor: pointer;
+    border: solid 1px var(--color-border);
+    align-items: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+
+.icons {
+    position: relative;
+    margin: 0 8px;
+
+    &__img {
+        color: var(--color-violet);
+        position: absolute;
+        margin-left: -12px;
+    }
+}
+
+.content {
+    margin-left: 16px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+
+    &__info {
+        font-size: 20px;
+        color: var(--color-violet);
+    }
+
+    &__title {
+        font-size: 20px;
+        margin-left: 8px;
+    }
+}
+
+.label {
+    font-size: 10px;
+    border-radius: 4px;
+    padding: 2px;
+    margin-left: 8px;
+
+    &__violet {
+        background-color: var(--color-violet);
+        color: var(--color-black);
+    }
+}
+
+.description {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.forum {
+    font-size: 12px;
+    color: var(--color-grey);
+}

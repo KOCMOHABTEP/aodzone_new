@@ -6,19 +6,13 @@ interface AchievementProps {
     alt?: string;
 }
 
-const Achievement = ({ level, image, alt = "" }: AchievementProps) => {
+export const Achievement = ({ level, image, alt = "" }: AchievementProps) => {
     return (
         <div className={styles.achievement}>
             {level && <div className={styles.achievement__level}>{level}</div>}
-            <div className={styles.achievement__image}>
-                <img
-                    className={styles.achievement__image__icon}
-                    src={image}
-                    alt={alt}
-                />
+            <div className={styles.image}>
+                <img className={styles.image__icon} src={image} alt={alt} />
             </div>
         </div>
     );
 };
-
-export default Achievement;

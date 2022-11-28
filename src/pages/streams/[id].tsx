@@ -1,10 +1,10 @@
-import Layout from "@/layouts/Layout/Layout";
-import StreamDetail from "@/layouts/Streams/StreamDetail/StreamDetail";
+import { Layout } from "@/components/layouts/Layout/Layout";
+import { StreamDetailView } from "@/components/views/StreamDetailView";
 
 const StreamDetailPage = () => {
     return (
         <Layout title="AOD Zone | Матч">
-            <StreamDetail />
+            <StreamDetailView />
         </Layout>
     );
 };

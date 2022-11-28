@@ -1,5 +1,5 @@
-import Layout from "@/layouts/Layout/Layout";
-import ForumView from "@/components/views/ForumView/ForumView";
+import { Layout } from "@/components/layouts/Layout/Layout";
+import { ForumView } from "@/components/views/ForumView";
 
 const Forum = () => {
     return (

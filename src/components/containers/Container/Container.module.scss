@@ -1,0 +1,27 @@
+.container {
+    max-width: calc(100% - 320px);
+    width: 100%;
+    padding-top: 96px;
+    margin-left: 320px;
+
+    &__full {
+        max-width: calc(100% - 90px);
+        margin-left: 90px;
+    }
+}
+
+.content {
+    max-width: 1114px;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+
+    &__full {
+        max-width: initial;
+    }
+}
+
+.inner {
+    padding-top: 40px;
+}
+

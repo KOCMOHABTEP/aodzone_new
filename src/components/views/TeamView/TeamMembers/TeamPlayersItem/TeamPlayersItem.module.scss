@@ -1,0 +1,33 @@
+.item {
+    padding: 8px;
+    flex: calc(100%/5);
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    margin-bottom: 8px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 4px;
+    }
+
+    &__achievement {
+        width: 72px;
+        font-size: 14px;
+        background-color: var(--color-violet);
+        text-align: center;
+        border-radius: 8px;
+    }
+}
+

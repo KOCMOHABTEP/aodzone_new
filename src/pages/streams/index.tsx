@@ -1,10 +1,10 @@
-import Layout from "@/layouts/Layout/Layout";
-import StreamsPage from "@/layouts/Streams/StreamsPage/StreamsPage";
+import { Layout } from "@/components/layouts/Layout/Layout";
+import { StreamView } from "@/components/views/StreamView";
 
 const Streams = () => {
     return (
         <Layout>
-            <StreamsPage />
+            <StreamView />
         </Layout>
     );
 };

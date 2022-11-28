@@ -1,0 +1,166 @@
+.item {
+    flex-grow: 0;
+    flex-shrink: 1;
+    color: inherit;
+    flex-basis: calc(100% /3);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 8px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.container {
+    border: solid 1px var(--color-border);
+    border-radius: 8px;
+}
+
+.top{
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    position: relative;
+
+    &__image {
+        height: 180px;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+}
+
+.head {
+    display: flex;
+    position: absolute;
+    align-items: flex-end;
+    top: 16px;
+    left: 16px;
+
+    &__label {
+        font-size: 10px;
+        padding: 4px;
+        background-color: var(--color-bg);
+        opacity: 80%;
+        border-radius: 12px;
+        margin-right: 6px;
+    }
+}
+
+.bottom {
+    background-color: var(--color-background-light);
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
+
+.content {
+    border-bottom: solid 1px var(--color-grey);
+    margin: 0 16px;
+    padding: 16px 0 ;
+
+    &__row {
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-right: 8px;
+    }
+
+    &__icon {
+        color: var(--color-violet);
+    }
+
+}
+
+.info {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.column{
+    display: flex;
+    align-items: center;
+}
+
+.card{
+
+    &__title {
+        font-size: 10px;
+        color: var(--color-grey);
+    }
+
+    &__value {
+        font-size: 12px;
+    }
+}
+
+.card + .card {
+    margin-left: 8px;
+}
+
+.players {
+    color: var(--color-green);
+    font-size: 14px;
+}
+
+.winner {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        margin-right: 4px;
+        color: var(--color-green);
+    }
+
+    &__name {
+        font-size: 10px;
+    }
+}
+
+
+.button {
+    font-size: var(--font-10);
+    height: 24px;
+    min-width: auto;
+    padding: 0 8px;
+    margin-left: 8px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+
+    &__info {
+        color: var(--color-grey);
+        font-size: 12px;
+    }
+}
+
+.label {
+    font-size: var(--font-10);
+    border-radius: 4px;
+    padding: 2px;
+    margin-right: 8px;
+
+    &__grey {
+        background-color: var(--color-text-grey);
+    }
+
+    &__green {
+        background-color: var(--color-green);
+        color: var(--color-black);
+    }
+
+    &__violet {
+        background-color: var(--color-violet);
+        color: var(--color-black);
+    }
+}

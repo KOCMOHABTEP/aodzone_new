@@ -1,8 +1,8 @@
-import ForumItem from "@/layouts/Forum/ForumItem/ForumItem";
-import ForumFilter from "@/layouts/Forum/ForumFilter/ForumFilter";
+import { ForumItem } from "@/components/views/ForumView/ForumItem/ForumItem";
+import ForumFilter from "@/components/views/ForumView/ForumFilter/ForumFilter";
 import styles from "./ForumView.module.scss";
 
-const ForumView = () => {
+export const ForumView = () => {
     return (
         <div className={styles.item}>
             <div className={styles.item__title}>COUNTER STRIKE</div>
@@ -26,5 +26,3 @@ const ForumView = () => {
         </div>
     );
 };
-
-export default ForumView;

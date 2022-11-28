@@ -1,7 +1,7 @@
-import Tag from "@/components/Tag/Tag";
-import Avatar from "@/components/ui/Avatar/Avatar";
+import { Tag } from "@/components/ui/Tag";
+import { Avatar } from "@/components/ui/Avatar";
+import { Icon } from "@/components/ui/Icon";
 import Link from "next/link";
-import Icon from "@/components/Icon/Icon";
 import Button from "@/components/ui/Button/Button";
 import { useState } from "react";
 import cn from "classnames";

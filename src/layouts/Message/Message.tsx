@@ -1,7 +1,8 @@
 import Button from "@/components/ui/Button/Button";
 import MessageItem from "@/layouts/Message/MessageItem/MessageItem";
-import Textarea from "@/components/Textarea/Textarea";
+
 import { useState } from "react";
+import { Textarea } from "@/components/ui/Textarea";
 import styles from "./Message.module.css";
 
 interface MessageProps {

@@ -1,10 +1,10 @@
-import Layout from "@/layouts/Layout/Layout";
-import ProfileLayout from "@/layouts/Profile/ProfileLayout";
+import { Layout } from "@/components/layouts/Layout/Layout";
+import { ProfileView } from "@/components/views/ProfileView";
 
 const Profile = () => {
     return (
         <Layout>
-            <ProfileLayout />
+            <ProfileView />
         </Layout>
     );
 };

@@ -1,0 +1,47 @@
+.user {
+    padding: 24px;
+    background-color: var(--color-bg);
+    border-radius: 4px;
+}
+
+.list {
+    overflow-y: scroll;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px var(--color-border);
+    padding: 16px 0;
+
+    &__time{
+        margin-right: 16px;
+        color: var(--color-grey);
+        font-size: 12px;
+    }
+}
+
+.icon {
+    margin-right: 24px;
+}
+
+.content {
+    flex: 1;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title{
+
+    }
+
+    &__subtitle {
+        color: var(--color-green);
+        font-size: 12px;
+    }
+}
+
+
+
+

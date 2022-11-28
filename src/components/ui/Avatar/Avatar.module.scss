@@ -31,34 +31,6 @@
         width: 102px;
         height: 102px;
     }
-
-    &__image {
-        height: 48px;
-        width: 48px;
-        border-radius: 100%;
-        overflow: hidden;
-        position: relative;
-        background: var(--color-background-lighter);
-        border: solid 1px var(--color-border);
-        box-shadow: var(--box-shadow);
-        transition: border 0.3s ease;
-
-        &__indicator {
-            width: 8px;
-            height: 8px;
-            background: var(--color-border);
-            outline: solid 4px var(--color-background-light);
-            border-radius: 100%;
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: 1;
-
-            &__online {
-                background: var(--color-green);
-            }
-        }
-    }
 }
 
 .level {
@@ -69,7 +41,33 @@
 }
 
 
+.image {
+    height: 48px;
+    width: 48px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    background: var(--color-background-lighter);
+    border: solid 1px var(--color-border);
+    box-shadow: var(--box-shadow);
+    transition: border 0.3s ease;
+}
 
+.indicator {
+    width: 8px;
+    height: 8px;
+    background: var(--color-border);
+    outline: solid 4px var(--color-background-light);
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+
+    &__online {
+        background: var(--color-green);
+    }
+}
 
 
 

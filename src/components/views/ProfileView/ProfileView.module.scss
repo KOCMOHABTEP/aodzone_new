@@ -1,0 +1,19 @@
+.item {
+    margin-bottom: 16px;
+}
+
+.wrapper {
+    margin-bottom: 16px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.column {
+    background-color: var(--color-background-light);
+    flex: 1;
+    margin: 8px;
+}

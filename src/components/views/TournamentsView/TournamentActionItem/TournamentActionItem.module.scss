@@ -1,0 +1,58 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item +.item {
+    margin-left: 48px;
+}
+
+.icon {
+    margin-bottom: 16px;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    align-items: center;
+
+    &__title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__description {
+        color: var(--color-grey);
+        font-size: 12px;
+    }
+}
+
+.button {
+    color: var(--color-white);
+    padding: 8px;
+    height: auto;
+
+    &__green {
+        background-color: var(--color-green-ghost);
+        border: solid 1px var(--color-green);
+
+        &:hover {
+            background-color: var(--color-green);
+            color: var(--color-black);
+        }
+    }
+
+    &__violet {
+        background-color: var(--color-violet-ghost);
+        border: solid 1px var(--color-violet);
+
+        &:hover {
+            background-color: var(--color-violet);
+            color: var(--color-black);
+        }
+    }
+}
+
