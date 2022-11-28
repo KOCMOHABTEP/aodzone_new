@@ -1,5 +1,5 @@
-import { ForumItem } from "@/components/views/ForumView/ForumItem/ForumItem";
-import ForumFilter from "@/components/views/ForumView/ForumFilter/ForumFilter";
+import { ForumItem } from "@/components/views/ForumView/ForumItem";
+import { ForumFilter } from "@/components/views/ForumView/ForumFilter";
 import styles from "./ForumView.module.scss";
 
 export const ForumView = () => {

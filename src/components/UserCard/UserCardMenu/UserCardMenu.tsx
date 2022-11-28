@@ -1,6 +1,6 @@
 import styles from "@/components/UserCard/UserCardMenu/UserCardMenu.module.scss";
 import Link from "next/link";
-import Icon from "@/components/ui/Icon/Icon";
+import { Icon } from "@/components/ui/Icon";
 
 interface UserCardMenuProps {
     onSelectItem: (event: any) => void;

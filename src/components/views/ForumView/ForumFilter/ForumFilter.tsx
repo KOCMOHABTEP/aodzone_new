@@ -1,6 +1,6 @@
 import { Input } from "@/components/ui/Input";
 import { ForumFilterItem } from "@/components/views/ForumView/ForumFilter/ForumFilterItem";
-import Button from "@/components/ui/Button/Button";
+import { Button } from "@/components/ui/Button";
 import styles from "./ForumFilter.module.scss";
 
 export const ForumFilter = () => {

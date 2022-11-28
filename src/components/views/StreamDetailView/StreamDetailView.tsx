@@ -1,5 +1,5 @@
 import { VideoPlayer } from "@/components/ui/VideoPlayer";
-import styles from "./StreamDetail.module.scss";
+import styles from "./StreamDetailView.module.scss";
 
 export const StreamDetailView = () => {
     return (

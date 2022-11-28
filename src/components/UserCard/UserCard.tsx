@@ -1,19 +1,24 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import UserCardMenu from "@/components/UserCard/UserCardMenu/UserCardMenu";
 import Link from "next/link";
 import { Avatar } from "@/components/ui/Avatar";
 import { Icon } from "@/components/ui/Icon";
+import { useClickOutsideContainer } from "@/hooks/use-click-outside-container";
 import styles from "./UserCard.module.scss";
 
 const UserCard = () => {
+    const userCardMenuRef = useRef(null);
     const [userSettingsIsOpened, setUserSettingsIsOpened] = useState(false);
+    useClickOutsideContainer(userCardMenuRef, () =>
+        setUserSettingsIsOpened(false)
+    );
 
     const handleSelectItem = () => {
         setUserSettingsIsOpened(false);
     };
 
     return (
-        <div className={styles.component}>
+        <div ref={userCardMenuRef} className={styles.component}>
             <div className={styles.card}>
                 <div className={styles.avatar}>
                     <Link href="/profile" passHref>

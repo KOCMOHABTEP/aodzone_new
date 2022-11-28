@@ -1,6 +1,6 @@
 import { Tag } from "@/components/ui/Tag";
 import { Icon } from "@/components/ui/Icon";
-import Button from "@/components/ui/Button/Button";
+import { Button } from "@/components/ui/Button";
 
 import styles from "./TournamentBanner.module.scss";
 

@@ -2,10 +2,16 @@
   "name": "aodzone_new",
   "version": "1.0.0",
   "private": true,
-  "author": {
-    "email": "dsmirnov.online@yandex.ru",
-    "name": "Dmitriy Smirnov"
-  },
+  "authors": [
+    {
+      "email": "dsmirnov.online@yandex.ru",
+      "name": "Dmitriy Smirnov"
+    },
+    {
+      "email": "bika0724@gmail.com",
+      "name": "Victoria Smirnova"
+    }
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",

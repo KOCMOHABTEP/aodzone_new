@@ -1,6 +1,6 @@
 import { Icon } from "@/components/ui/Icon";
 import cn from "classnames";
-import Button from "@/components/ui/Button/Button";
+import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import styles from "./TournamentItem.module.scss";
 

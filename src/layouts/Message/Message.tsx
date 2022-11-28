@@ -1,4 +1,4 @@
-import Button from "@/components/ui/Button/Button";
+import { Button } from "@/components/ui/Button";
 import MessageItem from "@/layouts/Message/MessageItem/MessageItem";
 
 import { useState } from "react";

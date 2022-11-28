@@ -24,21 +24,17 @@ export const MatchCard = ({ data, team }: MatchCardProps) => {
                 </div>
                 <div className={styles.content}>
                     <div className={styles.content__info}>
-                        <div>
-                            <MatchCardInfoUser
-                                title="КОСМОНАВТ"
-                                level={23}
-                                align="left"
-                            />
-                        </div>
+                        <MatchCardInfoUser
+                            title="КОСМОНАВТ"
+                            level={23}
+                            align="left"
+                        />
                         <div className={styles.score}>1:0</div>
-                        <div>
-                            <MatchCardInfoUser
-                                title="УЛЁТНЫЙ"
-                                level={12}
-                                align="right"
-                            />
-                        </div>
+                        <MatchCardInfoUser
+                            title="УЛЁТНЫЙ"
+                            level={12}
+                            align="right"
+                        />
                     </div>
                     <div className={styles.info}>
                         <MatchCardInfo title="Карта" description="map_0822" />

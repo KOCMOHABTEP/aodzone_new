@@ -42,8 +42,6 @@ export const Input = (props: InputProps) => {
         placeholderIsModified && styles.placeholder__modified,
     ]);
 
-    console.log("Input::render");
-
     return (
         <label className={styles.input__label} htmlFor={name}>
             {hint && (

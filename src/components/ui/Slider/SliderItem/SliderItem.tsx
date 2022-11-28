@@ -1,4 +1,4 @@
-import Button from "@/components/ui/Button/Button";
+import { Button } from "@/components/ui/Button";
 import cn from "classnames";
 import { ICON_NAME } from "@/components/ui/Icon/Icon.library";
 import { Icon } from "@/components/ui/Icon";
@@ -14,7 +14,7 @@ interface ISliderItem {
     current: boolean;
 }
 
-export default function SliderItem({
+export const SliderItem = ({
     title,
     game,
     icon,
@@ -22,7 +22,7 @@ export default function SliderItem({
     // href,
     image,
     current,
-}: ISliderItem) {
+}: ISliderItem) => {
     const renderIcon = () => {
         if (icon) {
             return <Icon name={icon} className={styles.icon} />;
@@ -51,4 +51,4 @@ export default function SliderItem({
             </div>
         </div>
     );
-}
+};

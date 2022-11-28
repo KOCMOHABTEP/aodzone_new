@@ -1,4 +1,4 @@
-import Button from "@/components/ui/Button/Button";
+import { Button } from "@/components/ui/Button";
 import { MatchItemTeam } from "@/components/views/MatchDetailView/MatchItemTeam";
 import { Tag } from "@/components/ui/Tag";
 import { UserTeam } from "@/components/views/MatchDetailView/UserTeam";

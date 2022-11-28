@@ -1,10 +1,10 @@
-import Button from "@/components/ui/Button/Button";
+import { Button } from "@/components/ui/Button";
 import { useState } from "react";
 import { Icon } from "@/components/ui/Icon";
 import { Textarea } from "@/components/ui/Textarea";
 import { ForumDetailAvatar } from "@/components/views/ForumDetailView/ForumDetailAvatar/ForumDetailAvatar";
 import { ForumDetailItem } from "@/components/views/ForumDetailView/ForumDetailItem";
-import styles from "./ForumDetail.module.scss";
+import styles from "./ForumDetailView.module.scss";
 
 export const ForumDetailView = () => {
     const [userMessage, setUserMessage] = useState("");

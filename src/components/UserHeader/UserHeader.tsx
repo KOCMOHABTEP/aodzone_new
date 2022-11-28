@@ -2,7 +2,7 @@ import { Tag } from "@/components/ui/Tag";
 import { Avatar } from "@/components/ui/Avatar";
 import { Icon } from "@/components/ui/Icon";
 import Link from "next/link";
-import Button from "@/components/ui/Button/Button";
+import { Button } from "@/components/ui/Button";
 import { useState } from "react";
 import cn from "classnames";
 import styles from "./UserHeader.module.css";

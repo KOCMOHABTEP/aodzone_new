@@ -3,7 +3,7 @@ import cn from "classnames";
 import { useState } from "react";
 import { ICON_NAME } from "@/components/ui/Icon/Icon.library";
 import { Icon } from "@/components/ui/Icon";
-import SliderItem from "./SliderItem/SliderItem";
+import { SliderItem } from "@/components/ui/Slider/SliderItem";
 import styles from "./Slider.module.scss";
 
 export const Slider = () => {
@@ -52,13 +52,13 @@ export const Slider = () => {
     return (
         <div className={styles.item}>
             <div className={styles.controls}>
-                <div className={styles.sliderControlsItem} onClick={prevSlide}>
+                <div className={styles.controls__item} onClick={prevSlide}>
                     <Icon
                         className={cn(styles.controls__icon)}
                         name="arrow_left"
                     />
                 </div>
-                <div className={styles.sliderControlsItem} onClick={nextSlide}>
+                <div className={styles.controls__item} onClick={nextSlide}>
                     <Icon
                         className={cn(styles.controls__icon)}
                         name="arrow_right"

@@ -44,14 +44,14 @@ export const Sidebar = () => {
             </div>
             <div className={logoClassName}>
                 <div className={styles.logoInner}>
-                    <Link href="/public">
+                    <Link href="/">
                         <a>{sidebarCollapsed ? <LogoShort /> : <LogoFull />}</a>
                     </Link>
                 </div>
             </div>
             <ul className={styles.sidebarList}>
                 <li className={styles.sidebarListItem}>
-                    <Link href="/public">
+                    <Link href="/">
                         <a>
                             <SidebarItem
                                 title="Главная"

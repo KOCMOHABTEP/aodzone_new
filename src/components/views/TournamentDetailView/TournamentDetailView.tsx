@@ -1,9 +1,9 @@
-import MatchesBanner from "@/components/views/TournamentsView/TournamentBanner/TournamentBanner";
+import { MatchesBanner } from "@/components/views/TournamentsView/TournamentBanner";
 import { Layout } from "@/components/layouts/Layout/Layout";
 import { Icon } from "@/components/ui/Icon";
 import { TournamentTable } from "@/components/views/TournamentDetailView/TournamentTable";
 import { TournamentTableTeam } from "@/components/views/TournamentDetailView/TournamentTable/TournamentTableTeam";
-import TournamentRound from "@/components/views/TournamentsView/TournamentRound/TournamentRound";
+import { TournamentRound } from "@/components/views/TournamentsView/TournamentRound";
 import cn from "classnames";
 import { useEffect, useRef, useState } from "react";
 import styles from "./TournamentDetailView.module.scss";
@@ -64,14 +64,12 @@ export const TournamentDetailView = () => {
         if (currentSlideIndex > 0) {
             setCurrentSlideIndex(prevState => prevState - 1);
         }
-        console.log("Щёлк влево");
     };
 
     const handleArrowRightClick = () => {
         if (currentSlideIndex + 1 < Math.ceil(slideList.length / 3)) {
             setCurrentSlideIndex(prevState => prevState + 1);
         }
-        console.log("Щёлк вправо");
     };
 
     return (

@@ -1,6 +1,6 @@
 import ReactPlayer from "react-player";
 import { ChangeEvent, useRef, useState } from "react";
-import VideoPlayerControlPanel from "@/components/ui/VideoPlayer/VideoPlayerControlPanel/VideoPlayerControlPanel";
+import { VideoPlayerControlPanel } from "@/components/ui/VideoPlayer/VideoPlayerControlPanel";
 import styles from "./VideoPlayer.module.scss";
 
 interface VideoPlayerProps {

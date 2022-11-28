@@ -7,11 +7,7 @@ interface ButtonProps {
     onClick?: () => void;
 }
 
-export default function Button({
-    text,
-    buttonClassName,
-    onClick,
-}: ButtonProps) {
+export const Button = ({ text, buttonClassName, onClick }: ButtonProps) => {
     const buttonClassNameStyles = cn(styles.button, buttonClassName);
 
     return (
@@ -23,4 +19,4 @@ export default function Button({
             {text}
         </button>
     );
-}
+};

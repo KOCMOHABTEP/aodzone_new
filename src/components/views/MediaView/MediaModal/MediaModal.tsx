@@ -1,7 +1,7 @@
 import { Icon } from "@/components/ui/Icon";
 import { MediaComment } from "@/components/views/MediaView/MediaComment";
 import { Textarea } from "@/components/ui/Textarea";
-import Button from "@/components/ui/Button/Button";
+import { Button } from "@/components/ui/Button";
 import { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import cn from "classnames";
