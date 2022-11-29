@@ -1,4 +1,4 @@
-import { TeamPlayersItem } from "@/components/views/TeamView/TeamMembers/TeamPlayersItem";
+import { TeamPlayersItem } from "@/components/views/ProfileView/TeamMembers/TeamPlayersItem";
 import { useState } from "react";
 import cn from "classnames";
 import styles from "./TeamMembers.module.scss";

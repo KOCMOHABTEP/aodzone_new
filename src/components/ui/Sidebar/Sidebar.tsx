@@ -72,28 +72,28 @@ export const Sidebar = () => {
                         </a>
                     </Link>
                 </li>
-                <li className={styles.sidebarListItem}>
-                    <Link href="/team">
-                        <a>
-                            <SidebarItem
-                                title="Команда"
-                                icon="team"
-                                active={isActiveSidebarHref("/team")}
-                            />
-                        </a>
-                    </Link>
-                </li>
-                <li className={styles.sidebarListItem}>
-                    <Link href="/friends">
-                        <a>
-                            <SidebarItem
-                                title="Друзья"
-                                icon="groups"
-                                active={isActiveSidebarHref("/friends")}
-                            />
-                        </a>
-                    </Link>
-                </li>
+                {/* <li className={styles.sidebarListItem}> */}
+                {/*    <Link href="/team"> */}
+                {/*        <a> */}
+                {/*            <SidebarItem */}
+                {/*                title="Команда" */}
+                {/*                icon="team" */}
+                {/*                active={isActiveSidebarHref("/team")} */}
+                {/*            /> */}
+                {/*        </a> */}
+                {/*    </Link> */}
+                {/* </li> */}
+                {/* <li className={styles.sidebarListItem}> */}
+                {/*    <Link href="/friends"> */}
+                {/*        <a> */}
+                {/*            <SidebarItem */}
+                {/*                title="Друзья" */}
+                {/*                icon="groups" */}
+                {/*                active={isActiveSidebarHref("/friends")} */}
+                {/*            /> */}
+                {/*        </a> */}
+                {/*    </Link> */}
+                {/* </li> */}
                 <li className={styles.sidebarListItem}>
                     <Link href="/matches">
                         <a>
@@ -105,17 +105,17 @@ export const Sidebar = () => {
                         </a>
                     </Link>
                 </li>
-                <li className={styles.sidebarListItem}>
-                    <Link href="/tournaments">
-                        <a>
-                            <SidebarItem
-                                title="Турниры"
-                                icon="team"
-                                active={isActiveSidebarHref("/tournaments")}
-                            />
-                        </a>
-                    </Link>
-                </li>
+                {/* <li className={styles.sidebarListItem}> */}
+                {/*    <Link href="/tournaments"> */}
+                {/*        <a> */}
+                {/*            <SidebarItem */}
+                {/*                title="Турниры" */}
+                {/*                icon="team" */}
+                {/*                active={isActiveSidebarHref("/tournaments")} */}
+                {/*            /> */}
+                {/*        </a> */}
+                {/*    </Link> */}
+                {/* </li> */}
                 <li className={styles.sidebarListItem}>
                     <Link href="/streams">
                         <a>
@@ -127,17 +127,17 @@ export const Sidebar = () => {
                         </a>
                     </Link>
                 </li>
-                <li className={styles.sidebarListItem}>
-                    <Link href="/forum">
-                        <a>
-                            <SidebarItem
-                                title="Форум"
-                                icon="team"
-                                active={isActiveSidebarHref("/forum")}
-                            />
-                        </a>
-                    </Link>
-                </li>
+                {/* <li className={styles.sidebarListItem}> */}
+                {/*    <Link href="/forum"> */}
+                {/*        <a> */}
+                {/*            <SidebarItem */}
+                {/*                title="Форум" */}
+                {/*                icon="team" */}
+                {/*                active={isActiveSidebarHref("/forum")} */}
+                {/*            /> */}
+                {/*        </a> */}
+                {/*    </Link> */}
+                {/* </li> */}
                 <li className={styles.sidebarListItem}>
                     <Link href="/media">
                         <a>

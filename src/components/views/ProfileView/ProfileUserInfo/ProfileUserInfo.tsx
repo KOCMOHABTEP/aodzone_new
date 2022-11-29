@@ -3,6 +3,7 @@ import { Icon } from "@/components/ui/Icon";
 import styles from "./ProfileUserInfo.module.scss";
 
 interface ProfileUserInfoProps {
+    title?: string;
     description?: string;
     location?: string;
     joined?: string;
@@ -12,6 +13,7 @@ interface ProfileUserInfoProps {
 }
 
 export const ProfileUserInfo = ({
+    title,
     location,
     description,
     joined,
@@ -22,7 +24,7 @@ export const ProfileUserInfo = ({
     return (
         <div className={styles.item}>
             <div>
-                <div className={styles.title}>ABOUT</div>
+                <div className={styles.title}>Обо мне</div>
                 <div className={styles.description}>{description}</div>
             </div>
             <div className={styles.button}>
@@ -34,6 +36,14 @@ export const ProfileUserInfo = ({
             </div>
             <div className={styles.content}>
                 {/** Item 1 * */}
+                <div className={styles.icon}>
+                    <Icon
+                        className={styles.icon__icn}
+                        name="profile"
+                        size={18}
+                    />
+                    <div className={styles.text}> {title}</div>
+                </div>
                 <div className={styles.icon}>
                     <Icon className={styles.icon__icn} name="home" size={18} />
                     <div className={styles.text}> {location}</div>

@@ -63,9 +63,9 @@ export const UserHeader = ({
                             <div className={styles.middle__title}>
                                 {nickName}
                             </div>
-                            <div>RU</div>
+                            <Icon name="countryRU" size={22} />
                         </div>
-                        <div className={styles.level}>Уровень {level}</div>
+                        {/* <div className={styles.level}>Уровень {level}</div> */}
                         <div className={styles.data}>Пользователь с {date}</div>
                         {steam && (
                             <Link href={steam.link} passHref>

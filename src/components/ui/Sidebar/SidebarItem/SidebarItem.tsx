@@ -41,8 +41,8 @@ export const SidebarItem = ({ title, icon, active }: SidebarItemProps) => {
     const showTooltip = Boolean(sidebarCollapsed && tooltipVisibility);
 
     const sidebarItemClassNames = cn(styles.item, {
-        [styles.item__collapsed]: sidebarCollapsed,
-        [styles.item__active]: active,
+        [styles.collapsed]: sidebarCollapsed,
+        [styles.active]: active,
     });
 
     return (

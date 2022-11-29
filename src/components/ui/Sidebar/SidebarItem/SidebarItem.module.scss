@@ -1,5 +1,3 @@
-
-
 .item {
     color: var(--color-white);
     min-width: 58px;
@@ -17,50 +15,32 @@
         opacity: 1;
         background: var(--color-background-lighter);
     }
-
-    &__active {
-        color: var(--color-green);
-        border: solid 1px var(--color-border);
-        background: var(--color-background-lighter);
-        opacity: 1;
-
-        &:after {
-            content: "";
-            width: 4px;
-            height: 100%;
-            background: var(--color-green);
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-    }
-
-    &__collapsed {
-
-        &:after {
-            display: none;
-        }
-    }
-
-    &__active {
-        color: var(--color-black);
-        border: solid 1px var(--color-border);
-        background: var(--color-green);
-        opacity: 1;
-
-        &:after {
-            content: "";
-            width: 4px;
-            height: 100%;
-            background: var(--color-green);
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-    }
 }
 
+.active {
+    color: var(--color-black);
+    border: solid 1px var(--color-border);
+    background: var(--color-green);
+    opacity: 1;
 
+    &:after {
+        content: "";
+        width: 4px;
+        height: 100%;
+        background: var(--color-green);
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+}
+
+.collapsed {
+
+    &:after {
+        display: none;
+    }
+}
 
 .container {
     display: flex;

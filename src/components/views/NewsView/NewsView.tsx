@@ -1,4 +1,5 @@
 import { NewsItem } from "@/components/views/NewsView/NewsItem";
+import { Button } from "@/components/ui/Button";
 import styles from "./NewsView.module.scss";
 
 export const NewsView = () => {
@@ -59,7 +60,13 @@ export const NewsView = () => {
 
     return (
         <div className={styles.item}>
-            <div className={styles.title}>Последние новости</div>
+            <div className={styles.head}>
+                <div className={styles.title}>Последние новости</div>
+                <Button
+                    text="Предложить новость"
+                    buttonClassName={styles.btn}
+                />
+            </div>
             <div className={styles.grid}>
                 {newsList.map(props => (
                     <NewsItem {...props} key={props.id} />

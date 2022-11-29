@@ -29,7 +29,7 @@ export const UserCard = () => {
                 </div>
                 <div className={styles.content}>
                     <div className={styles.name}>KOCMOHABT</div>
-                    <div className={styles.level}>Уровень 32</div>
+                    {/* <div className={styles.level}>Уровень 32</div> */}
                 </div>
                 <div className={styles.control}>
                     <div
