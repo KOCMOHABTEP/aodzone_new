@@ -1,3 +1,5 @@
+
+
 .item {
     padding: 16px;
     background-color: var(--color-background-light);
@@ -111,7 +113,7 @@
 .itemButtonBtn {
     padding: 6px;
     max-height:32px;
-    font-size: var(--font-14);
+    font-size: 14px;
     display: flex;
     text-align: left;
     justify-content: center;
@@ -125,7 +127,7 @@
 }
 
 .itemJoinInfo {
-    font-size: var(--font-12);
+    font-size: 12px;
     color: var(--color-violet);
 }
 
@@ -152,6 +154,6 @@
 }
 
 .itemInfoMatches {
-    font-size: var(--font-20);
+    font-size: 20px;
     margin-bottom: 12px;
 }

@@ -1,0 +1,45 @@
+
+
+.component {
+    position: relative;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    margin-right: 16px;
+}
+
+.content {
+    margin-right: 16px;
+
+    .name {
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--color-white);
+    }
+
+    .level {
+        font-size: 12px;
+        color: var(--color-green);
+    }
+}
+
+.control {
+
+    .button {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        border-radius: 6px;
+        border: 1px solid var(--color-border);
+        background: var(--color-bg-dark);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+

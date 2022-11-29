@@ -1,0 +1,80 @@
+:root {
+    /* NEW UI */
+
+    --color-bg: #20212b;
+    --color-bg-lighter: #2c2d3b;
+    --color-bg-light: #3C3C54;
+    --color-bg-dark: #19191e;
+
+    --color-text-grey: #5C6478;
+
+    --color-online: #9EE800;
+    --color-offline: #5C6478;
+
+
+    --ui-dark: #21212E;
+
+    --field-disabled: #3C3C54;
+    
+    /* COLORS */
+    --color-background-overlay: rgba(25, 25, 30, 0.35);
+    --color-background-overlay-modal: rgba(25, 25, 30, 0.60);
+    --color-background: #19191e;
+    --color-background-light: #20212b;
+    --color-background-lighter: #2c2d3b;
+    --color-grey: #7a7a99;
+
+    --color-border: #363543;
+    --color-border-light: #414358;
+    
+    --color-violet: #928FFF;
+    --color-violet-ghost: rgba(146, 143, 255, 0.15);
+    --color-green: #23EAA4;
+    --color-green-ghost: rgba(35, 234, 164, 0.15);
+    --color-green-dark: #40809C;
+    --color-green-darker: #329B9D;
+
+    --color-red-light: #FF6B69;
+    --color-red: #EB2B00;
+    --color-red-dark: #9E1E00;
+
+    /* GRADIENTS */
+    --gradient-green: linear-gradient(270deg, #00FBA4 0%, #40809C 100%);
+    
+    --color-header: #333333;
+    --color-link: #8888ee;
+    --color-white: #EEEEF0;
+    --color-black: #222222;
+
+    /* FONTS */
+    --font-body: 'AvenirNextCyr', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+    --font-header: Georgia, serif;
+
+
+    /* TODO: Refactor and delete */
+
+    --fs-normal: 1.6rem;
+    --lh-normal: 1.2;
+    --ls-normal: 0.02rem;
+    --header-weight: bold;
+    --header-lh: 1.5;
+    --header-ls: 1px;
+    --h1-size: 6rem;
+    --h2-size: 4rem;
+    --h3-size: 2rem;
+    --h4-size: 1.8rem;
+    --p-size: 1.6rem;
+    --p-lh: 1.2;
+    --p-ls: 0.2rem;
+    --p-mb: var(--spacing-2);
+
+    /* BORDERS */
+    --border: 1px solid var(--color-border);
+    --border-light: 1px solid var(--color-border-light);
+
+    /* SHADOWS */
+    --box-shadow-green: 0 0 0 2px rgba(35, 234, 164, 0.5);
+    --box-shadow-red: 0 0 0 2px rgba(255, 107, 105, 0.5);
+    --box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+}

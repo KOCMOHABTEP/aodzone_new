@@ -1,4 +1,4 @@
-import { Header } from "@/layouts/Header/Header";
+import { Header } from "@/components/ui/Header/Header";
 import { Sidebar } from "@/components/ui/Sidebar/Sidebar";
 import { Container } from "@/components/containers/Container/Container";
 import Head from "next/head";

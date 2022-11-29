@@ -2,10 +2,10 @@ import { TeamForm } from "@/components/views/TeamView/TeamForm";
 import { ProfileUserInfo } from "@/components/views/ProfileView/ProfileUserInfo";
 import { TeamMembers } from "@/components/views/TeamView/TeamMembers";
 import { FormDescription } from "@/components/views/TeamView/FormDescription";
-import { WidgetLastMatches } from "@/features/Widget/WidgetLastMatches/WidgetLastMatches";
-import AchievementsBar from "@/features/AchievementsBar/AchievementsBar";
+import { WidgetLastMatches } from "@/components/ui/Widget/WidgetLastMatches/WidgetLastMatches";
+import { AchievementsBar } from "@/components/ui/AchievementsBar";
 import { useState } from "react";
-import UserHeader from "@/components/UserHeader/UserHeader";
+import { UserHeader } from "@/components/ui/UserHeader";
 
 import styles from "./TeamView.module.scss";
 

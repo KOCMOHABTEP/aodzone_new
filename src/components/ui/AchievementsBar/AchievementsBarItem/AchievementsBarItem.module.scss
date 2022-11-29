@@ -1,0 +1,25 @@
+
+
+.item {
+  flex: 1;
+  display: flex;
+  color: #ffff;
+
+  .icon {
+    margin-right: 16px;
+  }
+}
+
+.content {
+
+  .stats {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .description {
+    color: var(--color-bg-light);
+    font-size: 14px;
+    font-weight: bold;
+  }
+}

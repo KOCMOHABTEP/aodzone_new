@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { FriendsItem } from "@/components/views/FriendsView/FriendsItem";
-import Message from "@/layouts/Message/Message";
+import { Message } from "@/components/ui/Message";
 import styles from "./FriendsView.module.scss";
 
 interface FriendsListProps {

@@ -42,7 +42,7 @@ export const Modal = ({
         return (
             <div onClick={handleClickOutside} className={styles.overlay}>
                 <div ref={modalContainerRef} className={styles.item}>
-                    <div className={styles.item_close} onClick={onClose}>
+                    <div className={styles.item__close} onClick={onClose}>
                         <Icon name="xmark" size={16} />
                     </div>
                     <div className={styles.head}>

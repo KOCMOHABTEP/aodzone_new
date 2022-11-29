@@ -1,3 +1,5 @@
+
+
 .item {
     width: 100%;
     display: flex;
@@ -32,12 +34,8 @@
         color: var(--color-grey);
     }
 }
-
-
-
-
-
 .dropdown {
+    color: inherit;
     padding: 12px;
     margin: 0 16px;
     display: flex;
@@ -63,6 +61,7 @@
         background-color: var(--color-bg-lighter);
         border-radius: 8px;
         border: solid 1px var(--color-border);
+        color: var(--color-green);
     }
 
     &:hover &__value {

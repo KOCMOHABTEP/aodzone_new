@@ -1,3 +1,5 @@
+
+
 .item {
     padding: 32px;
     margin-bottom: 40px;
@@ -22,10 +24,6 @@
     }
 }
 
-
-
-
-
 .container {
     width: calc(100% + 64px);
     height: 470px;
@@ -47,7 +45,7 @@
     font-size: 18px;
     margin-bottom: 40px;
 
-    &. * {
+    * {
         margin-bottom: 16px;
     }
 

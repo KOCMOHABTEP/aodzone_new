@@ -1,8 +1,8 @@
-import AchievementsBar from "@/features/AchievementsBar/AchievementsBar";
+import { AchievementsBar } from "@/components/ui/AchievementsBar";
 import { ProfileUserInfo } from "@/components/views/ProfileView/ProfileUserInfo";
 import { ProfileUserActivity } from "@/components/views/ProfileView/ProfileUserActivity";
-import { WidgetLastMatches } from "@/features/Widget/WidgetLastMatches/WidgetLastMatches";
-import UserHeader from "@/components/UserHeader/UserHeader";
+import { WidgetLastMatches } from "@/components/ui/Widget/WidgetLastMatches/WidgetLastMatches";
+import { UserHeader } from "@/components/ui/UserHeader";
 import styles from "./ProfileView.module.scss";
 
 export const ProfileView = () => {

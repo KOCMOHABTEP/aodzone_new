@@ -1,0 +1,29 @@
+
+
+.item {
+    margin-bottom: 32px;
+    border-radius: 6px;
+    border: solid 1px var(--color-border);
+    box-shadow: var(--box-shadow);
+    background: var(--color-background-light);
+    position: relative;
+
+    .header {
+        padding: 24px;
+        background: var(--color-background-lighter);
+        display: flex;
+
+        .title {
+            font-size: 14px;
+        }
+    }
+
+    .body {
+        padding: 24px;
+    }
+}
+
+
+
+
+
