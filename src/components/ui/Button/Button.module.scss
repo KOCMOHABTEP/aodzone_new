@@ -18,6 +18,18 @@
 
     &:hover {
         color: var(--color-white);
-        background-color: var(--color-green-ghost);
+        background: var(--color-green-ghost);
+    }
+}
+
+.buttonDisabled {
+    cursor: not-allowed;
+    color: var(--color-grey);
+    background: var(--field-disabled);
+    border: solid 1px var(--field-disabled);
+
+    &:hover {
+        color: var(--color-grey);
+        background: var(--field-disabled);
     }
 }

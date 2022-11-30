@@ -3,29 +3,42 @@ import { Input } from "@/components/ui/Input";
 import { Button } from "@/components/ui/Button";
 import { Checkbox } from "@/components/ui/Chekbox";
 import cn from "classnames";
-import { useForm, Controller } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import styles from "./LoginView.module.scss";
 
 type LoginProcessType = "login" | "registration";
 
 export const LoginView = () => {
     const [loginProcess, setLoginProcess] = useState<LoginProcessType>("login");
-    const {
-        register,
-        control,
-        getValues,
-        handleSubmit,
-        watch,
-        formState: { errors },
-    } = useForm({
+    const loginForm = useForm({
+        mode: "onChange",
         defaultValues: {
-            email: "yuhjhj",
+            email: "",
+            password: "",
         },
     });
-    console.log(control);
+
+    const registrationForm = useForm({
+        mode: "onChange",
+        defaultValues: {
+            nickname: "",
+            email: "",
+            password: "",
+            passwordConfirm: "",
+            agreement: false,
+        },
+    });
 
     const handleChangeProcess = (process: LoginProcessType) => {
         setLoginProcess(process);
+    };
+
+    const handleLogin = data => {
+        console.log("Логин::handleLogin", { ...data });
+    };
+
+    const handleRegister = data => {
+        console.log("Регистрация::handleRegister", { ...data });
     };
 
     return (
@@ -54,27 +67,34 @@ export const LoginView = () => {
                 {loginProcess === "login" && (
                     <>
                         <div className={styles.input}>
-                            <Controller
-                                name="email"
-                                control={control}
-                                render={({ field }) => (
-                                    <Input
-                                        label="Введите почту"
-                                        value={field.value}
-                                        {...field}
-                                    />
-                                )}
+                            <Input
+                                label="Введите почту"
+                                {...loginForm.register("email", {
+                                    required: "Поле должно быть заполнено",
+                                })}
+                                error={
+                                    loginForm.formState.errors.email?.message
+                                }
                             />
                         </div>
                         <div className={styles.input}>
                             <Input
-                                name="password"
                                 label="Введите пароль"
-                                value=""
+                                {...loginForm.register("password", {
+                                    required: "Поле должно быть заполнено",
+                                })}
+                                error={
+                                    loginForm.formState.errors.password?.message
+                                }
                             />
                         </div>
                         <div className={styles.button}>
-                            <Button text="Войти" buttonClassName={styles.btn} />
+                            <Button
+                                text="Войти"
+                                onClick={loginForm.handleSubmit(handleLogin)}
+                                disabled={!loginForm.formState.isValid}
+                                buttonClassName={styles.btn}
+                            />
                         </div>
                     </>
                 )}
@@ -82,39 +102,71 @@ export const LoginView = () => {
                     <>
                         <div className={styles.input}>
                             <Input
-                                name="nickname"
-                                label="Введите ваш никмейн"
-                                value=""
+                                label="Введите ваш никнейм"
+                                {...registrationForm.register("nickname", {
+                                    required: "Поле должно быть заполнено",
+                                })}
+                                error={
+                                    registrationForm.formState.errors.nickname
+                                        ?.message
+                                }
                             />
                         </div>
                         <div className={styles.input}>
                             <Input
-                                name="email"
                                 label="Введите вашу почту"
-                                value=""
+                                {...registrationForm.register("email", {
+                                    required: "Поле должно быть заполнено",
+                                })}
+                                error={
+                                    registrationForm.formState.errors.email
+                                        ?.message
+                                }
                             />
                         </div>
                         <div className={styles.input}>
                             <Input
-                                name="password"
                                 label="Придумайте пароль"
-                                value=""
+                                {...registrationForm.register("password", {
+                                    required: "Поле должно быть заполнено",
+                                })}
+                                error={
+                                    registrationForm.formState.errors.password
+                                        ?.message
+                                }
                             />
                         </div>
                         <div className={styles.input}>
                             <Input
-                                name="passwordConfirm"
-                                label="Повторите пароль"
-                                value=""
+                                label="Подтвердите пароль"
+                                {...registrationForm.register(
+                                    "passwordConfirm",
+                                    {
+                                        required: "Поле должно быть заполнено",
+                                    }
+                                )}
+                                error={
+                                    registrationForm.formState.errors
+                                        .passwordConfirm?.message
+                                }
                             />
                         </div>
                         <div className={styles.checkbox}>
-                            <Checkbox label="Согласен с соглашением AODZONE" />
+                            <Checkbox
+                                label="Согласен с соглашением AODZONE"
+                                {...registrationForm.register("agreement", {
+                                    required: "Поле должно быть заполнено",
+                                })}
+                            />
                         </div>
 
                         <div className={styles.button}>
                             <Button
                                 text="Зарегистрироваться"
+                                onClick={registrationForm.handleSubmit(
+                                    handleRegister
+                                )}
+                                disabled={!registrationForm.formState.isValid}
                                 buttonClassName={styles.btn}
                             />
                         </div>

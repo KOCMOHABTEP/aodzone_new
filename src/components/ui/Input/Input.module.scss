@@ -13,10 +13,16 @@
   background-color: var(--ui-dark);
   transition: all 0.3s ease;
 
-
   &:focus {
     border: solid 1px var(--color-green);
     box-shadow: var(--box-shadow-green);
+  }
+
+  &:focus + .placeholder,
+  &:not(:focus):not(:placeholder-shown) + .placeholder{
+    font-size: 12px;
+    line-height: 14px;
+    top: 8px;
   }
 
   &__container {
@@ -36,13 +42,18 @@
   border: solid 1px var(--color-red-light);
   box-shadow: var(--box-shadow-red);
 
+  &:focus {
+    border: solid 1px var(--color-red-light);
+    box-shadow: var(--box-shadow-red);
+  }
+
   &__container {
     margin-top: 8px;
     display: flex;
 
     &__icon {
       color: var(--color-red-light);
-      margin-right: 8px;
+      margin-right: 4px;
     }
 
     &__message {
@@ -77,6 +88,7 @@
   top: 16px;
   left: 16px;
   transition: all 0.3s ease;
+  pointer-events: none;
 
   &__modified {
     font-size: 12px;
