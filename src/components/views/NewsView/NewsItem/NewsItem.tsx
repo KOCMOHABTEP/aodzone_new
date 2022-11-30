@@ -11,6 +11,7 @@ interface INewsItem {
     stats: {
         views: number;
         comments: number;
+        likes: number;
     };
 }
 
@@ -50,6 +51,14 @@ export const NewsItem = ({
                                 size={16}
                             />
                             <span>{stats.comments}</span>
+                        </div>
+                        <div className={styles.control}>
+                            <Icon
+                                className={styles.control__icon}
+                                name="like"
+                                size={16}
+                            />
+                            <span>{stats.likes}</span>
                         </div>
                     </div>
                 </div>

@@ -67,14 +67,7 @@
         .btn {
             height: 40px;
             border: solid 1px var(--color-green);
-
-            &:hover {
-                color: var(--color-white);
-                background-color: var(--color-green-ghost);
-            }
         }
-
-
     }
 
 .wrapper +.wrapper {

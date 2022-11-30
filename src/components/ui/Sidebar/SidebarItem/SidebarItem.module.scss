@@ -33,6 +33,10 @@
         right: 0;
     }
 
+    &:hover {
+        background: var(--color-green);
+    }
+
 }
 
 .collapsed {

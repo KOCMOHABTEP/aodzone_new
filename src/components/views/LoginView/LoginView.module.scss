@@ -1,34 +1,52 @@
 .form {
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
 .item {
   padding: 32px;
   max-width: 400px;
+  width: 100%;
   background-color: var(--color-background-light);
   border-radius: 8px ;
   border: solid 1px var(--color-border);
   display: flex;
   flex-direction: column;
 
-
-
 }
 
 .wrapper {
   margin-bottom:24px ;
-  display: flex;
-  justify-content: space-between;
 
   .title {
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.3s ease;
+  }
+}
 
-    &:hover {
-      color: var(--color-green);
-    }
+.titleActive{
+  color: var(--color-green);
+}
+
+.input {
+
+}
+
+.input + .input {
+  margin-top: 16px;
+}
+
+.checkbox {
+  margin-top: 16px;
+}
+
+
+.button {
+  margin-top:24px ;
+
+  .btn {
+    width: 100%;
   }
 }

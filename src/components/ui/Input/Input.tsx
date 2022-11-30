@@ -1,17 +1,18 @@
 import cn from "classnames";
 
 import { ICON_NAME } from "@/components/ui/Icon/Icon.library";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, FC, forwardRef, useState } from "react";
 import { Icon } from "@/components/ui/Icon";
 import styles from "./Input.module.scss";
 
 interface InputProps {
-    name: string;
-    label: string;
-    value: string;
+    name?: string;
+    label?: string;
+    value?: string;
+    defaultValue?: string;
     onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
-    onFocus?: () => void;
-    onBlur?: () => void;
+    // onFocus?: () => void;
+    // onBlur?: () => void;
     icon?: ICON_NAME;
     hint?: string;
     disabled?: boolean;
@@ -22,20 +23,23 @@ interface InputProps {
     };
 }
 
-export const Input = (props: InputProps) => {
-    const [isFocused, setIsFocused] = useState(false);
-    const { name, value, required, onChange, hint, error, disabled, label } =
-        props;
+export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
+    const {
+        name,
+        value,
+        defaultValue,
+        required,
+        onChange,
+        hint,
+        error,
+        disabled,
+        label,
+        ...rest
+    } = props;
 
-    const handleFocus = () => {
-        setIsFocused(true);
-    };
+    console.log(value);
 
-    const handleBlur = () => {
-        setIsFocused(false);
-    };
-
-    const placeholderIsModified = isFocused || value.length;
+    const placeholderIsModified = value?.length;
 
     const placeholderClassName = cn([
         styles.placeholder,
@@ -58,6 +62,7 @@ export const Input = (props: InputProps) => {
                     {label}
                 </div>
                 <input
+                    ref={ref}
                     className={cn(styles.input, {
                         [styles.disabled]: disabled,
                         [styles.error]: error,
@@ -65,11 +70,11 @@ export const Input = (props: InputProps) => {
                     type="text"
                     name={name}
                     value={value}
+                    defaultValue={defaultValue}
                     required={required}
                     disabled={disabled}
                     onChange={event => onChange(event)}
-                    onFocus={handleFocus}
-                    onBlur={handleBlur}
+                    {...rest}
                 />
             </div>
             {error && (
@@ -86,4 +91,4 @@ export const Input = (props: InputProps) => {
             )}
         </label>
     );
-};
+});

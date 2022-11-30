@@ -1,10 +1,10 @@
 import { Layout } from "@/components/layouts/Layout/Layout";
-import { TeamView } from "@/components/views/TeamView";
+import { TeamsView } from "@/components/views/TeamsView/TeamsView";
 
 const Team = () => {
     return (
         <Layout>
-            <TeamView />
+            <TeamsView />
         </Layout>
     );
 };

@@ -1,0 +1,47 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.checkboxInput {
+  display: none;
+
+  &:checked + .checkboxLabel {
+    background-color: var(--color-green-ghost);
+    border: solid 1px var(--color-green);
+  }
+
+  &:checked +.checkboxLabel .checkboxLabelIcon {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+
+.checkboxLabel {
+  width: 24px;
+  height: 24px;
+  border: solid 1px var(--color-border);
+  border-radius: 4px;
+  background-color: var(--ui-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.checkboxLabelIcon {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.checkboxTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-grey);
+  margin-left: 8px;
+}

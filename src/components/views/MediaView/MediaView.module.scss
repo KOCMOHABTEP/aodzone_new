@@ -1,11 +1,49 @@
-
+.media {
+    padding: 8px;
+}
 
 .title {
     font-size: 24px;
     font-weight: bold;
     padding: 8px;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
+
+.content {
+    padding: 0 0 8px 0;
+    margin-left: 8px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px var(--color-background-lighter);
+}
+
+.contentTitle {
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contentTitle +.contentTitle {
+    margin-left: 24px;
+}
+
+.contentTitleActive {
+    color: var(--color-green);
+    position: relative;
+
+    &:after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: var(--color-green);
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+    }
+}
+
+
 
 .wrapper {
     display: flex;

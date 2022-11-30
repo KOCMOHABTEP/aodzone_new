@@ -15,6 +15,7 @@ export const NewsView = () => {
             stats: {
                 views: 74,
                 comments: 14,
+                likes: 25,
             },
         },
         {
@@ -28,6 +29,7 @@ export const NewsView = () => {
             stats: {
                 views: 74,
                 comments: 14,
+                likes: 85,
             },
         },
         {
@@ -41,6 +43,7 @@ export const NewsView = () => {
             stats: {
                 views: 74,
                 comments: 14,
+                likes: 5,
             },
         },
         {
@@ -54,6 +57,7 @@ export const NewsView = () => {
             stats: {
                 views: 74,
                 comments: 14,
+                likes: 24,
             },
         },
     ];
