@@ -1,0 +1,74 @@
+@import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+
+
+.rdw-editor-wrapper {
+  background: var(--color-background-light);
+  border-radius: 8px;
+  border: solid 1px var(--color-border);
+}
+
+
+.rdw-editor-toolbar {
+  background: none;
+  border: none;
+  border-bottom: solid 1px var(--color-border);
+  padding: 16px;
+}
+
+
+.rdw-option-wrapper {
+  height: 24px;
+  min-width: 24px;
+  padding: 0;
+  background: var(--color-green-ghost);
+  border: solid 1px var(--color-green);
+
+  & img {
+    filter: invert(1);
+  }
+}
+
+.rdw-dropdown-wrapper {
+  background: none;
+  border: none;
+
+  &:hover {
+    background: none;
+    box-shadow: none;
+  }
+}
+
+.rdw-dropdown-selectedtext {
+  color: var(--color-white);
+  background-color: var(--color-green-ghost);
+  border: solid 1px var(--color-green);
+}
+
+.rdw-dropdown-optionwrapper {
+  background: var(--color-background-light);
+  border: solid 1px var(--color-green);
+
+  &:hover {
+    background: var(--color-background-light);
+  }
+}
+
+.rdw-dropdownoption-active {
+  background: none;
+}
+
+.rdw-dropdownoption-highlighted {
+  background: var(--color-green-ghost);
+}
+
+.rdw-editor-main {
+  padding: 0 16px;
+
+}
+
+
+.rdw-link-modal, .rdw-colorpicker-modal, .rdw-embedded-modal, .rdw-emoji-modal, .rdw-image-modal {
+  background: var(--color-background-light);
+  border: solid 1px var(--color-green);
+  box-shadow: none;
+}

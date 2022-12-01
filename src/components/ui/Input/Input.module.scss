@@ -10,8 +10,12 @@
   padding: 24px 16px 8px 16px;
   border-radius: 6px;
   border: solid 1px var(--color-border);
-  background-color: var(--ui-dark);
+  background: var(--ui-dark);
   transition: all 0.3s ease;
+
+  &:-webkit-autofill {
+    transition: background-color 600000s 0s, color 600000s 0s;
+  }
 
   &:focus {
     border: solid 1px var(--color-green);
