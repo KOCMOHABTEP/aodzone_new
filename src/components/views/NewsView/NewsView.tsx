@@ -66,10 +66,12 @@ export const NewsView = () => {
         <div className={styles.item}>
             <div className={styles.head}>
                 <div className={styles.title}>Последние новости</div>
-                <Button
-                    text="Предложить новость"
-                    buttonClassName={styles.btn}
-                />
+                <a href="news/create">
+                    <Button
+                        text="Предложить новость"
+                        buttonClassName={styles.btn}
+                    />
+                </a>
             </div>
             <div className={styles.grid}>
                 {newsList.map(props => (

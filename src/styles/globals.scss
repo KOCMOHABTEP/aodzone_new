@@ -20,20 +20,7 @@ a {
     box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: var(--header-weight);
-    line-height: var(--header-lh);
-}
 
-h1 {
-    font-size: var(--h1-size);
-    letter-spacing: var(--header-ls);
-}
 
 *::-webkit-scrollbar {
     width: 3px;

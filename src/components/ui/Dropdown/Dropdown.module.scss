@@ -1,0 +1,77 @@
+.component {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.dropdown {
+  width: 70%;
+  position: relative;
+}
+
+.input {
+    padding: 8px 16px;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-background-light);
+    position: relative;
+  cursor: pointer;
+
+  &:hover {
+    border: solid 1px var(--color-green);
+  }
+}
+
+.inputActive {
+  border: 1px solid var(--color-green);
+}
+
+.inputIcon {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 16px;
+  bottom: 0;
+}
+
+
+.dropdownMenuContainer {
+  position: relative;
+}
+
+.dropdownMenu {
+  border: 1px solid var(--color-green);
+  background: var(--color-background-light);
+  border-radius: 8px;
+
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.dropdownMenuItem {
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    background: var(--color-green-ghost);
+  }
+}

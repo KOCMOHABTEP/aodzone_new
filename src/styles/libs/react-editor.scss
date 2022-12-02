@@ -38,7 +38,7 @@
   }
 }
 
-.rdw-dropdown-selectedtext {
+.rdw-dropdown-selectedtext  {
   color: var(--color-white);
   background-color: var(--color-green-ghost);
   border: solid 1px var(--color-green);
@@ -67,8 +67,36 @@
 }
 
 
-.rdw-link-modal, .rdw-colorpicker-modal, .rdw-embedded-modal, .rdw-emoji-modal, .rdw-image-modal {
+.rdw-link-modal, .rdw-colorpicker-modal, .rdw-embedded-modal, .rdw-emoji-modal, .rdw-image-modal, .rdw-link-modal-input, .rdw-embedded-modal-size-input, .rdw-image-modal-size-input  {
+  color: var(--color-white);
   background: var(--color-background-light);
   border: solid 1px var(--color-green);
   box-shadow: none;
+}
+
+.rdw-link-modal-btn, .rdw-embedded-modal-btn, .rdw-image-modal-btn {
+  color: var(--color-white);
+  background: var(--color-green-ghost);
+  border: solid 1px var(--color-green);
+  box-shadow: none;
+
+
+  &:disabled {
+    background: var(--color-green-ghost);
+    border: solid 1px var(--color-green);
+
+  }
+
+}
+
+.rdw-embedded-modal-link-input, .rdw-image-modal-url-input {
+  height: auto;;
+  color: var(--color-white);
+  background: var(--color-background-light);
+  border: solid 1px var(--color-green);
+  box-shadow: none;
+}
+
+.rdw-embedded-modal-header-option {
+  width: auto;
 }
