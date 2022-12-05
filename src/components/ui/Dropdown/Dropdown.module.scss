@@ -1,7 +1,7 @@
 .component {
+  width: 100%;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .label {
@@ -10,7 +10,6 @@
 }
 
 .dropdown {
-  width: 70%;
   position: relative;
 }
 
@@ -24,10 +23,6 @@
   background: var(--ui-dark);
   position: relative;
   cursor: pointer;
-
-  &:hover {
-    border: solid 1px var(--color-green);
-  }
 }
 
 .inputActive {

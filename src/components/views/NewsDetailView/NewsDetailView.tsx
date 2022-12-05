@@ -69,6 +69,7 @@ export const NewsDetailView = () => {
             </div>
             <div className={styles.footer}>
                 <div className={styles.footer__controls}>
+                    <Icon name="views" />
                     <Icon name="like" />
                     <Icon name="comments" />
                 </div>

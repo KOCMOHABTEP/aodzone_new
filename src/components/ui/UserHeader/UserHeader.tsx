@@ -1,11 +1,10 @@
-import { Tag } from "@/components/ui/Tag";
 import { Avatar } from "@/components/ui/Avatar";
 import { Icon } from "@/components/ui/Icon";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { useState } from "react";
 import cn from "classnames";
-import { Tabbar } from "@/components/ui/Tabbar";
+import { TabBar } from "@/components/ui/Tabbar";
 import styles from "./UserHeader.module.scss";
 
 interface UserHeaderProps {
@@ -23,9 +22,9 @@ export const UserHeader = ({
     steam,
     handleOpenTeamModal,
 }: UserHeaderProps) => {
-    const [filterValue, setFilterValue] = useState("ОБЗОР");
+    const [tabValue, setTabValue] = useState("ОБЗОР");
 
-    const filters = [
+    const tabList = [
         {
             label: "ОБЗОР",
         },
@@ -38,7 +37,8 @@ export const UserHeader = ({
     ];
 
     const handleTabClick = label => {
-        setFilterValue(label);
+        console.log(label);
+        setTabValue(label);
     };
 
     return (
@@ -87,7 +87,11 @@ export const UserHeader = ({
                     </div>
                 </div>
                 <div className={styles.bottom}>
-                    <Tabbar />
+                    <TabBar
+                        tabs={tabList}
+                        selectedTab={tabValue}
+                        onClick={handleTabClick}
+                    />
                     {/* <div className={styles.bottom__left}> */}
                     {/*    {filters.map(item => ( */}
                     {/*        <div */}

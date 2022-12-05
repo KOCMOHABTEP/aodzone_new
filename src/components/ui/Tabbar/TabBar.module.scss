@@ -1,0 +1,33 @@
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: solid 1px var(--color-grey);
+  padding: 0 0 12px;
+
+  &__left {
+    display: flex;
+  }
+}
+
+  .tabs {
+    font-size: 12px;
+    margin-right: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+
+    &__active {
+      color: var(--color-green);
+
+      &:after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: var(--color-green);
+        position: absolute;
+        bottom: -14px;
+        left: 0;
+      }
+    }
+  }

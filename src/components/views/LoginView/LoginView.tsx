@@ -160,7 +160,7 @@ export const LoginView = () => {
                             />
                         </div>
 
-                        <div className={styles.button}>
+                        <a href="/profile/edit" className={styles.button}>
                             <Button
                                 text="Зарегистрироваться"
                                 onClick={registrationForm.handleSubmit(
@@ -169,7 +169,7 @@ export const LoginView = () => {
                                 disabled={!registrationForm.formState.isValid}
                                 buttonClassName={styles.btn}
                             />
-                        </div>
+                        </a>
                     </>
                 )}
             </div>

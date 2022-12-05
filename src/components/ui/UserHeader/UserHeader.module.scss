@@ -1,6 +1,7 @@
 
 
 .item {
+    width: 100%;
     background-color: var(--color-background-light);
     padding: 24px;
     position: relative;
@@ -37,14 +38,11 @@
     z-index: 100;
 }
 
-.tags {
-    display: flex;
-}
-
 .middle {
     display: flex;
     margin: 64px 0;
     align-items: center;
+    justify-content: center;
 
     &__description {
         margin-left: 16px;

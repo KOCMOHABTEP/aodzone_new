@@ -52,7 +52,7 @@ export const ProfileView = () => {
                 <div className={styles.column}>
                     <ProfileUserInfo
                         title="КОСМОНАВТ"
-                        location="Сербия"
+                        location="Россия"
                         born="25.03.1996"
                         joined="5"
                         online="Был в сети 26.08.2022"
