@@ -111,6 +111,7 @@ export const UserHeader = ({
                             buttonClassName={styles.itemButton}
                             text="+ Добавить команду"
                         />
+                        <Button text="Изменить профиль" />
                     </div>
                 </div>
             </div>

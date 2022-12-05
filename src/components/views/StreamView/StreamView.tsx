@@ -8,42 +8,42 @@ export const StreamView = () => {
     return (
         <div className={styles.item}>
             <div className={styles.title}>СТРИМЫ</div>
-            <div className={styles.header}>
-                <div className={styles.header__title}>ПОПУЛЯРНЫЕ ИГРЫ</div>
-                <StreamFilterIAll />
-            </div>
-            <div className={styles.games}>
-                <StreamsGames
-                    nameGame="Fortnite"
-                    views={258}
-                    src="http://u.kanobu.ru/editor/images/43/eee21854-2a21-4b96-9b8b-7001c2c92949.jpg"
-                />
-                <StreamsGames
-                    nameGame="Fortnite"
-                    views={25}
-                    src="http://u.kanobu.ru/editor/images/43/eee21854-2a21-4b96-9b8b-7001c2c92949.jpg"
-                />
-                <StreamsGames
-                    nameGame="Fortnite"
-                    views={2}
-                    src="https://imagor.network-xyz.com/unsafe/fit-in/846x700/https://cdn.media-xyz.com/media/%D1%84%D0%BE%D0%BB_gDQ6bMJ.png"
-                />
-                <StreamsGames
-                    nameGame="Fortnite"
-                    views={63}
-                    src="https://avatars.dzeninfra.ru/get-zen_doc/1584893/pub_5d9e3dc6027a1500ae5afec4_5d9e403798930900b645272e/scale_1200"
-                />
-                <StreamsGames
-                    nameGame="Fortnite"
-                    views={2256}
-                    src="https://upload.wikimedia.org/wikipedia/ru/1/16/Killzone_2.jpg"
-                />
-                <StreamsGames
-                    nameGame="Fortnite"
-                    views={5}
-                    src="https://metarankings.ru/images/uploads/2021/05/hood-outlaws-legends-boxart-cover.jpg"
-                />
-            </div>
+            {/* <div className={styles.header}> */}
+            {/*    <div className={styles.header__title}>ПОПУЛЯРНЫЕ ИГРЫ</div> */}
+            {/*    <StreamFilterIAll /> */}
+            {/* </div> */}
+            {/* <div className={styles.games}> */}
+            {/*    <StreamsGames */}
+            {/*        nameGame="Fortnite" */}
+            {/*        views={258} */}
+            {/*        src="http://u.kanobu.ru/editor/images/43/eee21854-2a21-4b96-9b8b-7001c2c92949.jpg" */}
+            {/*    /> */}
+            {/*    <StreamsGames */}
+            {/*        nameGame="Fortnite" */}
+            {/*        views={25} */}
+            {/*        src="http://u.kanobu.ru/editor/images/43/eee21854-2a21-4b96-9b8b-7001c2c92949.jpg" */}
+            {/*    /> */}
+            {/*    <StreamsGames */}
+            {/*        nameGame="Fortnite" */}
+            {/*        views={2} */}
+            {/*        src="https://imagor.network-xyz.com/unsafe/fit-in/846x700/https://cdn.media-xyz.com/media/%D1%84%D0%BE%D0%BB_gDQ6bMJ.png" */}
+            {/*    /> */}
+            {/*    <StreamsGames */}
+            {/*        nameGame="Fortnite" */}
+            {/*        views={63} */}
+            {/*        src="https://avatars.dzeninfra.ru/get-zen_doc/1584893/pub_5d9e3dc6027a1500ae5afec4_5d9e403798930900b645272e/scale_1200" */}
+            {/*    /> */}
+            {/*    <StreamsGames */}
+            {/*        nameGame="Fortnite" */}
+            {/*        views={2256} */}
+            {/*        src="https://upload.wikimedia.org/wikipedia/ru/1/16/Killzone_2.jpg" */}
+            {/*    /> */}
+            {/*    <StreamsGames */}
+            {/*        nameGame="Fortnite" */}
+            {/*        views={5} */}
+            {/*        src="https://metarankings.ru/images/uploads/2021/05/hood-outlaws-legends-boxart-cover.jpg" */}
+            {/*    /> */}
+            {/* </div> */}
             <div>
                 <StreamsFilter />
                 <div className={styles.list}>

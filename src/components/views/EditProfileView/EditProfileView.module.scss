@@ -1,0 +1,45 @@
+.edit {
+  padding: 48px;
+  border-radius: 8px;
+  border: solid 1px var(--color-border-light);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 64px;
+}
+
+.editAvatar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+
+.wrapperContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  width: 100%;
+  margin-right: 24px;
+}
+
+.right {
+  width: 100%;
+}
+
+
+
+.input {
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}

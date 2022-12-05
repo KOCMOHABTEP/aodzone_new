@@ -12,7 +12,9 @@ interface InputProps {
     type?: HTMLInputTypeAttribute;
     defaultValue?: string;
     onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
+    onClick?: () => void;
     icon?: ICON_NAME;
+    placeholder?: string;
     hint?: string;
     disabled?: boolean;
     required?: boolean;
