@@ -47,69 +47,69 @@ export const EditProfileView = () => {
     return (
         <div className={styles.edit}>
             <div className={styles.title}>Редактирование профиля</div>
-            <div>
-                <div className={styles.editAvatar}>
+            <div className={styles.wrapper}>
+                <div className={styles.avatar}>
                     <Avatar />
                 </div>
                 <div className={styles.wrapperContent}>
-                    <div className={styles.left}>
-                        <div className={styles.input}>
-                            <Input
-                                label="Имя"
-                                {...profileForm.register("firstname")}
-                            />
+                    <div className={styles.wrapper}>
+                        <div className={styles.column}>
+                            <div className={styles.input}>
+                                <Input
+                                    label="Имя"
+                                    {...profileForm.register("firstname")}
+                                />
+                            </div>
+                            <div className={styles.input}>
+                                <Input
+                                    label="Фамилия"
+                                    {...profileForm.register("lastname")}
+                                />
+                            </div>
+                            <div className={styles.input}>
+                                <InputDatapicker
+                                    showPopperArrow={true}
+                                    selected={birthdayDate}
+                                    label="Дата рождения"
+                                    dateFormat="dd.MM.yyyy"
+                                    onChange={handleBirthdayDate}
+                                    name="birthdayUser"
+                                />
+                            </div>
+                            <div className={styles.input}>
+                                <Input
+                                    label="Ссылка на Steam"
+                                    {...profileForm.register("linkSteam")}
+                                />
+                            </div>
                         </div>
-                        <div className={styles.input}>
-                            <Input
-                                label="Фамилия"
-                                {...profileForm.register("lastname")}
-                            />
-                        </div>
-                        <div className={styles.input}>
-                            <InputDatapicker
-                                selected={birthdayDate}
-                                label="Дата рождения"
-                                dateFormat="dd.MM.yyyy"
-                                onChange={handleBirthdayDate}
-                                name="birthdayUser"
-                            />
-                        </div>
-                        <div className={styles.input}>
-                            <Input
-                                label="Ссылка на Steam"
-                                {...profileForm.register("linkSteam")}
-                            />
+                        <div className={styles.column}>
+                            <div className={styles.input}>
+                                <Input
+                                    label="Email / изменить"
+                                    {...profileForm.register("email")}
+                                />
+                            </div>
+                            <div className={styles.input}>
+                                <Input
+                                    label="Введите старый пароль"
+                                    {...profileForm.register("password")}
+                                />
+                            </div>
+                            <div className={styles.input}>
+                                <Input
+                                    label="Введите новый пароль"
+                                    {...profileForm.register("password")}
+                                />
+                            </div>
+                            <div className={styles.input}>
+                                <Input
+                                    label="Ссылка на Twitch"
+                                    {...profileForm.register("linkTwitch")}
+                                />
+                            </div>
                         </div>
                     </div>
-                    <div className={styles.right}>
-                        <div className={styles.input}>
-                            <Input
-                                label="Email / изменить"
-                                {...profileForm.register("email")}
-                            />
-                        </div>
-                        <div className={styles.input}>
-                            <Input
-                                label="Введите старый пароль"
-                                {...profileForm.register("password")}
-                            />
-                        </div>
-                        <div className={styles.input}>
-                            <Input
-                                label="Введите новый пароль"
-                                {...profileForm.register("password")}
-                            />
-                        </div>
-                        <div className={styles.input}>
-                            <Input
-                                label="Ссылка на Twitch"
-                                {...profileForm.register("linkTwitch")}
-                            />
-                        </div>
-                    </div>
-                </div>
-
-                <div className={styles.input}>
                     <Dropdown
                         label="Страна"
                         options={dropdownCountry}
@@ -122,7 +122,11 @@ export const EditProfileView = () => {
                 </div>
             </div>
             <div className={styles.button}>
-                <Button text="Изменить данные" />
+                <Button
+                    buttonClassName={styles.buttonBtn}
+                    text="Вернуться в профиль"
+                />
+                <Button text="Сохранить изменения" />
             </div>
         </div>
     );

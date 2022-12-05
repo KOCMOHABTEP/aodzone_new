@@ -10,17 +10,39 @@
   margin-bottom: 64px;
 }
 
-.editAvatar {
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar {
   display: flex;
   align-items: center;
-  margin-bottom: 24px;
 }
 
 
 .wrapperContent {
+  width:70% ;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+}
+
+.column {
+  width: 100%;
+}
+
+.column + .column {
+  margin-left: 16px;
 }
 
 .left {
@@ -39,7 +61,15 @@
   cursor: pointer;
 }
 
+.dropdown {
+}
+
 .button {
+  margin-top: 16px;
   display: flex;
   justify-content: flex-end;
+}
+
+.buttonBtn {
+  margin-right: 16px;
 }

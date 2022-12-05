@@ -5,11 +5,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { useState } from "react";
 import cn from "classnames";
+import { Tabbar } from "@/components/ui/Tabbar";
 import styles from "./UserHeader.module.scss";
 
 interface UserHeaderProps {
     nickName: string;
-    level: number;
+    level?: number;
     date: string;
     handleOpenTeamModal?: () => void;
     steam?: { link: string; id: string };
@@ -49,11 +50,6 @@ export const UserHeader = ({
                 />
             </div>
             <div className={styles.content}>
-                <div className={styles.tags}>
-                    <Tag label="ROKIE" />
-                    <Tag label="PUPA" />
-                    <Tag label="ROKIE" />
-                </div>
                 <div className={styles.middle}>
                     <div>
                         <Avatar />
@@ -91,28 +87,28 @@ export const UserHeader = ({
                     </div>
                 </div>
                 <div className={styles.bottom}>
-                    <div className={styles.bottom__left}>
-                        {filters.map(item => (
-                            <div
-                                key={item.label}
-                                onClick={() => handleTabClick(item.label)}
-                                className={cn(styles.tabs, {
-                                    [styles.tabs__active]:
-                                        item.label === filterValue,
-                                })}
-                            >
-                                {item.label}
-                            </div>
-                        ))}
-                    </div>
-                    <div className={styles.bottom__right}>
-                        <Button
-                            onClick={handleOpenTeamModal}
-                            buttonClassName={styles.itemButton}
-                            text="+ Добавить команду"
-                        />
-                        <Button text="Изменить профиль" />
-                    </div>
+                    <Tabbar />
+                    {/* <div className={styles.bottom__left}> */}
+                    {/*    {filters.map(item => ( */}
+                    {/*        <div */}
+                    {/*            key={item.label} */}
+                    {/*            onClick={() => handleTabClick(item.label)} */}
+                    {/*            className={cn(styles.tabs, { */}
+                    {/*                [styles.tabs__active]: */}
+                    {/*                    item.label === filterValue, */}
+                    {/*            })} */}
+                    {/*        > */}
+                    {/*            {item.label} */}
+                    {/*        </div> */}
+                    {/*    ))} */}
+                    {/* </div> */}
+                    {/* <div className={styles.bottom__right}> */}
+                    {/*    <Button */}
+                    {/*        onClick={handleOpenTeamModal} */}
+                    {/*        buttonClassName={styles.itemButton} */}
+                    {/*        text="+ Добавить команду" */}
+                    {/*    /> */}
+                    {/* </div> */}
                 </div>
             </div>
         </div>

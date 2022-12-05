@@ -222,17 +222,17 @@
   position: relative;
 }
 .react-datepicker__navigation-icon--next {
-
 }
 .react-datepicker__navigation-icon--next::before {
-  background: url("/icons/arrow-right.svg");
-  color: var(--color-white);
+  background: var(--color-white);
+  mask: url("/icons/svg/arrow_right.svg") ;
 }
 .react-datepicker__navigation-icon--previous {
 
 }
 .react-datepicker__navigation-icon--previous::before {
-  background: url("/icons/arrow-left.svg");
+  background: var(--color-white);
+  mask: url("/icons/svg/arrow_left.svg") ;
 }
 
 .react-datepicker__month-container {
@@ -764,4 +764,5 @@
 .react-datepicker__portal .react-datepicker-time__header {
   font-size: 1.44rem;
 }
+
 
