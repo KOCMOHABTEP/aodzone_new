@@ -55,7 +55,6 @@ export const ProfileView = () => {
                         location="Россия"
                         born="25.03.1996"
                         joined="5"
-                        online="Был в сети 26.08.2022"
                         handleOpenDescriptionForm={handleOpenDescriptionModal}
                     />
                 </div>

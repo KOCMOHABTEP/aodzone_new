@@ -8,13 +8,14 @@
 
     &__tabs {
         font-size: 12px;
-        color: var(--color-violet);
+        text-transform: uppercase;
+        color: var(--color-green);
         font-weight: bold;
         margin-right: 4px;
     }
 
     &__icon {
-        color: var(--color-violet);
+        color: var(--color-green);
     }
 }
 

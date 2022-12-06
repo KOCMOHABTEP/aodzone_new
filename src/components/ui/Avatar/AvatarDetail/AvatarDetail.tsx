@@ -1,4 +1,5 @@
-import styles from "./ForumDetailAvatar.module.scss";
+import { Avatar } from "@/components/ui/Avatar";
+import styles from "./AvatarDetail.module.scss";
 
 interface ForumDetailAvatarProps {
     title: string;
@@ -6,7 +7,7 @@ interface ForumDetailAvatarProps {
     src: string;
 }
 
-export const ForumDetailAvatar = ({
+export const AvatarDetail = ({
     title,
     messages,
     src,
@@ -14,7 +15,7 @@ export const ForumDetailAvatar = ({
     return (
         <div className={styles.item}>
             <div className={styles.image}>
-                <img className={styles.image__img} src={src} alt="logoUser" />
+                <Avatar image={src} online={true} />
             </div>
             <div className={styles.content}>
                 <div className={styles.content__title}>{title}</div>

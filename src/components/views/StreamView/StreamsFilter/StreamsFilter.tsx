@@ -1,44 +1,39 @@
 import { StreamFilterIAll } from "@/components/views/StreamView/StreamsFilter/StreamFilterIAll";
 import { useState } from "react";
 import cn from "classnames";
+import { TabBar } from "@/components/ui/Tabbar";
 import styles from "./StreamsFilter.module.scss";
 
 export const StreamsFilter = () => {
-    const [filterValue, setFilterValue] = useState("TOP STEAMS");
+    const [streamTabValue, setStreamTabValue] = useState("Популярные стримы");
 
-    const filters = [
+    const streamsTabList = [
         {
-            label: "TOP STEAMS",
+            label: "Популярные стримы",
         },
         {
-            label: "CURRENCY ONLINE",
+            label: "Онлайн",
         },
         {
-            label: "UPCOMING",
+            label: "Предстоящие",
         },
         {
-            label: "CLIPS (FINISHED)",
+            label: "Завершенные",
         },
     ];
 
-    const handleTabClick = label => {
-        setFilterValue(label);
+    const handleStreamTabClick = label => {
+        setStreamTabValue(label);
     };
 
     return (
         <div className={styles.item}>
             <div className={styles.item__right}>
-                {filters.map(item => (
-                    <div
-                        key={item.label}
-                        onClick={() => handleTabClick(item.label)}
-                        className={cn(styles.tabs, {
-                            [styles.tabs__active]: item.label === filterValue,
-                        })}
-                    >
-                        {item.label}
-                    </div>
-                ))}
+                <TabBar
+                    tabs={streamsTabList}
+                    selectedTab={streamTabValue}
+                    onClick={handleStreamTabClick}
+                />
             </div>
             <div className={styles.item__left}>
                 <StreamFilterIAll />

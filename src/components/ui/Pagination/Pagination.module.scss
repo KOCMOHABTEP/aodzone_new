@@ -1,0 +1,49 @@
+.container {
+  margin-bottom: 32px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconPrev {
+  margin-right: 8px;
+}
+
+.iconNext {
+  margin-left: 8px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.controlsItem {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controlsItemSelected {
+  color: var(--color-white);
+  border-radius: 50%;
+  background: #6373F2;
+}
+
+.controlsItemDisabled {
+  display: none;
+}

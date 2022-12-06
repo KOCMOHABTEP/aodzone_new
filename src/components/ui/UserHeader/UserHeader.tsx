@@ -22,17 +22,20 @@ export const UserHeader = ({
     steam,
     handleOpenTeamModal,
 }: UserHeaderProps) => {
-    const [tabValue, setTabValue] = useState("ОБЗОР");
+    const [tabValue, setTabValue] = useState("Обзор");
 
     const tabList = [
         {
-            label: "ОБЗОР",
+            label: "Обзор",
         },
         {
-            label: "ИСТОРИЯ ИГРЫ",
+            label: "Достижения",
         },
         {
-            label: "ДОСТИЖЕНИЯ",
+            label: "Команда",
+        },
+        {
+            label: "Матчи",
         },
     ];
 
@@ -92,20 +95,6 @@ export const UserHeader = ({
                         selectedTab={tabValue}
                         onClick={handleTabClick}
                     />
-                    {/* <div className={styles.bottom__left}> */}
-                    {/*    {filters.map(item => ( */}
-                    {/*        <div */}
-                    {/*            key={item.label} */}
-                    {/*            onClick={() => handleTabClick(item.label)} */}
-                    {/*            className={cn(styles.tabs, { */}
-                    {/*                [styles.tabs__active]: */}
-                    {/*                    item.label === filterValue, */}
-                    {/*            })} */}
-                    {/*        > */}
-                    {/*            {item.label} */}
-                    {/*        </div> */}
-                    {/*    ))} */}
-                    {/* </div> */}
                     {/* <div className={styles.bottom__right}> */}
                     {/*    <Button */}
                     {/*        onClick={handleOpenTeamModal} */}

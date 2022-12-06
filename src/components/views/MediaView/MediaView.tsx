@@ -2,6 +2,7 @@ import { MediaListItem } from "@/components/views/MediaView/MediaListItem";
 import { MediaModal } from "@/components/views/MediaView/MediaModal";
 import { useState } from "react";
 import cn from "classnames";
+import { TabBar } from "@/components/ui/Tabbar";
 import styles from "./MediaView.module.scss";
 
 type MediaType = "all" | "pictures" | "videos";
@@ -9,7 +10,7 @@ type MediaType = "all" | "pictures" | "videos";
 export const MediaView = () => {
     const [activeMediaItem, setActiveMediaItem] = useState(null);
     const [mediaModalFormVisible, setMediaModalFormVisible] = useState(false);
-    const [mediaType, setMediaType] = useState<MediaType>("all");
+    const [mediaTabValue, setMediaTabValue] = useState("Все медиафайлы");
 
     const mediaList = [
         {
@@ -77,43 +78,37 @@ export const MediaView = () => {
         },
     ];
 
+    const mediaTabList = [
+        {
+            label: "Все медиафайлы",
+        },
+        {
+            label: "Картинки",
+        },
+        {
+            label: "Видео",
+        },
+    ];
+
     const handleMediaItemClick = (data: any) => {
         setActiveMediaItem(data);
         setMediaModalFormVisible(true);
     };
 
-    const handleChangeMediaType = (process: MediaType) => {
-        setMediaType(process);
+    const handleMediaTabClick = label => {
+        console.log(label);
+        setMediaTabValue(label);
     };
 
     return (
         <div className={styles.media}>
             <div className={styles.title}>МЕДИА</div>
-            <div className={styles.content}>
-                <div
-                    className={cn(styles.contentTitle, {
-                        [styles.contentTitleActive]: mediaType === "all",
-                    })}
-                    onClick={() => handleChangeMediaType("all")}
-                >
-                    Все медиафайлы
-                </div>
-                <div
-                    className={cn(styles.contentTitle, {
-                        [styles.contentTitleActive]: mediaType === "pictures",
-                    })}
-                    onClick={() => handleChangeMediaType("pictures")}
-                >
-                    Картинки
-                </div>
-                <div
-                    className={cn(styles.contentTitle, {
-                        [styles.contentTitleActive]: mediaType === "videos",
-                    })}
-                    onClick={() => handleChangeMediaType("videos")}
-                >
-                    Видео
-                </div>
+            <div className={styles.mediaTabBar}>
+                <TabBar
+                    tabs={mediaTabList}
+                    selectedTab={mediaTabValue}
+                    onClick={handleMediaTabClick}
+                />
             </div>
             <div className={styles.wrapper}>
                 {mediaList.map(mediaItem => (

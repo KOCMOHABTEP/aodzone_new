@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Icon } from "@/components/ui/Icon";
 import { MatchCardInfo } from "@/components/views/MatchView/MatchCard/MatchCardInfo";
 import { MatchCardInfoUser } from "@/components/views/MatchView/MatchCard/MatchCardInfoUser";
+import { Button } from "@/components/ui/Button";
 import styles from "./MatchCard.module.scss";
 
 interface MatchCardProps {

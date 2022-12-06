@@ -1,4 +1,5 @@
 import { Icon } from "@/components/ui/Icon";
+import { CommentSendSection } from "@/components/ui/Comment/CommentSendSection";
 import styles from "./NewsDetailView.module.scss";
 
 export const NewsDetailView = () => {
@@ -74,6 +75,7 @@ export const NewsDetailView = () => {
                     <Icon name="comments" />
                 </div>
             </div>
+            <CommentSendSection />
         </div>
     );
 };
