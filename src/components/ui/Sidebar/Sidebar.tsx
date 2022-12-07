@@ -76,7 +76,7 @@ export const Sidebar = () => {
                     <Link href="/teams">
                         <a>
                             <SidebarItem
-                                title="Команды"
+                                title="Рейтинг команд"
                                 icon="team"
                                 active={isActiveSidebarHref("/team")}
                             />

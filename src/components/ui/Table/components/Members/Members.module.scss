@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.progressBar {
+  height: 4px;
+  max-width: 100px;
+  width: 100%;
+  background: var(--color-grey);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progressBarFill {
+  height: 4px;
+  width: 33%;
+  background: var(--color-green);
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.caption {
+  font-size: 14px;
+  color: var(--color-grey);
+  margin-right: 8px;
+}

@@ -1,7 +1,7 @@
 import FlagRU from "~/icons/countries/RU.svg";
 import FlagBY from "~/icons/countries/BY.svg";
 import FlagKZ from "~/icons/countries/KZ.svg";
-import styles from "./TableCellCountry.module.scss";
+import styles from "./Country.module.scss";
 
 const COUNTRIES_LIST = {
     RU: FlagRU,
@@ -13,7 +13,7 @@ interface TableCellCountryProps {
     country: keyof typeof COUNTRIES_LIST;
 }
 
-export const TableCellCountry = ({ country }: TableCellCountryProps) => {
+export const Country = ({ country }: TableCellCountryProps) => {
     const CountryIcon = () => {
         const iconSize = { width: 24, height: 24 };
 

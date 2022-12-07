@@ -6,14 +6,18 @@ import {
     TableRow,
 } from "@/components/ui/Table";
 
-import { TableCellCountry } from "@/components/ui/Table/components/TableCellCountry";
-import { TableCellName } from "@/components/ui/Table/components/TableCellName";
+import { Country } from "@/components/ui/Table/components/Country";
+import { Name } from "@/components/ui/Table/components/Name";
+import { Members } from "@/components/ui/Table/components/Members";
+import { Tag } from "@/components/ui/Table/components/Tag";
+import { Points } from "@/components/ui/Table/components/Points";
+import { List } from "@/components/ui/Table/components/List";
 import styles from "./TeamsView.module.scss";
 
 export const TeamsView = () => {
     return (
         <div>
-            <div className={styles.title}>Команды AodZone</div>
+            <div className={styles.title}>Рейтинг команд</div>
             <Table>
                 <TableHead
                     labels={[
@@ -27,16 +31,24 @@ export const TeamsView = () => {
                 />
                 <TableBody>
                     <TableRow>
-                        <TableCell>1</TableCell>
-                        <TableCell>123</TableCell>
-                        <TableCell>AOD</TableCell>
                         <TableCell>
-                            <TableCellName title="Лупчики" />
+                            <List number={1} />
                         </TableCell>
                         <TableCell>
-                            <TableCellCountry country="BY" />
+                            <Points points={154} />
                         </TableCell>
-                        <TableCell>53</TableCell>
+                        <TableCell>
+                            <Tag tag="AOD" />
+                        </TableCell>
+                        <TableCell>
+                            <Name title="Лупчики" />
+                        </TableCell>
+                        <TableCell>
+                            <Country country="BY" />
+                        </TableCell>
+                        <TableCell>
+                            <Members />
+                        </TableCell>
                     </TableRow>
                 </TableBody>
             </Table>
