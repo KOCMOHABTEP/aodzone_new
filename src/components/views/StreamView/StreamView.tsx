@@ -1,5 +1,4 @@
 import { StreamFilterIAll } from "@/components/views/StreamView/StreamsFilter/StreamFilterIAll";
-import { StreamsGames } from "@/components/views/StreamView/StreamsGames";
 import { StreamsFilter } from "@/components/views/StreamView/StreamsFilter";
 import { StreamItem } from "@/components/views/StreamView/StreamItem";
 import styles from "./StreamView.module.scss";
@@ -45,7 +44,9 @@ export const StreamView = () => {
             {/*    /> */}
             {/* </div> */}
             <div>
-                <StreamsFilter />
+                <StreamsFilter>
+                    <StreamFilterIAll />
+                </StreamsFilter>
                 <div className={styles.list}>
                     <StreamItem
                         nameGame="World plane 3"

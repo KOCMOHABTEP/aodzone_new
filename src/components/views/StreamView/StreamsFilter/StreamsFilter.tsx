@@ -1,10 +1,14 @@
 import { StreamFilterIAll } from "@/components/views/StreamView/StreamsFilter/StreamFilterIAll";
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import cn from "classnames";
 import { TabBar } from "@/components/ui/Tabbar";
 import styles from "./StreamsFilter.module.scss";
 
-export const StreamsFilter = () => {
+interface StreamsFilterProps {
+    children?: ReactNode;
+}
+
+export const StreamsFilter = ({ children }: StreamsFilterProps) => {
     const [streamTabValue, setStreamTabValue] = useState("Популярные стримы");
 
     const streamsTabList = [
@@ -35,9 +39,7 @@ export const StreamsFilter = () => {
                     onClick={handleStreamTabClick}
                 />
             </div>
-            <div className={styles.item__left}>
-                <StreamFilterIAll />
-            </div>
+            <div className={styles.item__left}>{children}</div>
         </div>
     );
 };
