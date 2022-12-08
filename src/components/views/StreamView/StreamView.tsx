@@ -1,12 +1,108 @@
 import { StreamFilterIAll } from "@/components/views/StreamView/StreamsFilter/StreamFilterIAll";
 import { StreamsFilter } from "@/components/views/StreamView/StreamsFilter";
 import { StreamItem } from "@/components/views/StreamView/StreamItem";
+import { Button } from "@/components/ui/Button";
+import { useState } from "react";
+import { StreamForm } from "@/components/views/StreamView/StreamForm";
 import styles from "./StreamView.module.scss";
 
 export const StreamView = () => {
+    const [streamFormVisible, setStreamFormVisible] = useState(false);
+
+    const streamList = [
+        {
+            nameGame: "World plane 3",
+            title: "Играем в игру на выживание",
+            nickName: "КОСМОНАВТ",
+            numbersViews: 32,
+            src: "https://metarankings.ru/images/uploads/2021/05/hood-outlaws-legends-boxart-cover.jpg",
+        },
+        {
+            nameGame: "World plane 3",
+            title: "Играем в игру на выживание",
+            nickName: "ЛУПА",
+            numbersViews: 356,
+            src: "https://metarankings.ru/images/uploads/2021/05/hood-outlaws-legends-boxart-cover.jpg",
+        },
+        {
+            nameGame: "World plane 3",
+            title: "Играем в игру на выживание",
+            nickName: "Пупа",
+            numbersViews: 156,
+            src: "https://www.ixbt.com/img/n1/news/2020/5/1/02ab2825469425b9_1920xH_large.jpg",
+        },
+        {
+            title: "Играем в игру на выживание",
+            nameGame: "World plane 3",
+            nickName: "ПУПА",
+            numbersViews: 156,
+            src: "https://www.ixbt.com/img/n1/news/2020/5/1/02ab2825469425b9_1920xH_large.jpg",
+        },
+        {
+            title: "Играем в игру на выживание",
+            nickName: "КОСМОНАВТ",
+            nameGame: "World plane 3",
+            numbersViews: 156,
+            src: "https://cdn.igromania.ru/mnt/news/1/0/5/1/2/6/95631/748015063a88962f_1920xH.jpg",
+        },
+        {
+            title: "Играем в игру на выживание",
+            nickName: "КОСМОНАВТ",
+            nameGame: "World plane 3",
+            numbersViews: 785,
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5wloazeH48nDKtWRUWMXsgcPM9xcUZgmZzw&usqp=CAU",
+        },
+        {
+            title: "Играем в игру на выживание",
+            nickName: "КОСМОНАВТ",
+            nameGame: "World plane 3",
+            numbersViews: 785,
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5wloazeH48nDKtWRUWMXsgcPM9xcUZgmZzw&usqp=CAU",
+        },
+        {
+            title: "Играем в игру на выживание",
+            nickName: "КОСМОНАВТ",
+            nameGame: "World plane 3",
+            numbersViews: 785,
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5wloazeH48nDKtWRUWMXsgcPM9xcUZgmZzw&usqp=CAU",
+        },
+        {
+            title: "Играем в игру на выживание",
+            nickName: "КОСМОНАВТ",
+            nameGame: "World plane 3",
+            numbersViews: 785,
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5wloazeH48nDKtWRUWMXsgcPM9xcUZgmZzw&usqp=CAU",
+        },
+        {
+            title: "Играем в игру на выживание",
+            nickName: "КОСМОНАВТ",
+            nameGame: "World plane 3",
+            numbersViews: 785,
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5wloazeH48nDKtWRUWMXsgcPM9xcUZgmZzw&usqp=CAU",
+        },
+    ];
+
+    const handleOpenStreamModal = () => {
+        setStreamFormVisible(true);
+    };
+
+    const handleCloseTeamModal = () => {
+        setStreamFormVisible(false);
+    };
+
     return (
         <div className={styles.item}>
-            <div className={styles.title}>СТРИМЫ</div>
+            <div className={styles.wrapper}>
+                <div className={styles.title}>СТРИМЫ</div>
+                <Button text="Добавить стрим" onClick={handleOpenStreamModal} />
+            </div>
+            <div>
+                <StreamForm
+                    streamFormVisible={streamFormVisible}
+                    handleCloseTeamModal={handleCloseTeamModal}
+                />
+            </div>
+
             {/* <div className={styles.header}> */}
             {/*    <div className={styles.header__title}>ПОПУЛЯРНЫЕ ИГРЫ</div> */}
             {/*    <StreamFilterIAll /> */}
@@ -48,48 +144,21 @@ export const StreamView = () => {
                     <StreamFilterIAll />
                 </StreamsFilter>
                 <div className={styles.list}>
-                    <StreamItem
-                        nameGame="World plane 3"
-                        title="Играем в игру на выживание"
-                        nickName="КОСМОНАВТ"
-                        numbersViews={32}
-                        src="https://metarankings.ru/images/uploads/2021/05/hood-outlaws-legends-boxart-cover.jpg"
-                    />
-                    <StreamItem
-                        nameGame="World plane 3"
-                        title="Играем в игру на выживание"
-                        nickName="ЛУПА"
-                        numbersViews={356}
-                        src="https://metarankings.ru/images/uploads/2021/05/hood-outlaws-legends-boxart-cover.jpg"
-                    />
-                    <StreamItem
-                        title="Играем в игру на выживание"
-                        nameGame="World plane 3"
-                        nickName="ПУПА"
-                        numbersViews={156}
-                        src="https://www.ixbt.com/img/n1/news/2020/5/1/02ab2825469425b9_1920xH_large.jpg"
-                    />
-                    <StreamItem
-                        title="Играем в игру на выживание"
-                        nameGame="World plane 3"
-                        nickName="КОСМОНАВТ"
-                        numbersViews={456}
-                        src="https://cdnstatic.rg.ru/uploads/images/194/05/37/IMG_20200417_100440_693_d_850.jpg"
-                    />
-                    <StreamItem
-                        title="Играем в игру на выживание"
-                        nickName="КОСМОНАВТ"
-                        nameGame="World plane 3"
-                        numbersViews={156}
-                        src="https://cdn.igromania.ru/mnt/news/1/0/5/1/2/6/95631/748015063a88962f_1920xH.jpg"
-                    />
-                    <StreamItem
-                        title="Играем в игру на выживание"
-                        nickName="КОСМОНАВТ"
-                        nameGame="World plane 3"
-                        numbersViews={785}
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5wloazeH48nDKtWRUWMXsgcPM9xcUZgmZzw&usqp=CAU"
-                    />
+                    {streamList.map(
+                        (
+                            { title, nickName, nameGame, numbersViews, src },
+                            index
+                        ) => (
+                            <StreamItem
+                                key={index}
+                                nameGame={nameGame}
+                                title={title}
+                                nickName={nickName}
+                                numbersViews={numbersViews}
+                                src={src}
+                            />
+                        )
+                    )}
                 </div>
             </div>
         </div>

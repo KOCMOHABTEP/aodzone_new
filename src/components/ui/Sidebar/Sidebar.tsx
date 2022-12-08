@@ -73,16 +73,28 @@ export const Sidebar = () => {
                     </Link>
                 </li>
                 <li className={styles.sidebarListItem}>
+                    <Link href="/players">
+                        <a>
+                            <SidebarItem
+                                title="Рейтинг игроков"
+                                icon="profile"
+                                active={isActiveSidebarHref("/players")}
+                            />
+                        </a>
+                    </Link>
+                </li>
+                <li className={styles.sidebarListItem}>
                     <Link href="/teams">
                         <a>
                             <SidebarItem
                                 title="Рейтинг команд"
                                 icon="team"
-                                active={isActiveSidebarHref("/team")}
+                                active={isActiveSidebarHref("/teams")}
                             />
                         </a>
                     </Link>
                 </li>
+
                 {/* <li className={styles.sidebarListItem}> */}
                 {/*    <Link href="/friends"> */}
                 {/*        <a> */}

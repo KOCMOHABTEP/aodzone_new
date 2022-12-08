@@ -3,6 +3,7 @@ import { MediaModal } from "@/components/views/MediaView/MediaModal";
 import { useState } from "react";
 import cn from "classnames";
 import { TabBar } from "@/components/ui/Tabbar";
+import { Pagination } from "@/components/ui/Pagination";
 import styles from "./MediaView.module.scss";
 
 type MediaType = "all" | "pictures" | "videos";
@@ -129,6 +130,9 @@ export const MediaView = () => {
                     />
                 )}
             </div>
+            {/* <div className={styles.paginetor}> */}
+            {/*    <Pagination pageCount={} onChangePage={} /> */}
+            {/* </div> */}
         </div>
     );
 };

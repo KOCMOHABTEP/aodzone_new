@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  margin-right: 16px;
+  position: relative;
+}
+
+
+.content {
+}
+
+.title {
+  color: var(--color-grey);
+  margin-bottom: 4px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.infoCountry {
+  height: 12px;
+  width: 12px;
+  margin-right: 4px;
+  display: flex;
+}
+
+.tag {
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--color-grey);
+}

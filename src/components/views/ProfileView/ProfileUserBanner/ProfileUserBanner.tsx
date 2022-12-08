@@ -11,7 +11,7 @@ export const ProfileUserBanner = () => {
                     <img className={styles.image__img} src="/img/space.jpg" />
                 </div>
                 <div className={styles.user}>
-                    <Avatar size="large" />
+                    <Avatar />
                     <div className={styles.info}>
                         <div className={styles.info__name}>KOCMOHABT</div>
                         <div className={styles.progress} />

@@ -1,6 +1,7 @@
 import { Icon } from "@/components/ui/Icon";
 import cn from "classnames";
 import Link from "next/link";
+import { Avatar } from "@/components/ui/Avatar";
 import styles from "./StreamItem.module.scss";
 
 interface StreamItemProps {
@@ -26,18 +27,18 @@ export const StreamItem = ({
                         <img className={styles.image__img} src={src} />
                     </div>
                     <div className={styles.info}>
-                        <div className={cn(styles.stats, styles.stats__left)}>
+                        <div className={cn(styles.stats, styles.stats__top)}>
                             <Icon
                                 className={styles.stats__icon}
-                                name="views"
+                                name="streams"
                                 size={16}
                             />
                             <div className={styles.stats__label}>LIVE</div>
                         </div>
-                        <div className={cn(styles.stats, styles.stats__right)}>
+                        <div className={cn(styles.stats, styles.stats__bottom)}>
                             <Icon
                                 className={styles.stats__icon}
-                                name="friends"
+                                name="views"
                                 size={16}
                             />
                             <div className={styles.stats__label}>
@@ -47,7 +48,7 @@ export const StreamItem = ({
                     </div>
                 </div>
                 <div className={styles.content}>
-                    <Icon name="matches" />
+                    <Avatar size={32} />
                     <div className={styles.text}>
                         <div className={styles.text__title}>{title}</div>
                         <div className={styles.wrapper}>

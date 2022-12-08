@@ -2,8 +2,20 @@
     max-width: 48px;
     position: relative;
 
-    &:after {
-        content: "";
+    //&:after {
+    //    content: "";
+    //    width: 58px;
+    //    height: 58px;
+    //    border: solid 1px var(--color-border);
+    //    border-radius: 100%;
+    //    position: absolute;
+    //    left: 50%;
+    //    top: 50%;
+    //    transform: translate(-50%, -50%);
+    //}
+
+
+    &__bordered {
         width: 58px;
         height: 58px;
         border: solid 1px var(--color-border);
@@ -27,9 +39,6 @@
         }
     }
 
-    &__large {
-        width: 102px;
-    }
 }
 
 .level {

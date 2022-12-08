@@ -1,7 +1,10 @@
 import styles from "./Members.module.scss";
 
-export const Members = () => {
-    const members = 15;
+interface MembersProps {
+    members: number;
+}
+
+export const Members = ({ members }: MembersProps) => {
     const maxMembers = 20;
 
     const membersPercentage = (members * 100) / maxMembers;

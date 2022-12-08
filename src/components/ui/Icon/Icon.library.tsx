@@ -3,6 +3,7 @@ import IconArrowRight from "~/icons/svg/arrow_right.svg";
 import IconArrowDown from "~/icons/svg/arrow_down.svg";
 import IconArrowLeft from "~/icons/svg/arrow_left.svg";
 import IconChat from "~/icons/svg/chat.svg";
+import IconClose from "~/icons/svg/close.svg";
 import IconError from "~/icons/svg/error.svg";
 import IconFriends from "~/icons/svg/friends.svg";
 import IconFullscreen from "~/icons/svg/fullscreen.svg";
@@ -35,6 +36,7 @@ export const ICON_LIBRARY = {
     arrow_down: IconArrowDown,
     arrow_left: IconArrowLeft,
     comments: IconChat,
+    close: IconClose,
     error: IconError,
     friends: IconFriends,
     fullscreen: IconFullscreen,
