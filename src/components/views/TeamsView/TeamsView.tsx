@@ -10,6 +10,9 @@ import { Members } from "@/components/ui/Table/components/Members";
 import { TeamInfo } from "@/components/ui/Table/components/TeamInfo";
 import { Points } from "@/components/ui/Table/components/Points";
 import { List } from "@/components/ui/Table/components/List";
+import { Games } from "@/components/ui/Table/components/Games";
+import { Wins } from "@/components/ui/Table/components/Wins";
+import { WinsPercentage } from "@/components/ui/Table/components/WinsPercentage";
 import { Country } from "@/components/ui/Table/components/Country";
 import styles from "./TeamsView.module.scss";
 
@@ -23,6 +26,8 @@ export const TeamsView = () => {
             title: "Лупчики",
             country: "BY",
             members: 15,
+            games: 1456,
+            wins: 56,
         },
         {
             number: 2,
@@ -32,6 +37,8 @@ export const TeamsView = () => {
             title: "Руссичи",
             country: "RU",
             members: 4,
+            games: 1456,
+            wins: 56,
         },
         {
             number: 3,
@@ -41,6 +48,8 @@ export const TeamsView = () => {
             title: "Counter",
             country: "AE",
             members: 9,
+            games: 1456,
+            wins: 56,
         },
         {
             number: 4,
@@ -50,6 +59,8 @@ export const TeamsView = () => {
             title: "Counter",
             country: "AM",
             members: 12,
+            games: 13,
+            wins: 6,
         },
         {
             number: 5,
@@ -59,6 +70,8 @@ export const TeamsView = () => {
             title: "Counter",
             country: "KZ",
             members: 3,
+            games: 1456,
+            wins: 56,
         },
     ];
 
@@ -71,7 +84,7 @@ export const TeamsView = () => {
                         "",
                         "Баллы",
                         "Команда",
-                        "Количество участников",
+                        "Кол-во участников",
                         "Игр",
                         "Побед",
                         "% побед",
@@ -88,6 +101,8 @@ export const TeamsView = () => {
                                 title,
                                 country,
                                 members,
+                                wins,
+                                games,
                             },
                             index
                         ) => (
@@ -108,6 +123,19 @@ export const TeamsView = () => {
                                 </TableCell>
                                 <TableCell>
                                     <Members members={members} />
+                                </TableCell>
+                                <TableCell>
+                                    <Games value={games.toString()} />
+                                </TableCell>
+                                <TableCell>
+                                    <Wins value={wins.toString()} />
+                                </TableCell>
+                                <TableCell>
+                                    <WinsPercentage
+                                        value={`${parseFloat(
+                                            (games / wins).toFixed(2)
+                                        )}%`}
+                                    />
                                 </TableCell>
                             </TableRow>
                         )
