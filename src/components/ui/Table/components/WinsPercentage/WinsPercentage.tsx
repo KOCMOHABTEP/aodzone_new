@@ -5,5 +5,5 @@ interface WinsPercentageProps {
 }
 
 export const WinsPercentage = ({ value }: WinsPercentageProps) => {
-    return <div>{value}</div>;
+    return <div className={styles.title}>{value}</div>;
 };

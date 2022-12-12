@@ -5,5 +5,5 @@ interface WinsProps {
 }
 
 export const Wins = ({ value }: WinsProps) => {
-    return <div>{value}</div>;
+    return <div className={styles.title}>{value}</div>;
 };

@@ -13,7 +13,6 @@ import { List } from "@/components/ui/Table/components/List";
 import { Games } from "@/components/ui/Table/components/Games";
 import { Wins } from "@/components/ui/Table/components/Wins";
 import { WinsPercentage } from "@/components/ui/Table/components/WinsPercentage";
-import { Country } from "@/components/ui/Table/components/Country";
 import styles from "./TeamsView.module.scss";
 
 export const TeamsView = () => {

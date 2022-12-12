@@ -32,14 +32,14 @@
     position: relative;
 
     &__active {
-        color: var(--color-violet);
+        color: var(--color-green);
 
         &:after {
             content: "";
             height: 4px;
             width: 4px;
             border-radius: 50%;
-            background-color: var(--color-violet);
+            background-color: var(--color-green);
             position: absolute;
             bottom: 5px;
             left: 8px;

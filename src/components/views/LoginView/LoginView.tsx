@@ -4,11 +4,17 @@ import { Button } from "@/components/ui/Button";
 import { Checkbox } from "@/components/ui/Chekbox";
 import cn from "classnames";
 import { useForm } from "react-hook-form";
+import { useAppDispatch } from "@/redux/store";
+import { testLogin } from "@/redux/auth/auth.slice";
+import { useRouter } from "next/router";
+import Link from "next/link";
 import styles from "./LoginView.module.scss";
 
 type LoginProcessType = "login" | "registration";
 
 export const LoginView = () => {
+    const router = useRouter();
+    const dispatch = useAppDispatch();
     const [loginProcess, setLoginProcess] = useState<LoginProcessType>("login");
     const loginForm = useForm({
         mode: "onChange",
@@ -35,6 +41,8 @@ export const LoginView = () => {
 
     const handleLogin = data => {
         console.log("Логин::handleLogin", { ...data });
+        dispatch(testLogin());
+        router.push("/");
     };
 
     const handleRegister = data => {
@@ -159,17 +167,20 @@ export const LoginView = () => {
                                 })}
                             />
                         </div>
-
-                        <a href="/profile/edit" className={styles.button}>
-                            <Button
-                                text="Зарегистрироваться"
-                                onClick={registrationForm.handleSubmit(
-                                    handleRegister
-                                )}
-                                disabled={!registrationForm.formState.isValid}
-                                buttonClassName={styles.btn}
-                            />
-                        </a>
+                        <Link href="/profile/edit">
+                            <a className={styles.button}>
+                                <Button
+                                    text="Зарегистрироваться"
+                                    onClick={registrationForm.handleSubmit(
+                                        handleRegister
+                                    )}
+                                    disabled={
+                                        !registrationForm.formState.isValid
+                                    }
+                                    buttonClassName={styles.btn}
+                                />
+                            </a>
+                        </Link>
                     </>
                 )}
             </div>

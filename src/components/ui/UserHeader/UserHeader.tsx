@@ -3,33 +3,28 @@ import { Icon } from "@/components/ui/Icon";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { useState } from "react";
-import cn from "classnames";
+import countryRU from "~/icons/countries/RU.svg";
 import { TabBar } from "@/components/ui/Tabbar";
 import styles from "./UserHeader.module.scss";
 
 interface UserHeaderProps {
     nickName: string;
     level?: number;
-    date: string;
-    handleOpenTeamModal?: () => void;
+    createdDate: string;
     steam?: { link: string; id: string };
 }
 
 export const UserHeader = ({
     nickName,
     level,
-    date,
+    createdDate,
     steam,
-    handleOpenTeamModal,
 }: UserHeaderProps) => {
     const [tabValue, setTabValue] = useState("Обзор");
 
     const tabList = [
         {
             label: "Обзор",
-        },
-        {
-            label: "Достижения",
         },
         {
             label: "Команда",
@@ -62,10 +57,14 @@ export const UserHeader = ({
                             <div className={styles.middle__title}>
                                 {nickName}
                             </div>
-                            <Icon name="countryRU" size={22} />
+                            <Icon name={countryRU} size={22} />
                         </div>
+                        <div>ФИО</div>
+                        <div>Дата рождения</div>
                         {/* <div className={styles.level}>Уровень {level}</div> */}
-                        <div className={styles.data}>Пользователь с {date}</div>
+                        <div className={styles.data}>
+                            Пользователь с {createdDate}
+                        </div>
                         {steam && (
                             <Link href={steam.link} passHref>
                                 <a className={styles.link}>
@@ -95,13 +94,11 @@ export const UserHeader = ({
                         selectedTab={tabValue}
                         onClick={handleTabClick}
                     />
-                    {/* <div className={styles.bottom__right}> */}
-                    {/*    <Button */}
-                    {/*        onClick={handleOpenTeamModal} */}
-                    {/*        buttonClassName={styles.itemButton} */}
-                    {/*        text="+ Добавить команду" */}
-                    {/*    /> */}
-                    {/* </div> */}
+                    <Link href="/profile/edit">
+                        <a>
+                            <Button text="Редактировать профиль" />
+                        </a>
+                    </Link>
                 </div>
             </div>
         </div>

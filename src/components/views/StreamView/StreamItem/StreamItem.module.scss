@@ -29,28 +29,34 @@
     }
 }
 
-.info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 8px;
-    left: 16px;
-}
+//.info {
+//    display: flex;
+//    flex-direction: column;
+//    align-items: center;
+//    position: absolute;
+//    top: 8px;
+//    left: 16px;
+//}
 
-.stats {
+.info {
     background-color: var(--color-background-overlay);
     padding: 4px;
     align-items: center;
     display: flex;
 
-    &__top {
+    &__live {
+        position: absolute;
         border-radius: 8px;
         margin-bottom: 72px;
+        top: 8px;
+        left: 16px;
     }
 
-    &__bottom {
+    &__stats {
+        position: absolute;
         border-radius: 8px;
+        bottom: 8px;
+        left: 16px;
     }
 
     &__icon {

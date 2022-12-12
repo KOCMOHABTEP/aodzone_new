@@ -14,6 +14,8 @@ import {
 
 import createWebStorage from "redux-persist/lib/storage/createWebStorage";
 import app from "@/redux/app/app.slice";
+import user from "@/redux/user/user.slice";
+import auth from "@/redux/auth/auth.slice";
 
 const createNoopStorage = () => {
     return {
@@ -40,6 +42,8 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
     app,
+    user,
+    auth,
     // auth: authSlice,
     // admin: adminOrderSlice,
     // courses: coursesSlice,

@@ -5,5 +5,5 @@ interface GamesProps {
 }
 
 export const Games = ({ value }: GamesProps) => {
-    return <div>{value}</div>;
+    return <div className={styles.title}>{value}</div>;
 };

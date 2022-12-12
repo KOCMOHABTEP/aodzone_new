@@ -22,7 +22,7 @@ export const TeamMembers = () => {
     return (
         <div className={styles.item}>
             <div className={styles.header}>
-                <div className={styles.header__title}>КОМАНДА</div>
+                <div className={styles.header__title}>Моя команда</div>
                 <div className={styles.header__info}>
                     {filters.map(item => (
                         <div

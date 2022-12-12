@@ -1,8 +1,13 @@
 import { NewsItem } from "@/components/views/NewsView/NewsItem";
 import { Button } from "@/components/ui/Button";
+import { useSelector } from "react-redux";
+import { getUserAuth } from "@/redux/auth/auth.selector";
+import Link from "next/link";
 import styles from "./NewsView.module.scss";
 
 export const NewsView = () => {
+    const isAuth = useSelector(getUserAuth);
+
     const newsList = [
         {
             id: 1,
@@ -66,12 +71,16 @@ export const NewsView = () => {
         <div className={styles.item}>
             <div className={styles.head}>
                 <div className={styles.title}>Последние новости</div>
-                <a href="news/create">
-                    <Button
-                        text="Предложить новость"
-                        buttonClassName={styles.btn}
-                    />
-                </a>
+                {isAuth && (
+                    <Link href="news/create">
+                        <a>
+                            <Button
+                                text="Предложить новость"
+                                buttonClassName={styles.btn}
+                            />
+                        </a>
+                    </Link>
+                )}
             </div>
             <div className={styles.grid}>
                 {newsList.map(props => (

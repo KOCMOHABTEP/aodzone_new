@@ -27,7 +27,9 @@
     &__achievement {
         width: 72px;
         font-size: 14px;
-        background-color: var(--color-violet);
+        font-weight: 700;
+        color: var(--color-black);
+        background-color: var(--color-green);
         text-align: center;
         border-radius: 8px;
     }

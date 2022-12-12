@@ -1,5 +1,6 @@
 import { Icon } from "@/components/ui/Icon";
 import { useState } from "react";
+import Link from "next/link";
 import styles from "./ForumFilterItem.module.scss";
 
 interface ForumFilterItemProps {
@@ -35,12 +36,16 @@ export const ForumFilterItem = ({
                 </div>
             </div>
             {dropDownShown && (
-                <a href="/forum/1" className={styles.dropdown}>
-                    <div className={styles.dropdown__title}>{titleTopic}</div>
-                    <div className={styles.dropdown__value}>
-                        {comments} комментариев
-                    </div>
-                </a>
+                <Link href="/forum/1">
+                    <a className={styles.dropdown}>
+                        <div className={styles.dropdown__title}>
+                            {titleTopic}
+                        </div>
+                        <div className={styles.dropdown__value}>
+                            {comments} комментариев
+                        </div>
+                    </a>
+                </Link>
             )}
         </>
     );

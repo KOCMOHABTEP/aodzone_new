@@ -4,6 +4,7 @@ import { useState } from "react";
 import cn from "classnames";
 import { TabBar } from "@/components/ui/Tabbar";
 import { Pagination } from "@/components/ui/Pagination";
+import { Button } from "@/components/ui/Button";
 import styles from "./MediaView.module.scss";
 
 type MediaType = "all" | "pictures" | "videos";
@@ -103,7 +104,10 @@ export const MediaView = () => {
 
     return (
         <div className={styles.media}>
-            <div className={styles.title}>МЕДИА</div>
+            <div className={styles.wrapperHeader}>
+                <div className={styles.title}>МЕДИА</div>
+                <Button text="Добавить" />
+            </div>
             <div className={styles.mediaTabBar}>
                 <TabBar
                     tabs={mediaTabList}

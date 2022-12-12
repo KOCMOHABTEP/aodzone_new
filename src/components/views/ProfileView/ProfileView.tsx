@@ -1,5 +1,4 @@
 import { AchievementsBar } from "@/components/ui/AchievementsBar";
-import { ProfileUserInfo } from "@/components/views/ProfileView/ProfileUserInfo";
 import { ProfileUserActivity } from "@/components/views/ProfileView/ProfileUserActivity";
 import { WidgetLastMatches } from "@/components/ui/Widget/WidgetLastMatches/WidgetLastMatches";
 import { UserHeader } from "@/components/ui/UserHeader";
@@ -7,71 +6,65 @@ import { TeamMembers } from "@/components/views/ProfileView/TeamMembers";
 import { useState } from "react";
 import { TeamForm } from "@/components/views/ProfileView/TeamForm";
 import { FormDescription } from "@/components/views/ProfileView/FormDescription";
+import { Button } from "@/components/ui/Button";
+import { useSelector } from "react-redux";
+import { getUser } from "@/redux/user/user.selectors";
+import Link from "next/link";
 import styles from "./ProfileView.module.scss";
 
 export const ProfileView = () => {
-    const [teamFormVisible, setTeamFormVisible] = useState(false);
-    const [descriptionFormVisible, setDescriptionFormVisible] = useState(false);
+    const userData = useSelector(getUser);
 
-    const handleOpenTeamModal = () => {
-        setTeamFormVisible(true);
-    };
+    console.log(userData);
 
-    const handleCloseTeamModal = () => {
-        setTeamFormVisible(false);
-    };
-
-    const handleOpenDescriptionModal = () => {
-        setDescriptionFormVisible(true);
-    };
-
-    const handleCloseDescriptionModal = () => {
-        setDescriptionFormVisible(false);
-    };
+    const achievementsVisible = true;
+    const matchesVisible = false;
+    const teamVisible = false;
 
     return (
         <>
             <div className={styles.item}>
                 <UserHeader
-                    handleOpenTeamModal={handleOpenTeamModal}
-                    nickName="КОСМОНАВТ"
-                    level={23}
-                    date="23.05.2022"
-                />
-            </div>
-            <div className={styles.form}>
-                <TeamForm
-                    teamFormVisible={teamFormVisible}
-                    handleCloseTeamModal={handleCloseTeamModal}
+                    nickName={userData.nickName}
+                    createdDate={userData.createdDate}
                 />
             </div>
             <div className={styles.wrapper}>
-                <AchievementsBar />
+                {achievementsVisible && <AchievementsBar />}
             </div>
-            <div className={styles.row}>
-                <div className={styles.column}>
-                    <ProfileUserInfo
-                        title="КОСМОНАВТ"
-                        location="Россия"
-                        born="25.03.1996"
-                        joined="5"
-                        handleOpenDescriptionForm={handleOpenDescriptionModal}
-                    />
-                </div>
-                <div className={styles.column}>
-                    <ProfileUserActivity />
-                </div>
-            </div>
+            {/* <div className={styles.row}> */}
+            {/* <div className={styles.column}> */}
+            {/*    <ProfileUserActivity /> */}
+            {/* </div> */}
+            {/* </div> */}
             <div className={styles.team}>
-                <TeamMembers />
+                {teamVisible && <TeamMembers />}
+                {!teamVisible && (
+                    <div className={styles.noTeam}>
+                        <div className={styles.noTeamTitle}>
+                            На данный момент у Вас ещё нет команды.
+                        </div>
+                        <Link href="/teams/create">
+                            <a>
+                                <Button text="Создать команду" />
+                            </a>
+                        </Link>
+                    </div>
+                )}
             </div>
-            <WidgetLastMatches title="Последние матчи" />
-            <div>
-                <FormDescription
-                    descriptionFormVisible={descriptionFormVisible}
-                    handleCloseDescriptionForm={handleCloseDescriptionModal}
-                />
-            </div>
+            {matchesVisible && <WidgetLastMatches title="Последние матчи" />}
+            {!matchesVisible && (
+                <div className={styles.matches}>
+                    <div className={styles.matchesTitle}>
+                        На данный момент у вас нет матчей
+                    </div>
+                    <Link href="/matches/add">
+                        <a>
+                            <Button text="Создать матч" />
+                        </a>
+                    </Link>
+                </div>
+            )}
         </>
     );
 };

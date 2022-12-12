@@ -16,6 +16,7 @@ export const StreamView = () => {
             nickName: "КОСМОНАВТ",
             numbersViews: 32,
             src: "https://metarankings.ru/images/uploads/2021/05/hood-outlaws-legends-boxart-cover.jpg",
+            online: true,
         },
         {
             nameGame: "World plane 3",
@@ -23,6 +24,7 @@ export const StreamView = () => {
             nickName: "ЛУПА",
             numbersViews: 356,
             src: "https://metarankings.ru/images/uploads/2021/05/hood-outlaws-legends-boxart-cover.jpg",
+            online: false,
         },
         {
             nameGame: "World plane 3",
@@ -30,6 +32,7 @@ export const StreamView = () => {
             nickName: "Пупа",
             numbersViews: 156,
             src: "https://www.ixbt.com/img/n1/news/2020/5/1/02ab2825469425b9_1920xH_large.jpg",
+            online: false,
         },
         {
             title: "Играем в игру на выживание",
@@ -37,6 +40,7 @@ export const StreamView = () => {
             nickName: "ПУПА",
             numbersViews: 156,
             src: "https://www.ixbt.com/img/n1/news/2020/5/1/02ab2825469425b9_1920xH_large.jpg",
+            online: false,
         },
         {
             title: "Играем в игру на выживание",
@@ -44,6 +48,7 @@ export const StreamView = () => {
             nameGame: "World plane 3",
             numbersViews: 156,
             src: "https://cdn.igromania.ru/mnt/news/1/0/5/1/2/6/95631/748015063a88962f_1920xH.jpg",
+            online: false,
         },
         {
             title: "Играем в игру на выживание",
@@ -51,6 +56,7 @@ export const StreamView = () => {
             nameGame: "World plane 3",
             numbersViews: 785,
             src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5wloazeH48nDKtWRUWMXsgcPM9xcUZgmZzw&usqp=CAU",
+            online: false,
         },
         {
             title: "Играем в игру на выживание",
@@ -58,6 +64,7 @@ export const StreamView = () => {
             nameGame: "World plane 3",
             numbersViews: 785,
             src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5wloazeH48nDKtWRUWMXsgcPM9xcUZgmZzw&usqp=CAU",
+            online: false,
         },
         {
             title: "Играем в игру на выживание",
@@ -65,6 +72,7 @@ export const StreamView = () => {
             nameGame: "World plane 3",
             numbersViews: 785,
             src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5wloazeH48nDKtWRUWMXsgcPM9xcUZgmZzw&usqp=CAU",
+            online: false,
         },
         {
             title: "Играем в игру на выживание",
@@ -72,6 +80,7 @@ export const StreamView = () => {
             nameGame: "World plane 3",
             numbersViews: 785,
             src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5wloazeH48nDKtWRUWMXsgcPM9xcUZgmZzw&usqp=CAU",
+            online: false,
         },
         {
             title: "Играем в игру на выживание",
@@ -79,6 +88,7 @@ export const StreamView = () => {
             nameGame: "World plane 3",
             numbersViews: 785,
             src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5wloazeH48nDKtWRUWMXsgcPM9xcUZgmZzw&usqp=CAU",
+            online: false,
         },
     ];
 
@@ -146,7 +156,14 @@ export const StreamView = () => {
                 <div className={styles.list}>
                     {streamList.map(
                         (
-                            { title, nickName, nameGame, numbersViews, src },
+                            {
+                                title,
+                                nickName,
+                                nameGame,
+                                numbersViews,
+                                src,
+                                online,
+                            },
                             index
                         ) => (
                             <StreamItem
@@ -156,6 +173,7 @@ export const StreamView = () => {
                                 nickName={nickName}
                                 numbersViews={numbersViews}
                                 src={src}
+                                online={online}
                             />
                         )
                     )}

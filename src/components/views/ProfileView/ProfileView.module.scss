@@ -10,19 +10,46 @@
     margin-bottom: 16px;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 16px;
-}
+//.row {
+//    display: flex;
+//    flex-direction: row;
+//    margin-bottom: 16px;
+//}
 
-.column {
-    background-color: var(--color-background-light);
-    flex: 1;
-    margin: 8px;
-}
+//.column {
+//    background-color: var(--color-background-light);
+//    flex: 1;
+//}
+
 
 .team {
     background-color: var(--color-background-light);
     margin-bottom: 16px;
+}
+
+
+.noTeam {
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.noTeamTitle {
+    margin-bottom: 24px;
+}
+
+
+.matches {
+    background: var(--color-background-light);
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.matchesTitle {
+    margin-bottom: 24px;
 }

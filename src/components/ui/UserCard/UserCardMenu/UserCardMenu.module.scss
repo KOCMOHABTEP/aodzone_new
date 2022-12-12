@@ -10,38 +10,6 @@
     right: 0;
 }
 
-.item {
-    color: var(--color-white);
-    padding: 8px;
-    margin-bottom: 8px;
-    border-radius: 6px;
-    opacity: 0.5;
-    display: block;
-    transition: background 0.3s ease, opacity 0.3s ease;
-
-    &:last-child {
-        margin-bottom: 0;
-    }
-
-    &:hover {
-        opacity: 1;
-        background: var(--color-background-lighter);
-    }
-
-}
-
-.container {
-    display: flex;
-    align-items: center;
-
-    &__icon {
-        margin-right: 8px;
-    }
-
-    &__text {
-        font-size: 14px;
-    }
-}
 
 
 

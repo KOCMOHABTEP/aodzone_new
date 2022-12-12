@@ -37,7 +37,7 @@ export const Dropdown = ({
     useClickOutsideContainer(dropdownRef, () => setDropdownMenuOpened(false));
 
     const generateDropdownValues = () => {
-        const defaultValue = "Выбрать";
+        const defaultValue = label || "Выбрать";
 
         if (value) {
             return options.find(option => option.value === value)?.label;
@@ -80,7 +80,7 @@ export const Dropdown = ({
 
     return (
         <div className={styles.component} ref={dropdownRef}>
-            <div className={styles.label}>{label}</div>
+            {/* <div className={styles.label}>{label}</div> */}
             <div className={styles.dropdown}>
                 <div
                     className={cn(styles.input, {

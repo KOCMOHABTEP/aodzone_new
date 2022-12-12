@@ -4,9 +4,16 @@ import { HeaderActionMenu } from "@/components/ui/Header/HeaderActionMenu";
 import { useState } from "react";
 import { HeaderNotification } from "@/components/ui/Header/HeaderNotification";
 import { Button } from "@/components/ui/Button";
+import { useSelector } from "react-redux";
+import { getUserAuth } from "@/redux/auth/auth.selector";
+import Link from "next/link";
 import styles from "./Header.module.scss";
 
 export const Header = () => {
+    const isAuth = useSelector(getUserAuth);
+
+    console.log(isAuth);
+
     const [menuNotificationsVisible, setMenuNotificationsVisible] =
         useState(false);
     const [menuFriendsVisible, setMenuFriendsVisible] = useState(false);
@@ -54,10 +61,15 @@ export const Header = () => {
                 {/*        </div> */}
                 {/*    </a> */}
                 {/* </div> */}
-                <a href="/login/" className={styles.wrapper}>
-                    <Button buttonClassName={styles.btn} text="Войти" />
-                </a>
-                {/* <UserCard /> */}
+                {isAuth ? (
+                    <UserCard />
+                ) : (
+                    <Link href="/login/">
+                        <a className={styles.wrapper}>
+                            <Button buttonClassName={styles.btn} text="Войти" />
+                        </a>
+                    </Link>
+                )}
             </div>
         </div>
     );

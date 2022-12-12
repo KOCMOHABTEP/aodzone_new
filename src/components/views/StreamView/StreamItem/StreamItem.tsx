@@ -10,6 +10,7 @@ interface StreamItemProps {
     numbersViews: number;
     nameGame: string;
     src: string;
+    online?: boolean;
 }
 
 export const StreamItem = ({
@@ -18,6 +19,7 @@ export const StreamItem = ({
     nameGame,
     numbersViews,
     src,
+    online,
 }: StreamItemProps) => {
     return (
         <Link href="/streams/1">
@@ -26,25 +28,24 @@ export const StreamItem = ({
                     <div className={styles.image}>
                         <img className={styles.image__img} src={src} />
                     </div>
-                    <div className={styles.info}>
-                        <div className={cn(styles.stats, styles.stats__top)}>
+                    {online && (
+                        <div className={cn(styles.info, styles.info__live)}>
                             <Icon
-                                className={styles.stats__icon}
+                                className={styles.info__icon}
                                 name="streams"
                                 size={16}
                             />
-                            <div className={styles.stats__label}>LIVE</div>
+                            <div className={styles.info__label}>LIVE</div>
                         </div>
-                        <div className={cn(styles.stats, styles.stats__bottom)}>
-                            <Icon
-                                className={styles.stats__icon}
-                                name="views"
-                                size={16}
-                            />
-                            <div className={styles.stats__label}>
-                                {numbersViews}
-                            </div>
-                        </div>
+                    )}
+
+                    <div className={cn(styles.info, styles.info__stats)}>
+                        <Icon
+                            className={styles.info__icon}
+                            name="views"
+                            size={16}
+                        />
+                        <div className={styles.info__label}>{numbersViews}</div>
                     </div>
                 </div>
                 <div className={styles.content}>
