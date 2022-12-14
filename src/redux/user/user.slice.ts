@@ -16,9 +16,9 @@ export interface IUserState {
 
 const initialState: IUserState = {
     role: "ADMIN",
-    firstName: "Вика",
-    lastName: "Смирнова",
-    nickName: "Viktorina",
+    firstName: "Тест",
+    lastName: "Тестович",
+    nickName: "Testov",
     email: "test@test.ru",
     birthdayDate: "01.01.1990",
     linkSteam: "",

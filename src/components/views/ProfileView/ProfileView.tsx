@@ -26,6 +26,9 @@ export const ProfileView = () => {
             <div className={styles.item}>
                 <UserHeader
                     nickName={userData.nickName}
+                    firstName={userData.firstName}
+                    lastName={userData.lastName}
+                    birthdayDate={userData.birthdayDate}
                     createdDate={userData.createdDate}
                 />
             </div>

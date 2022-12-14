@@ -3,21 +3,28 @@ import { Icon } from "@/components/ui/Icon";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { useState } from "react";
-import countryRU from "~/icons/countries/RU.svg";
 import { TabBar } from "@/components/ui/Tabbar";
 import styles from "./UserHeader.module.scss";
 
 interface UserHeaderProps {
     nickName: string;
     level?: number;
-    createdDate: string;
+    firstName: string;
+    lastName: string;
+    birthdayDate: string;
+    createdDate?: string;
+    countryUser: string;
     steam?: { link: string; id: string };
 }
 
 export const UserHeader = ({
     nickName,
     level,
+    firstName,
+    lastName,
+    birthdayDate,
     createdDate,
+    countryUser,
     steam,
 }: UserHeaderProps) => {
     const [tabValue, setTabValue] = useState("Обзор");
@@ -57,10 +64,14 @@ export const UserHeader = ({
                             <div className={styles.middle__title}>
                                 {nickName}
                             </div>
-                            <Icon name={countryRU} size={22} />
+                            {/* <Icon name={countryUser} size={22} /> */}
                         </div>
-                        <div>ФИО</div>
-                        <div>Дата рождения</div>
+                        <div className={styles.name}>
+                            {firstName} {lastName}
+                        </div>
+                        <div className={styles.birthdayDate}>
+                            Дата рождения: {birthdayDate}
+                        </div>
                         {/* <div className={styles.level}>Уровень {level}</div> */}
                         <div className={styles.data}>
                             Пользователь с {createdDate}

@@ -4,9 +4,12 @@ import { StreamItem } from "@/components/views/StreamView/StreamItem";
 import { Button } from "@/components/ui/Button";
 import { useState } from "react";
 import { StreamForm } from "@/components/views/StreamView/StreamForm";
+import { useSelector } from "react-redux";
+import { getUserAuth } from "@/redux/auth/auth.selector";
 import styles from "./StreamView.module.scss";
 
 export const StreamView = () => {
+    const isAuth = useSelector(getUserAuth);
     const [streamFormVisible, setStreamFormVisible] = useState(false);
 
     const streamList = [
@@ -104,7 +107,12 @@ export const StreamView = () => {
         <div className={styles.item}>
             <div className={styles.wrapper}>
                 <div className={styles.title}>СТРИМЫ</div>
-                <Button text="Добавить стрим" onClick={handleOpenStreamModal} />
+                {isAuth && (
+                    <Button
+                        text="Добавить стрим"
+                        onClick={handleOpenStreamModal}
+                    />
+                )}
             </div>
             <div>
                 <StreamForm

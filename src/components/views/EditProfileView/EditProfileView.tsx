@@ -17,6 +17,7 @@ export const EditProfileView = () => {
         defaultValues: {
             email: "",
             password: "",
+            nickName: "",
             firstname: "",
             lastname: "",
             birthdayDate: "",
@@ -62,6 +63,12 @@ export const EditProfileView = () => {
                             <div className={styles.block}>
                                 <div className={styles.input}>
                                     <Input
+                                        label="Никнейм"
+                                        {...profileForm.register("nickName")}
+                                    />
+                                </div>
+                                <div className={styles.input}>
+                                    <Input
                                         label="Имя"
                                         {...profileForm.register("firstname")}
                                     />
@@ -82,17 +89,19 @@ export const EditProfileView = () => {
                                         name="birthdayDate"
                                     />
                                 </div>
+                            </div>
+                        </div>
+                        <div className={styles.wrapperContent}>
+                            <div className={styles.profileTitle}>
+                                Пароль / Email{" "}
+                            </div>
+                            <div className={styles.block}>
                                 <div className={styles.input}>
                                     <Input
                                         label="Email / изменить"
                                         {...profileForm.register("email")}
                                     />
                                 </div>
-                            </div>
-                        </div>
-                        <div className={styles.wrapperContent}>
-                            <div className={styles.profileTitle}>Пароль</div>
-                            <div className={styles.block}>
                                 <div className={styles.input}>
                                     <Input
                                         label="Введите текущий пароль"

@@ -5,11 +5,14 @@ import cn from "classnames";
 import { TabBar } from "@/components/ui/Tabbar";
 import { Pagination } from "@/components/ui/Pagination";
 import { Button } from "@/components/ui/Button";
+import { useSelector } from "react-redux";
+import { getUserAuth } from "@/redux/auth/auth.selector";
 import styles from "./MediaView.module.scss";
 
 type MediaType = "all" | "pictures" | "videos";
 
 export const MediaView = () => {
+    const isAuth = useSelector(getUserAuth);
     const [activeMediaItem, setActiveMediaItem] = useState(null);
     const [mediaModalFormVisible, setMediaModalFormVisible] = useState(false);
     const [mediaTabValue, setMediaTabValue] = useState("Все медиафайлы");
@@ -106,7 +109,7 @@ export const MediaView = () => {
         <div className={styles.media}>
             <div className={styles.wrapperHeader}>
                 <div className={styles.title}>МЕДИА</div>
-                <Button text="Добавить" />
+                {isAuth && <Button text="Добавить" />}
             </div>
             <div className={styles.mediaTabBar}>
                 <TabBar
