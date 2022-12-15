@@ -52,7 +52,9 @@ export const EditProfileView = () => {
             <div className={styles.wrapper}>
                 <div className={styles.avatar}>
                     <Avatar />
-                    <div>Загрузить аватар</div>
+                    <div className={styles.avatarTitle}>
+                        Добавить / изменить аватар
+                    </div>
                 </div>
                 <div className={styles.content}>
                     <div className={styles.info}>

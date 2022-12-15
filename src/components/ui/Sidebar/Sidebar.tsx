@@ -60,7 +60,7 @@ export const Sidebar = () => {
                             <SidebarItem
                                 title="Главная"
                                 icon="home"
-                                active={isActiveSidebarHref("/")}
+                                active={router.asPath === "/"}
                             />
                         </a>
                     </Link>

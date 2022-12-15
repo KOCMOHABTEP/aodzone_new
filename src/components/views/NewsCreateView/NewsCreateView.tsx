@@ -31,14 +31,28 @@ export const NewsCreateView = () => {
                     onSelect={({ option }) => setDropdownValue(option.value)}
                 />
             </div>
-            <Input label="Название " />
-            <Input label="Название отображаемое в URL" />
-            <Textarea label="Краткое описание" value="" onChange="" />
-            <ContentEditor />
-            <Input label="Иконка новости" />
-            <Input label="Ссылка на картинку для главной статей" />
-            <Input label="Ссылка на источник материала" />
-            <div>Автор</div>
+            <div className={styles.wrapper}>
+                <Input label="Название " />
+            </div>
+            <div className={styles.wrapper}>
+                <Input label="Название отображаемое в URL" />
+            </div>
+            <div className={styles.wrapper}>
+                <Textarea label="Краткое описание" value="" onChange="" />
+            </div>
+            <div className={styles.wrapper}>
+                <ContentEditor />
+            </div>
+            <div className={styles.wrapper}>
+                <Input label="Иконка новости" />
+            </div>
+            <div className={styles.wrapper}>
+                <Input label="Ссылка на картинку для главной статей" />
+            </div>
+            <div className={styles.wrapper}>
+                <Input label="Ссылка на источник материала" />
+            </div>
+            <div>Автор статьи: Космонавт</div>
             <div>
                 <Button text="Отменить" />
                 <Button text="Отправить" />

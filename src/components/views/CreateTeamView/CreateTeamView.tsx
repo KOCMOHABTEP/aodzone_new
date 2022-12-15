@@ -13,8 +13,8 @@ export const CreateTeamView = () => {
         defaultValues: {
             teamName: "",
             tag: "",
-            linkSteam: "",
-            linkTwitch: "",
+            teamLinkWebsite: "",
+            TeamLinkSmm: "",
             countryTeam: "",
         },
     });
@@ -40,7 +40,9 @@ export const CreateTeamView = () => {
             <div>
                 <div className={styles.avatar}>
                     <Avatar />
-                    <div>Добавить аватар команды</div>
+                    <div className={styles.avatarTitle}>
+                        Добавить / изменить аватар команды
+                    </div>
                 </div>
                 <div className={styles.wrapper}>
                     <div className={styles.wrapperTitle}>
@@ -69,13 +71,37 @@ export const CreateTeamView = () => {
                         </div>
                     </div>
                 </div>
+                <div className={styles.wrapper}>
+                    <div>
+                        <div className={styles.wrapperTitle}>Ссылки</div>
+                    </div>
+                    <div className={styles.block}>
+                        <div className={styles.input}>
+                            <Input
+                                label="Сайт"
+                                {...teamForm.register("teamLinkWebsite")}
+                            />
+                        </div>
+                        <div className={styles.input}>
+                            <Input
+                                label="Социальная сеть"
+                                {...teamForm.register("TeamLinkSmm")}
+                            />
+                        </div>
+                    </div>
+                </div>
                 <div>
                     <div className={styles.wrapperTitle}>
                         Приглашение в команду
                     </div>
-                </div>
-                <div>
-                    <div className={styles.wrapperTitle}>Ссылки</div>
+                    <div className={styles.block}>
+                        <div className={styles.input}>
+                            <Input
+                                label="Добавить в команду "
+                                {...teamForm.register("TeamLinkSmm")}
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
