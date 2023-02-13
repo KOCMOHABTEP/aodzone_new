@@ -6,12 +6,12 @@ html,
 body {
     font-family: var(--font-body);
     font-size: 16px;
-    color: var(--color-white);
-    background: var(--color-background);
+    color: $white;
+    background: $bgBlack;
 }
 
 a {
-    color: var(--color-link);
+    color: $secondary;
     text-decoration: none;
 }
 
@@ -22,19 +22,18 @@ a {
 }
 
 
-
 *::-webkit-scrollbar {
     width: 3px;
     height: 3px;
 }
 
 *::-webkit-scrollbar-track {
-    background: var(--color-border);
+    background: $border;
     border-radius: 3px;
 }
 
 *::-webkit-scrollbar-thumb {
-    background: var(--color-green);
+    background: $primary;
     box-shadow: inset 2px 2px 5px 0 rgba(255,255,255, 0.5);
     border-radius: 3px;
 }

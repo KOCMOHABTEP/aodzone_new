@@ -1,28 +1,28 @@
 //BACKGROUND COLOR
 
-$bgBlack: #21212E;
-$bgBlue: #3C3C54;
-$bgGrey: #3D414A;
-$bgWhite: #FFFFFF;
+$bgBlack: rgba(33, 33, 46, 1); //#21212E
+$bgBlue: rgba(60, 60, 84, 1); //##3C3C54
+$bgGrey: rgba(61, 65, 74, 1); //#3D414A
+$white: rgba(255, 255, 255, 1); //#FFFFFF
 
 //BORDER-RADIUS
-$border: #484D5A;
+$border: rgba(72, 77, 90, 1); //##484D5A
 
 
 //ERROR
-$error: #FF6B69;
+$error: rgba(255, 107, 105, 1); //#FF6B69
 $errorOpacity: rgba(255, 107, 105, 0.3);
 
 //TEXT-COLOR
-$text: #7C839A;
-$textOpacity: rgba(176, 184, 204, 1);
+$textGrey: rgba(124, 131, 154, 1); //#7C839A
+$textGreyLight: rgba(176, 184, 204, 1); //#B0B8CC
 
 //PRIMARY
-$primary: #13C486;
+$primary: rgba(19, 196, 134, 1); //#13C486
 $primaryOpacity: rgba(19, 196, 134, 0.3);
 
 //SECONDARY
-$secondary: #928FFF;
+$secondary: rgba(146, 143, 255, 1); //#928FFF
 $secondaryOpacity: rgba(146, 143, 255, 0.3);
 
 
