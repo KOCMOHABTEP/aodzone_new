@@ -1,4 +1,4 @@
-
+//@import "src/styles/variables";
 
 .input {
   font-size: 14px;
@@ -47,7 +47,7 @@
 }
 
 .error {
-  border: solid 1px var(--color-red-light);
+  border: $error solid 1px ;
   box-shadow: var(--box-shadow-red);
 
   &:focus {
