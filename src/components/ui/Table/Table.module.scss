@@ -11,14 +11,14 @@
   font-size: 14px;
   font-weight: normal;
   text-align: left;
-  background: var(--color-background-overlay);
+  background: var(--color-grey-900);
   color: var(--color-white);
   padding: 16px 24px;
   border-bottom: solid 1px var(--color-grey);
 }
 
 .tableRow {
-  background-color: var(--color-black);
+  background-color: var(--color-background-overlay);
 }
 
 .tableRowDark {

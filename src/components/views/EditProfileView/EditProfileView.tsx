@@ -46,10 +46,10 @@ export const EditProfileView = () => {
         setBirthdayDate(data);
     };
 
-    onScaleChange = scaleChangeEvent => {
-        const scaleValue = parseFloat(scaleChangeEvent.target.value);
-        setState({ scaleValue });
-    };
+    // onScaleChange = scaleChangeEvent => {
+    //     const scaleValue = parseFloat(scaleChangeEvent.target.value);
+    //     setState({ scaleValue });
+    // };
 
     return (
         <div className={styles.item}>
