@@ -14,7 +14,7 @@ import styles from "./ProfileView.module.scss";
 
 export const ProfileView = () => {
     const userData = useSelector(getUser);
-    
+
 
     const achievementsVisible = true;
     const matchesVisible = false;
