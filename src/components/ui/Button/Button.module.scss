@@ -5,7 +5,7 @@
     border: solid 1px var(--color-green);
     font-size: 14px;
     font-weight: bold;
-    color: var(--color-background);
+    color: var(--color-black);
     outline: none;
     min-width: 100px;
     height: 48px;
@@ -25,11 +25,11 @@
 .buttonDisabled {
     cursor: not-allowed;
     color: var(--color-grey);
-    background: var(--field-disabled);
-    border: solid 1px var(--field-disabled);
+    background: var(--color-border-light);
+    border: solid 1px var(--color-border-light);
 
     &:hover {
         color: var(--color-grey);
-        background: var(--field-disabled);
+        background: var(--color-border-light);
     }
 }

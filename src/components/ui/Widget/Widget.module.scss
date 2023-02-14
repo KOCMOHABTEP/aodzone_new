@@ -3,14 +3,14 @@
 .item {
     margin-bottom: 32px;
     border-radius: 6px;
-    border: solid 1px var(--color-border);
+    border: solid 1px var(--color-grey);
     box-shadow: var(--box-shadow);
-    background: var(--color-background-light);
+    background: var(--color-black;
     position: relative;
 
     .header {
         padding: 24px;
-        background: var(--color-background-lighter);
+        background: var(--color-background-overlay);
         display: flex;
 
         .title {

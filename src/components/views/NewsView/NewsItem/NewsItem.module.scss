@@ -1,10 +1,8 @@
-
-
 .item {
     overflow: hidden;
-    background: var(--color-background-light);
+    background: var(--color-black);
     border-radius: 6px;
-    border: solid 1px var(--color-border);
+    border: solid 1px var(--color-grey);
     box-shadow: var(--box-shadow);
     margin: 16px;
     position: relative;
@@ -52,13 +50,13 @@
 .control {
     font-size: 12px;
     font-weight: bold;
-    color: var(--color-grey);
+    color: var(--color-text-grey);
     line-height: 16px;
     position: relative;
     display: flex;
 
     &__icon {
-        color: var(--color-grey);
+        color: var(--color-text-grey);
         margin-right: 8px;
     }
 }

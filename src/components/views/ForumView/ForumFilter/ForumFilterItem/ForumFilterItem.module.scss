@@ -12,8 +12,8 @@
     border: solid 1px transparent;
 
     &:hover {
-        border: solid 1px var(--color-border);
-        background-color: var(--color-bg-lighter);
+        border: solid 1px var(--color-grey);
+        background-color: var(--color-background-overlay);
     }
 }
 
@@ -58,9 +58,9 @@
     }
 
     &:hover {
-        background-color: var(--color-bg-lighter);
+        background-color: var(--color-background-overlay);
         border-radius: 8px;
-        border: solid 1px var(--color-border);
+        border: solid 1px var(--color-grey);
         color: var(--color-green);
     }
 

@@ -1,7 +1,7 @@
 
 .user {
     padding: 24px;
-    background-color: var(--color-bg);
+    background-color: var(--color-black);
     border-radius: 4px;
 }
 
@@ -12,7 +12,7 @@
 .item {
     display: flex;
     align-items: center;
-    border-bottom: solid 1px var(--color-border);
+    border-bottom: solid 1px var(--color-grey);
     padding: 16px 0;
 
     &__time{

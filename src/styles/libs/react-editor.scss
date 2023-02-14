@@ -2,16 +2,16 @@
 
 
 .rdw-editor-wrapper {
-  background: var(--ui-dark);
+  background: var(--color-black);
   border-radius: 8px;
-  border: solid 1px var(--color-border);
+  border: solid 1px var(--color-grey);
 }
 
 
 .rdw-editor-toolbar {
   background: none;
   border: none;
-  border-bottom: solid 1px var(--color-border);
+  border-bottom: solid 1px var(--color-grey);
   padding: 16px;
 }
 
@@ -45,11 +45,11 @@
 }
 
 .rdw-dropdown-optionwrapper {
-  background: var(--ui-dark);
+  background: var(--color-black);
   border: solid 1px var(--color-green);
 
   &:hover {
-    background: var(--ui-dark);
+    background: var(--color-black);
   }
 }
 
@@ -68,7 +68,7 @@
 
 .rdw-link-modal, .rdw-colorpicker-modal, .rdw-embedded-modal, .rdw-emoji-modal, .rdw-image-modal, .rdw-link-modal-input, .rdw-embedded-modal-size-input, .rdw-image-modal-size-input  {
   color: var(--color-white);
-  background: var(--ui-dark);
+  background: var(--color-black);
   border: solid 1px var(--color-green);
   box-shadow: none;
 }
@@ -91,7 +91,7 @@
 .rdw-embedded-modal-link-input, .rdw-image-modal-url-input {
   height: auto;;
   color: var(--color-white);
-  background: var(--ui-dark);
+  background: var(--color-black);
   border: solid 1px var(--color-green);
   box-shadow: none;
 }

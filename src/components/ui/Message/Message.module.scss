@@ -3,14 +3,14 @@
 .item {
     display: flex;
     flex-direction: column;
-    border: solid 1px var(--color-border);
+    border: solid 1px var(--color-grey);
     width: 640px;
     height: 640px;
 
     .header {
-        background-color: var(--color-background-light);
+        background-color: var(--color-black);
         padding: 8px;
-        border-bottom: solid 1px var(--color-border);
+        border-bottom: solid 1px var(--color-grey);
 
         .title {
             font-weight: bold;
@@ -40,8 +40,8 @@
 
 
 .input {
-    background-color: var(--color-background-light);
-    border-top: solid 1px var(--color-border);
+    background-color: var(--color-black);
+    border-top: solid 1px var(--color-grey);
     padding: 8px;
     display: flex;
     justify-content: space-between;

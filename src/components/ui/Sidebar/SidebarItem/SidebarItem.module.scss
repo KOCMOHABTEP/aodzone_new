@@ -13,13 +13,13 @@
 
     &:hover {
         opacity: 1;
-        background: var(--color-background-lighter);
+        background: var(--color-background-overlay);
     }
 }
 
 .active {
     color: var(--color-black);
-    border: solid 1px var(--color-border);
+    border: solid 1px var(--color-grey);
     background: var(--color-green);
     opacity: 1;
 

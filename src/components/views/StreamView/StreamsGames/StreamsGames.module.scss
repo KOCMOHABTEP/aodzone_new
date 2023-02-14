@@ -4,7 +4,7 @@
     margin-bottom: 8px;
     cursor: pointer;
     transition: transform 0.3s ease;
-    border: solid 1px var(--color-border);
+    border: solid 1px var(--color-grey);
     border-radius: 8px;
 
     &:hover {
@@ -41,7 +41,7 @@
 .description {
     width: 124px;
     display: flex;
-    background-color: var(--color-bg-light);
+    background-color: var(--color-border-light);
     border-radius: 8px;
     align-items: center;
     justify-content: space-between;

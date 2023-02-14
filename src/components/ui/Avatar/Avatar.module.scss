@@ -6,7 +6,7 @@
     //    content: "";
     //    width: 58px;
     //    height: 58px;
-    //    border: solid 1px var(--color-border);
+    //    border: solid 1px var(--color-grey);
     //    border-radius: 100%;
     //    position: absolute;
     //    left: 50%;
@@ -18,7 +18,7 @@
     &__bordered {
         width: 58px;
         height: 58px;
-        border: solid 1px var(--color-border);
+        border: solid 1px var(--color-grey);
         border-radius: 100%;
         position: absolute;
         left: 50%;
@@ -55,8 +55,8 @@
     border-radius: 100%;
     overflow: hidden;
     position: relative;
-    background: var(--color-background-lighter);
-    border: solid 1px var(--color-border);
+    background: var(--color-background-overlay);
+    border: solid 1px var(--color-grey);
     box-shadow: var(--box-shadow);
     transition: border 0.3s ease;
 }
@@ -64,8 +64,8 @@
 .indicator {
     width: 8px;
     height: 8px;
-    background: var(--color-border);
-    outline: solid 4px var(--color-background-light);
+    background: var(--color-grey);
+    outline: solid 4px var(--color-black);
     border-radius: 100%;
     position: absolute;
     top: 0;

@@ -1,7 +1,7 @@
 
 
 .item {
-    background-color: var(--color-background-light);
+    background-color: var(--color-black);
     padding: 24px;
     color: inherit;
     cursor: pointer;
@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 8px;
-    border: solid 1px var(--color-border);
+    border: solid 1px var(--color-grey);
 }
 
 .item + .item {
@@ -48,7 +48,7 @@
     width: 8px;
     height: 8px;
     background: var(--color-green);
-    outline: solid 4px var(--color-background-light);
+    outline: solid 4px var(--color-black);
     border-radius: 100%;
     top: 0;
     right: 0;

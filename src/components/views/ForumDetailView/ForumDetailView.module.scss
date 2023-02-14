@@ -1,7 +1,7 @@
 
 
 .item {
-    background-color: var(--color-background-light);
+    background-color: var(--color-black);
     padding:16px;
     border-radius: 8px;
 }
@@ -58,7 +58,7 @@
 
 
 .comment {
-    background-color: var(--color-background-light);
+    background-color: var(--color-black);
     border-radius: 8px;
     margin-top: 24px;
     padding: 24px;
@@ -67,7 +67,7 @@
         font-size: 20px;
         font-weight: bold;
         margin-bottom: 32px;
-        border-bottom: solid 1px var(--color-bg-light);
+        border-bottom: solid 1px var(--color-border-light);
         padding: 8px;
     }
 }

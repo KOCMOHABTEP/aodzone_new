@@ -10,7 +10,7 @@
   height: 4px;
   max-width: 100px;
   width: 100%;
-  background: var(--color-grey);
+  background: var(--color-text-grey);
   border-radius: 4px;
   position: relative;
   overflow: hidden;
@@ -28,7 +28,7 @@
 
 .caption {
   font-size: 14px;
-  color: var(--color-grey);
+  color: var(--color-text-grey);
   display: flex;
   margin-bottom: 8px;
 }

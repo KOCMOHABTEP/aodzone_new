@@ -16,11 +16,11 @@
 
     &__info {
         display: flex;
-        background-color: var(--color-background-lighter);
+        background-color: var(--color-background-overlay);
         margin-left: 16px;
         border-radius: 8px;
         padding: 8px;
-        border: solid 1px var(--color-border);
+        border: solid 1px var(--color-grey);
     }
 }
 

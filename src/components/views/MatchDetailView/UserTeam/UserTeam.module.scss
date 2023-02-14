@@ -9,7 +9,7 @@
 .statistic {
     flex: 1;
     border-radius: 8px;
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--color-grey);
     overflow: hidden;
 
     &__left {
@@ -22,12 +22,12 @@
 }
 
 .header {
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-grey);
     display: flex;
     justify-content: space-between;
     padding: 16px;
     align-items: center;
-    background-color: var(--color-bg-lighter);
+    background-color: var(--color-background-overlay);
 
     &__name {
         width: 240px;

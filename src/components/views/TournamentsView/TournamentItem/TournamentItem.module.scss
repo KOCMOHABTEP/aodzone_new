@@ -15,7 +15,7 @@
 }
 
 .container {
-    border: solid 1px var(--color-border);
+    border: solid 1px var(--color-grey);
     border-radius: 8px;
 }
 
@@ -45,7 +45,7 @@
     &__label {
         font-size: 10px;
         padding: 4px;
-        background-color: var(--color-bg);
+        background-color: var(--color-black);
         opacity: 80%;
         border-radius: 12px;
         margin-right: 6px;
@@ -53,7 +53,7 @@
 }
 
 .bottom {
-    background-color: var(--color-background-light);
+    background-color: var(--color-black);
     border-radius: 0 0 8px 8px;
     overflow: hidden;
 }

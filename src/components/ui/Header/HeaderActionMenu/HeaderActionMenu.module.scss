@@ -3,16 +3,16 @@
 .item {
     position: absolute;
     width: 240px;
-    background-color: var(--color-background-light);
+    background-color: var(--color-black);
     border-radius: 8px;
-    border: solid 1px var(--color-border);
+    border: solid 1px var(--color-grey);
     left: -120px;
     top: 32px;
 
     .title {
         color: var(--color-white);
         padding: 8px;
-        border-bottom: solid 1px var(--color-border);
+        border-bottom: solid 1px var(--color-grey);
     }
 
     .container {
@@ -30,7 +30,7 @@
 .button {
     display: block;
     padding: 16px ;
-    border-top: solid 1px var(--color-border);
+    border-top: solid 1px var(--color-grey);
 
     .btn {
         height: 100%;

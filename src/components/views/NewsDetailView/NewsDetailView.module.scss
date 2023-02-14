@@ -3,8 +3,8 @@
 .item {
     padding: 32px;
     margin-bottom: 40px;
-    background: var(--color-background-light);
-    border: 1px solid var(--color-border);
+    background: var(--color-black);
+    border: 1px solid var(--color-grey);
     border-radius: 10px;
     box-shadow: var(--box-shadow);
 }
@@ -28,7 +28,7 @@
     width: calc(100% + 64px);
     height: 470px;
     margin: 0 -32px 40px;
-    background: var(--color-background-lighter);
+    background: var(--color-border-light);
     overflow: hidden;
     position: relative;
 
@@ -56,7 +56,7 @@
 }
 
 .footer {
-    border-top: 1px solid var(--color-border);
+    border-top: 1px solid var(--color-grey);
     padding-top: 32px;
 
     &__controls {

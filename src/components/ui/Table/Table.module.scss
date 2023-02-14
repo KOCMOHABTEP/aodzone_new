@@ -4,25 +4,25 @@
   border-radius: 4px;
   border-collapse: collapse;
   border-style: hidden;
-  box-shadow: 0 0 0 1px var(--color-border);
+  box-shadow: 0 0 0 1px var(--color-grey);
 }
 
 .tableHeadCell {
   font-size: 14px;
   font-weight: normal;
   text-align: left;
-  background: var(--color-background-lighter);
+  background: var(--color-background-overlay);
   color: var(--color-white);
   padding: 16px 24px;
-  border-bottom: solid 1px var(--color-border);
+  border-bottom: solid 1px var(--color-grey);
 }
 
 .tableRow {
-  background-color: var(--ui-dark);
+  background-color: var(--color-black);
 }
 
 .tableRowDark {
-  background-color: #F4F6FF;
+  background-color: var(--color-white);
 }
 
 .tableCell {

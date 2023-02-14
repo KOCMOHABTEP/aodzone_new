@@ -29,7 +29,7 @@
         background-color: var(--color-white);
         max-width: 80px;
         height: auto;
-        color: var(--color-bg);
+        color: var(--color-black);
         font-size: 10px;
         text-align: center;
         border-radius: 10px;
@@ -39,7 +39,7 @@
     }
 
     &__description {
-        color: var(--color-bg);
+        color: var(--color-black);
         font-size: 12px;
         font-weight: bold;
     }

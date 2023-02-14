@@ -1,13 +1,13 @@
 
 .item {
     display: flex;
-    background-color: var(--color-background-light);
+    background-color: var(--color-black);
     border-radius: 8px;
     padding: 16px;
     margin-bottom: 12px;
     color: inherit;
     cursor: pointer;
-    border: solid 1px var(--color-border);
+    border: solid 1px var(--color-grey);
     align-items: center;
     transition: transform 0.3s ease;
 
