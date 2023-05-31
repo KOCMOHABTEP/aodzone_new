@@ -70,7 +70,7 @@ export const NewsView = () => {
     return (
         <div className={styles.item}>
             <div className={styles.head}>
-                <div className={styles.title}>Последние новости</div>
+                <h1 className={styles.title}>Последние новости</h1>
                 {isAuth && (
                     <Link href="news/create">
                         <a>

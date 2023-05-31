@@ -15,7 +15,9 @@ export const Container = ({ children }) => {
     return (
         <div className={containerClassName}>
             <div className={styles.inner}>
-                <div className={containerContentClassName}>{children}</div>
+                <div className={containerContentClassName}>
+                    {children}
+                </div>
             </div>
         </div>
     );

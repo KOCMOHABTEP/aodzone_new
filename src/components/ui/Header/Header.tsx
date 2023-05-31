@@ -66,7 +66,7 @@ export const Header = () => {
                 ) : (
                     <Link href="/login/">
                         <a className={styles.wrapper}>
-                            <Button buttonClassName={styles.btn} text="Войти" />
+                            <Button buttonClassName={styles.btn} text="ВОЙТИ" />
                         </a>
                     </Link>
                 )}

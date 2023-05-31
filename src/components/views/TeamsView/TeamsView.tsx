@@ -76,7 +76,7 @@ export const TeamsView = () => {
 
     return (
         <div>
-            <div className={styles.title}>Рейтинг команд</div>
+            <h1 className={styles.title}>Рейтинг игровых команд</h1>
             <Table>
                 <TableHead
                     labels={[

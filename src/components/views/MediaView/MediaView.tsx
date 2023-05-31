@@ -108,7 +108,7 @@ export const MediaView = () => {
     return (
         <div className={styles.media}>
             <div className={styles.wrapperHeader}>
-                <div className={styles.title}>МЕДИА</div>
+                <h1 className={styles.h1}>Медиа</h1>
                 {isAuth && <Button text="Добавить" />}
             </div>
             <div className={styles.mediaTabBar}>

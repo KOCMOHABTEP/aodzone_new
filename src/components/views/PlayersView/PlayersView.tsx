@@ -69,7 +69,7 @@ export const PlayersView = () => {
 
     return (
         <div>
-            <div className={styles.title}>Рейтинг игроков</div>
+            <h1 className={styles.title}>Рейтинг игроков</h1>
             <Table>
                 <TableHead
                     labels={["", "Баллы", "Игрок", "Игр", "Побед", "% побед"]}

@@ -106,7 +106,7 @@ export const StreamView = () => {
     return (
         <div className={styles.item}>
             <div className={styles.wrapper}>
-                <div className={styles.title}>СТРИМЫ</div>
+                <h1 className={styles.title}>Стримы игр</h1>
                 {isAuth && (
                     <Button
                         text="Добавить стрим"

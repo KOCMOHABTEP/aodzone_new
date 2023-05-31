@@ -1,12 +1,10 @@
-import { NewsView } from "@/components/views/NewsView";
 import { Layout } from "@/components/layouts/Layout/Layout";
-import { Slider } from "@/components/ui/Slider";
+import { HomeView } from "@/components/views/HomeView";
 
 const Home = () => {
     return (
         <Layout>
-            <Slider />
-            <NewsView />
+            <HomeView />
         </Layout>
     );
 };

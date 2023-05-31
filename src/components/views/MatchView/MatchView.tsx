@@ -12,7 +12,7 @@ export const MatchView = () => {
     return (
         <>
             <div className={styles.wrapperTitle}>
-                <div className={styles.title}>Все матчи команды</div>
+                <h1 className={styles.title}>Все матчи команды</h1>
                 {isAuth && (
                     <Link href="/matches/add">
                         <a>
