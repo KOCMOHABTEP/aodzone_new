@@ -48,8 +48,6 @@ export default function Document() {
                         />
                     </div>
                 </noscript>
-
-
             </body>
         </Html>
     );
