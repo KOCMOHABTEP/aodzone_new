@@ -3,7 +3,7 @@ import { ProfileView } from "@/components/views/ProfileView";
 
 const Profile = () => {
     return (
-        <Layout>
+        <Layout name="robots" description="noindex">
             <ProfileView />
         </Layout>
     );
