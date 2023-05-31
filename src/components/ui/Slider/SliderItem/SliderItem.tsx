@@ -45,7 +45,7 @@ export const SliderItem = ({
                     {renderIcon()}
                     <span className={styles.content__text}>{game}</span>
                 </div>
-                <h1 className={styles.title}>{title}</h1>
+                <h2 className={styles.title}>{title}</h2>
                 <p className={styles.description}>{description}</p>
                 <Button text="ЧИТАТЬ" />
             </div>

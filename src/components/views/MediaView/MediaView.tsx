@@ -111,6 +111,7 @@ export const MediaView = () => {
                 <h1 className={styles.h1}>Медиа</h1>
                 {isAuth && <Button text="Добавить" />}
             </div>
+            {/*<p className={styles.description}>Мемы про игры. Здесь вы можете посмотреть различные мемчики и предложить свои</p>*/}
             <div className={styles.mediaTabBar}>
                 <TabBar
                     tabs={mediaTabList}

@@ -79,7 +79,7 @@ export const StreamsAllView = () => {
 
     return (
         <div>
-            <div className={styles.title}>Список всех стримов</div>
+            <h1 className={styles.title}>Список всех стримов</h1>
             <StreamsFilter />
             <div className={styles.list}>
                 {streamList.map(

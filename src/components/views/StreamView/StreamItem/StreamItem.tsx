@@ -51,9 +51,9 @@ export const StreamItem = ({
                 <div className={styles.content}>
                     <Avatar size={32} />
                     <div className={styles.text}>
-                        <div className={styles.text__title}>{title}</div>
+                        <h2 className={styles.text__title}>{title}</h2>
                         <div className={styles.wrapper}>
-                            <div className={styles.description}>{nickName}</div>
+                            <h3 className={styles.description}>{nickName}</h3>
                             <span
                                 className={cn(
                                     styles.description,
@@ -62,7 +62,7 @@ export const StreamItem = ({
                             >
                                 •
                             </span>
-                            <div className={styles.description}>{nameGame}</div>
+                            <h2 className={styles.description}>{nameGame}</h2>
                         </div>
                     </div>
                 </div>

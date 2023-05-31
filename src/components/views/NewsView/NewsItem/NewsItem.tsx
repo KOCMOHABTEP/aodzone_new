@@ -31,10 +31,8 @@ export const NewsItem = ({
                     style={{ backgroundImage: `url(${image})` }}
                 />
                 <div className={styles.content}>
-                    <div className={styles.content__title}>{title}</div>
-                    <div className={styles.content__description}>
-                        {description}
-                    </div>
+                    <h2 className={styles.content__title}>{title}</h2>
+                    <p className={styles.content__description}>{description}</p>
                     <div className={styles.stats}>
                         <div className={styles.control}>
                             <Icon

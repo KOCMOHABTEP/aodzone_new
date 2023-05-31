@@ -16,7 +16,7 @@ export const NewsDetailView = () => {
             comments: 14,
         },
         content: `
-            <h1>Открыл я как-то ящики</h1>
+            <h2>Открыл я как-то ящики</h2>
             <p>Я вчера открыл 100 Ящиков поддержки (50 обычных и 50 редких), с целью проведения эксперимента, так как в последнем патче редкие ящики поддержки были улучшены (увеличен шанс выпадения Легендарных/Эпических, а также гарантировано выпадение камуфляжа на оружие&nbsp;или предмета для специалиста в каждом ящике). Результаты были поразительными и мне захотелось поделиться своим экспериментом с вами!</p>
             <ul>
              <li>50 Редких ящиков (33 обычных, 64 редких, 34 легендарных, 19 эпических вещей)</li>
@@ -37,7 +37,7 @@ export const NewsDetailView = () => {
             <p><img alt="" src="/news_img/cod/diagram11.jpg" style="width: 760px; height: 480px;"></p>
             </div>
             
-            <p>Камуфляжи из Обычных ящиков (из 80/150 вещей были камуфляжи):</p>
+            <h3>Камуфляжи из Обычных ящиков (из 80/150 вещей были камуфляжи):</h3>
             
             <ul>
              <li>66 Обычных (83%)</li>
@@ -57,10 +57,10 @@ export const NewsDetailView = () => {
     return (
         <div className={styles.item}>
             <div className={styles.header}>
-                <div className={styles.header__title}>{newsItem.title}</div>
-                <div className={styles.header__caption}>
+                <h1 className={styles.header__title}>{newsItem.title}</h1>
+                <p className={styles.header__caption}>
                     {newsItem.description}
-                </div>
+                </p>
             </div>
             <div className={styles.container}>
                 <img className={styles.container__image} src={newsItem.image} />

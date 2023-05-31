@@ -74,7 +74,8 @@
     border-radius: 0 0 8px 8px;
 }
 
-.text {
+.text h2 {
+    font-size: 16px;
     margin-left: 16px;
 
     &__title {
@@ -85,10 +86,12 @@
 
 .wrapper {
     display: flex;
+    margin-left: 16px;
 }
 
 .description {
     font-size: 14px;
+    font-weight: normal;
     color: var(--color-text-grey);
 }
 
