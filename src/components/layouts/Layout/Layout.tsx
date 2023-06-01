@@ -6,14 +6,22 @@ import styles from "./Layout.module.scss";
 
 interface ILayout {
     title?: string;
+    description?: string,
+    name?: string,
     children: any;
 }
 
-export const Layout = ({ title = "AOD Zone", children }: ILayout) => {
+export const Layout = ({
+    title = "AOD Zone",
+    children,
+    description = "noindex",
+    name = "robots",
+}: ILayout) => {
     return (
         <>
             <Head>
                 <title>{title}</title>
+                <meta name={name} content={description} key="desc" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div>

@@ -3,7 +3,7 @@ import { EditProfileView } from "@/components/views/EditProfileView";
 
 const Edit = () => {
     return (
-        <Layout>
+        <Layout >
             <EditProfileView />
         </Layout>
     );

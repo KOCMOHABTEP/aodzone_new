@@ -3,7 +3,11 @@ import { TeamsView } from "@/components/views/TeamsView/TeamsView";
 
 const Team = () => {
     return (
-        <Layout>
+        <Layout
+            name="description"
+            title="Рейтинг лучших игровых команд онлайн игр"
+            description="Рейтинг команд информационного игрового сообщества AODZONE.
+         Зарегистрируйся и веди статистику своей команды по разным играм.">
             <TeamsView />
         </Layout>
     );

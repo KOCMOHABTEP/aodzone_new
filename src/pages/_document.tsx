@@ -33,8 +33,7 @@ export default function Document() {
                 ym(93767455, "init", {
                       clickmap:true,
                       trackLinks:true,
-                      accurateTrackBounce:true,
-                      webvisor:true
+                      accurateTrackBounce:true
                 });
               `,
                     }}
@@ -48,8 +47,6 @@ export default function Document() {
                         />
                     </div>
                 </noscript>
-
-
             </body>
         </Html>
     );
