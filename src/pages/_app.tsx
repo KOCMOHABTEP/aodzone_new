@@ -3,7 +3,7 @@ import { Provider } from "react-redux";
 import { store, persistor } from "@/redux/store";
 
 import "@/styles/global.scss";
-import "@/styles/variables.scss"
+import "@/styles/variables.scss";
 
 import { PersistGate } from "redux-persist/integration/react";
 
