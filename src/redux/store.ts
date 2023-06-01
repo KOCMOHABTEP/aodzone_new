@@ -1,5 +1,5 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import { useDispatch } from "react-redux";
+import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 
 import {
     persistStore,
@@ -16,6 +16,7 @@ import createWebStorage from "redux-persist/lib/storage/createWebStorage";
 import app from "@/redux/app/app.slice";
 import user from "@/redux/user/user.slice";
 import auth from "@/redux/auth/auth.slice";
+import StoreService from "@/redux/store.service";
 
 const createNoopStorage = () => {
     return {
@@ -73,6 +74,10 @@ export const store = configureStore({
 export const persistor = persistStore(store);
 
 export type RootState = ReturnType<typeof store.getState>;
-export type StoreType = typeof store;
+export type RootAction = typeof store.dispatch;
+export type RootStore = typeof store;
+
 export type AppDispatch = typeof store.dispatch;
-export const useAppDispatch = () => useDispatch<AppDispatch>();
+
+export const useAppDispatch: () => AppDispatch = useDispatch;
+export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;

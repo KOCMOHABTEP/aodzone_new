@@ -5,9 +5,10 @@ import { Checkbox } from "@/components/ui/Chekbox";
 import cn from "classnames";
 import { useForm } from "react-hook-form";
 import { useAppDispatch } from "@/redux/store";
-import { testLogin } from "@/redux/auth/auth.slice";
+import { logOut, testLogin } from "@/redux/auth/auth.slice";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { login } from "@/redux/auth/auth.action";
 import styles from "./LoginView.module.scss";
 
 type LoginProcessType = "login" | "registration";
@@ -19,7 +20,7 @@ export const LoginView = () => {
     const loginForm = useForm({
         mode: "onChange",
         defaultValues: {
-            email: "",
+            email: "test@test.ru",
             password: "",
         },
     });
@@ -41,8 +42,9 @@ export const LoginView = () => {
 
     const handleLogin = data => {
         console.log("Логин::handleLogin", { ...data });
-        dispatch(testLogin());
-        router.push("/");
+        dispatch(login({ email: data.email, password: data.password }));
+        // dispatch(logOut());
+        // router.push("/");
     };
 
     const handleRegister = data => {
@@ -167,20 +169,14 @@ export const LoginView = () => {
                                 })}
                             />
                         </div>
-                        <Link href="/profile/edit">
-                            <a className={styles.button}>
-                                <Button
-                                    text="Зарегистрироваться"
-                                    onClick={registrationForm.handleSubmit(
-                                        handleRegister
-                                    )}
-                                    disabled={
-                                        !registrationForm.formState.isValid
-                                    }
-                                    buttonClassName={styles.btn}
-                                />
-                            </a>
-                        </Link>
+                        <Button
+                            text="Зарегистрироваться"
+                            onClick={registrationForm.handleSubmit(
+                                handleRegister
+                            )}
+                            disabled={!registrationForm.formState.isValid}
+                            buttonClassName={styles.button}
+                        />
                     </>
                 )}
             </div>
