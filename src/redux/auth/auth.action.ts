@@ -1,30 +1,37 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import $api from "@/services/api";
-import { IUser } from "@/types/IUser";
 import { IAuthLogin, IAuthRegistration } from "@/types/IAuth";
+import AuthService from "@/services/auth.service";
+
+interface AuthRegistrationParams {
+    email: string;
+    password: string;
+}
+
+interface AuthLoginParams {
+    email: string;
+    password: string;
+}
 
 export const registration = createAsyncThunk(
     "auth/registration",
-    async (params: IAuthRegistration) => {
-        const { data } = await $api.post<IUser>(
-            `${process.env.NEXT_PUBLIC_API_KEY}/auth/register`,
-            params
-        );
+    async (params: AuthRegistrationParams) => {
+        const { data } = await AuthService.registration(params);
         return data;
     }
 );
 
 export const login = createAsyncThunk(
     "auth/login",
-    async (params: IAuthLogin, { rejectWithValue }) => {
+    async ({ email, password }: AuthLoginParams) => {
         try {
-            const { data } = await $api.post<{ token: string }>(
-                `${process.env.NEXT_PUBLIC_API_KEY}/auth/login`,
-                params
-            );
+            const { data } = await AuthService.login({
+                email,
+                password,
+            });
+
             return data;
-        } catch (error) {
-            return rejectWithValue(error.response.data);
+        } catch (error: any) {
+            return error;
         }
     }
 );

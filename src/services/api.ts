@@ -1,11 +1,5 @@
-import axios, { AxiosError, AxiosResponse } from "axios";
-import StoreService from "@/redux/store.service";
-import { logOut } from "@/redux/auth/auth.slice";
-
-export const config = {
-    logGeneral: false,
-    logNetworkMessages: false,
-};
+import axios, { AxiosResponse } from "axios";
+import AuthService from "@/services/auth.service";
 
 const $api = axios.create({
     baseURL: process.env.NEXT_PUBLIC_API_KEY,
@@ -13,51 +7,39 @@ const $api = axios.create({
     // withCredentials: true,
 });
 
-$api.interceptors.request.use(
-    requestConfig => {
-        if (config.logNetworkMessages) {
-            console.log("[Request interceptor]", requestConfig);
-        }
+$api.interceptors.request.use(config => {
+    if (config.headers) {
+        config.headers.Authorization = `Bearer ${localStorage.getItem(
+            "token"
+        )}`;
+    }
 
-        return requestConfig;
-    },
-    error => Promise.reject(error)
-);
+    return config;
+});
 
 $api.interceptors.response.use(
     (response: AxiosResponse) => {
-        if (config.logNetworkMessages) {
-            console.log("[Response interceptor]", response);
-        }
-
         return response;
     },
-    (error: AxiosError) => {
-        // const originalRequest = error.config;
-        // if (error.response.status === 401 && error.config && !error.config._isRetry) {
-        //     originalRequest._isRetry = true;
-        //     try {
-        //         const response = await axios.get<AuthResponse>(`${API_URL}/refresh`, {withCredentials: true});
-        //         localStorage.setItem('token', response.data.accessToken);
-        //         return $api.request(originalRequest);
-        //     } catch (error) {
-        //         console.log('Не авторизован')
-        //     }
-        // }
-        // throw error;
+    async error => {
+        const originalRequest = { ...error.config };
+        originalRequest.isRetry = true;
+        if (
+            error.response.status === 401 &&
+            error.config &&
+            !error.config.isRetry
+        ) {
+            try {
+                const { data } = await AuthService.refresh();
+                // const { data: accessToken } = await $api.get("/api/refresh");
+                localStorage.setItem("token", data.accessToken);
 
-        // On unauthorized error logout and navigate to AuthStack
-        if (error?.response?.status === 401) {
-            StoreService.dispatch(logOut());
-            // StoreService.dispatch()
-            // StoreService.dispatch(logOut());
+                return $api.request(originalRequest);
+            } catch (e: any) {
+                console.log("AUTH ERROR");
+            }
         }
-
-        if (config.logNetworkMessages) {
-            console.log("[Error interceptor]", error);
-        }
-
-        return Promise.reject(error);
+        throw error;
     }
 );
 
