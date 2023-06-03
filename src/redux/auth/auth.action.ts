@@ -1,6 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { IAuthLogin, IAuthRegistration } from "@/types/IAuth";
 import AuthService from "@/services/auth.service";
+import { AuthResponse } from "@/types/AuthResponse";
 
 interface AuthRegistrationParams {
     email: string;
@@ -12,17 +13,17 @@ interface AuthLoginParams {
     password: string;
 }
 
-export const registration = createAsyncThunk(
-    "auth/registration",
-    async (params: AuthRegistrationParams) => {
-        const { data } = await AuthService.registration(params);
-        return data;
-    }
-);
+export const registration = createAsyncThunk<
+    AuthResponse,
+    AuthRegistrationParams
+>("auth/registration", async params => {
+    const { data } = await AuthService.registration(params);
+    return data;
+});
 
-export const login = createAsyncThunk(
+export const login = createAsyncThunk<AuthResponse, AuthLoginParams>(
     "auth/login",
-    async ({ email, password }: AuthLoginParams) => {
+    async ({ email, password }) => {
         try {
             const { data } = await AuthService.login({
                 email,
