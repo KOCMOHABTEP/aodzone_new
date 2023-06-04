@@ -13,10 +13,9 @@ import {
 } from "redux-persist";
 
 import createWebStorage from "redux-persist/lib/storage/createWebStorage";
-import app from "@/redux/app/app.slice";
-import user from "@/redux/user/user.slice";
-import auth from "@/redux/auth/auth.slice";
-import StoreService from "@/redux/store.service";
+import appReducer from "@/redux/app/app.slice";
+import userReducer from "@/redux/user/user.slice";
+import authReducer from "@/redux/auth/auth.slice";
 
 const createNoopStorage = () => {
     return {
@@ -42,14 +41,9 @@ const persistConfig = {
 };
 
 const rootReducer = combineReducers({
-    app,
-    user,
-    auth,
-    // auth: authSlice,
-    // admin: adminOrderSlice,
-    // courses: coursesSlice,
-    // countries: countriesSlice,
-    // order: orderSlice,
+    app: appReducer,
+    user: userReducer,
+    auth: authReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
@@ -58,6 +52,7 @@ export const store = configureStore({
     reducer: persistedReducer,
     middleware: getDefaultMiddleware =>
         getDefaultMiddleware({
+            immutableCheck: false,
             serializableCheck: {
                 ignoredActions: [
                     FLUSH,
@@ -74,7 +69,6 @@ export const store = configureStore({
 export const persistor = persistStore(store);
 
 export type RootState = ReturnType<typeof store.getState>;
-export type RootAction = typeof store.dispatch;
 export type RootStore = typeof store;
 
 export type AppDispatch = typeof store.dispatch;

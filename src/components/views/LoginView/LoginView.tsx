@@ -3,52 +3,101 @@ import { Input } from "@/components/ui/Input";
 import { Button } from "@/components/ui/Button";
 import { Checkbox } from "@/components/ui/Chekbox";
 import cn from "classnames";
-import { useForm } from "react-hook-form";
+import * as Yup from "yup";
+import { SubmitHandler, useForm } from "react-hook-form";
 import { useAppDispatch } from "@/redux/store";
-import { logOut, testLogin } from "@/redux/auth/auth.slice";
+import { logout, testLogin } from "@/redux/auth/auth.slice";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { login } from "@/redux/auth/auth.action";
+import { login, registration } from "@/redux/auth/auth.action";
+import { toast } from "react-toastify";
+import { yupResolver } from "@hookform/resolvers/yup";
 import styles from "./LoginView.module.scss";
 
 type LoginProcessType = "login" | "registration";
+
+type LoginFormValues = {
+    email: string;
+    password: string;
+};
+
+type RegistrationFormValues = {
+    username: string;
+    email: string;
+    password: string;
+    password2: string;
+    agreement: boolean;
+};
 
 export const LoginView = () => {
     const router = useRouter();
     const dispatch = useAppDispatch();
     const [loginProcess, setLoginProcess] = useState<LoginProcessType>("login");
-    const loginForm = useForm({
+
+    const loginFormValidationSchema = Yup.object().shape({
+        email: Yup.string().required("Укажите Email").email("Укажите Email"),
+        password: Yup.string()
+            .required("Введите пароль")
+            .min(6, "Минимум 6 символов")
+            .max(40, "Пароль не должен превышать 40 символов"),
+    });
+    const loginForm = useForm<LoginFormValues>({
         mode: "onChange",
         defaultValues: {
             email: "test@test.ru",
-            password: "",
+            password: "12345678",
         },
+        resolver: yupResolver(loginFormValidationSchema),
     });
 
-    const registrationForm = useForm({
+    const registrationFormValidationSchema = Yup.object().shape({
+        username: Yup.string().required("Укажите имя пользователя"),
+        email: Yup.string().required("Укажите Email").email("Укажите Email"),
+        password: Yup.string()
+            .required("Введите пароль")
+            .min(6, "Минимум 6 символов")
+            .max(40, "Пароль не должен превышать 40 символов"),
+    });
+    const registrationForm = useForm<RegistrationFormValues>({
         mode: "onChange",
         defaultValues: {
-            nickname: "",
+            username: "",
             email: "",
             password: "",
-            passwordConfirm: "",
+            password2: "",
             agreement: false,
         },
+        resolver: yupResolver(registrationFormValidationSchema),
     });
 
     const handleChangeProcess = (process: LoginProcessType) => {
         setLoginProcess(process);
     };
 
-    const handleLogin = data => {
+    const handleLogin: SubmitHandler<LoginFormValues> = async data => {
         console.log("Логин::handleLogin", { ...data });
-        dispatch(login({ email: data.email, password: data.password }));
-        // dispatch(logOut());
-        // router.push("/");
+
+        const { email, password } = data;
+        try {
+            await dispatch(login({ email, password }));
+            await router.push("/profile");
+        } catch (e) {
+            toast.error("Произошла ошибка");
+        }
     };
 
-    const handleRegister = data => {
+    const handleRegister: SubmitHandler<
+        RegistrationFormValues
+    > = async data => {
         console.log("Регистрация::handleRegister", { ...data });
+        const { username, email, password } = data;
+        try {
+            await dispatch(registration({ username, email, password }));
+            await dispatch(login({ email, password }));
+            await router.push("/profile");
+        } catch (e) {
+            toast.error("Ошибка регистрации");
+        }
     };
 
     return (
@@ -78,7 +127,7 @@ export const LoginView = () => {
                     <>
                         <div className={styles.input}>
                             <Input
-                                label="Введите почту"
+                                label="Эл. почта"
                                 {...loginForm.register("email", {
                                     required: "Поле должно быть заполнено",
                                 })}
@@ -112,19 +161,19 @@ export const LoginView = () => {
                     <>
                         <div className={styles.input}>
                             <Input
-                                label="Введите ваш никнейм"
-                                {...registrationForm.register("nickname", {
+                                label="Имя пользователя"
+                                {...registrationForm.register("username", {
                                     required: "Поле должно быть заполнено",
                                 })}
                                 error={
-                                    registrationForm.formState.errors.nickname
+                                    registrationForm.formState.errors.username
                                         ?.message
                                 }
                             />
                         </div>
                         <div className={styles.input}>
                             <Input
-                                label="Введите вашу почту"
+                                label="Эл. почта"
                                 {...registrationForm.register("email", {
                                     required: "Поле должно быть заполнено",
                                 })}
@@ -136,7 +185,7 @@ export const LoginView = () => {
                         </div>
                         <div className={styles.input}>
                             <Input
-                                label="Придумайте пароль"
+                                label="Пароль"
                                 {...registrationForm.register("password", {
                                     required: "Поле должно быть заполнено",
                                 })}
@@ -149,15 +198,12 @@ export const LoginView = () => {
                         <div className={styles.input}>
                             <Input
                                 label="Подтвердите пароль"
-                                {...registrationForm.register(
-                                    "passwordConfirm",
-                                    {
-                                        required: "Поле должно быть заполнено",
-                                    }
-                                )}
+                                {...registrationForm.register("password2", {
+                                    required: "Поле должно быть заполнено",
+                                })}
                                 error={
-                                    registrationForm.formState.errors
-                                        .passwordConfirm?.message
+                                    registrationForm.formState.errors.password2
+                                        ?.message
                                 }
                             />
                         </div>

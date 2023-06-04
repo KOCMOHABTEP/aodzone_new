@@ -1,17 +1,16 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { login } from "@/redux/auth/auth.action";
+import { IUser } from "@/types/IUser";
 
 export interface AuthState {
     isAuth: boolean;
-    user?: any;
-    username: string | null;
+    user: IUser | null;
     token: string | null;
 }
 
 const initialState: AuthState = {
     isAuth: false,
     user: null,
-    username: null,
     token: null,
 };
 
@@ -19,9 +18,10 @@ export const authSlice = createSlice({
     name: "auth",
     initialState,
     reducers: {
-        logOut: state => {
+        logout: state => {
             state.user = null;
             state.token = null;
+            state.isAuth = false;
         },
         setAccessToken: (
             state,
@@ -110,6 +110,6 @@ export const authSlice = createSlice({
     // },
 });
 
-export const { logOut, testLogin } = authSlice.actions;
+export const { logout } = authSlice.actions;
 
 export default authSlice.reducer;

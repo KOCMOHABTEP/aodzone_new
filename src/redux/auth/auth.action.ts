@@ -4,6 +4,7 @@ import AuthService from "@/services/auth.service";
 import { AuthResponse } from "@/types/AuthResponse";
 
 interface AuthRegistrationParams {
+    username: string;
     email: string;
     password: string;
 }
@@ -36,47 +37,3 @@ export const login = createAsyncThunk<AuthResponse, AuthLoginParams>(
         }
     }
 );
-
-/**
- *
- * export const authRegistration = createAsyncThunk(
- *     "auth/authRegistration",
- *     async (params: IAuthRegistration) => {
- *         const { data } = await $publicApi.post<IBasicResponse<IUser>>(
- *             `${process.env.NEXT_PUBLIC_API_KEY}/api/auth/signUp`,
- *             params
- *         );
- *         return data.data;
- *     }
- * );
- *
- * export const adminAuthLogin = createAsyncThunk(
- *     "auth/adminAuthLogin",
- *     async (params: IAuthLogin, { rejectWithValue }) => {
- *         try {
- *             const { data } = await $publicApi.post<
- *                 IBasicResponse<{ token: string }>
- *             >(`${process.env.NEXT_PUBLIC_API_KEY}/api/auth/signIn`, params);
- *             return data.data;
- *         } catch (error) {
- *             return rejectWithValue(error.response.data);
- *         }
- *     }
- * );
- *
- * export const authLogin = createAsyncThunk(
- *     "auth/authLogin",
- *     async (params: IAuthLogin, { rejectWithValue }) => {
- *         try {
- *             const { data } = await $publicApi.post<
- *                 IBasicResponse<{ token: string }>
- *             >(`${process.env.NEXT_PUBLIC_API_KEY}/api/auth/signIn`, params);
- *             return data.data;
- *         } catch (error) {
- *             return rejectWithValue(error.response.data);
- *         }
- *     }
- * );
- *
- *
- */

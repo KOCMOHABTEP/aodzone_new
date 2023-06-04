@@ -4,18 +4,17 @@ import Link from "next/link";
 import { Avatar } from "@/components/ui/Avatar";
 import { Icon } from "@/components/ui/Icon";
 import { useClickOutsideContainer } from "@/hooks/use-click-outside-container";
-import { useSelector } from "react-redux";
-import { getUser } from "@/redux/user/user.selectors";
+
 import { UserCardMenuItem } from "@/components/ui/UserCard/UserCardMenu/UserCardMenuItem";
-import { useAppDispatch } from "@/redux/store";
-import { logout } from "@/redux/auth/auth.slice";
+import { useAppDispatch, useAppSelector } from "@/redux/store";
 import { useRouter } from "next/router";
+import { logout } from "@/redux/auth/auth.slice";
 import styles from "./UserCard.module.scss";
 
 export const UserCard = () => {
     const router = useRouter();
     const dispatch = useAppDispatch();
-    const userData = useSelector(getUser);
+    const userData = useAppSelector(state => state.auth.user);
 
     const userCardMenuRef = useRef(null);
     const [userSettingsIsOpened, setUserSettingsIsOpened] = useState(false);
@@ -25,6 +24,7 @@ export const UserCard = () => {
 
     const handleSelectLogout = () => {
         dispatch(logout());
+        router.replace("/");
         setUserSettingsIsOpened(false);
     };
 
@@ -44,7 +44,7 @@ export const UserCard = () => {
                     </Link>
                 </div>
                 <div className={styles.content}>
-                    <div className={styles.name}>{userData.nickName}</div>
+                    <div className={styles.name}>{userData?.nickname}</div>
                     {/* <div className={styles.level}>Уровень 32</div> */}
                 </div>
                 <div className={styles.control}>

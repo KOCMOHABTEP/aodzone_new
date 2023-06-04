@@ -74,5 +74,6 @@ module.exports = {
         "react/require-default-props": "off",
         "jsx-a11y/anchor-is-valid": "off",
         "no-param-reassign": "off",
+        "sonarjs/no-duplicate-string": "off",
     },
 };

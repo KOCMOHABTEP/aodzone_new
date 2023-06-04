@@ -1,20 +1,15 @@
 import { AchievementsBar } from "@/components/ui/AchievementsBar";
-import { ProfileUserActivity } from "@/components/views/ProfileView/ProfileUserActivity";
 import { WidgetLastMatches } from "@/components/ui/Widget/WidgetLastMatches/WidgetLastMatches";
 import { UserHeader } from "@/components/ui/UserHeader";
 import { TeamMembers } from "@/components/views/ProfileView/TeamMembers";
-import { useState } from "react";
-import { TeamForm } from "@/components/views/ProfileView/TeamForm";
-import { FormDescription } from "@/components/views/ProfileView/FormDescription";
 import { Button } from "@/components/ui/Button";
-import { useSelector } from "react-redux";
-import { getUser } from "@/redux/user/user.selectors";
 import Link from "next/link";
+import { useAppSelector } from "@/redux/store";
 import styles from "./ProfileView.module.scss";
 
 export const ProfileView = () => {
-    const userData = useSelector(getUser);
-
+    const userData = useAppSelector(state => state.auth.user);
+    console.log(userData);
 
     const achievementsVisible = true;
     const matchesVisible = false;
@@ -24,7 +19,7 @@ export const ProfileView = () => {
         <>
             <div className={styles.item}>
                 <UserHeader
-                    nickName={userData.nickName}
+                    nickname={userData.nickname}
                     firstName={userData.firstName}
                     lastName={userData.lastName}
                     birthdayDate={userData.birthdayDate}

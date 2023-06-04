@@ -7,18 +7,18 @@ import { TabBar } from "@/components/ui/Tabbar";
 import styles from "./UserHeader.module.scss";
 
 interface UserHeaderProps {
-    nickName: string;
+    nickname: string;
     level?: number;
     firstName: string;
     lastName: string;
     birthdayDate: string;
     createdDate?: string;
-    countryUser: string;
+    countryUser?: string;
     steam?: { link: string; id: string };
 }
 
 export const UserHeader = ({
-    nickName,
+    nickname,
     level,
     firstName,
     lastName,
@@ -61,9 +61,12 @@ export const UserHeader = ({
                     </div>
                     <div className={styles.middle__description}>
                         <div className={styles.middle__wrapper}>
-                            <div className={styles.middle__title}>
-                                {nickName}
-                            </div>
+                            {nickname && (
+                                <div className={styles.middle__title}>
+                                    {nickname}
+                                </div>
+                            )}
+
                             {/* <Icon name={countryUser} size={22} /> */}
                         </div>
                         <div className={styles.name}>
