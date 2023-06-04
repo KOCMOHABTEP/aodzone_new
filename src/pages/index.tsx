@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layouts/Layout/Layout";
 import { HomeView } from "@/components/views/HomeView";
+import {Footer} from "@/components/ui/Footer";
 
 const Home = () => {
     return (
