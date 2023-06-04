@@ -18,13 +18,15 @@ export const ProfileView = () => {
     return (
         <>
             <div className={styles.item}>
-                <UserHeader
-                    nickname={userData.nickname}
-                    firstName={userData.firstName}
-                    lastName={userData.lastName}
-                    birthdayDate={userData.birthdayDate}
-                    createdDate={userData.createdDate}
-                />
+                {userData && (
+                    <UserHeader
+                        nickname={userData.nickname}
+                        firstName={userData.firstName}
+                        lastName={userData.lastName}
+                        birthdayDate={userData.birthdayDate}
+                        createdDate={userData.createdDate}
+                    />
+                )}
             </div>
             <div className={styles.wrapper}>
                 {achievementsVisible && <AchievementsBar />}
