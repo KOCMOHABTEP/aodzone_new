@@ -24,7 +24,7 @@ export const registration = createAsyncThunk<
 
 export const login = createAsyncThunk<AuthResponse, AuthLoginParams>(
     "auth/login",
-    async ({ email, password }) => {
+    async ({ email, password }, { rejectWithValue }) => {
         try {
             const { data } = await AuthService.login({
                 email,
@@ -33,7 +33,8 @@ export const login = createAsyncThunk<AuthResponse, AuthLoginParams>(
 
             return data;
         } catch (error: any) {
-            return error;
+            console.log(error);
+            return rejectWithValue(error);
         }
     }
 );
