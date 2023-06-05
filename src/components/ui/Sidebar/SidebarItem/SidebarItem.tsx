@@ -54,7 +54,11 @@ export const SidebarItem = ({ title, icon, active }: SidebarItemProps) => {
                 onMouseLeave={() => setTooltipVisibility(false)}
             >
                 <div className={styles.container}>
-                    <Icon name={icon} className={styles.container__icon} />
+                    <Icon
+                        name={icon}
+                        className={styles.container__icon}
+                        size={16}
+                    />
                     {showDescription && (
                         <span className={styles.container__text}>{title}</span>
                     )}
