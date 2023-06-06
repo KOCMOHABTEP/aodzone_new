@@ -79,9 +79,10 @@ export const LoginView = () => {
 
         const { email, password } = data;
         try {
-            await dispatch(login({ email, password }));
+            await dispatch(login({ email, password })).unwrap();
             await router.push("/profile");
         } catch (e) {
+            console.log(e);
             toast.error("Произошла ошибка");
         }
     };

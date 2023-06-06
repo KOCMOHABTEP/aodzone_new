@@ -1,22 +1,29 @@
-.item {
+.footer {
+  max-width: calc(100% - 320px);
+  margin-left: 320px;
+  margin-top: 48px;
   border-top: 1px solid var(--color-grey);
   display: flex;
   justify-content: space-between;
-  margin-top: 48px;
   padding: 30px;
+
+  &.footerCollapsed {
+    max-width: calc(100% - 90px);
+    margin-left: 90px;
+  }
 }
 
-.info {
+
+.footerInfo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
-.infoDocs{
+.footerInfoDocs{
   color: var(--color-white);
 }
 
-.infoYears {
+.footerInfoYears {
   color: var(--color-white)
 }
