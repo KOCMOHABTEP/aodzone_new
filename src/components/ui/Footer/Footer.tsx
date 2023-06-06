@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Footer.module.scss";
 
 export const Footer = () => {
@@ -5,8 +6,16 @@ export const Footer = () => {
         <>
             <div className={styles.item}>
                 <div className={styles.info}>
-                    <div className={styles.infoYears}>© 2023</div>
-                    <div>Политика конфединциальности</div>
+                    <Link href="/">
+                        <a className={styles.infoDocs}>
+                            Политика конфединциальности
+                        </a>
+                    </Link>
+                    <Link href="/">
+                        <a className={styles.infoDocs}>
+                            Пользовательское соглашение
+                        </a>
+                    </Link>
                 </div>
                 <div>SMM</div>
             </div>

@@ -7,7 +7,14 @@
 }
 
 .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
+}
+
+.infoDocs{
+  color: var(--color-white);
 }
 
 .infoYears {

@@ -28,8 +28,10 @@ export const Layout = ({
             <div>
                 <Header />
                 <Sidebar />
-                <Container>{children}</Container>
-                <Footer />
+                <Container>
+                    {children}
+                    <Footer />
+                </Container>
             </div>
             <div id="modal-root" />
             <div id="tooltip-root" />
