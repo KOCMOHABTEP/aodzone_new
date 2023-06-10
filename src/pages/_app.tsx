@@ -3,8 +3,9 @@ import { Provider } from "react-redux";
 import { store, persistor } from "@/redux/store";
 
 import "react-toastify/dist/ReactToastify.css";
+import "@/styles/vars.scss";
+import "@/styles/fonts.scss";
 import "@/styles/global.scss";
-import "@/styles/variables.scss";
 
 import { PersistGate } from "redux-persist/integration/react";
 import StoreService from "@/redux/store.service";

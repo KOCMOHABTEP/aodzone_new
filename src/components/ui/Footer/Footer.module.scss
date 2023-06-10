@@ -1,11 +1,11 @@
 .footer {
   max-width: calc(100% - 320px);
   margin-left: 320px;
-  margin-top: 48px;
   border-top: 1px solid var(--color-grey);
   display: flex;
   justify-content: space-between;
   padding: 30px;
+  background: var(--color-background);
 
   &.footerCollapsed {
     max-width: calc(100% - 90px);
