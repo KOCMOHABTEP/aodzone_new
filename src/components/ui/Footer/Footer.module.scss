@@ -15,7 +15,13 @@
 
 
 .footerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.footerInfoDocs{
+  color: var(--color-white);
 }
 
 .footerInfoYears {

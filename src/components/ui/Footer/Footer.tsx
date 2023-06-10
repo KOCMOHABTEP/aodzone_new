@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import { getSidebarCollapsed } from "@/redux/app/app.selectors";
 import cn from "classnames";
+import Link from "next/link";
 import styles from "./Footer.module.scss";
 
 export const Footer = () => {
@@ -14,7 +15,16 @@ export const Footer = () => {
         >
             <div className={styles.footerInfo}>
                 <div className={styles.footerInfoYears}>© 2023</div>
-                <div>Политика конфединциальности</div>
+                <Link href="/">
+                    <a className={styles.footerInfoDocs}>
+                        Политика конфединциальности
+                    </a>
+                </Link>
+                <Link href="/">
+                    <a className={styles.footerInfoDocs}>
+                        Пользовательское соглашение
+                    </a>
+                </Link>
             </div>
             <div>SMM</div>
         </div>
