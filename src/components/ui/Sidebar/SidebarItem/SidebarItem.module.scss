@@ -1,8 +1,6 @@
 .item {
     color: var(--color-white);
-    min-width: 58px;
     padding: 16px;
-    border: solid 1px transparent;
     border-radius: 6px;
     overflow: hidden;
     cursor: pointer;
@@ -17,9 +15,8 @@
     }
 }
 
-.active {
+.itemActive {
     color: var(--color-black);
-    border: solid 1px var(--color-grey);
     background: var(--color-green);
     opacity: 1;
 
@@ -36,10 +33,11 @@
     &:hover {
         background: var(--color-green);
     }
-
 }
 
-.collapsed {
+.itemCollapsed {
+    width: 48px;
+    height: 48px;
 
     &:after {
         display: none;
@@ -49,15 +47,15 @@
 .container {
     display: flex;
     align-items: center;
+}
 
-    &__icon {
-        color: inherit;
-        margin-right: 8px;
-    }
+.containerIcon {
+    color: inherit;
+}
 
-    &__text {
-        font-size: 14px;
-    }
+.containerLabel {
+    font-size: 14px;
+    margin-left: 8px;
 }
 
 

@@ -18,7 +18,8 @@ export const SidebarItem = ({ title, icon, active }: SidebarItemProps) => {
     const sidebarCollapsed = useSelector(getSidebarCollapsed);
 
     const [tooltipVisibility, setTooltipVisibility] = useState(false);
-    const [referenceElement, setReferenceElement] = useState(null);
+    const [referenceElement, setReferenceElement] =
+        useState<HTMLDivElement | null>(null);
     const [popperElement, setPopperElement] = useState(null);
 
     const { styles: popperStyles, attributes } = usePopper(
@@ -40,39 +41,35 @@ export const SidebarItem = ({ title, icon, active }: SidebarItemProps) => {
     const showDescription = Boolean(!sidebarCollapsed);
     const showTooltip = Boolean(sidebarCollapsed && tooltipVisibility);
 
-    const sidebarItemClassNames = cn(styles.item, {
-        [styles.collapsed]: sidebarCollapsed,
-        [styles.active]: active,
-    });
-
     return (
         <>
             <div
                 ref={setReferenceElement}
-                className={sidebarItemClassNames}
+                className={cn(styles.item, {
+                    [styles.itemCollapsed]: sidebarCollapsed,
+                    [styles.itemActive]: active,
+                })}
                 onMouseOver={() => setTooltipVisibility(true)}
                 onMouseLeave={() => setTooltipVisibility(false)}
             >
                 <div className={styles.container}>
                     <Icon
                         name={icon}
-                        className={styles.container__icon}
+                        className={styles.containerIcon}
                         size={16}
                     />
                     {showDescription && (
-                        <span className={styles.container__text}>{title}</span>
+                        <span className={styles.containerLabel}>{title}</span>
                     )}
                 </div>
             </div>
-            {showTooltip && (
-                <Tooltip
-                    visible={true}
-                    label={title}
-                    customRef={setPopperElement}
-                    customStyles={popperStyles.popper}
-                    attributes={attributes.popper}
-                />
-            )}
+            <Tooltip
+                visible={showTooltip}
+                label={title}
+                customRef={setPopperElement}
+                customStyles={popperStyles.popper}
+                attributes={attributes.popper}
+            />
         </>
     );
 };

@@ -2,13 +2,13 @@ import { Header } from "@/components/ui/Header/Header";
 import { Sidebar } from "@/components/ui/Sidebar/Sidebar";
 import { Container } from "@/components/containers/Container/Container";
 import Head from "next/head";
+import { Footer } from "@/components/ui/Footer";
 import styles from "./Layout.module.scss";
-import {Footer} from "@/components/ui/Footer";
 
 interface ILayout {
     title?: string;
-    description?: string,
-    name?: string,
+    description?: string;
+    name?: string;
     children: any;
 }
 
@@ -28,10 +28,8 @@ export const Layout = ({
             <div>
                 <Header />
                 <Sidebar />
-                <Container>
-                    {children}
-                    <Footer />
-                </Container>
+                <Container>{children}</Container>
+                <Footer />
             </div>
             <div id="modal-root" />
             <div id="tooltip-root" />

@@ -27,9 +27,7 @@ export const Sidebar = () => {
     });
 
     const isActiveSidebarHref = (url: string) => {
-        if (router.asPath.startsWith(url)) {
-            return true;
-        }
+        return router.asPath.startsWith(url);
     };
 
     return (

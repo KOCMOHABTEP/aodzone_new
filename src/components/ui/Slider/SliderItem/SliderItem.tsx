@@ -23,31 +23,26 @@ export const SliderItem = ({
     image,
     current,
 }: ISliderItem) => {
-    const renderIcon = () => {
-        if (icon) {
-            return <Icon name={icon} className={styles.icon} />;
-        }
-        return null;
-    };
-
     return (
         <div
             className={cn(styles.item, {
-                [styles.item__active]: current,
+                [styles.itemActive]: current,
             })}
         >
             <div
-                className={styles.content__frame}
+                className={styles.frame}
                 style={{ backgroundImage: `url(${image})` }}
             />
             <div className={styles.content}>
-                <div className={styles.content__game}>
-                    {renderIcon()}
-                    <span className={styles.content__text}>{game}</span>
+                <div className={styles.contentGame}>
+                    {icon && (
+                        <Icon name={icon} className={styles.contentIcon} />
+                    )}
+                    <span className={styles.contentLabel}>{game}</span>
                 </div>
-                <h2 className={styles.title}>{title}</h2>
-                <p className={styles.description}>{description}</p>
-                <Button text="ЧИТАТЬ" />
+                <h2 className={styles.contentTitle}>{title}</h2>
+                <p className={styles.contentDescription}>{description}</p>
+                <Button text="Читать" />
             </div>
         </div>
     );

@@ -1,21 +1,24 @@
 import { useSelector } from "react-redux";
 import cn from "classnames";
 import { getSidebarCollapsed } from "@/redux/app/app.selectors";
+import { FC, PropsWithChildren, ReactNode } from "react";
 import styles from "./Container.module.scss";
 
-export const Container = ({ children }) => {
+export const Container: FC<PropsWithChildren<ReactNode>> = ({ children }) => {
     const sidebarCollapsed = useSelector(getSidebarCollapsed);
-    const containerClassName = cn(styles.container, {
-        [styles.container__full]: sidebarCollapsed,
-    });
-    const containerContentClassName = cn(styles.content, {
-        [styles.content__full]: sidebarCollapsed,
-    });
 
     return (
-        <div className={containerClassName}>
+        <div
+            className={cn(styles.container, {
+                [styles.container__full]: sidebarCollapsed,
+            })}
+        >
             <div className={styles.inner}>
-                <div className={containerContentClassName}>
+                <div
+                    className={cn(styles.content, {
+                        [styles.content__full]: sidebarCollapsed,
+                    })}
+                >
                     {children}
                 </div>
             </div>
