@@ -11,6 +11,25 @@ import { sidebarCollapseToggle } from "@/redux/app/app.slice";
 import moment from "moment";
 import styles from "./Sidebar.module.scss";
 
+const SIDEBAR_FOOTER_LINKS_LIST = [
+    {
+        label: "Политика конфиденциальности",
+        href: "",
+    },
+    {
+        label: "FAQ",
+        href: "",
+    },
+    {
+        label: "Контакты",
+        href: "",
+    },
+    {
+        label: "О нас",
+        href: "",
+    },
+];
+
 export const Sidebar = () => {
     const sidebarCollapsed = useSelector(getSidebarCollapsed);
     const dispatch = useDispatch();
@@ -21,38 +40,16 @@ export const Sidebar = () => {
         dispatch(sidebarCollapseToggle(!sidebarCollapsed));
     };
 
-    const sidebarClassName = cn(styles.sidebar, {
-        [styles.sidebarCollapsed]: sidebarCollapsed,
-    });
-    const logoClassName = cn(styles.logo, {
-        [styles.logoCollapsed]: sidebarCollapsed,
-    });
-
     const isActiveSidebarHref = (url: string) => {
         return router.asPath.startsWith(url);
     };
 
-    const sidebarFooterLinkList = [
-        {
-            label: "Политика конфиденциальности",
-            href: "",
-        },
-        {
-            label: "FAQ",
-            href: "",
-        },
-        {
-            label: "Контакты",
-            href: "",
-        },
-        {
-            label: "О нас",
-            href: "",
-        },
-    ];
-
     return (
-        <div className={sidebarClassName}>
+        <div
+            className={cn(styles.sidebar, {
+                [styles.sidebarCollapsed]: sidebarCollapsed,
+            })}
+        >
             <div
                 className={styles.sidebarToggle}
                 onClick={handleSidebarCollapse}
@@ -63,7 +60,11 @@ export const Sidebar = () => {
                     <Icon name="arrow_left" size={16} />
                 )}
             </div>
-            <div className={logoClassName}>
+            <div
+                className={cn(styles.logo, {
+                    [styles.logoCollapsed]: sidebarCollapsed,
+                })}
+            >
                 <div className={styles.logoInner}>
                     <Link href="/">
                         <a>{sidebarCollapsed ? <LogoShort /> : <LogoFull />}</a>
@@ -185,7 +186,7 @@ export const Sidebar = () => {
             </ul>
             <div className={styles.sidebarFooter}>
                 <div className={styles.sidebarFooterLinkList}>
-                    {sidebarFooterLinkList.map((item, idx) => (
+                    {SIDEBAR_FOOTER_LINKS_LIST.map((item, idx) => (
                         <>
                             <Link href={item.href}>
                                 <a
@@ -195,7 +196,7 @@ export const Sidebar = () => {
                                     {item.label}
                                 </a>
                             </Link>
-                            {idx < sidebarFooterLinkList.length && ", "}
+                            {idx < SIDEBAR_FOOTER_LINKS_LIST.length - 1 && ", "}
                         </>
                     ))}
                 </div>

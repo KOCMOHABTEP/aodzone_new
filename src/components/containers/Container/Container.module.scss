@@ -14,18 +14,14 @@
 }
 
 .content {
+    flex: 1;
     max-width: 1280px;
     width: 100%;
-    padding: 0 30px;
+    padding: 40px 32px;
     margin: 0 auto;
 }
 
 .contentFull {
     max-width: initial;
-}
-
-.inner {
-    padding: 40px 0;
-    flex: 1;
 }
 

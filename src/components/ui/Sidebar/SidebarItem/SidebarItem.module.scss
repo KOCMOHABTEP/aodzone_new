@@ -1,8 +1,8 @@
 .item {
-    color: var(--color-grey-100);
+    color: var(--color-text-grey);
     padding: 16px;
-    border-radius: 6px;
     overflow: hidden;
+    border-radius: 6px;
     cursor: pointer;
     display: flex;
     position: relative;
@@ -10,13 +10,13 @@
 
     &:not(.itemActive):hover {
         color: var(--color-white);
-        background: var(--color-grey-900);
+        background: var(--color-grey);
     }
 }
 
 .itemActive {
-    color: var(--color-black);
-    background: var(--color-green);
+    color: var(--color-green);
+    background: var(--color-grey);
     opacity: 1;
 
     &:after {
@@ -26,17 +26,15 @@
         background: var(--color-green);
         position: absolute;
         top: 0;
-        right: 0;
+        left: 0;
     }
 
-    &:hover {
-        background: var(--color-green);
-    }
 }
 
 .itemCollapsed {
-    width: 48px;
-    height: 48px;
+    width: 56px;
+    height: 56px;
+    margin: 0 auto;
 
     &:after {
         display: none;

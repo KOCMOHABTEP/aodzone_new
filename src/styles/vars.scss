@@ -3,9 +3,20 @@
     --color-white: #FEFEFE;
     --color-black: #0E1015;
 
+    --color-dark-extra: #0E1015;
+    --color-dark: #15171F;
+    --color-dark-light: #21212E;
+
     --color-background: #15171F;
     --color-background-light: #12161e;
     --color-background-lighter: #2B2F3B;
+
+    /* TEXT */
+    --color-border: var(--color-grey);
+
+    /* TEXT */
+    --color-text-grey: var(--color-grey-100);
+    --color-text-grey-light: var(--color-grey-50);
 
     /* GREENS */
     --color-green: #23EAA4;
@@ -60,10 +71,6 @@
     --color-red-700: #ed0e1c;
     --color-red-800: #df0014;
     --color-red-900: #cf0002;
-
-    /* TEXT */
-    --color-text-grey: var(--color-grey-100);
-    --color-text-grey-light: var(--color-grey-50);
 
     /* GRADIENTS */
     --gradient-green: linear-gradient(270deg, #00FBA4 0%, #40809C 100%);

@@ -27,32 +27,32 @@ export const NewsItem = ({
         <Link href="news/1">
             <div className={styles.item}>
                 <div
-                    className={styles.item__image}
+                    className={styles.itemImage}
                     style={{ backgroundImage: `url(${image})` }}
                 />
                 <div className={styles.content}>
-                    <h2 className={styles.content__title}>{title}</h2>
-                    <p className={styles.content__description}>{description}</p>
-                    <div className={styles.stats}>
-                        <div className={styles.control}>
+                    <h2 className={styles.contentTitle}>{title}</h2>
+                    <p className={styles.contentDescription}>{description}</p>
+                    <div className={styles.contentInfo}>
+                        <div className={styles.contentInfoItem}>
                             <Icon
-                                className={styles.control__icon}
+                                className={styles.contentInfoItemIcon}
                                 name="views"
                                 size={16}
                             />
                             <span>{stats.views}</span>
                         </div>
-                        <div className={styles.control}>
+                        <div className={styles.contentInfoItem}>
                             <Icon
-                                className={styles.control__icon}
+                                className={styles.contentInfoItemIcon}
                                 name="comments"
                                 size={16}
                             />
                             <span>{stats.comments}</span>
                         </div>
-                        <div className={styles.control}>
+                        <div className={styles.contentInfoItem}>
                             <Icon
-                                className={styles.control__icon}
+                                className={styles.contentInfoItemIcon}
                                 name="like"
                                 size={16}
                             />

@@ -55,17 +55,18 @@ export const NewsDetailView = () => {
     };
 
     return (
-        <div className={styles.item}>
+        <div className={styles.component}>
             <div className={styles.header}>
-                <h1 className={styles.header__title}>{newsItem.title}</h1>
-                <p className={styles.header__caption}>
+                <h1 className={styles.headerTitle}>{newsItem.title}</h1>
+                <p className={styles.headerDescription}>
                     {newsItem.description}
                 </p>
             </div>
             <div className={styles.container}>
-                <img className={styles.container__image} src={newsItem.image} />
+                <img className={styles.containerImage} src={newsItem.image} />
             </div>
             <div className={styles.detail}>
+                {/* eslint-disable-next-line react/no-danger */}
                 <div dangerouslySetInnerHTML={{ __html: newsItem.content }} />
             </div>
             <div className={styles.footer}>

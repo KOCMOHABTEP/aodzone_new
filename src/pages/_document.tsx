@@ -6,7 +6,18 @@ const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_MEASUREMENT_ID;
 export default function Document() {
     return (
         <Html>
-            <Head />
+            <Head>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link
+                    rel="preconnect"
+                    href="https://fonts.gstatic.com"
+                    crossOrigin="true"
+                />
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+                    rel="stylesheet"
+                />
+            </Head>
             <Script
                 src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
                 strategy="afterInteractive"

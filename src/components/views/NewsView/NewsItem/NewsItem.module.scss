@@ -1,6 +1,6 @@
 .item {
     overflow: hidden;
-    background: var(--color-grey-900);
+    background: var(--color-background);
     border-radius: 6px;
     border: solid 1px var(--color-grey);
     box-shadow: var(--box-shadow);
@@ -13,41 +13,39 @@
     &:hover {
         transform: scale(1.05);
     }
+}
 
-    &__image {
-        width: 100%;
-        min-height: 150px;
-        background: var(--color-grey);
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
-    }
-
+.itemImage {
+    width: 100%;
+    min-height: 150px;
+    background: var(--color-grey);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .content {
     padding: 24px;
-
-    &__title {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 16px;
-    }
-
-    &__description {
-        font-size: 14px;
-        height: 36px;
-        overflow: hidden;
-        margin-bottom: 24px;
-    }
-
 }
 
-.stats {
+.contentTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.contentDescription {
+    font-size: 14px;
+    height: 36px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.contentInfo {
     display: flex;
 }
 
-.control {
+.contentInfoItem {
     font-size: 12px;
     font-weight: bold;
     color: var(--color-text-grey);
@@ -55,14 +53,14 @@
     position: relative;
     display: flex;
 
-    &__icon {
-        color: var(--color-text-grey);
-        margin-right: 8px;
+    & + & {
+        margin-left: 16px;
     }
 }
 
-.control + .control {
-    margin-left: 16px;
+.contentInfoItemIcon {
+    color: var(--color-text-grey);
+    margin-right: 8px;
 }
 
 
