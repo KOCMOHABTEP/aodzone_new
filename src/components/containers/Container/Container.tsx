@@ -9,14 +9,14 @@ export const Container: FC<PropsWithChildren<ReactNode>> = ({ children }) => {
 
     return (
         <div
-            className={cn(styles.container, {
-                [styles.container__full]: sidebarCollapsed,
+            className={cn(styles.root, {
+                [styles.rootFull]: sidebarCollapsed,
             })}
         >
             <div className={styles.inner}>
                 <div
                     className={cn(styles.content, {
-                        [styles.content__full]: sidebarCollapsed,
+                        [styles.contentFull]: sidebarCollapsed,
                     })}
                 >
                     {children}

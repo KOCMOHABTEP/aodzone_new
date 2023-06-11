@@ -62,8 +62,8 @@
     --color-red-900: #cf0002;
 
     /* TEXT */
-    --color-text-grey: #9797B0;
-    --color-text-grey-light: #B0B8CC;
+    --color-text-grey: var(--color-grey-100);
+    --color-text-grey-light: var(--color-grey-50);
 
     /* GRADIENTS */
     --gradient-green: linear-gradient(270deg, #00FBA4 0%, #40809C 100%);

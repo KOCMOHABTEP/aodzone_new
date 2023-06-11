@@ -8,12 +8,14 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { getSidebarCollapsed } from "@/redux/app/app.selectors";
 import { sidebarCollapseToggle } from "@/redux/app/app.slice";
+import moment from "moment";
 import styles from "./Sidebar.module.scss";
 
 export const Sidebar = () => {
     const sidebarCollapsed = useSelector(getSidebarCollapsed);
     const dispatch = useDispatch();
     const router = useRouter();
+    const currentYear = moment().year();
 
     const handleSidebarCollapse = () => {
         dispatch(sidebarCollapseToggle(!sidebarCollapsed));
@@ -29,6 +31,25 @@ export const Sidebar = () => {
     const isActiveSidebarHref = (url: string) => {
         return router.asPath.startsWith(url);
     };
+
+    const sidebarFooterLinkList = [
+        {
+            label: "Политика конфиденциальности",
+            href: "",
+        },
+        {
+            label: "FAQ",
+            href: "",
+        },
+        {
+            label: "Контакты",
+            href: "",
+        },
+        {
+            label: "О нас",
+            href: "",
+        },
+    ];
 
     return (
         <div className={sidebarClassName}>
@@ -162,6 +183,27 @@ export const Sidebar = () => {
                     </Link>
                 </li>
             </ul>
+            <div className={styles.sidebarFooter}>
+                <div className={styles.sidebarFooterLinkList}>
+                    {sidebarFooterLinkList.map((item, idx) => (
+                        <>
+                            <Link href={item.href}>
+                                <a
+                                    key={item.label}
+                                    className={styles.sidebarFooterLink}
+                                >
+                                    {item.label}
+                                </a>
+                            </Link>
+                            {idx < sidebarFooterLinkList.length && ", "}
+                        </>
+                    ))}
+                </div>
+
+                <div className={styles.sidebarCopyright}>
+                    © 2007 — {currentYear}, Aodzone
+                </div>
+            </div>
         </div>
     );
 };

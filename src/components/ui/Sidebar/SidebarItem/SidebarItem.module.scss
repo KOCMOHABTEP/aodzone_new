@@ -1,17 +1,16 @@
 .item {
-    color: var(--color-white);
+    color: var(--color-grey-100);
     padding: 16px;
     border-radius: 6px;
     overflow: hidden;
     cursor: pointer;
-    opacity: 0.5;
     display: flex;
     position: relative;
     transition: all 0.3s ease;
 
-    &:hover {
-        opacity: 1;
-        background: var(--color-background-overlay);
+    &:not(.itemActive):hover {
+        color: var(--color-white);
+        background: var(--color-grey-900);
     }
 }
 
@@ -54,7 +53,7 @@
 }
 
 .containerLabel {
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 8px;
 }
 

@@ -56,7 +56,7 @@ export const SidebarItem = ({ title, icon, active }: SidebarItemProps) => {
                     <Icon
                         name={icon}
                         className={styles.containerIcon}
-                        size={16}
+                        size={24}
                     />
                     {showDescription && (
                         <span className={styles.containerLabel}>{title}</span>
