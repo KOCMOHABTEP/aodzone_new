@@ -1,7 +1,7 @@
 
 .item {
     display: flex;
-    background-color: var(--color-black);
+    background-color: var(--color-dark-extra);
     border-radius: 8px;
     padding: 16px;
     margin-bottom: 12px;
@@ -56,7 +56,7 @@
 
     &__violet {
         background-color: var(--color-violet);
-        color: var(--color-black);
+        color: var(--color-dark-extra);
     }
 }
 

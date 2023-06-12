@@ -8,33 +8,12 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { getSidebarCollapsed } from "@/redux/app/app.selectors";
 import { sidebarCollapseToggle } from "@/redux/app/app.slice";
-import moment from "moment";
 import styles from "./Sidebar.module.scss";
-
-const SIDEBAR_FOOTER_LINKS_LIST = [
-    {
-        label: "Политика конфиденциальности",
-        href: "",
-    },
-    {
-        label: "FAQ",
-        href: "",
-    },
-    {
-        label: "Контакты",
-        href: "",
-    },
-    {
-        label: "О нас",
-        href: "",
-    },
-];
 
 export const Sidebar = () => {
     const sidebarCollapsed = useSelector(getSidebarCollapsed);
     const dispatch = useDispatch();
     const router = useRouter();
-    const currentYear = moment().year();
 
     const handleSidebarCollapse = () => {
         dispatch(sidebarCollapseToggle(!sidebarCollapsed));
@@ -184,27 +163,6 @@ export const Sidebar = () => {
                     </Link>
                 </li>
             </ul>
-            <div className={styles.sidebarFooter}>
-                <div className={styles.sidebarFooterLinkList}>
-                    {SIDEBAR_FOOTER_LINKS_LIST.map((item, idx) => (
-                        <>
-                            <Link href={item.href}>
-                                <a
-                                    key={item.label}
-                                    className={styles.sidebarFooterLink}
-                                >
-                                    {item.label}
-                                </a>
-                            </Link>
-                            {idx < SIDEBAR_FOOTER_LINKS_LIST.length - 1 && ", "}
-                        </>
-                    ))}
-                </div>
-
-                <div className={styles.sidebarCopyright}>
-                    © 2007 — {currentYear}, Aodzone
-                </div>
-            </div>
         </div>
     );
 };

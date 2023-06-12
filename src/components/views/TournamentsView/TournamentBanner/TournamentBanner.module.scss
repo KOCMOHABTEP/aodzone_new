@@ -2,7 +2,7 @@
 
 .item {
     padding: 16px;
-    background-color: var(--color-black);
+    background-color: var(--color-dark-extra);
     width: 100%;
     height: 100%;
     margin-bottom: 24px;
@@ -13,7 +13,7 @@
 .content {
     display: flex;
     flex-direction: column;
-    border-bottom: solid 1px var(--color-black);
+    border-bottom: solid 1px var(--color-dark-extra);
 }
 
 .header{
@@ -48,7 +48,7 @@
     cursor: pointer;
 
     &__btn {
-        color: var(--color-black);
+        color: var(--color-dark-extra);
         width: 120px;
         max-height: 24px;
         opacity: 70%;
@@ -59,7 +59,7 @@
 
 
 .buttonIconColorHeaderMatches {
-    color: var(--color-black);
+    color: var(--color-dark-extra);
 }
 
 
@@ -137,7 +137,7 @@
 }
 
 .itemInfoHeaderButton {
-    color: var(--color-black);
+    color: var(--color-dark-extra);
     max-height: 24px;
     display: flex;
     align-items: center;

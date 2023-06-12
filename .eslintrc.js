@@ -45,6 +45,13 @@ module.exports = {
     ],
 
     rules: {
+        "sort-imports": [
+            "error",
+            {
+                ignoreDeclarationSort: true,
+                ignoreCase: true,
+            },
+        ],
         "import/no-unresolved": "error",
         "@typescript-eslint/no-unused-vars": "error",
         "react/react-in-jsx-scope": "off",

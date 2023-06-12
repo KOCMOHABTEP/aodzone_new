@@ -45,7 +45,7 @@
     &__label {
         font-size: 10px;
         padding: 4px;
-        background-color: var(--color-black);
+        background-color: var(--color-dark-extra);
         opacity: 80%;
         border-radius: 12px;
         margin-right: 6px;
@@ -53,7 +53,7 @@
 }
 
 .bottom {
-    background-color: var(--color-black);
+    background-color: var(--color-dark-extra);
     border-radius: 0 0 8px 8px;
     overflow: hidden;
 }
@@ -158,11 +158,11 @@
 
     &__green {
         background-color: var(--color-green);
-        color: var(--color-black);
+        color: var(--color-dark-extra);
     }
 
     &__violet {
         background-color: var(--color-violet);
-        color: var(--color-black);
+        color: var(--color-dark-extra);
     }
 }
