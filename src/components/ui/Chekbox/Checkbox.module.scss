@@ -25,7 +25,7 @@
   height: 24px;
   border: solid 1px var(--color-grey);
   border-radius: 4px;
-  background-color: var(--color-dark-extra);
+  background-color: var(--color-dark-light);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,6 +42,6 @@
 .checkboxTitle {
   font-size: 14px;
   font-weight: 500;
-  color: var(--color-grey);
+  color: var(--color-text-grey);
   margin-left: 8px;
 }

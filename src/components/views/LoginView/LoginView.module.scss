@@ -1,48 +1,103 @@
-.form {
+.root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+}
+
+.container {
+  border-radius: 8px;
+  border: solid 1px var(--color-grey);
+  background: var(--color-dark);
+  display: flex;
+  flex-direction: row;
+}
+
+.containerColumn {
+  padding: 32px;
+  flex: 1;
+  position: relative;
+}
+
+.contentImage {
+  height: 560px;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
+.contentImageItem {
+  width: 320px;
+  height: 320px;
+  margin: auto;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(146,143,255,1) 0%, rgba(247,24,196,1) 50%, rgba(35,234,164,1) 100%);
+  z-index: 10;
+}
+
+.content {
+
+}
+
+.contentHead {
+  margin-bottom: 24px;
+}
+
+.contentHeadTitle {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.contentHeadDescription {
+  font-size: 18px;
+  color: var(--color-text-grey);
+}
+
+.contentBody {
+
+}
+
+.contentRow {
+  & + & {
+    margin-top: 16px;
+  }
+}
+
+.contentInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.contentInfoLink {
+  font-size: 14px;
+}
+
+.contentButton {
+  width: 100%;
+}
+
+.contentFooter {
+  margin-top: 8px;
   display: flex;
   justify-content: center;
 }
 
-.item {
-  padding: 32px;
-  max-width: 400px;
-  //width: 100%;
-  background-color: var(--color-dark);
-  border-radius: 8px ;
-  border: solid 1px var(--color-grey);
-  display: flex;
-  flex-direction: column;
-
+.contentFooterCaption {
+  font-size: 14px;
+  color: var(--color-text-grey);
 }
 
-.wrapper {
-  margin-bottom:24px ;
+.contentFooterLink {
 
-  .title {
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-}
-
-.titleActive{
-  color: var(--color-green);
-}
-
-.input {
-
-}
-
-.input + .input {
-  margin-top: 16px;
-}
-
-.checkbox {
-  margin-top: 16px;
-}
-
-
-.button {
-  margin-top:24px ;
 }

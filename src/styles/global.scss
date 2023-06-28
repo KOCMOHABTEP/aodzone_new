@@ -9,7 +9,8 @@ body {
 }
 
 a {
-    color: var(--color-violet);
+    font-size: 14px;
+    color: var(--color-green);
     cursor: pointer;
     text-decoration: none;
 }
@@ -20,21 +21,25 @@ a {
     box-sizing: border-box;
 }
 
-
-*::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 3px;
     height: 3px;
 }
 
-*::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: var(--color-grey);
     border-radius: 3px;
 }
 
-*::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: var(--color-green);
     box-shadow: inset 2px 2px 5px 0 rgba(255,255,255, 0.5);
     border-radius: 3px;
+}
+
+::selection {
+    background: var(--color-green);
+    color: var(--color-dark-extra);
 }
 
 
