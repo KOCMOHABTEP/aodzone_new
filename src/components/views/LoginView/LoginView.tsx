@@ -346,6 +346,7 @@ export const LoginView = () => {
                         <div className={styles.contentRow}>
                             <Button
                                 text="Вернуться к авторизации"
+                                secondary={true}
                                 onClick={() => setLoginProcess("login")}
                                 buttonClassName={styles.contentButton}
                             />

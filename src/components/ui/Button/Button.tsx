@@ -3,6 +3,7 @@ import styles from "./Button.module.scss";
 
 interface ButtonProps {
     text: string;
+    secondary?: boolean;
     buttonClassName?: string;
     disabled?: boolean;
     onClick?: () => void;
@@ -12,9 +13,11 @@ export const Button = ({
     text,
     buttonClassName,
     disabled,
+    secondary,
     onClick,
 }: ButtonProps) => {
     const buttonClassNameStyles = cn(styles.button, buttonClassName, {
+        [styles.buttonSecondary]: secondary,
         [styles.buttonDisabled]: disabled,
     });
 

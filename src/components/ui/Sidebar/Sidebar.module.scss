@@ -26,7 +26,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 32px;
+    top: 30px;
     right: -16px;
     z-index: 1;
     user-select: none;
@@ -36,9 +36,9 @@
     height: 48px;
     max-width: 320px;
     width: 100%;
-    overflow: hidden;
     padding: 0 16px;
-    margin: 24px 0;
+    margin: 16px 0;
+    overflow: hidden;
     position: relative;
 }
 
@@ -54,7 +54,7 @@
 .sidebarList {
     height: calc(100% - 96px);
     overflow-y: auto;
-    padding: 0;
+    padding: 0 8px;
     margin: 0;
     list-style: none;
 }
