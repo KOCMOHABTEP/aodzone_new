@@ -1,8 +1,9 @@
 import type { AppProps } from "next/app";
 import { Provider } from "react-redux";
-import { store, persistor } from "@/redux/store";
+import { persistor, store } from "@/redux/store";
 
 import "react-toastify/dist/ReactToastify.css";
+import "@/styles/libs/index.scss";
 import "@/styles/vars.scss";
 import "@/styles/fonts.scss";
 import "@/styles/global.scss";

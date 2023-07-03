@@ -6,8 +6,12 @@
     --color-dark: #15171F;
     --color-dark-light: #21212E;
 
-    /* TEXT */
     --color-border: var(--color-grey);
+
+
+    /* TYPOGRAPHY */
+    --font-family: 'AvenirNextCyr', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 
     /* TEXT */
     --color-text-grey: var(--color-grey-100);

@@ -2,16 +2,10 @@ import { AxiosResponse } from "axios";
 
 import $api from "@/services/api";
 import { AuthResponse } from "@/types/AuthResponse";
-
-type AuthRegistrationParams = {
-    email: string;
-    password: string;
-};
-
-type AuthLoginParams = {
-    email: string;
-    password: string;
-};
+import {
+    AuthLoginParams,
+    AuthRegistrationParams,
+} from "@/redux/auth/auth.types";
 
 export default class AuthService {
     static async login(

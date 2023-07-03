@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 import { login, registration } from "@/redux/auth/auth.action";
 import { toast } from "react-toastify";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { FormError } from "@/components/ui/Form/FormError";
 import styles from "./LoginView.module.scss";
 
 type LoginProcessType = "login" | "registration" | "forget_password";
@@ -23,7 +24,7 @@ type RegistrationFormValues = {
     username: string;
     email: string;
     password: string;
-    password2: string;
+    passwordConfirmation: string;
     agreement: boolean;
 };
 
@@ -59,15 +60,21 @@ export const LoginView = () => {
             .required("Введите пароль")
             .min(6, "Минимум 6 символов")
             .max(40, "Пароль не должен превышать 40 символов"),
+        passwordConfirmation: Yup.string()
+            .required("Введите пароль")
+            .oneOf([Yup.ref("password")], "Пароли не совпадают"),
+        agreement: Yup.boolean()
+            .required("Необходимо согласие")
+            .oneOf([true], "Необходимо согласие"),
     });
     const registrationForm = useForm<RegistrationFormValues>({
         mode: "onChange",
         defaultValues: {
-            username: "",
-            email: "",
-            password: "",
-            password2: "",
-            agreement: false,
+            username: "kocmohabtep",
+            email: "test@test2.ru",
+            password: "b5440b",
+            passwordConfirmation: "b5440b",
+            agreement: true,
         },
         resolver: yupResolver(registrationFormValidationSchema),
     });
@@ -102,10 +109,18 @@ export const LoginView = () => {
         console.log("Регистрация::handleRegister", { ...data });
         const { username, email, password } = data;
         try {
-            await dispatch(registration({ username, email, password }));
+            await dispatch(
+                registration({ username, email, password })
+            ).unwrap();
             await dispatch(login({ email, password }));
+            toast.success(`${username} добро пожаловать на Aodzone`);
             await router.push("/profile");
         } catch (e) {
+            console.log(e);
+            registrationForm.setError("email", {
+                type: "custom",
+                message: "Пользователь с таким email уже существует",
+            });
             toast.error("Ошибка регистрации");
         }
     };
@@ -258,6 +273,7 @@ export const LoginView = () => {
                         <div className={styles.contentRow}>
                             <Input
                                 label="Пароль"
+                                type="password"
                                 {...registrationForm.register("password", {
                                     required: "Поле должно быть заполнено",
                                 })}
@@ -271,12 +287,16 @@ export const LoginView = () => {
                         <div className={styles.contentRow}>
                             <Input
                                 label="Подтвердите пароль"
-                                {...registrationForm.register("password2", {
-                                    required: "Поле должно быть заполнено",
-                                })}
+                                type="password"
+                                {...registrationForm.register(
+                                    "passwordConfirmation",
+                                    {
+                                        required: "Поле должно быть заполнено",
+                                    }
+                                )}
                                 error={
-                                    registrationForm.formState.errors.password2
-                                        ?.message
+                                    registrationForm.formState.errors
+                                        .passwordConfirmation?.message
                                 }
                             />
                         </div>
@@ -391,7 +411,7 @@ export const LoginView = () => {
     return (
         <div className={styles.root}>
             <div className={styles.container}>
-                <div className={styles.containerColumn}>
+                <div className={styles.containerRow}>
                     <div className={styles.containerHeader}>
                         <div className={styles.containerHeaderAvatar}>
                             <img
@@ -402,9 +422,7 @@ export const LoginView = () => {
                         <div className={styles.containerHeaderAvatarBackdrop} />
                     </div>
                 </div>
-                <div className={styles.containerColumn}>
-                    {renderProcessForm()}
-                </div>
+                <div className={styles.containerRow}>{renderProcessForm()}</div>
             </div>
         </div>
     );

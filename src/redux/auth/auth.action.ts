@@ -2,25 +2,31 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import { IAuthLogin, IAuthRegistration } from "@/types/IAuth";
 import AuthService from "@/services/auth.service";
 import { AuthResponse } from "@/types/AuthResponse";
-
-interface AuthRegistrationParams {
-    username: string;
-    email: string;
-    password: string;
-}
-
-interface AuthLoginParams {
-    email: string;
-    password: string;
-}
+import {
+    AuthLoginParams,
+    AuthRegistrationParams,
+} from "@/redux/auth/auth.types";
 
 export const registration = createAsyncThunk<
     AuthResponse,
     AuthRegistrationParams
->("auth/registration", async params => {
-    const { data } = await AuthService.registration(params);
-    return data;
-});
+>(
+    "auth/registration",
+    async ({ email, password, username }, { rejectWithValue }) => {
+        try {
+            const { data } = await AuthService.registration({
+                email,
+                password,
+                username,
+            });
+
+            return data;
+        } catch (error: any) {
+            console.log(error);
+            return rejectWithValue(error);
+        }
+    }
+);
 
 export const login = createAsyncThunk<AuthResponse, AuthLoginParams>(
     "auth/login",
@@ -33,7 +39,6 @@ export const login = createAsyncThunk<AuthResponse, AuthLoginParams>(
 
             return data;
         } catch (error: any) {
-            console.log(error);
             return rejectWithValue(error);
         }
     }

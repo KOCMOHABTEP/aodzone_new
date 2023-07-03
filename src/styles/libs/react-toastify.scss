@@ -1,3 +1,8 @@
+:root {
+    --toastify-icon-color-success: var(--color-green);
+    --toastify-icon-color-error: var(--color-red);
+}
+
 @media only screen and (max-width: 480px) {
     .Toastify__toast-container {
         width: 70vw;
@@ -7,12 +12,17 @@
 }
 
 .Toastify__toast {
-    font-family: var(--font-body);
-    color: var(--color-dark-extra);
+    font-family: var(--font-family);
+    font-size: 14px;
+    color: var(--color-white);
     min-height: auto;
-    padding: 12px 16px;
-    background: #F4F6FF;
-    border: solid 1px var(--color-violet);
+    padding: 12px;
+    background: var(--color-dark-light);
+    border: solid 1px var(--color-border);
+}
+
+.Toastify__toast-icon {
+    width: 16px;
 }
 
 .Toastify__toast-body {
@@ -21,6 +31,9 @@
 }
 
 .Toastify__toast--error {
-    background-color: #f7d4d6;
     border: solid 1px var(--color-red);
+}
+
+.Toastify__toast--success {
+    border: solid 1px var(--color-green);
 }

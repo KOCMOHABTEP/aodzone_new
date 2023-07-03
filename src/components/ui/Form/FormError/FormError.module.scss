@@ -1,0 +1,14 @@
+.error {
+    margin-top: 8px;
+    display: flex;
+}
+
+.errorIcon {
+    color: var(--color-red);
+    margin-right: 4px;
+}
+
+.errorMessage {
+    font-size: 12px;
+    color: var(--color-red);
+}
