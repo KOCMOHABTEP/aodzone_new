@@ -126,6 +126,19 @@ export const LoginView = () => {
         // }
     };
 
+    const generateImagePathByType = () => {
+        switch (loginProcess) {
+            case "login":
+                return "/illustrations/illustration-test2.png";
+            case "forget_password":
+                return "/illustrations/illustration-2.png";
+            case "registration":
+                return "/illustrations/illustration-3.png";
+            default:
+                return "";
+        }
+    };
+
     const renderProcessForm = () => {
         if (loginProcess === "login") {
             return (
@@ -379,14 +392,18 @@ export const LoginView = () => {
         <div className={styles.root}>
             <div className={styles.container}>
                 <div className={styles.containerColumn}>
-                    {renderProcessForm()}
+                    <div className={styles.containerHeader}>
+                        <div className={styles.containerHeaderAvatar}>
+                            <img
+                                src={generateImagePathByType()}
+                                className={styles.containerHeaderAvatarImage}
+                            />
+                        </div>
+                        <div className={styles.containerHeaderAvatarBackdrop} />
+                    </div>
                 </div>
                 <div className={styles.containerColumn}>
-                    <img
-                        src="/illustrations/illustration-test2.png"
-                        className={styles.contentImage}
-                    />
-                    <div className={styles.contentImageItem} />
+                    {renderProcessForm()}
                 </div>
             </div>
         </div>

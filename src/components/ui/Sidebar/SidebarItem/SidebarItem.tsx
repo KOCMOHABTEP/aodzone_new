@@ -31,7 +31,7 @@ export const SidebarItem = ({ title, icon, active }: SidebarItemProps) => {
                 {
                     name: "offset",
                     options: {
-                        offset: [0, 20],
+                        offset: [0, 10],
                     },
                 },
             ],

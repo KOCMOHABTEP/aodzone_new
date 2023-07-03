@@ -31,13 +31,13 @@ export const Tooltip = ({
         return ReactDOM.createPortal(
             <div
                 ref={customRef}
-                className={styles.tooltip}
+                className={styles.component}
                 style={customStyles}
                 {...attributes}
             >
-                <div className={styles.tooltip__label}>{label}</div>
+                <div className={styles.label}>{label}</div>
             </div>,
-            document.getElementById("tooltip-root")
+            document.getElementById("tooltip-root") as HTMLElement
         );
     }
     return null;

@@ -1,16 +1,18 @@
 .root {
   display: flex;
-  flex-direction: column;
   flex: 1;
+  align-items: center;
   justify-content: center;
 }
 
 .container {
+  max-width: 480px;
+  width: 100%;
   border-radius: 8px;
   border: solid 1px var(--color-grey);
   background: var(--color-dark);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .containerColumn {
@@ -19,29 +21,47 @@
   position: relative;
 }
 
-.contentImage {
-  height: 560px;
-  margin: auto;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.containerHeader {
+
+}
+
+.containerHeaderAvatar {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+  background: var(--color-dark);
+  border: solid 1px var(--color-green);
+  position: relative;
   z-index: 20;
 }
 
-.contentImageItem {
-  width: 320px;
-  height: 320px;
+.containerHeaderAvatarBackdrop {
+  width: 120px;
+  height: 120px;
   margin: auto;
   position: absolute;
   border-radius: 50%;
-  filter: blur(100px);
+  filter: blur(50px);
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background: linear-gradient(90deg, rgba(146,143,255,1) 0%, rgba(247,24,196,1) 50%, rgba(35,234,164,1) 100%);
   z-index: 10;
+}
+
+.containerHeaderAvatarImage {
+  height: 100%;
+  margin: auto;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  transform: translate(-50%, 0);
+  z-index: 20;
 }
 
 .content {
