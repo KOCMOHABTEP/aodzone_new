@@ -14,14 +14,10 @@ export const UserCardMenuItem = ({
     onSelectItem,
 }: UserCardMenuItemProps) => {
     return (
-        <div className={styles.item} onClick={() => onSelectItem(label)}>
-            <div className={styles.container}>
-                <Icon
-                    name={icon}
-                    size={16}
-                    className={styles.container__icon}
-                />
-                <div className={styles.container__text}>{label}</div>
+        <div className={styles.container} onClick={() => onSelectItem(label)}>
+            <div className={styles.item}>
+                <Icon name={icon} size={16} className={styles.itemIcon} />
+                <div className={styles.itemLabel}>{label}</div>
             </div>
         </div>
     );
