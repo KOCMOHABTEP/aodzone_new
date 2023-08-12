@@ -9,7 +9,7 @@
         "./public/*"
       ]
     },
-    "target": "ESNext",
+    "target": "es5",
     "useDefineForClassFields": true,
     "lib": [
       "DOM",

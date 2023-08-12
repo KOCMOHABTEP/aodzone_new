@@ -2,6 +2,9 @@
   "name": "aodzone_new",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=12.22.0"
+  },
   "authors": [
     {
       "email": "dsmirnov.online@yandex.ru",
@@ -13,7 +16,7 @@
     }
   ],
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 5000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -57,26 +60,20 @@
     "@types/node": "^14.14.33",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^18.2.6",
-    "@typescript-eslint/eslint-plugin": "^5.12.1",
-    "@typescript-eslint/parser": "^5.29.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-next": "^12.0.4",
     "eslint-config-prettier": "^8.4.0",
-    "eslint-import-resolver-typescript": "^3.1.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.25.3",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-security": "^1.4.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-sonarjs": "^0.12.0",
     "postcss": "^8.4.14",
-    "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-preset-env": "^7.7.2",
     "prettier": "^2.5.1",
     "sass": "^1.53.0",
+    "stylelint": "^15.10.2",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-standard-scss": "^10.0.0",
+    "stylelint-order": "^6.0.3",
     "typescript": "^4.2.3"
   }
 }

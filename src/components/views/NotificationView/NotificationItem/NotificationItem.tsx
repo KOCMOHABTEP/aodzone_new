@@ -1,6 +1,6 @@
-import Link from "next/link";
-import cn from "classnames";
-import styles from "./NotificationItem.module.scss";
+import Link from 'next/link';
+import cn from 'classnames';
+import styles from './NotificationItem.module.scss';
 
 interface NotificationItemProps {
     title: string;
@@ -16,7 +16,7 @@ export const NotificationItem = ({
     read,
 }: NotificationItemProps) => {
     return (
-        <Link href="/notification/1">
+        <Link href="/notifications/1">
             <a className={styles.item}>
                 <div className={styles.content}>
                     <div
