@@ -22,13 +22,11 @@ export const HeaderActionMenu = ({
         <div className={styles.item}>
             <div className={styles.title}>{title}</div>
             <div className={styles.container}>{children}</div>
-            <Link href="/notifications">
-                <a className={styles.button}>
-                    <Button
-                        buttonClassName={styles.btn}
-                        text="Посмотреть все"
-                    />
-                </a>
+            <Link href="/notifications" className={styles.button}>
+                <Button
+                    buttonClassName={styles.btn}
+                    text="Посмотреть все"
+                />
             </Link>
         </div>
     );

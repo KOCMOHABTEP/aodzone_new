@@ -38,9 +38,7 @@ export const UserCard = () => {
             <div className={styles.card}>
                 <div className={styles.avatar}>
                     <Link href="/profile" passHref>
-                        <a>
-                            <Avatar />
-                        </a>
+                        <Avatar />
                     </Link>
                 </div>
                 <div className={styles.content}>

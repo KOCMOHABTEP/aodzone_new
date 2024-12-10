@@ -36,15 +36,15 @@ export const ForumFilterItem = ({
                 </div>
             </div>
             {dropDownShown && (
-                <Link href="/forum/1">
-                    <a className={styles.dropdown}>
+                <Link href="/forum/1" className={styles.dropdown}>
+                    <>
                         <div className={styles.dropdown__title}>
                             {titleTopic}
                         </div>
                         <div className={styles.dropdown__value}>
                             {comments} комментариев
                         </div>
-                    </a>
+                    </>
                 </Link>
             )}
         </>

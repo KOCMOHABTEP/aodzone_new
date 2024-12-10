@@ -22,8 +22,8 @@ export const StreamItem = ({
     online,
 }: StreamItemProps) => {
     return (
-        <Link href="/streams/1">
-            <a className={styles.item}>
+        <Link href="/streams/1" className={styles.item}>
+            <>
                 <div className={styles.header}>
                     <div className={styles.image}>
                         <img className={styles.image__img} src={src} />
@@ -66,7 +66,7 @@ export const StreamItem = ({
                         </div>
                     </div>
                 </div>
-            </a>
+            </>
         </Link>
     );
 };

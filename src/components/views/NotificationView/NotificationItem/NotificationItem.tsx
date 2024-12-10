@@ -16,8 +16,8 @@ export const NotificationItem = ({
     read,
 }: NotificationItemProps) => {
     return (
-        <Link href="/notifications/1">
-            <a className={styles.item}>
+        <Link href="/notifications/1" className={styles.item}>
+            <>
                 <div className={styles.content}>
                     <div
                         className={cn(styles.title, {
@@ -38,7 +38,7 @@ export const NotificationItem = ({
                     </div>
                 </div>
                 {!read && <div className={styles.indicator} />}
-            </a>
+            </>
         </Link>
     );
 };

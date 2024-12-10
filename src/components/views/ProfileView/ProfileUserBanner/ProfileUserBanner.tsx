@@ -20,22 +20,21 @@ export const ProfileUserBanner = () => {
                         </div>
                         <div className={styles.socials}>
                             <Link
+                                className={styles.socials__link}
                                 href="https://steamcommunity.com/id/KOCMOHABTYC"
                                 passHref
                             >
-                                <a className={styles.socials__link}>
-                                    <div className={styles.root}>
-                                        <div className={styles.icon}>
-                                            <Icon
-                                                name="social_steam"
-                                                size={24}
-                                            />
-                                        </div>
-                                        <div className={styles.nick}>
-                                            KOCMOHABT
-                                        </div>
+                                <div className={styles.root}>
+                                    <div className={styles.icon}>
+                                        <Icon
+                                            name="social_steam"
+                                            size={24}
+                                        />
                                     </div>
-                                </a>
+                                    <div className={styles.nick}>
+                                        KOCMOHABT
+                                    </div>
+                                </div>
                             </Link>
                         </div>
                     </div>

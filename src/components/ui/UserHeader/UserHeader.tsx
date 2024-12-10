@@ -80,24 +80,22 @@ export const UserHeader = ({
                             Пользователь с {createdDate}
                         </div>
                         {steam && (
-                            <Link href={steam.link} passHref>
-                                <a className={styles.link}>
-                                    <div className={styles.link__wrapper}>
-                                        <div
-                                            className={
-                                                styles.link__wrapper__icon
-                                            }
-                                        >
-                                            <Icon
-                                                name="social_steam"
-                                                size={24}
-                                            />
-                                        </div>
-                                        <div className={styles.link__id}>
-                                            {steam.id}
-                                        </div>
+                            <Link href={steam.link} className={styles.link} passHref>
+                                <div className={styles.link__wrapper}>
+                                    <div
+                                        className={
+                                            styles.link__wrapper__icon
+                                        }
+                                    >
+                                        <Icon
+                                            name="social_steam"
+                                            size={24}
+                                        />
                                     </div>
-                                </a>
+                                    <div className={styles.link__id}>
+                                        {steam.id}
+                                    </div>
+                                </div>
                             </Link>
                         )}
                     </div>
@@ -109,9 +107,7 @@ export const UserHeader = ({
                         onClick={handleTabClick}
                     />
                     <Link href="/profile/edit">
-                        <a>
-                            <Button text="Редактировать профиль" />
-                        </a>
+                        <Button text="Редактировать профиль" />
                     </Link>
                 </div>
             </div>

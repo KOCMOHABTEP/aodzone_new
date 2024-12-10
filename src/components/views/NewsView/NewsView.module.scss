@@ -25,3 +25,7 @@
     flex-wrap: wrap;
     align-items: baseline;
 }
+
+.gridItem {
+    flex: 0 0 calc(50% - 32px);
+}

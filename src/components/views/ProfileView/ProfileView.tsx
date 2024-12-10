@@ -44,9 +44,7 @@ export const ProfileView = () => {
                             На данный момент у Вас ещё нет команды.
                         </div>
                         <Link href="/teams/create">
-                            <a>
-                                <Button text="Создать команду" />
-                            </a>
+                            <Button text="Создать команду" />
                         </Link>
                     </div>
                 )}
@@ -58,9 +56,7 @@ export const ProfileView = () => {
                         На данный момент у вас нет матчей
                     </div>
                     <Link href="/matches/add">
-                        <a>
-                            <Button text="Создать матч" />
-                        </a>
+                        <Button text="Создать матч" />
                     </Link>
                 </div>
             )}

@@ -165,12 +165,10 @@ export const EditProfileView = () => {
             <div className={styles.wrapperButton}>
                 <div className={styles.button}>
                     <Link href="/profile">
-                        <a>
-                            <Button
-                                buttonClassName={styles.buttonBtn}
-                                text="Вернуться в профиль"
-                            />
-                        </a>
+                        <Button
+                            buttonClassName={styles.buttonBtn}
+                            text="Вернуться в профиль"
+                        />
                     </Link>
                 </div>
                 <div className={styles.button}>

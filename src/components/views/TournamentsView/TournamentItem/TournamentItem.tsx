@@ -76,8 +76,8 @@ export const TournamentItem = ({ type, src }: TournamentItemProps) => {
     };
 
     return (
-        <Link href="/tournaments/1">
-            <a className={styles.item}>
+        <Link href="/tournaments/1" className={styles.item}>
+            <>
                 <div className={styles.container}>
                     <div className={styles.top}>
                         <div className={styles.top__image}>
@@ -149,7 +149,7 @@ export const TournamentItem = ({ type, src }: TournamentItemProps) => {
                         </div>
                     </div>
                 </div>
-            </a>
+            </>
         </Link>
     );
 };

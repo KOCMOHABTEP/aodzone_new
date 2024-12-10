@@ -38,10 +38,8 @@ export const Footer = () => {
             <div className={styles.footerLinkList}>
                 {SIDEBAR_FOOTER_LINKS_LIST.map((item, idx) => (
                     <Fragment key={item.label}>
-                        <Link href={item.href}>
-                            <a key={item.label} className={styles.footerLink}>
-                                {item.label}
-                            </a>
+                        <Link href={item.href} className={styles.footerLink}>
+                            {item.label}
                         </Link>
                         {idx < SIDEBAR_FOOTER_LINKS_LIST.length - 1 && ", "}
                     </Fragment>

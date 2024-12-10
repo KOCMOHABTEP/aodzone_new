@@ -73,18 +73,18 @@ export const NewsView = () => {
                 <h1 className={styles.title}>Последние новости</h1>
                 {isAuth && (
                     <Link href="news/create">
-                        <a>
-                            <Button
-                                text="Предложить новость"
-                                buttonClassName={styles.btn}
-                            />
-                        </a>
+                        <Button
+                            text="Предложить новость"
+                            buttonClassName={styles.btn}
+                        />
                     </Link>
                 )}
             </div>
             <div className={styles.grid}>
                 {newsList.map(props => (
-                    <NewsItem {...props} key={props.id} />
+                    <Link href="news/1" key={props.id} className={styles.gridItem}>
+                        <NewsItem {...props} />
+                    </Link>
                 ))}
             </div>
         </div>

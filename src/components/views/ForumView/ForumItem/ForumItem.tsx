@@ -11,8 +11,8 @@ interface ForumItemProps {
 
 export const ForumItem = ({ title, description, created }: ForumItemProps) => {
     return (
-        <Link href="/forum/1">
-            <a className={styles.item}>
+        <Link href="/forum/1" className={styles.item}>
+            <>
                 <div className={styles.icons}>
                     <Icon name="home" size={40} />
                     <Icon
@@ -32,7 +32,7 @@ export const ForumItem = ({ title, description, created }: ForumItemProps) => {
                     <div className={styles.description}>{description}</div>
                     <div className={styles.forum}>Тема создана {created}</div>
                 </div>
-            </a>
+            </>
         </Link>
     );
 };

@@ -15,9 +15,7 @@ export const MatchView = () => {
                 <h1 className={styles.title}>Все матчи команды</h1>
                 {isAuth && (
                     <Link href="/matches/add">
-                        <a>
-                            <Button text=" Запланировать / Добавить матч" />
-                        </a>
+                        <Button text=" Запланировать / Добавить матч" />
                     </Link>
                 )}
             </div>

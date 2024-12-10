@@ -12,8 +12,8 @@ interface MatchCardProps {
 
 export const MatchCard = ({ data, team }: MatchCardProps) => {
     return (
-        <Link href="/matches/1">
-            <a className={styles.item}>
+        <Link href="/matches/1" className={styles.item}>
+            <>
                 <div className={styles.header}>
                     <div className={styles.header__date}>{data}</div>
                     <div className={styles.header__result}>
@@ -43,7 +43,7 @@ export const MatchCard = ({ data, team }: MatchCardProps) => {
                         <MatchCardInfo title="Смертей" description="32" />
                     </div>
                 </div>
-            </a>
+            </>
         </Link>
     );
 };

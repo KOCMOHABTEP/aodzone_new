@@ -64,10 +64,8 @@ export const Header = () => {
                 {isAuth ? (
                     <UserCard />
                 ) : (
-                    <Link href="/login/">
-                        <a className={styles.wrapper}>
-                            <Button buttonClassName={styles.btn} text="Войти" />
-                        </a>
+                    <Link href="/login/" className={styles.wrapper}>
+                        <Button buttonClassName={styles.btn} text="Войти" />
                     </Link>
                 )}
             </div>
