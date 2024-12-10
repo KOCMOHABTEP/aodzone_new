@@ -1,18 +1,14 @@
 .item {
+  &__title {
+    font-size: 12px;
+    text-align: center;
+    color: var(--color-text-grey);
+    margin-bottom: 8px;
+  }
 
-    &__title {
-        font-size: 12px;
-        text-align: center;
-        color: var(--color-text-grey);
-        margin-bottom: 8px;
-    }
-
-    &__description {
-        font-size: 12px;
-        color: var(--color-white);
-        text-align: center;
-    }
+  &__description {
+    font-size: 12px;
+    color: var(--color-white);
+    text-align: center;
+  }
 }
-
-
-

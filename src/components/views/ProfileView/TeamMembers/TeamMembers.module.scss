@@ -1,57 +1,54 @@
-
-
 .item {
-    width: 100%;
-    padding: 24px;
+  width: 100%;
+  padding: 24px;
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__info {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &__title {
-        font-weight: bold;
-    }
-
-    &__info {
-        display: flex;
-        background-color: var(--color-background-overlay);
-        margin-left: 16px;
-        border-radius: 8px;
-        padding: 8px;
-        border: solid 1px var(--color-grey);
-    }
+    background-color: var(--color-background-overlay);
+    margin-left: 16px;
+    border-radius: 8px;
+    padding: 8px;
+    border: solid 1px var(--color-grey);
+  }
 }
 
 .title {
-    font-size: 12px;
-    color: var(--color-grey);
-    cursor: pointer;
-    padding-left: 16px;
-    position: relative;
+  font-size: 12px;
+  color: var(--color-grey);
+  cursor: pointer;
+  padding-left: 16px;
+  position: relative;
 
-    &__active {
-        color: var(--color-green);
+  &__active {
+    color: var(--color-green);
 
-        &:after {
-            content: "";
-            height: 4px;
-            width: 4px;
-            border-radius: 50%;
-            background-color: var(--color-green);
-            position: absolute;
-            bottom: 5px;
-            left: 8px;
-        }
+    &:after {
+      content: '';
+      height: 4px;
+      width: 4px;
+      border-radius: 50%;
+      background-color: var(--color-green);
+      position: absolute;
+      bottom: 5px;
+      left: 8px;
     }
+  }
 }
 
 .players {
-    height: 240px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 16px 0;
-    overflow-y: auto;
+  height: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 16px 0;
+  overflow-y: auto;
 }
-

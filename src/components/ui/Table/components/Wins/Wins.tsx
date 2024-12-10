@@ -1,9 +1,9 @@
-import styles from "./Wins.module.scss";
+import styles from './Wins.module.scss';
 
 interface WinsProps {
-    value: string;
+  value: string;
 }
 
 export const Wins = ({ value }: WinsProps) => {
-    return <div className={styles.title}>{value}</div>;
+  return <div className={styles.title}>{value}</div>;
 };

@@ -10,25 +10,25 @@
   }
 }
 
-  .tabs {
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-right: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
+.tabs {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
 
-    &__active {
-      color: var(--color-green);
+  &__active {
+    color: var(--color-green);
 
-      &:after {
-        content: "";
-        height: 2px;
-        width: 100%;
-        background-color: var(--color-green);
-        position: absolute;
-        bottom: -14px;
-        left: 0;
-      }
+    &:after {
+      content: '';
+      height: 2px;
+      width: 100%;
+      background-color: var(--color-green);
+      position: absolute;
+      bottom: -14px;
+      left: 0;
     }
   }
+}

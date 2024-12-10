@@ -1,45 +1,41 @@
-
-
 .component {
-    position: relative;
+  position: relative;
 }
 
 .card {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .avatar {
-    margin-right: 16px;
+  margin-right: 16px;
 }
 
 .content {
-    margin-right: 16px;
+  margin-right: 16px;
 
-    .name {
-        font-size: 14px;
-        font-weight: bold;
-        color: var(--color-white);
-    }
+  .name {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-white);
+  }
 
-    .level {
-        font-size: 12px;
-        color: var(--color-green);
-    }
+  .level {
+    font-size: 12px;
+    color: var(--color-green);
+  }
 }
 
 .control {
-
-    .button {
-        width: 24px;
-        height: 24px;
-        cursor: pointer;
-        border-radius: 6px;
-        border: 1px solid var(--color-grey);
-        background: var(--color-dark-extra);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .button {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid var(--color-grey);
+    background: var(--color-dark-extra);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
-

@@ -2,5 +2,5 @@
  * Check server side process
  */
 export const isServer = (): boolean => {
-    return typeof window === "undefined";
+  return typeof window === 'undefined';
 };

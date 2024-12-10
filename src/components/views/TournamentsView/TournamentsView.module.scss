@@ -1,31 +1,25 @@
-
-
 .item {
-    padding: 24px;
+  padding: 24px;
 }
 
 .title {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .banner {
-    display: flex;
-    justify-content: center;
-    margin: 48px 0;
-    background-image: url("");
+  display: flex;
+  justify-content: center;
+  margin: 48px 0;
+  background-image: url('');
 }
 
 .filter {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
-
 
 .list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -8px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -8px;
 }
-
-
-

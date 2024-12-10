@@ -1,14 +1,14 @@
 .component {
-    position: absolute;
-    inset: 0 auto auto 0;
-    z-index: 500;
+  position: absolute;
+  inset: 0 auto auto 0;
+  z-index: 500;
 }
 
 .label {
-    font-size: 14px;
-    color: var(--color-white);
-    padding: 8px 16px;
-    background: var(--color-dark);
-    border: solid 1px var(--color-grey);
-    border-radius: 6px;
+  font-size: 14px;
+  color: var(--color-white);
+  padding: 8px 16px;
+  background: var(--color-dark);
+  border: solid 1px var(--color-grey);
+  border-radius: 6px;
 }

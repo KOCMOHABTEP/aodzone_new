@@ -1,1 +1,1 @@
-export * from "./NewsDetailView";
+export * from './NewsDetailView';

@@ -1,10 +1,10 @@
 export type IAuthRegistration = {
-    email: string;
-    password: string;
+  email: string;
+  password: string;
 };
 
 export type IAuthLogin = {
-    email: string;
-    // login: string;
-    password: string;
+  email: string;
+  // login: string;
+  password: string;
 };

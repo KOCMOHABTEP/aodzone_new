@@ -1,9 +1,9 @@
-import styles from "./WinsPercentage.module.scss";
+import styles from './WinsPercentage.module.scss';
 
 interface WinsPercentageProps {
-    value: string;
+  value: string;
 }
 
 export const WinsPercentage = ({ value }: WinsPercentageProps) => {
-    return <div className={styles.title}>{value}</div>;
+  return <div className={styles.title}>{value}</div>;
 };

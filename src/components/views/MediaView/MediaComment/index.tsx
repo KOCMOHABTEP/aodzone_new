@@ -1,1 +1,1 @@
-export * from "./MediaComment";
+export * from './MediaComment';

@@ -25,7 +25,7 @@
   }
 
   &:focus + .placeholder,
-  &:not(:focus):not(:placeholder-shown) + .placeholder{
+  &:not(:focus):not(:placeholder-shown) + .placeholder {
     font-size: 14px;
     line-height: 14px;
     top: 8px;
@@ -45,7 +45,7 @@
 }
 
 .error {
-  border: solid 1px var(--color-red) ;
+  border: solid 1px var(--color-red);
   box-shadow: var(--box-shadow-red);
 
   &:focus {
@@ -66,7 +66,6 @@
       font-size: 12px;
       color: var(--color-red);
     }
-
   }
 }
 

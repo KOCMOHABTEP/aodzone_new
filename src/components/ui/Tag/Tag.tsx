@@ -1,9 +1,9 @@
-import styles from "./Tag.module.scss";
+import styles from './Tag.module.scss';
 
 interface TagProps {
-    label: string;
+  label: string;
 }
 
 export const Tag = ({ label }: TagProps) => {
-    return <div className={styles.item}>{label}</div>;
+  return <div className={styles.item}>{label}</div>;
 };

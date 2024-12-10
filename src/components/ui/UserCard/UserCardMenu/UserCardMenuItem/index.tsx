@@ -1,1 +1,1 @@
-export * from "./UserCardMenuItem";
+export * from './UserCardMenuItem';

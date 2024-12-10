@@ -12,13 +12,11 @@
     border: solid 1px var(--color-green);
   }
 
-  &:checked +.checkboxLabel .checkboxLabelIcon {
+  &:checked + .checkboxLabel .checkboxLabelIcon {
     opacity: 1;
     visibility: visible;
   }
 }
-
-
 
 .checkboxLabel {
   width: 24px;

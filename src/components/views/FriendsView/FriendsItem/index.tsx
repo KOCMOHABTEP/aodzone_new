@@ -1,1 +1,1 @@
-export * from "./FriendsItem";
+export * from './FriendsItem';

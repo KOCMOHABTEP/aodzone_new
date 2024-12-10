@@ -1,59 +1,55 @@
 .item {
-    color: var(--color-text-grey);
-    padding: 16px;
-    overflow: hidden;
-    border-radius: 6px;
-    cursor: pointer;
-    display: flex;
-    position: relative;
-    transition: all 0.3s ease;
+  color: var(--color-text-grey);
+  padding: 16px;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  transition: all 0.3s ease;
 
-    &:not(.itemActive):hover {
-        color: var(--color-white);
-        background: var(--color-grey);
-    }
+  &:not(.itemActive):hover {
+    color: var(--color-white);
+    background: var(--color-grey);
+  }
 }
 
 .itemActive {
-    color: var(--color-green);
-    background: var(--color-grey);
-    opacity: 1;
+  color: var(--color-green);
+  background: var(--color-grey);
+  opacity: 1;
 
-    &:after {
-        content: "";
-        width: 4px;
-        height: 100%;
-        background: var(--color-green);
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
+  &:after {
+    content: '';
+    width: 4px;
+    height: 100%;
+    background: var(--color-green);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .itemCollapsed {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
 
-    &:after {
-        display: none;
-    }
+  &:after {
+    display: none;
+  }
 }
 
 .container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .containerIcon {
-    color: inherit;
+  color: inherit;
 }
 
 .containerLabel {
-    font-size: 14px;
-    margin-left: 8px;
+  font-size: 14px;
+  margin-left: 8px;
 }
-
-
-

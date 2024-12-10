@@ -1,1 +1,1 @@
-export * from "./StreamsFilter";
+export * from './StreamsFilter';

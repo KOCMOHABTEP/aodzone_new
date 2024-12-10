@@ -1,1 +1,1 @@
-export * from "./StreamsAllView";
+export * from './StreamsAllView';

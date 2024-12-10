@@ -4,7 +4,7 @@
   cursor: pointer;
   border-radius: 6px;
   display: block;
-  transition: color 0.3s ease,background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
 
   &:hover {
     color: var(--color-white);
@@ -14,7 +14,6 @@
   & + & {
     margin-top: 2px;
   }
-
 }
 
 .item {
@@ -22,7 +21,6 @@
   align-items: center;
 
   &:hover {
-
   }
 }
 

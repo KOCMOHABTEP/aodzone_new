@@ -1,1 +1,1 @@
-export * from "./TournamentTable";
+export * from './TournamentTable';

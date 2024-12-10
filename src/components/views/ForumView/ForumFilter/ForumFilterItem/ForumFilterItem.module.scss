@@ -1,94 +1,78 @@
-
-
 .item {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    padding: 16px;
-    border-radius: 8px;
-    transition:transform 0.3s ease ;
-    border: solid 1px transparent;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 16px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  border: solid 1px transparent;
 
-    &:hover {
-        border: solid 1px var(--color-grey);
-        background-color: var(--color-background-overlay);
-    }
+  &:hover {
+    border: solid 1px var(--color-grey);
+    background-color: var(--color-background-overlay);
+  }
 }
 
 .icon {
-    margin: 0 8px;
+  margin: 0 8px;
 }
-
 
 .content {
+  &__title {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
 
-    &__title {
-        font-weight: bold;
-        margin-bottom: 4px;
-    }
-
-    &__description {
-        font-size: 12px;
-        color: var(--color-grey);
-    }
+  &__description {
+    font-size: 12px;
+    color: var(--color-grey);
+  }
 }
 .dropdown {
-    color: inherit;
-    padding: 12px;
-    margin: 0 16px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    align-items: center;
-    cursor: pointer;
-    border: solid 1px transparent;
+  color: inherit;
+  padding: 12px;
+  margin: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  border: solid 1px transparent;
 
-    &:after {
-        content: "";
-        width: 6px;
-        height: 6px;
-        background: var(--color-grey);
-        position: absolute;
-        left: 0;
-        border-radius: 4px;
-        top: 16px;
-        margin-left: 16px;
-    }
+  &:after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--color-grey);
+    position: absolute;
+    left: 0;
+    border-radius: 4px;
+    top: 16px;
+    margin-left: 16px;
+  }
 
-    &:hover {
-        background-color: var(--color-background-overlay);
-        border-radius: 8px;
-        border: solid 1px var(--color-grey);
-        color: var(--color-green);
-    }
+  &:hover {
+    background-color: var(--color-background-overlay);
+    border-radius: 8px;
+    border: solid 1px var(--color-grey);
+    color: var(--color-green);
+  }
 
-    &:hover &__value {
-        color: var(--color-green);
-    }
+  &:hover &__value {
+    color: var(--color-green);
+  }
 
-    &__title {
-        font-size: 12px;
-        font-weight: bold;
-        margin-left: 24px;
-    }
+  &__title {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 24px;
+  }
 
-    &__value {
-        font-size: 10px;
-        font-weight: bold;
-        color: var(--color-grey);
-    }
+  &__value {
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--color-grey);
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-

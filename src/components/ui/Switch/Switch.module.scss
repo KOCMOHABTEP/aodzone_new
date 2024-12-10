@@ -1,44 +1,42 @@
-
-
 .circle {
-    height: 20px;
-    width: 20px;
-    background-color: var(--color-white);
-    border-radius: 100%;
-    position: absolute;
-    transform: translateX(0);
-    left: 2px;
-    top: 2px;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.30);
+  height: 20px;
+  width: 20px;
+  background-color: var(--color-white);
+  border-radius: 100%;
+  position: absolute;
+  transform: translateX(0);
+  left: 2px;
+  top: 2px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 
-    &__on {
-        transform: translateX(18px);
-        left: auto;
-    }
+  &__on {
+    transform: translateX(18px);
+    left: auto;
+  }
 }
 
 .component {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .label {
-    font-size: 10px;
-    margin-right: 16px;
+  font-size: 10px;
+  margin-right: 16px;
 }
 
 .switch {
-    height: 26px;
-    width: 42px;
-    border: solid 1px var(--color-violet);
-    background-color: var(--color-violet-ghost);
-    border-radius: 16px;
-    position: relative;
-    transition: all 0.3s ease;
-    cursor: pointer;
+  height: 26px;
+  width: 42px;
+  border: solid 1px var(--color-violet);
+  background-color: var(--color-violet-ghost);
+  border-radius: 16px;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
 
-    &__on {
-        background-color: var(--color-violet);
-    }
+  &__on {
+    background-color: var(--color-violet);
+  }
 }

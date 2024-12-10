@@ -1,1 +1,1 @@
-export * from "./MatchesAddView";
+export * from './MatchesAddView';

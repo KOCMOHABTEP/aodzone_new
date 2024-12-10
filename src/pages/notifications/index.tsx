@@ -1,12 +1,12 @@
-import { Layout } from "@/components/layouts/Layout/Layout";
-import { NotificationView } from "@/components/views/NotificationView";
+import { Layout } from '@/components/layouts/Layout/Layout';
+import { NotificationView } from '@/components/views/NotificationView';
 
 const NotificationPage = () => {
-    return (
-        <Layout>
-            <NotificationView />
-        </Layout>
-    );
+  return (
+    <Layout>
+      <NotificationView />
+    </Layout>
+  );
 };
 
 export default NotificationPage;

@@ -1,1 +1,1 @@
-export * from "./AchievementsBarItem";
+export * from './AchievementsBarItem';

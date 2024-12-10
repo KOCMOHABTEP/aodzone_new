@@ -1,1 +1,1 @@
-export * from "./TournamentFilter";
+export * from './TournamentFilter';

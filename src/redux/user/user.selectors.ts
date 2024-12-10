@@ -1,10 +1,10 @@
-import { RootState } from "@/redux/store";
+import { RootState } from '@/redux/store';
 
 export const getUser = (state: RootState) => state.user;
 
 export const getUserRole = (state: RootState) => state.user.role;
 
-export const isSuperUser = (state: RootState) => state.user.role === "ADMIN";
+export const isSuperUser = (state: RootState) => state.user.role === 'ADMIN';
 //
 // export const getUserNickName = (state: RootState) => state.user.nickName;
 //

@@ -1,13 +1,13 @@
 .item {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .form {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .wrapper {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 //.row {
@@ -21,35 +21,32 @@
 //    flex: 1;
 //}
 
-
 .team {
-    background-color: var(--color-grey-900);
-    margin-bottom: 16px;
+  background-color: var(--color-grey-900);
+  margin-bottom: 16px;
 }
 
-
 .noTeam {
-    padding: 64px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .noTeamTitle {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
-
 .matches {
-    background: var(--color-grey-900);
-    padding: 64px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background: var(--color-grey-900);
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .matchesTitle {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }

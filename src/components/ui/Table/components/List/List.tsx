@@ -1,9 +1,9 @@
-import styles from "./List.module.scss";
+import styles from './List.module.scss';
 
 interface ListProps {
-    number: number;
+  number: number;
 }
 
 export const List = ({ number }: ListProps) => {
-    return <div className={styles.list}>{number}</div>;
+  return <div className={styles.list}>{number}</div>;
 };

@@ -1,159 +1,148 @@
-
-
 .item {
-    padding: 16px;
-    background-color: var(--color-dark-extra);
-    width: 100%;
-    height: 100%;
-    margin-bottom: 24px;
-    border-radius: 8px;
-    border: solid 1px var(--color-grey);
+  padding: 16px;
+  background-color: var(--color-dark-extra);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  border: solid 1px var(--color-grey);
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    border-bottom: solid 1px var(--color-dark-extra);
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1px var(--color-dark-extra);
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
+.header {
+  display: flex;
+  justify-content: space-between;
 
-    &__labels{
-        display: flex;
-        align-items: center;
-    }
+  &__labels {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header + .header {
-    margin-left: 24px;
+  margin-left: 24px;
 }
 
 .right {
-    display: flex;
+  display: flex;
 
-    &__additional {
-        width: 100%;
-        color: var(--color-green);
-        cursor: pointer;
-    }
+  &__additional {
+    width: 100%;
+    color: var(--color-green);
+    cursor: pointer;
+  }
 }
 
 .button {
-    display: flex;
-    margin-bottom: 12px;
-    margin-right: 24px;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  margin-bottom: 12px;
+  margin-right: 24px;
+  align-items: center;
+  cursor: pointer;
 
-    &__btn {
-        color: var(--color-dark-extra);
-        width: 120px;
-        max-height: 24px;
-        opacity: 70%;
-    }
+  &__btn {
+    color: var(--color-dark-extra);
+    width: 120px;
+    max-height: 24px;
+    opacity: 70%;
+  }
 }
-
-
-
 
 .buttonIconColorHeaderMatches {
-    color: var(--color-dark-extra);
+  color: var(--color-dark-extra);
 }
 
-
-
 .additionalMenuHeader:hover {
-    color: var(--color-violet);
+  color: var(--color-violet);
 }
 
 .info {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    margin: 32px 0;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 32px 0;
 
-    &__image {
-        width: 160px;
-    }
+  &__image {
+    width: 160px;
+  }
 }
-
-
 
 .wrapper {
-    padding: 20px;
+  padding: 20px;
 
-    &__header {
-        width: 296px;
-        margin-bottom: 8px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+  &__header {
+    width: 296px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    &__info {
-        display: flex;
-        align-items: center;
-    }
-}
-
-
-
-.infoJoinMatchesBanner {
+  &__info {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+  }
+}
+
+.infoJoinMatchesBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .itemButton {
-    margin-right: 16px;
+  margin-right: 16px;
 }
 
 .itemButtonBtn {
-    padding: 6px;
-    max-height:32px;
-    font-size: 14px;
-    display: flex;
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  padding: 6px;
+  max-height: 32px;
+  font-size: 14px;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .itemButtonBtn:hover {
-    background-color: var(--color-violet);
-    border-color: var(--color-violet);
+  background-color: var(--color-violet);
+  border-color: var(--color-violet);
 }
 
 .itemJoinInfo {
-    font-size: 12px;
-    color: var(--color-violet);
+  font-size: 12px;
+  color: var(--color-violet);
 }
 
 .itemInfoHeaderTitleText {
-    font-size: 14px;
-    margin-left: 8px;
+  font-size: 14px;
+  margin-left: 8px;
 }
 
 .itemInfoHeaderButton {
-    color: var(--color-dark-extra);
-    max-height: 24px;
-    display: flex;
-    align-items: center;
-    text-align: left;
-    justify-content: center;
-    border-radius: 8px;
-    background-color: var(--color-green);
-    border: none;
-    cursor: pointer;
+  color: var(--color-dark-extra);
+  max-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: var(--color-green);
+  border: none;
+  cursor: pointer;
 }
 
 .itemInfoHeaderButton:hover {
-    background-color: var(--color-violet);
+  background-color: var(--color-violet);
 }
 
 .itemInfoMatches {
-    font-size: 20px;
-    margin-bottom: 12px;
+  font-size: 20px;
+  margin-bottom: 12px;
 }

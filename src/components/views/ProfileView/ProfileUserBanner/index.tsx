@@ -1,1 +1,1 @@
-export * from "./ProfileUserBanner";
+export * from './ProfileUserBanner';

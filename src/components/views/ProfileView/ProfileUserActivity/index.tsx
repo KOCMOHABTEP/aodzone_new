@@ -1,1 +1,1 @@
-export * from "./ProfileUserActivity";
+export * from './ProfileUserActivity';

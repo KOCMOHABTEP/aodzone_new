@@ -1,1 +1,1 @@
-export * from "./ForumItem";
+export * from './ForumItem';

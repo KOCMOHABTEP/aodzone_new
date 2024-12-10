@@ -1,1 +1,1 @@
-export * from "./AvatarDetail";
+export * from './AvatarDetail';

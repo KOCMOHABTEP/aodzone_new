@@ -1,58 +1,58 @@
 .item {
-    width: 100%;
-    padding: 16px;
-    border-radius: 6px;
-    color: inherit;
-    border: 1px solid var(--color-grey-800);
-    background: var(--color-grey-900);
-    display: block;
+  width: 100%;
+  padding: 16px;
+  border-radius: 6px;
+  color: inherit;
+  border: 1px solid var(--color-grey-800);
+  background: var(--color-grey-900);
+  display: block;
 }
 
 .item + .item {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 
 .header {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+
+  &__date {
+    font-size: 14px;
+    color: var(--color-text-grey);
+  }
+
+  &__result {
+    font-size: 14px;
+    color: var(--color-text-grey);
     display: flex;
-    justify-content: space-between;
-
-    &__date {
-        font-size: 14px;
-        color: var(--color-text-grey);
-    }
-
-    &__result {
-        font-size: 14px;
-        color: var(--color-text-grey);
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
+    align-items: center;
+    gap: 8px;
+  }
 }
 
 .icon {
-    color: var(--color-text-grey);
+  color: var(--color-text-grey);
 }
 
 .status {
-    font-weight: bold;
-    color: var(--color-green);
+  font-weight: bold;
+  color: var(--color-green);
 }
 
 .content {
-    display: flex;
+  display: flex;
 
-    &__info {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+  &__info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .info {
-    display: flex;
-    gap: 48px;
-    margin-left: auto;
+  display: flex;
+  gap: 48px;
+  margin-left: auto;
 }

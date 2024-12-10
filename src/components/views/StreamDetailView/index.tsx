@@ -1,1 +1,1 @@
-export * from "./StreamDetailView";
+export * from './StreamDetailView';

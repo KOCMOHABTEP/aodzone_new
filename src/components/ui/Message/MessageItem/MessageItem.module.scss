@@ -1,23 +1,21 @@
-
-
 .item {
-    display: flex;
-    flex-direction: column;
-    width: 262px;
-    background-color: var(--color-dark-extra);
-    border-radius: 8px;
-    padding: 4px;
-    margin-top: 8px;
-    border: solid 1px var(--color-grey);
+  display: flex;
+  flex-direction: column;
+  width: 262px;
+  background-color: var(--color-dark-extra);
+  border-radius: 8px;
+  padding: 4px;
+  margin-top: 8px;
+  border: solid 1px var(--color-grey);
 
-    .title {
-        font-size: 14px;
-        font-weight: bold;
-        color: var(--color-grey);
-        margin-bottom: 4px;
-    }
+  .title {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-grey);
+    margin-bottom: 4px;
+  }
 
-    .description {
-        font-size: 12px;
-    }
+  .description {
+    font-size: 12px;
+  }
 }

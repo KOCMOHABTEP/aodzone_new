@@ -4,30 +4,27 @@ import Link from 'next/link';
 import styles from './HeaderActionMenu.module.scss';
 
 interface HeaderActionMenuProps {
-    title: string;
-    visible: boolean;
-    children: ReactNode;
+  title: string;
+  visible: boolean;
+  children: ReactNode;
 }
 
 export const HeaderActionMenu = ({
-    title,
-    visible,
-    children,
+  title,
+  visible,
+  children,
 }: HeaderActionMenuProps) => {
-    if (!visible) {
-        return null;
-    }
+  if (!visible) {
+    return null;
+  }
 
-    return (
-        <div className={styles.item}>
-            <div className={styles.title}>{title}</div>
-            <div className={styles.container}>{children}</div>
-            <Link href="/notifications" className={styles.button}>
-                <Button
-                    buttonClassName={styles.btn}
-                    text="Посмотреть все"
-                />
-            </Link>
-        </div>
-    );
+  return (
+    <div className={styles.item}>
+      <div className={styles.title}>{title}</div>
+      <div className={styles.container}>{children}</div>
+      <Link href="/notifications" className={styles.button}>
+        <Button buttonClassName={styles.btn} text="Посмотреть все" />
+      </Link>
+    </div>
+  );
 };

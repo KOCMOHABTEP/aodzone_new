@@ -1,1 +1,1 @@
-export * from "./VideoPlayerControlPanel";
+export * from './VideoPlayerControlPanel';

@@ -1,1 +1,1 @@
-export * from "./MediaModal";
+export * from './MediaModal';

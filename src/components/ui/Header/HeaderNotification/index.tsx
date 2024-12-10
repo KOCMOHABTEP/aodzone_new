@@ -1,1 +1,1 @@
-export * from "./HeaderNotification";
+export * from './HeaderNotification';

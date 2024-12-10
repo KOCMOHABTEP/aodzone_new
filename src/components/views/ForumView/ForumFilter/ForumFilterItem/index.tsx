@@ -1,1 +1,1 @@
-export * from "./ForumFilterItem";
+export * from './ForumFilterItem';

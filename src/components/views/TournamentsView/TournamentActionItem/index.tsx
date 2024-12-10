@@ -1,1 +1,1 @@
-export * from "./TournamentActionItem";
+export * from './TournamentActionItem';

@@ -1,9 +1,9 @@
-import styles from "./Points.module.scss";
+import styles from './Points.module.scss';
 
 interface PointsProps {
-    points: number;
+  points: number;
 }
 
 export const Points = ({ points }: PointsProps) => {
-    return <div className={styles.points}>{points}</div>;
+  return <div className={styles.points}>{points}</div>;
 };

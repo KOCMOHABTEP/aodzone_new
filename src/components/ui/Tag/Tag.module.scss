@@ -1,16 +1,14 @@
-
-
 .item {
-    min-width: 70px;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 4px;
-    color: var(--color-dark-extra);
-    border-radius: 12px;
-    text-align: center;
-    background-color: var(--color-green);
+  min-width: 70px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px;
+  color: var(--color-dark-extra);
+  border-radius: 12px;
+  text-align: center;
+  background-color: var(--color-green);
 }
 
-.item +.item {
-    margin-left: 16px;
+.item + .item {
+  margin-left: 16px;
 }

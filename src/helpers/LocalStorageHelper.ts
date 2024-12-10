@@ -1,100 +1,99 @@
 interface LocalStorageState {
-    userConfig: {
-        sidebarCollapsed: boolean;
-    };
+  userConfig: {
+    sidebarCollapsed: boolean;
+  };
 }
 
 type LocalStorageStateKeys = keyof LocalStorageState;
 
 export default class LocalStorageHelper {
-    static loadState(): LocalStorageState {
-        if (typeof window !== "undefined") {
-            try {
-                const serializedState = localStorage.getItem("appState");
+  static loadState(): LocalStorageState {
+    if (typeof window !== 'undefined') {
+      try {
+        const serializedState = localStorage.getItem('appState');
 
-                if (serializedState === null) {
-                    return this.initializeState();
-                }
-
-                return JSON.parse(serializedState);
-            } catch (err) {
-                return this.initializeState();
-            }
+        if (serializedState === null) {
+          return this.initializeState();
         }
 
-        return null;
+        return JSON.parse(serializedState);
+      } catch (err) {
+        return this.initializeState();
+      }
     }
 
-    static saveState(state) {
-        if (typeof window !== "undefined") {
-            try {
-                const serializedState = JSON.stringify(state);
-                localStorage.setItem("appState", serializedState);
-            } catch (err) {}
-        }
+    return null;
+  }
 
-        return null;
+  static saveState(state) {
+    if (typeof window !== 'undefined') {
+      try {
+        const serializedState = JSON.stringify(state);
+        localStorage.setItem('appState', serializedState);
+      } catch (err) {}
     }
 
-    static initializeState(): LocalStorageState {
-        if (typeof window !== "undefined") {
-            const initialState: LocalStorageState = {
-                userConfig: {
-                    sidebarCollapsed: false,
-                },
-            };
-            localStorage.setItem("appState", JSON.stringify(initialState));
+    return null;
+  }
 
-            return initialState;
-        }
+  static initializeState(): LocalStorageState {
+    if (typeof window !== 'undefined') {
+      const initialState: LocalStorageState = {
+        userConfig: {
+          sidebarCollapsed: false,
+        },
+      };
+      localStorage.setItem('appState', JSON.stringify(initialState));
 
-        return null;
+      return initialState;
     }
 
-    static editStorageKey(
-        key: LocalStorageStateKeys,
-        value: LocalStorageState[LocalStorageStateKeys]
-    ): LocalStorageState {
-        if (typeof window !== "undefined") {
-            try {
-                const serializedState = localStorage.getItem("appState");
-                const parsedState: LocalStorageState =
-                    JSON.parse(serializedState);
-                const editedState = {
-                    ...parsedState,
-                    [key]: {
-                        ...parsedState[key],
-                        ...value,
-                    },
-                };
+    return null;
+  }
 
-                this.saveState(editedState);
+  static editStorageKey(
+    key: LocalStorageStateKeys,
+    value: LocalStorageState[LocalStorageStateKeys]
+  ): LocalStorageState {
+    if (typeof window !== 'undefined') {
+      try {
+        const serializedState = localStorage.getItem('appState');
+        const parsedState: LocalStorageState = JSON.parse(serializedState);
+        const editedState = {
+          ...parsedState,
+          [key]: {
+            ...parsedState[key],
+            ...value,
+          },
+        };
 
-                return editedState;
-            } catch (err) {
-                return this.initializeState();
-            }
-        }
+        this.saveState(editedState);
 
-        return null;
+        return editedState;
+      } catch (err) {
+        return this.initializeState();
+      }
     }
 
-    static getStorageKey(
-        key: LocalStorageStateKeys
-    ): LocalStorageState[LocalStorageStateKeys] {
-        if (typeof window !== "undefined") {
-            try {
-                const serializedState = localStorage.getItem("appState");
-                const parsedState = JSON.parse(serializedState);
+    return null;
+  }
 
-                this.saveState(parsedState);
+  static getStorageKey(
+    key: LocalStorageStateKeys
+  ): LocalStorageState[LocalStorageStateKeys] {
+    if (typeof window !== 'undefined') {
+      try {
+        const serializedState = localStorage.getItem('appState');
+        const parsedState = JSON.parse(serializedState);
 
-                return parsedState[key];
-            } catch (err) {
-                return null;
-            }
-        }
+        this.saveState(parsedState);
 
+        return parsedState[key];
+      } catch (err) {
         return null;
+      }
     }
+
+    return null;
+  }
 }

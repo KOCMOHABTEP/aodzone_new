@@ -1,1 +1,1 @@
-export * from "./MediaView";
+export * from './MediaView';

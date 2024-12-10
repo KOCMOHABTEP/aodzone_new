@@ -1,52 +1,50 @@
-
-
 .item {
-    width: 100%;
-    height: auto;
-    background: var(--gradient-green);
-    border-radius: 4px;
-    padding: 24px;
-    margin-bottom: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  height: auto;
+  background: var(--gradient-green);
+  border-radius: 4px;
+  padding: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .slider {
+  display: flex;
+  overflow: hidden;
+
+  &__track {
     display: flex;
-    overflow: hidden;
+    transition: all 0.3s ease;
+  }
 
-    &__track {
-        display: flex;
-        transition: all 0.3s ease;
-    }
-
-    &__item {
-        flex: 0 0 calc(100%/3);
-    }
+  &__item {
+    flex: 0 0 calc(100% / 3);
+  }
 }
 
 .icon {
-    flex-shrink: 0;
-    cursor: pointer;
+  flex-shrink: 0;
+  cursor: pointer;
 
-    &:hover {
-        color: var(--color-dark-extra);
-    }
+  &:hover {
+    color: var(--color-dark-extra);
+  }
 
-    &__left {
-        margin-right: 16px;
-    }
+  &__left {
+    margin-right: 16px;
+  }
 
-    &__right {
-        margin-left: 16px;
-    }
+  &__right {
+    margin-left: 16px;
+  }
 }
 
 .tournaments {
-    background-color: var(--color-dark-extra);
-    display: flex;
-    padding: 24px;
-    border: solid 1px var(--color-grey);
-    border-radius: 8px;
+  background-color: var(--color-dark-extra);
+  display: flex;
+  padding: 24px;
+  border: solid 1px var(--color-grey);
+  border-radius: 8px;
 }

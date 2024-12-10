@@ -1,29 +1,22 @@
-
-
 .item {
-    margin-bottom: 32px;
-    border-radius: 6px;
-    border: solid 1px var(--color-grey);
-    box-shadow: var(--box-shadow);
-    background: var(--color-dark-extra);
-    position: relative;
+  margin-bottom: 32px;
+  border-radius: 6px;
+  border: solid 1px var(--color-grey);
+  box-shadow: var(--box-shadow);
+  background: var(--color-dark-extra);
+  position: relative;
 
-    .header {
-        padding: 24px;
-        background: var(--color-background-overlay);
-        display: flex;
+  .header {
+    padding: 24px;
+    background: var(--color-background-overlay);
+    display: flex;
 
-        .title {
-            font-size: 14px;
-        }
+    .title {
+      font-size: 14px;
     }
+  }
 
-    .body {
-        padding: 24px;
-    }
+  .body {
+    padding: 24px;
+  }
 }
-
-
-
-
-

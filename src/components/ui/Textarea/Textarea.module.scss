@@ -1,43 +1,39 @@
-
-
 .container {
-    position: relative;
+  position: relative;
 }
 
 .field {
-    font-size: 14px;
-    height: 48px;
-    overflow: hidden;
-    color: var(--color-white);
-    font-family: inherit;
-    background-color: var(--color-dark-extra);
-    width: 100%;
-    padding: 24px 16px 8px 16px;
-    border-radius: 6px;
-    border: solid 1px var(--color-grey);
-    transition: all 0.3s ease;
-    outline: none;
+  font-size: 14px;
+  height: 48px;
+  overflow: hidden;
+  color: var(--color-white);
+  font-family: inherit;
+  background-color: var(--color-dark-extra);
+  width: 100%;
+  padding: 24px 16px 8px 16px;
+  border-radius: 6px;
+  border: solid 1px var(--color-grey);
+  transition: all 0.3s ease;
+  outline: none;
 
-    &:focus {
-        border: solid 1px var(--color-green);
-        box-shadow: var(--box-shadow-green);
-    }
+  &:focus {
+    border: solid 1px var(--color-green);
+    box-shadow: var(--box-shadow-green);
+  }
 }
-
 
 .placeholder {
-    font-size: 14px;
-    line-height: 16px;
-    color: var(--color-text-grey);
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    transition: all 0.3s ease;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--color-text-grey);
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  transition: all 0.3s ease;
 
-&__modified {
-     font-size: 12px;
-     line-height: 14px;
-     top: 8px;
- }
+  &__modified {
+    font-size: 12px;
+    line-height: 14px;
+    top: 8px;
+  }
 }
-

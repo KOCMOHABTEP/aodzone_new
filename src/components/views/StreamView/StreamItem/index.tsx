@@ -1,1 +1,1 @@
-export * from "./StreamItem";
+export * from './StreamItem';

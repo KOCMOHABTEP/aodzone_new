@@ -1,46 +1,43 @@
-
-
 .item {
+  .head {
+    display: flex;
+    justify-content: space-between;
 
-    .head {
-        display: flex;
-        justify-content: space-between;
-
-        .btn {
-            padding: 0 8px;
-            height: 40px;
-        }
+    .btn {
+      padding: 0 8px;
+      height: 40px;
     }
+  }
 }
 
 .title {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .grid {
-    margin: 0 -16px;
-    display: flex;
+  margin: 0 -16px;
+  display: flex;
 }
 
 .gridColumn {
-    margin: 0 16px;
-    flex-basis: 50%;
+  margin: 0 16px;
+  flex-basis: 50%;
 
-    &.gridColumnLeft {
-      margin: 0 8px 0 16px;
-    }
+  &.gridColumnLeft {
+    margin: 0 8px 0 16px;
+  }
 
-    &.gridColumnRight {
-        margin: 0 16px 0 8px;
-    }
+  &.gridColumnRight {
+    margin: 0 16px 0 8px;
+  }
 }
 
 .gridItem {
-    display: block;
+  display: block;
 
-    & + & {
-        margin-top: 16px;
-    }
+  & + & {
+    margin-top: 16px;
+  }
 }

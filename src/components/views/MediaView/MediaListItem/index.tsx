@@ -1,1 +1,1 @@
-export * from "./MediaListItem";
+export * from './MediaListItem';

@@ -1,1 +1,1 @@
-export * from "./WidgetLastMatches";
+export * from './WidgetLastMatches';

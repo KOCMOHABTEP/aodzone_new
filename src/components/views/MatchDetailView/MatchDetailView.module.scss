@@ -1,153 +1,150 @@
 .item {
-    width: 100%;
-    height: auto;
-    padding: 40px;
-    border-radius: 8px;
-    border: solid 1px var(--color-grey);
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  border-radius: 8px;
+  border: solid 1px var(--color-grey);
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    &__title {
-        color: var(--color-green);
-        font-size: 12px;
-        margin-bottom: 8px;
-    }
+  &__title {
+    color: var(--color-green);
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
 }
 
 .content {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
 
-    &__description {
+  &__description {
     margin-right: 12px;
     font-size: 20px;
-    }
+  }
 }
 
 .button {
-    margin-right: 16px;
+  margin-right: 16px;
 
-    &__btn {
-        height: 24px;
+  &__btn {
+    height: 24px;
 
-        &:hover {
-            background-color: var(--color-violet);
-        }
+    &:hover {
+      background-color: var(--color-violet);
     }
+  }
 }
 
 .logo {
-    width: 102px;
+  width: 102px;
 }
 
 .info {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .wrapper {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .wrapperDetailMatch {
-    display: flex;
-    padding: 8px;
-    align-items: center;
+  display: flex;
+  padding: 8px;
+  align-items: center;
 }
 
 .wrapperResultMatch {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .resultMatchInfo {
-    padding: 6px;
+  padding: 6px;
 }
 
 .resultMatchInfoLeft {
-    text-align: right;
-    margin-right: 32px;
+  text-align: right;
+  margin-right: 32px;
 }
 
 .resultMatchInfoRight {
-    text-align: left;
-    margin-left: 32px;
+  text-align: left;
+  margin-left: 32px;
 }
 
 .battleStatusResultMatch {
-    font-size: 12px;
-    margin-bottom: 4px;
+  font-size: 12px;
+  margin-bottom: 4px;
 }
 
 .battleStatusVictoryResultMatch {
-    color: var(--color-green);
-
+  color: var(--color-green);
 }
 
 .battleStatusDefeatResultMatch {
-    color: var(--color-red);
+  color: var(--color-red);
 }
 
 .battleStatusDrawResultMatch {
-    color: var(--color-violet);
+  color: var(--color-violet);
 }
 
 .nameTeamResultMatch {
-    font-size: 20px;
-    font-weight: 100;
+  font-size: 20px;
+  font-weight: 100;
 }
 
 .logoResultMatch {
-    width: 102px;
+  width: 102px;
 }
 
-
-
 .checkResultMatch {
-    font-size: 48px;
-    margin: 0 32px;
+  font-size: 48px;
+  margin: 0 32px;
 }
 
 .detail {
-    color: var(--color-green);
-    font-size: 48px;
-    margin: 0 16px;
+  color: var(--color-green);
+  font-size: 48px;
+  margin: 0 16px;
 }
 
 .data {
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 64px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 64px;
 
-    &__info {
-        font-size: 12px;
-        margin-bottom: 4px;
-    }
+  &__info {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
 
-    &__time {
-        font-size: 12px;
-        color: var(--color-green);
-    }
+  &__time {
+    font-size: 12px;
+    color: var(--color-green);
+  }
 }
 
 .tags {
-    display: flex;
-    padding: 8px;
+  display: flex;
+  padding: 8px;
 }
 
 .teams {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 8px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 8px;
 }

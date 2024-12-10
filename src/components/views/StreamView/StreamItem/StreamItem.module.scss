@@ -1,30 +1,30 @@
 .item {
-    height: auto;
-    border-radius: 8px;
-    padding: 8px;
-    color: inherit;
-    flex: calc(100%/3);
-    flex-grow: 0;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+  height: auto;
+  border-radius: 8px;
+  padding: 8px;
+  color: inherit;
+  flex: calc(100% / 3);
+  flex-grow: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 
-    &:hover {
-        transform: scale(1.05);
-    }
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .header {
-    position: relative;
+  position: relative;
 }
 
 .image {
-    max-height: 140px;
-    overflow: hidden;
+  max-height: 140px;
+  overflow: hidden;
 
-    &__img {
-        width: 100%;
-        border-radius: 8px 8px 0 0;
-    }
+  &__img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
 }
 
 //.info {
@@ -37,64 +37,64 @@
 //}
 
 .info {
-    background-color: var(--color-background-overlay);
-    padding: 4px;
-    align-items: center;
-    display: flex;
+  background-color: var(--color-background-overlay);
+  padding: 4px;
+  align-items: center;
+  display: flex;
 
-    &__live {
-        position: absolute;
-        border-radius: 8px;
-        margin-bottom: 72px;
-        top: 8px;
-        left: 16px;
-    }
+  &__live {
+    position: absolute;
+    border-radius: 8px;
+    margin-bottom: 72px;
+    top: 8px;
+    left: 16px;
+  }
 
-    &__stats {
-        position: absolute;
-        border-radius: 8px;
-        bottom: 8px;
-        left: 16px;
-    }
+  &__stats {
+    position: absolute;
+    border-radius: 8px;
+    bottom: 8px;
+    left: 16px;
+  }
 
-    &__icon {
-        margin-right: 4px;
-    }
+  &__icon {
+    margin-right: 4px;
+  }
 
-    &__label {
-        font-size: 12px;
-    }
+  &__label {
+    font-size: 12px;
+  }
 }
 
 .content {
-    background-color: var(--color-grey-900);
-    display: flex;
-    padding: 16px;
-    align-items: center;
-    border-radius: 0 0 8px 8px;
+  background-color: var(--color-grey-900);
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  border-radius: 0 0 8px 8px;
 }
 
 .text h2 {
-    font-size: 16px;
-    margin-left: 16px;
+  font-size: 16px;
+  margin-left: 16px;
 
-    &__title {
-        font-weight: bold;
-        margin-bottom: 4px;
-    }
+  &__title {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
 }
 
 .wrapper {
-    display: flex;
-    margin-left: 16px;
+  display: flex;
+  margin-left: 16px;
 }
 
 .description {
-    font-size: 14px;
-    font-weight: normal;
-    color: var(--color-text-grey);
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--color-text-grey);
 }
 
 .separation {
-    margin: 0 8px;
+  margin: 0 8px;
 }

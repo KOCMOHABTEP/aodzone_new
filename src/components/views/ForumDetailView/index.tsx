@@ -1,1 +1,1 @@
-export * from "./ForumDetailView";
+export * from './ForumDetailView';

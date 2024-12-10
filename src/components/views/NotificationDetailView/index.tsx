@@ -1,1 +1,1 @@
-export * from "./NotificationDetailView";
+export * from './NotificationDetailView';

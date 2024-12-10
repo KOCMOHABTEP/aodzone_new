@@ -1,1 +1,1 @@
-export * from "./CreateTeamView";
+export * from './CreateTeamView';

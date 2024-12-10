@@ -1,30 +1,30 @@
 .media {
-    padding: 8px;
+  padding: 8px;
 }
 
 .wrapperHeader {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
 }
 
 .h1 {
-    font-size: 32px;
-    font-weight: bold;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .description {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .mediaTabBar {
-    padding: 0 0 12px;
-    margin-bottom: 12px;
-    border-bottom: solid 1px var(--color-grey);
+  padding: 0 0 12px;
+  margin-bottom: 12px;
+  border-bottom: solid 1px var(--color-grey);
 }
 
 .wrapper {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }

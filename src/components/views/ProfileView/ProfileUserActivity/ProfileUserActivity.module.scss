@@ -1,48 +1,42 @@
-
 .user {
-    padding: 24px;
-    background-color: var(--color-dark-extra);
-    border-radius: 4px;
+  padding: 24px;
+  background-color: var(--color-dark-extra);
+  border-radius: 4px;
 }
 
 .list {
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 .item {
-    display: flex;
-    align-items: center;
-    border-bottom: solid 1px var(--color-grey);
-    padding: 16px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px var(--color-grey);
+  padding: 16px 0;
 
-    &__time{
-        margin-right: 16px;
-        color: var(--color-grey);
-        font-size: 12px;
-    }
+  &__time {
+    margin-right: 16px;
+    color: var(--color-grey);
+    font-size: 12px;
+  }
 }
 
 .icon {
-    margin-right: 24px;
+  margin-right: 24px;
 }
 
 .content {
-    flex: 1;
-    height: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex: 1;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    &__title{
+  &__title {
+  }
 
-    }
-
-    &__subtitle {
-        color: var(--color-green);
-        font-size: 12px;
-    }
+  &__subtitle {
+    color: var(--color-green);
+    font-size: 12px;
+  }
 }
-
-
-
-

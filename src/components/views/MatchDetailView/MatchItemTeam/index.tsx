@@ -1,1 +1,1 @@
-export * from "./MatchItemTeam";
+export * from './MatchItemTeam';

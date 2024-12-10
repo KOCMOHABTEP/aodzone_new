@@ -1,1 +1,1 @@
-export * from "./FriendsView";
+export * from './FriendsView';

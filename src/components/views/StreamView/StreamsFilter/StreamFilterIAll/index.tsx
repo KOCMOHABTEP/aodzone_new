@@ -1,1 +1,1 @@
-export * from "./StreamFilterIAll";
+export * from './StreamFilterIAll';

@@ -1,64 +1,62 @@
 .component {
-    padding: 32px;
-    margin-bottom: 16px;
-    background: var(--color-dark-extra);
-    border: 1px solid var(--color-border);
-    border-radius: 10px;
-    box-shadow: var(--box-shadow);
+  padding: 32px;
+  margin-bottom: 16px;
+  background: var(--color-dark-extra);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
 }
 
 .header {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .headerTitle {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
 }
 
 .headerDescription {
-    font-size: 16px;
-    color: var(--color-text-grey);
+  font-size: 16px;
+  color: var(--color-text-grey);
 }
 
 .container {
-    width: calc(100% + 64px);
-    height: 420px;
-    margin: 0 -32px 40px;
-    background: var(--color-border-light);
-    overflow: hidden;
-    position: relative;
+  width: calc(100% + 64px);
+  height: 420px;
+  margin: 0 -32px 40px;
+  background: var(--color-border-light);
+  overflow: hidden;
+  position: relative;
 }
 
 .containerImage {
-    width: 100%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .detail {
-    font-size: 18px;
-    margin-bottom: 40px;
+  font-size: 18px;
+  margin-bottom: 40px;
 
-    * {
-        margin-bottom: 16px;
-    }
+  * {
+    margin-bottom: 16px;
+  }
 
-    &.h1 {
-        font-size: 32px;
-        margin-bottom: 16px;
-    }
+  &.h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
 }
 
 .footer {
-    border-top: 1px solid var(--color-grey);
-    padding-top: 32px;
+  border-top: 1px solid var(--color-grey);
+  padding-top: 32px;
 
-    &__controls {
-
-    }
+  &__controls {
+  }
 }
-

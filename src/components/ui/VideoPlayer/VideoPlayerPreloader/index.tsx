@@ -1,1 +1,1 @@
-export * from "./VideoPlayerPreloader";
+export * from './VideoPlayerPreloader';
