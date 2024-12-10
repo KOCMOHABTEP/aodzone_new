@@ -1,3 +1,3 @@
-@import './react-editor';
-@import './react-datepicker';
-@import './react-toastify';
+@use './react-editor' as *;
+@use './react-datepicker' as *;
+@use './react-toastify' as *;

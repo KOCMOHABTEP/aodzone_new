@@ -12,8 +12,6 @@ import styles from './Header.module.scss';
 export const Header = () => {
   const isAuth = useSelector(getUserAuth);
 
-  console.log(isAuth);
-
   const [menuNotificationsVisible, setMenuNotificationsVisible] =
     useState(false);
   const [menuFriendsVisible, setMenuFriendsVisible] = useState(false);

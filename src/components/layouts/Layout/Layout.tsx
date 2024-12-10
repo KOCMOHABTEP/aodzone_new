@@ -4,20 +4,20 @@ import { Container } from '@/components/containers/Container/Container';
 import Head from 'next/head';
 import { Footer } from '@/components/ui/Footer';
 import styles from './Layout.module.scss';
+import { FC, PropsWithChildren, ReactNode } from 'react';
 
 interface ILayout {
   title?: string;
   description?: string;
   name?: string;
-  children: any;
 }
 
-export const Layout = ({
+export const Layout: FC<PropsWithChildren<ILayout>> = ({
   title = 'AOD Zone',
-  children,
   description = 'noindex',
   name = 'robots',
-}: ILayout) => {
+  children,
+}) => {
   return (
     <>
       <Head>

@@ -1,39 +1,39 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-    webpack(config) {
-        config.module.rules.push({
-            test: /\.svg$/,
-            loader: '@svgr/webpack',
-            options: {
-                svgoConfig: {
-                    plugins: [
-                        {
-                            name: 'preset-default',
-                            params: {
-                                overrides: { removeViewBox: false },
-                            },
-                        },
-                    ],
-                },
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      loader: '@svgr/webpack',
+      options: {
+        svgoConfig: {
+          plugins: [
+            {
+              name: 'preset-default',
+              params: {
+                overrides: { removeViewBox: false },
+              },
             },
-        });
-
-        return config;
-    },
-    experimental: {
-        turbo: {
-            rules: {
-                '*.scss': {
-                    loaders: ['sass-loader'],
-                    as: '*.css',
-                },
-            },
+          ],
         },
+      },
+    });
+
+    return config;
+  },
+  experimental: {
+    turbo: {
+      rules: {
+        '*.scss': {
+          loaders: ['sass-loader'],
+          as: '*.css',
+        },
+      },
     },
-    // sassOptions: {
-    //     silenceDeprecations: ["legacy-js-api"], // 👈 HERE
-    // }
+  },
+  sassOptions: {
+    silenceDeprecations: ['legacy-js-api'], // 👈 HERE
+  },
 };
 
 export default nextConfig;

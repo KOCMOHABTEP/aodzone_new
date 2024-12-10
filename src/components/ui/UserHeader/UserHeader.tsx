@@ -41,7 +41,7 @@ export const UserHeader = ({
     },
   ];
 
-  const handleTabClick = (label) => {
+  const handleTabClick = (label: string) => {
     console.log(label);
     setTabValue(label);
   };

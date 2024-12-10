@@ -4,7 +4,7 @@ import { getSidebarCollapsed } from '@/redux/app/app.selectors';
 import { FC, PropsWithChildren, ReactNode } from 'react';
 import styles from './Container.module.scss';
 
-export const Container: FC<PropsWithChildren<ReactNode>> = ({ children }) => {
+export const Container: FC<PropsWithChildren> = ({ children }) => {
   const sidebarCollapsed = useSelector(getSidebarCollapsed);
 
   return (
