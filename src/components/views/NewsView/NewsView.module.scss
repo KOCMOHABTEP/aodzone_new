@@ -22,10 +22,25 @@
 .grid {
     margin: 0 -16px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
+}
+
+.gridColumn {
+    margin: 0 16px;
+    flex-basis: 50%;
+
+    &.gridColumnLeft {
+      margin: 0 8px 0 16px;
+    }
+
+    &.gridColumnRight {
+        margin: 0 16px 0 8px;
+    }
 }
 
 .gridItem {
-    flex: 0 0 calc(50% - 32px);
+    display: block;
+
+    & + & {
+        margin-top: 16px;
+    }
 }
